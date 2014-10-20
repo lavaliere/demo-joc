@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<com.cloudbees.opscenter.server.model.ClientMaster plugin="operations-center-server@1.5.1">
+  <actions/>
+  <description></description>
+  <id>1</id>
+  <encodedName>api</encodedName>
+  <idName>1-api</idName>
+  <timeStamp>1413827191511</timeStamp>
+  <grantId>819f7655-3d9b-4f4c-b3cc-b9a172ae2a32</grantId>
+  <approved>false</approved>
+  <properties class="com.cloudbees.opscenter.server.model.ConnectedMaster$PropertyList">
+    <com.cloudbees.opscenter.server.properties.ConnectedMasterOwnerProperty>
+      <owners></owners>
+      <delay>5</delay>
+    </com.cloudbees.opscenter.server.properties.ConnectedMasterOwnerProperty>
+    <com.cloudbees.opscenter.server.properties.ConnectedMasterLicenseServerProperty>
+      <strategy class="com.cloudbees.opscenter.server.properties.ConnectedMasterLicenseServerProperty$NoLicensingStrategy"/>
+    </com.cloudbees.opscenter.server.properties.ConnectedMasterLicenseServerProperty>
+  </properties>
+  <state>Created</state>
+</com.cloudbees.opscenter.server.model.ClientMaster>

@@ -26,7 +26,8 @@ B3f/jLXrPqL9yW0dw4FB4SA3NXs5h+ZqM+mWCxiEZHdKRWO7R8v6ikeoZzuMyJWr
 dYab4QKBgEZe1kX/5uTEdn/9ugKpgu/nd+PbQgBCRFQ/eayLH3C2miZ3Ey+l4xNz
 hagB9QDtXgx7kbrzMC58wPZfjJ1S0p6hSfDj3QPL9XwwHMqaEUdMxYMO6TxBCPZ/
 ItcI6GdyTTuzdb3YfT3csQk44gdnTO6j4k8uiFZROxRsMhSMDIuv
------END RSA PRIVATE KEY-----</key>
+-----END RSA PRIVATE KEY-----
+</key>
   <certificate>-----BEGIN CERTIFICATE-----
 MIIFBDCCA+ygAwIBAgIQDV2r0gnSWSlCxdrk3kdRRzANBgkqhkiG9w0BAQUFADCB
 sTELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMREwDwYDVQQHEwhTYW4gSm9zZTEW
@@ -55,6 +56,7 @@ nBvUEUCnSsc5D9405DG3jQF9nykfLiVky/VaEJQwdloV6p6G9f/0etqu0Pr14fkH
 1pErdl50u1Es2FQ/XeSBjiJ3yOTejM05QSpQiyV5DBCwPVMZTOrh+06wypczpFdi
 GDTLzPlLO5PXE/XCPdosFWI0fgz8Cl1u7ySWtf8uBwN1YmJ3VOE/nJ0NaKm7yAqe
 2tkZGYYPMY7vAxXVa0h/xgQQd1S0YZA1TY0YCmYNIMFYPuPQK+wxQA==
------END CERTIFICATE-----</certificate>
-  <expires>0</expires>
+-----END CERTIFICATE-----
+</certificate>
+  <expires>1416411261000</expires>
 </hudson.license.LicenseManager>
