@@ -4,17 +4,7 @@
     <hudson.plugins.git.GitTool>
       <name>Default</name>
       <home>git</home>
-      <properties>
-        <hudson.tools.InstallSourceProperty>
-          <installers>
-            <hudson.tools.ZipExtractionInstaller>
-              <label>Git</label>
-              <url></url>
-              <subdir>/bin</subdir>
-            </hudson.tools.ZipExtractionInstaller>
-          </installers>
-        </hudson.tools.InstallSourceProperty>
-      </properties>
+      <properties/>
     </hudson.plugins.git.GitTool>
   </installations>
 </hudson.plugins.git.GitTool_-DescriptorImpl>
