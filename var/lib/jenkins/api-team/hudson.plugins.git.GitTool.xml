@@ -6,7 +6,13 @@
       <home>git</home>
       <properties>
         <hudson.tools.InstallSourceProperty>
-          <installers/>
+          <installers>
+            <hudson.tools.ZipExtractionInstaller>
+              <label>Git</label>
+              <url></url>
+              <subdir>/bin</subdir>
+            </hudson.tools.ZipExtractionInstaller>
+          </installers>
         </hudson.tools.InstallSourceProperty>
       </properties>
     </hudson.plugins.git.GitTool>
