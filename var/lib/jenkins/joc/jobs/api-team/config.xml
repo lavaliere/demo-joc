@@ -6,16 +6,9 @@ api-team-2.jenkins-enterprise.dev.beedemo.io:8080</description>
   <id>0</id>
   <encodedName>api-team</encodedName>
   <idName>0-api-team</idName>
-  <timeStamp>1412737451536</timeStamp>
-  <grantId>2c124321-e76d-4178-bebe-cfe5f5856970</grantId>
-  <approved>true</approved>
-  <localEndpoint>http://proxy.demo-joc-haproxy.dev.beedemo.io/api-team/</localEndpoint>
-  <identity>MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlThi30FLmtRr9xydZP6jt9i/0quM1bqJ
-u1WBpmrxzLXy/m9Np5BTDNSLuSgTAwGhUOH1aYE0vRpJOdiXhU6ckiOplKQMVHOQwo7MHTgGJp+K
-Ei3CnCJmBLLtZwg/XCBkuFa9v4f3+sYnMe08sRlZQGs60xH7z7B9zSfpZjif3Dur3R2qUOwdcbi3
-zPDMF+n+GrvP+QikaFSf8plYX83b6pek6VwuQaS2o82/xUHormc/A5R40phKlJQSGKZZkfRvdG5x
-FwF+MqVtPqr3SyN0IxwdxMmseCMCz0q+EfwwHjOFHqF15QkhtoI+1XQyXzraL6tPr5G7lEbYYJwx
-y/SuxwIDAQAB</identity>
+  <timeStamp>1413819318981</timeStamp>
+  <grantId>5d0e36ac-35ab-4fd7-aba3-64df1e44115b</grantId>
+  <approved>false</approved>
   <properties class="com.cloudbees.opscenter.server.model.ConnectedMaster$PropertyList">
     <com.cloudbees.opscenter.server.properties.ConnectedMasterOwnerProperty>
       <owners></owners>
@@ -25,5 +18,5 @@ y/SuxwIDAQAB</identity>
       <strategy class="com.cloudbees.opscenter.server.properties.ConnectedMasterLicenseServerProperty$NoLicensingStrategy"/>
     </com.cloudbees.opscenter.server.properties.ConnectedMasterLicenseServerProperty>
   </properties>
-  <state>Approved</state>
+  <state>Created</state>
 </com.cloudbees.opscenter.server.model.ClientMaster>

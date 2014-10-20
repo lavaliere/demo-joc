@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <hudson>
   <disabledAdministrativeMonitors/>
-  <version>1.0</version>
+  <version>1.554.2.2 (Jenkins Enterprise by CloudBees 14.05)</version>
   <numExecutors>2</numExecutors>
   <mode>NORMAL</mode>
   <useSecurity>true</useSecurity>
@@ -20,6 +20,7 @@
     </com.cloudbees.opscenter.client.cloud.CloudImpl>
   </clouds>
   <slaves/>
+  <quietPeriod>5</quietPeriod>
   <scmCheckoutRetryCount>0</scmCheckoutRetryCount>
   <views>
     <hudson.model.AllView>
