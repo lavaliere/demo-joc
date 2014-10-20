@@ -59,11 +59,11 @@
       <permission id="jenkins.metrics.api.Metrics.HealthCheck"/>
       <permission id="com.cloudbees.plugins.updatecenter.UpdateCenter.Configure"/>
       <permission id="hudson.model.Computer.Create"/>
-      <permission id="hudson.model.Computer.Secure"/>
       <permission id="com.cloudbees.jenkins.support.SupportPlugin.DownloadBundle"/>
+      <permission id="hudson.model.Computer.Secure"/>
       <permission id="hudson.model.Computer.Build"/>
-      <permission id="nectar.plugins.rbac.groups.Group.Delete"/>
       <permission id="hudson.model.Item.Cancel"/>
+      <permission id="nectar.plugins.rbac.groups.Group.Delete"/>
       <permission id="com.cloudbees.plugins.credentials.CredentialsProvider.Update"/>
     </role>
   </configuration>

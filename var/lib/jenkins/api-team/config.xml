@@ -16,11 +16,7 @@
   <jdks/>
   <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
   <myViewsTabBar class="hudson.views.DefaultMyViewsTabBar"/>
-  <clouds>
-    <com.cloudbees.opscenter.client.cloud.CloudImpl plugin="operations-center-cloud@1.5">
-      <name>Operations Center Slave Provisioning Service</name>
-    </com.cloudbees.opscenter.client.cloud.CloudImpl>
-  </clouds>
+  <clouds/>
   <slaves/>
   <quietPeriod>5</quietPeriod>
   <scmCheckoutRetryCount>0</scmCheckoutRetryCount>
