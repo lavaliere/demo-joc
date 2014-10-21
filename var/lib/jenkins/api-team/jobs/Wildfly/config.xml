@@ -30,6 +30,27 @@
       <filterQueue>false</filterQueue>
       <properties class="hudson.model.View$PropertyList"/>
     </hudson.model.AllView>
+    <au.com.centrumsystems.hudson.plugin.buildpipeline.BuildPipelineView plugin="build-pipeline-plugin@1.4.3">
+      <owner class="com.cloudbees.hudson.plugins.folder.Folder" reference="../../.."/>
+      <name>Wildfly-Pipeline</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+      <gridBuilder class="au.com.centrumsystems.hudson.plugin.buildpipeline.DownstreamProjectGridBuilder">
+        <firstJob>build</firstJob>
+      </gridBuilder>
+      <noOfDisplayedBuilds>1</noOfDisplayedBuilds>
+      <buildViewTitle></buildViewTitle>
+      <consoleOutputLinkStyle>Lightbox</consoleOutputLinkStyle>
+      <cssUrl></cssUrl>
+      <triggerOnlyLatestJob>false</triggerOnlyLatestJob>
+      <alwaysAllowManualTrigger>false</alwaysAllowManualTrigger>
+      <showPipelineParameters>false</showPipelineParameters>
+      <showPipelineParametersInHeaders>false</showPipelineParametersInHeaders>
+      <startsWithParameters>false</startsWithParameters>
+      <refreshFrequency>3</refreshFrequency>
+      <showPipelineDefinitionHeader>false</showPipelineDefinitionHeader>
+    </au.com.centrumsystems.hudson.plugin.buildpipeline.BuildPipelineView>
   </views>
   <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
   <primaryView>All</primaryView>

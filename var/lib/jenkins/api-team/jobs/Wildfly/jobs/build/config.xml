@@ -27,9 +27,14 @@
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers/>
   <concurrentBuild>false</concurrentBuild>
+  <rootModule>
+    <groupId>cd-wildfly</groupId>
+    <artifactId>cd-wildfly</artifactId>
+  </rootModule>
+  <goals>clean -Pwildfy81-embedded package</goals>
   <aggregatorStyleBuild>true</aggregatorStyleBuild>
   <incrementalBuild>false</incrementalBuild>
-  <ignoreUpstremChanges>false</ignoreUpstremChanges>
+  <ignoreUpstremChanges>true</ignoreUpstremChanges>
   <archivingDisabled>false</archivingDisabled>
   <siteArchivingDisabled>false</siteArchivingDisabled>
   <resolveDependencies>false</resolveDependencies>
@@ -40,14 +45,35 @@
   <settings class="jenkins.mvn.DefaultSettingsProvider"/>
   <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
   <reporters/>
-  <publishers/>
+  <publishers>
+    <hudson.tasks.ArtifactArchiver>
+      <artifacts>target/cd-wildfly-*.*.war</artifacts>
+      <latestOnly>false</latestOnly>
+      <allowEmptyArchive>false</allowEmptyArchive>
+    </hudson.tasks.ArtifactArchiver>
+    <hudson.tasks.BuildTrigger>
+      <childProjects>Wildfly/archive</childProjects>
+      <threshold>
+        <name>SUCCESS</name>
+        <ordinal>0</ordinal>
+        <color>BLUE</color>
+        <completeBuild>true</completeBuild>
+      </threshold>
+    </hudson.tasks.BuildTrigger>
+    <hudson.maven.RedeployPublisher>
+      <id>wildfly-release</id>
+      <url>http://nexus.beedemo.io/nexus/content/repositories/wildfly-release</url>
+      <uniqueVersion>false</uniqueVersion>
+      <evenIfUnstable>false</evenIfUnstable>
+    </hudson.maven.RedeployPublisher>
+  </publishers>
   <buildWrappers/>
   <prebuilders/>
   <postbuilders/>
   <runPostStepsIfResult>
-    <name>FAILURE</name>
-    <ordinal>2</ordinal>
-    <color>RED</color>
+    <name>UNSTABLE</name>
+    <ordinal>1</ordinal>
+    <color>YELLOW</color>
     <completeBuild>true</completeBuild>
   </runPostStepsIfResult>
 </maven2-moduleset>

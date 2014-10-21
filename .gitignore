@@ -78,6 +78,7 @@ bin/
 **/custom_deps/
 **/slave/workspace/
 **/slave-slave.log.*
+jdks/
 
 # JEBC
 **/jgroups/*
