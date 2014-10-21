@@ -2,13 +2,19 @@
 <maven2-moduleset plugin="maven-plugin@2.3">
   <actions/>
   <description></description>
+  <logRotator class="hudson.tasks.LogRotator">
+    <daysToKeep>2</daysToKeep>
+    <numToKeep>4</numToKeep>
+    <artifactDaysToKeep>-1</artifactDaysToKeep>
+    <artifactNumToKeep>-1</artifactNumToKeep>
+  </logRotator>
   <keepDependencies>false</keepDependencies>
   <properties/>
   <scm class="hudson.plugins.git.GitSCM" plugin="git@2.2.1">
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
-        <url>https://github.com/jenkinsbyexample/jenkins-cd-jboss</url>
+        <url>https://github.com/jenkinsbyexample/jenkins-cd-jboss.git</url>
         <credentialsId>3252d167-ab65-41a6-a981-d9f4bcab2bf7</credentialsId>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
@@ -51,8 +57,14 @@
       <latestOnly>false</latestOnly>
       <allowEmptyArchive>false</allowEmptyArchive>
     </hudson.tasks.ArtifactArchiver>
+    <hudson.maven.RedeployPublisher>
+      <id>wildfly-release</id>
+      <url>http://nexus.beedemo.io/nexus/content/repositories/wildfly-release</url>
+      <uniqueVersion>false</uniqueVersion>
+      <evenIfUnstable>false</evenIfUnstable>
+    </hudson.maven.RedeployPublisher>
     <hudson.tasks.BuildTrigger>
-      <childProjects>Wildfly/archive</childProjects>
+      <childProjects>Wildfly/qa</childProjects>
       <threshold>
         <name>SUCCESS</name>
         <ordinal>0</ordinal>
@@ -60,12 +72,6 @@
         <completeBuild>true</completeBuild>
       </threshold>
     </hudson.tasks.BuildTrigger>
-    <hudson.maven.RedeployPublisher>
-      <id>wildfly-release</id>
-      <url>http://nexus.beedemo.io/nexus/content/repositories/wildfly-release</url>
-      <uniqueVersion>false</uniqueVersion>
-      <evenIfUnstable>false</evenIfUnstable>
-    </hudson.maven.RedeployPublisher>
   </publishers>
   <buildWrappers/>
   <prebuilders/>

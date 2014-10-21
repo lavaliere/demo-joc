@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hudson.plugins.promoted__builds.PromotionProcess plugin="promoted-builds@2.17">
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <conditions>
+    <hudson.plugins.promoted__builds.conditions.DownstreamPassCondition>
+      <jobs>Wildfly/qa</jobs>
+      <evenIfUnstable>false</evenIfUnstable>
+    </hudson.plugins.promoted__builds.conditions.DownstreamPassCondition>
+  </conditions>
+  <icon>star-gold</icon>
+  <buildSteps>
+    <hudson.plugins.promoted__builds.tasks.RedeployBatchTaskPublisher>
+      <id>wildfly-release</id>
+      <url>http://nexus.beedemo.io/nexus/content/repositories/wildfly-release</url>
+      <uniqueVersion>false</uniqueVersion>
+      <evenIfUnstable>false</evenIfUnstable>
+    </hudson.plugins.promoted__builds.tasks.RedeployBatchTaskPublisher>
+  </buildSteps>
+</hudson.plugins.promoted__builds.PromotionProcess>
