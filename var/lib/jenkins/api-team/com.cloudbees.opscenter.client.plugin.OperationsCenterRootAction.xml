@@ -2,9 +2,9 @@
 <com.cloudbees.opscenter.client.plugin.OperationsCenterRootAction_-DescriptorImpl plugin="operations-center-client@1.5.1">
   <state>ENABLED</state>
   <connectionDetails>----- BEGIN CONNECTION DETAILS -----
-H4sIAAAAAAAAADWKQQ7CIBAA/7JnFwK0VvqbBbYWo11C0WiMfxcPXiaZybzhXGlrMMPJ+GU6jiO6
-5AMOyxAxuNjhyUyW2JKzcICc+muQSu5yr9dua2tl1rpUeb5U4pvgRSKu9A8PFZh/XWXRUnaMvDWu
-Gj5fCRmdO34AAAA=
+H4sIAAAAAAAAADXKSw6DIBAA0LvMukMnAoLehs+oNFUM0abGeHfpotuXd8JY3LJBD4FNjKYj5HYw
+qJQMaLVqUXrS1qtGy6GBB6RYL6FbE27s5ip7eVdaS/4eIvKc8ZUDTu4PH+GZfy5S7i1ZesJ1A+KF
+K6F2AAAA
 ----- END CONNECTION DETAILS -----</connectionDetails>
   <configurable>true</configurable>
   <registered>true</registered>
