@@ -24,7 +24,7 @@
   <builders>
     <hudson.plugins.copyartifact.CopyArtifact plugin="copyartifact@1.32.1">
       <project>Wildfly/build</project>
-      <filter>target/cd-wildfly-*.*.war, pom.xml</filter>
+      <filter>target/cd-wildfly-*.*.war, pom.xml, src\main\webapp\WEB-INF\web.xml</filter>
       <target></target>
       <excludes></excludes>
       <selector class="hudson.plugins.copyartifact.StatusBuildSelector"/>

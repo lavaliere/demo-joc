@@ -1,0 +1,38 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace /data/var/lib/jenkins/api-team/workspace/Wildfly/build
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/lavaliere/jenkins-cd-jboss.git # timeout=10
+Fetching upstream changes from https://github.com/lavaliere/jenkins-cd-jboss.git
+ > git --version # timeout=10
+using .gitcredentials to set credentials
+ > git config --local credential.helper store --file=/tmp/git1456119844093381298.credentials # timeout=10
+ > git fetch --tags --progress https://github.com/lavaliere/jenkins-cd-jboss.git +refs/heads/*:refs/remotes/origin/*
+ > git config --local --remove-section credential # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision ff2c908d47bcd04f5c2203e1cc6e79b1726eedde (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f ff2c908d47bcd04f5c2203e1cc6e79b1726eedde
+ > git rev-list c10f76d85261bcc0ffb67b7667bd97a0f4c73374 # timeout=10
+Parsing POMs
+ERROR: Failed to parse POMs
+[8mha:AAAAWB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0morg.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[FATAL] Non-parseable POM /data/var/lib/jenkins/api-team/workspace/Wildfly/build/pom.xml: expected name start and not > (position: TEXT seen ...</configuration>\n                    </>... @100:24)  @ line 100, column 24
+
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:364)
+	at hudson.maven.MavenEmbedder.buildProjects(MavenEmbedder.java:361)
+	at hudson.maven.MavenEmbedder.readProjects(MavenEmbedder.java:331)
+	at hudson.maven.MavenModuleSetBuild$PomParser.invoke(MavenModuleSetBuild.java:1291)
+	at hudson.maven.MavenModuleSetBuild$PomParser.invoke(MavenModuleSetBuild.java:1088)
+	at hudson.FilePath.act(FilePath.java:914)
+	at hudson.FilePath.act(FilePath.java:887)
+	at hudson.maven.MavenModuleSetBuild$MavenModuleSetBuildExecution.parsePoms(MavenModuleSetBuild.java:950)
+	at hudson.maven.MavenModuleSetBuild$MavenModuleSetBuildExecution.doRun(MavenModuleSetBuild.java:677)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:585)
+	at hudson.model.Run.execute(Run.java:1684)
+	at hudson.maven.MavenModuleSetBuild.run(MavenModuleSetBuild.java:529)
+	at hudson.model.ResourceController.execute(ResourceController.java:88)
+	at hudson.model.Executor.run(Executor.java:231)
+Archiving artifacts
+Finished: FAILURE
