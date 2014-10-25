@@ -9,7 +9,11 @@
     <artifactNumToKeep>-1</artifactNumToKeep>
   </logRotator>
   <keepDependencies>false</keepDependencies>
-  <properties/>
+  <properties>
+    <org.jenkinsci.plugins.mavenrepocleaner.MavenRepoCleanerProperty plugin="maven-repo-cleaner@1.2">
+      <notOnThisProject>false</notOnThisProject>
+    </org.jenkinsci.plugins.mavenrepocleaner.MavenRepoCleanerProperty>
+  </properties>
   <scm class="hudson.plugins.git.GitSCM" plugin="git@2.2.7">
     <configVersion>2</configVersion>
     <userRemoteConfigs>
@@ -55,7 +59,7 @@
   <reporters/>
   <publishers>
     <hudson.tasks.ArtifactArchiver>
-      <artifacts>target/cd-wildfly-*.*.war, pom.xml</artifacts>
+      <artifacts>target/cd-wildfly-*.*.war, pom.xml, src/main/webapp/WEB-INF/web.xml</artifacts>
       <latestOnly>false</latestOnly>
       <allowEmptyArchive>false</allowEmptyArchive>
     </hudson.tasks.ArtifactArchiver>
