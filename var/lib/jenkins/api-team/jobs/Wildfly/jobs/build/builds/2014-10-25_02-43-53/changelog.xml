@@ -1,9 +1,0 @@
-commit 449d017fede4bee95c78f90da062ba5bf613c327
-tree 1c2275031624c6e084186312d6d024374976cb2b
-parent f32e18d26dc707dbbec223799b810773c2a592bf
-author lavaliere <kennedy.tracy@yahoo.com> 1414205021 -0400
-committer lavaliere <kennedy.tracy@yahoo.com> 1414205021 -0400
-
-    tried to fix arquillian problem
-
-:100644 100644 1409e62f1a3c230b5c4e5e5e81593c9ef5d0424c e4cdb56950c2de22200de388b10cc82772195d16 M	src/test/resources/arquillian.xml

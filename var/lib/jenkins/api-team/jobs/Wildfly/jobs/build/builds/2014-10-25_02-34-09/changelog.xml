@@ -1,9 +1,0 @@
-commit 3a3e8e3eac8f8d0928e5acc75cc943bc6b747836
-tree 58ce11558c3114a782e29bf3139293fe557612f4
-parent fe63640bbec53474cff0600f12d5d9b780b8fd7b
-author lavaliere <kennedy.tracy@yahoo.com> 1414204439 -0400
-committer lavaliere <kennedy.tracy@yahoo.com> 1414204439 -0400
-
-    fixed extra symbol in pom
-
-:100644 100644 de70f70f3e9d82a2c5c1f882e89b2f2a13fc7b2c 777f2409b0f76a9d4e2fab06102153aeea6abe43 M	pom.xml
