@@ -2,6 +2,12 @@
 <project>
   <actions/>
   <description></description>
+  <logRotator class="hudson.tasks.LogRotator">
+    <daysToKeep>2</daysToKeep>
+    <numToKeep>4</numToKeep>
+    <artifactDaysToKeep>-1</artifactDaysToKeep>
+    <artifactNumToKeep>-1</artifactNumToKeep>
+  </logRotator>
   <keepDependencies>false</keepDependencies>
   <properties/>
   <scm class="hudson.scm.NullSCM"/>
@@ -14,14 +20,14 @@
   <builders>
     <hudson.plugins.copyartifact.CopyArtifact plugin="copyartifact@1.32.1">
       <project>Wildfly/build</project>
-      <filter>target/cd-wildfly-*.*.war</filter>
+      <filter>target/cd-wildfly-*.*.war, pom.xml</filter>
       <target></target>
       <excludes></excludes>
       <selector class="hudson.plugins.copyartifact.StatusBuildSelector"/>
       <doNotFingerprintArtifacts>false</doNotFingerprintArtifacts>
     </hudson.plugins.copyartifact.CopyArtifact>
     <hudson.tasks.Maven>
-      <targets>deploy:deploy-file  -DgroupId=cloudbees  -DartifactId=cd-jboss  -Dversion=1.0  -Dpackaging=jar  -Dfile=target/cd-wildfly-*.*.war -DrepositoryId=wildfly-release  -Durl=nexus.nexus.dev.wildfly.io:8081/nexus/content/repositories/wildfly-release/</targets>
+      <targets>deploy</targets>
       <mavenName>Maven_3</mavenName>
       <usePrivateRepository>false</usePrivateRepository>
       <settings class="jenkins.mvn.DefaultSettingsProvider"/>

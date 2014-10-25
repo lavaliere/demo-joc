@@ -1,9 +1,0 @@
-commit 894b80bbb6c9dcf5a2eab0ea60e02063b49b19af
-tree 4414957e6b9333747af7c82907b30d844e09a52f
-parent 2dc651a9747afaa2780a0f4c9b24fc8b07d444cb
-author lavaliere <kennedy.tracy@yahoo.com> 1414249508 -0400
-committer lavaliere <kennedy.tracy@yahoo.com> 1414249508 -0400
-
-    commit nexus pom changes
-
-:100644 100644 f87a6f03af0b391846c7eaa051196694a114b119 3ffd8e05b1919f4343618064f5cdea54e4037205 M	pom.xml

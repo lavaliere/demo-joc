@@ -1,40 +1,0 @@
-Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
-Building in workspace /data/var/lib/jenkins/api-team/workspace/Wildfly/archive
-Copied 1 artifact from "[8mha:AAAAkx+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMjgL2EQ18/KT9IPz8xJScupBLOTSoEcfQDuMU6EnAAAAA==[0mWildfly ? build" build number [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgKmGQ0s/KT9IPz8xJScupBLOTSoEcfUMzfQA1u7o0nwAAAA==[0m16
-Copied 0 artifacts from "[8mha:AAAAnR+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMiQKWHQ1c/KT9IPz8xJScupBLOTSoEc/eQU3XKIoAqCqQ8AUv1o3LIAAAA=[0mWildfly ? build ? cd-wildfly" build number [8mha:AAAAoB+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgKmEw0M/KT9IPz8xJScupBLOTSoEc/eQU3XKIoAqCqW9opg8A7mOx7rUAAAA=[0m16
-[archive] $ /data/var/lib/jenkins/api-team/tools/hudson.tasks.Maven_MavenInstallation/Maven_3/bin/mvn deploy:deploy-file -DgroupId=cloudbees -DartifactId=cd-jboss -Dversion=1.0 -Dpackaging=jar -Dfile=target/cd-wildfly-*.*.war -DrepositoryId=wildfly-release -Durl=nexus.nexus.dev.wildfly.io:8081/nexus/content/repositories/wildfly-release/
-[INFO] Scanning for projects...
-Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/2.4/maven-install-plugin-2.4.pom
-1/7 KB   5/7 KB   7/7 KB            Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/2.4/maven-install-plugin-2.4.pom (7 KB at 19.0 KB/sec)
-Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/2.4/maven-install-plugin-2.4.jar
-4/27 KB   7/27 KB   11/27 KB   14/27 KB   16/27 KB   20/27 KB   24/27 KB   24/27 KB   26/27 KB   27/27 KB              Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/2.4/maven-install-plugin-2.4.jar (27 KB at 299.1 KB/sec)
-Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.7/maven-deploy-plugin-2.7.pom
-1/6 KB     5/6 KB   6/6 KB            Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.7/maven-deploy-plugin-2.7.pom (6 KB at 48.1 KB/sec)
-Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.7/maven-deploy-plugin-2.7.jar
-4/27 KB   8/27 KB   11/27 KB   12/27 KB   16/27 KB   20/27 KB   23/27 KB   26/27 KB   27/27 KB              Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.7/maven-deploy-plugin-2.7.jar (27 KB at 331.7 KB/sec)
-[INFO]                                                                         
-[INFO] ------------------------------------------------------------------------
-[INFO] Building Maven Stub Project (No POM) 1
-[INFO] ------------------------------------------------------------------------
-[INFO] 
-[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-deploy-plugin:2.7:deploy-file (default-cli) @ standalone-pom ---
-Downloading: http://repo.maven.apache.org/maven2/org/apache/apache/3/apache-3.pom
-           Downloaded: http://repo.maven.apache.org/maven2/org/apache/apache/3/apache-3.pom (0 B at 0.0 KB/sec)
-Downloading: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.6/plexus-utils-1.5.6.jar
-3/245 KB   7/245 KB   10/245 KB   11/245 KB   12/245 KB   15/245 KB   18/245 KB   19/245 KB   20/245 KB   22/245 KB   24/245 KB   28/245 KB   32/245 KB   34/245 KB   35/245 KB   37/245 KB   41/245 KB   41/245 KB   42/245 KB   46/245 KB   49/245 KB   53/245 KB   54/245 KB   56/245 KB   57/245 KB   58/245 KB   60/245 KB   61/245 KB   62/245 KB   64/245 KB   68/245 KB   69/245 KB   70/245 KB   72/245 KB   73/245 KB   74/245 KB   76/245 KB   77/245 KB   79/245 KB   83/245 KB   84/245 KB   85/245 KB   89/245 KB   93/245 KB   93/245 KB   96/245 KB   99/245 KB   100/245 KB   103/245 KB   106/245 KB   107/245 KB   108/245 KB   110/245 KB   114/245 KB   118/245 KB   120/245 KB   122/245 KB   124/245 KB   126/245 KB   130/245 KB   130/245 KB   134/245 KB   134/245 KB   135/245 KB   137/245 KB   139/245 KB   143/245 KB   147/245 KB   151/245 KB   152/245 KB   154/245 KB   157/245 KB   158/245 KB   162/245 KB   165/245 KB   166/245 KB   169/245 KB   170/245 KB   173/245 KB   177/245 KB   177/245 KB   180/245 KB   183/245 KB   184/245 KB   185/245 KB   187/245 KB   188/245 KB   189/245 KB   192/245 KB   196/245 KB   196/245 KB   199/245 KB   200/245 KB   204/245 KB   208/245 KB   212/245 KB   212/245 KB   216/245 KB   218/245 KB   220/245 KB   222/245 KB   224/245 KB   228/245 KB   229/245 KB   233/245 KB   233/245 KB   237/245 KB   237/245 KB   238/245 KB   239/245 KB   241/245 KB   242/245 KB   245/245 KB   245/245 KB                Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.6/plexus-utils-1.5.6.jar (245 KB at 771.8 KB/sec)
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time: 2.423 s
-[INFO] Finished at: 2014-10-25T15:48:04+00:00
-[INFO] Final Memory: 7M/68M
-[INFO] ------------------------------------------------------------------------
-[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] Failed to execute goal org.apache.maven.plugins:maven-deploy-plugin:2.7:deploy-file (default-cli) on project standalone-pom: /data/var/lib/jenkins/api-team/workspace/Wildfly/archive/target/cd-wildfly-*.*.war not found. -> [Help 1]
-[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 
-[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 
-[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
-Build step 'Invoke top-level Maven targets' marked build as failure
-Finished: FAILURE
