@@ -59,7 +59,7 @@
     </hudson.tasks.ArtifactArchiver>
     <hudson.maven.RedeployPublisher>
       <id>wildfly-release</id>
-      <url>http://nexus.beedemo.io/nexus/content/repositories/wildfly-release</url>
+      <url>nexus.nexus.dev.beedemo.io/nexus/content/repositories/wildfly-release</url>
       <uniqueVersion>false</uniqueVersion>
       <evenIfUnstable>false</evenIfUnstable>
     </hudson.maven.RedeployPublisher>
