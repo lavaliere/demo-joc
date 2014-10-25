@@ -46,6 +46,7 @@ Temporary Items
 .viminfo
 .vnc
 bin/
+tools/
 
 # Generated Hudson state
 **/.owner
