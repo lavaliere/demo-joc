@@ -79,9 +79,9 @@
   <prebuilders/>
   <postbuilders/>
   <runPostStepsIfResult>
-    <name>UNSTABLE</name>
-    <ordinal>1</ordinal>
-    <color>YELLOW</color>
+    <name>SUCCESS</name>
+    <ordinal>0</ordinal>
+    <color>BLUE</color>
     <completeBuild>true</completeBuild>
   </runPostStepsIfResult>
 </maven2-moduleset>

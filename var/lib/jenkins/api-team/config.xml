@@ -2,6 +2,7 @@
 <hudson>
   <disabledAdministrativeMonitors>
     <string>jenkins.diagnostics.SecurityIsOffMonitor</string>
+    <string>OldData</string>
   </disabledAdministrativeMonitors>
   <version>1.554.2.2 (Jenkins Enterprise by CloudBees 14.05)</version>
   <numExecutors>2</numExecutors>
