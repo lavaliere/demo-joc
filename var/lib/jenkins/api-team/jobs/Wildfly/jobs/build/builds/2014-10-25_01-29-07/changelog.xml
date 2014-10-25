@@ -1,0 +1,9 @@
+commit c39913312ece52416ec643d760af36bd51c52be7
+tree 023249a444ae477d65a2a0fb923fd1fb2732ef08
+parent 950d733ee252b72c2815e598db547314bf6f6ddc
+author lavaliere <kennedy.tracy@yahoo.com> 1414200531 -0400
+committer lavaliere <kennedy.tracy@yahoo.com> 1414200531 -0400
+
+    removed wildfly plugin from pom.xml
+
+:100644 100644 55c4e836fa59db2c4295c68eab63676884dfbfc2 26f621fa6479420a6b55069b21d89e688ffaf197 M	pom.xml
