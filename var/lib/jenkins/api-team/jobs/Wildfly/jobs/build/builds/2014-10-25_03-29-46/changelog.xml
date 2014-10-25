@@ -1,0 +1,9 @@
+commit 196762dbacaa0379db64666a747f74a7036a48fb
+tree 0405bd873e667b7df59cb918c0d08c07152520d0
+parent 900e4317a303fd27ded555c807203a5ca1aa1b4b
+author lavaliere <kennedy.tracy@yahoo.com> 1414206716 -0400
+committer lavaliere <kennedy.tracy@yahoo.com> 1414206716 -0400
+
+    reverted arquillian xml to embedded set up
+
+:100644 100644 8a49dc15549c95eab48dc65e01a4496386787d03 b1b1455057d996358895981395112a3ef8463a9b M	src/test/resources/arquillian.xml
