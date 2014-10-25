@@ -1,0 +1,9 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace /data/var/lib/jenkins/api-team/workspace/Wildfly/archive
+Copied 1 artifact from "[8mha:AAAAkx+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMjgL2EQ18/KT9IPz8xJScupBLOTSoEcfQDuMU6EnAAAAA==[0mWildfly ? build" build number [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgKmGQ0s/KT9IPz8xJScupBLOTSoEcfUMzfQA1u7o0nwAAAA==[0m16
+Copied 0 artifacts from "[8mha:AAAAnR+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMiQKWHQ1c/KT9IPz8xJScupBLOTSoEc/eQU3XKIoAqCqQ8AUv1o3LIAAAA=[0mWildfly ? build ? cd-wildfly" build number [8mha:AAAAoB+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgKmEw0M/KT9IPz8xJScupBLOTSoEc/eQU3XKIoAqCqW9opg8A7mOx7rUAAAA=[0m16
+[archive] $ /bin/sh -xe /tmp/hudson8312858421791012381.sh
++ mvn deploy:deploy-file
+/tmp/hudson8312858421791012381.sh: 2: /tmp/hudson8312858421791012381.sh: mvn: not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
