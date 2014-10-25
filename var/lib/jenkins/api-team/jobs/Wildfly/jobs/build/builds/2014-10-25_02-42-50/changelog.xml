@@ -1,0 +1,9 @@
+commit f32e18d26dc707dbbec223799b810773c2a592bf
+tree 57203c04c933314e58a252cd461db8a11e6c74a4
+parent 74aa7c851761779a2d18252a11d7613ebdb3fa10
+author lavaliere <kennedy.tracy@yahoo.com> 1414204962 -0400
+committer lavaliere <kennedy.tracy@yahoo.com> 1414204962 -0400
+
+    tried to fix arquillian problem
+
+:100644 100644 777f2409b0f76a9d4e2fab06102153aeea6abe43 84e44d38114c8e80e7a192b0bf7e2980b93fbc65 M	pom.xml
