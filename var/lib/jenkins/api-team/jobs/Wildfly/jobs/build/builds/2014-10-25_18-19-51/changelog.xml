@@ -1,0 +1,9 @@
+commit 925579bd6866898aa57a2f79eb75a372e68291c4
+tree 8cc287f1159f6513f71415aea92a61943471f39c
+parent db9852790d7382c8e258b762588f531226023d89
+author lavaliere <kennedy.tracy@yahoo.com> 1414261178 -0400
+committer lavaliere <kennedy.tracy@yahoo.com> 1414261178 -0400
+
+    tried to fix pom
+
+:100644 100644 09da16ad02ebb8c5e8dacccb0c73746b1d84237b ec11ee30784ed0da16f61d057c26444a286b080b M	pom.xml
