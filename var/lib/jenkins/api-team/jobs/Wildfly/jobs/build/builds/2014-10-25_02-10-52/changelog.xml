@@ -1,0 +1,9 @@
+commit 9283de3c6820f9831e12f6e034286b037bd27fcc
+tree 8f1ff36c068bf343769d4da3d398b56af6d8c1f9
+parent 60eea7e5ab2b0c8ca4193dbdd1d497012027d851
+author lavaliere <kennedy.tracy@yahoo.com> 1414203042 -0400
+committer lavaliere <kennedy.tracy@yahoo.com> 1414203042 -0400
+
+    attempting to customize for demo
+
+:100644 100644 5ffa1a4ddfeb3196eff39ea218f17c26c74d1cf9 6dd628ed2e4e83e740339d2d991b11b8fe58a9e6 M	src/test/resources/arquillian.xml

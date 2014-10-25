@@ -37,7 +37,7 @@
     <groupId>cd-wildfly</groupId>
     <artifactId>cd-wildfly</artifactId>
   </rootModule>
-  <goals>clean -Pwildfy81-embedded package</goals>
+  <goals>clean test -Parq-jbossas-managed package</goals>
   <aggregatorStyleBuild>true</aggregatorStyleBuild>
   <incrementalBuild>false</incrementalBuild>
   <ignoreUpstremChanges>true</ignoreUpstremChanges>

@@ -1,0 +1,11 @@
+commit 8e3218718df265330b57228186e7ce3fe7292c1a
+tree ccce4aa1abaad8d75d9d002402c53eecc837a9eb
+parent 9283de3c6820f9831e12f6e034286b037bd27fcc
+author lavaliere <kennedy.tracy@yahoo.com> 1414203692 -0400
+committer lavaliere <kennedy.tracy@yahoo.com> 1414203692 -0400
+
+    attempting to customize for demo - fixed pom and arquillian xml
+
+:100644 100644 c754f99dd55a5d741e46812d9867cbd7ecb2d702 a8a6d7da2fa32460cf4a7f8635487440ab51c625 M	.DS_Store
+:100644 100644 26f621fa6479420a6b55069b21d89e688ffaf197 8a11c7a9d861f272bebd275300e7a4bea765364c M	pom.xml
+:100644 100644 6dd628ed2e4e83e740339d2d991b11b8fe58a9e6 4532ca9c6e72a98ac5539edbe188c4867a5f7cc9 M	src/test/resources/arquillian.xml
