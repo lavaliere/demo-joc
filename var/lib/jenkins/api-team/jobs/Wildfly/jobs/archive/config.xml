@@ -27,7 +27,7 @@
     </hudson.plugins.copyartifact.CopyArtifact>
     <hudson.tasks.Maven>
       <targets>deploy -Preleases  -e</targets>
-      <mavenName>Maven_3</mavenName>
+      <mavenName>Maven_2</mavenName>
       <usePrivateRepository>false</usePrivateRepository>
       <settings class="jenkins.mvn.DefaultSettingsProvider"/>
       <globalSettings class="org.jenkinsci.plugins.configfiles.maven.job.MvnGlobalSettingsProvider" plugin="config-file-provider@2.7.5">
