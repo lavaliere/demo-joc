@@ -1,0 +1,83 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace /data/var/lib/jenkins/api-team/workspace/Wildfly/archive
+Copied 3 artifacts from "[8mha:AAAAkx+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMjgL2EQ18/KT9IPz8xJScupBLOTSoEcfQDuMU6EnAAAAA==[0mWildfly ? build" build number [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgKmGQ0s/KT9IPz8xJScupBLOTSoEcfVNDfQAuhfJ8nwAAAA==[0m51
+Copied 0 artifacts from "[8mha:AAAAnR+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMiQKWHQ1c/KT9IPz8xJScupBLOTSoEc/eQU3XKIoAqCqQ8AUv1o3LIAAAA=[0mWildfly ? build ? cd-wildfly" build number [8mha:AAAAoB+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgKmEw0M/KT9IPz8xJScupBLOTSoEc/eQU3XKIoAqCqW9qqA8A9V35prUAAAA=[0m51
+using global settings config with name CustomGlobal
+[archive] $ /data/var/lib/jenkins/api-team/tools/hudson.tasks.Maven_MavenInstallation/Maven_3/bin/mvn -gs /tmp/global-settings8593859536430997621.xml deploy -Preleases -x
+Unable to parse command line options: Unrecognized option: -x
+
+usage: mvn [options] [<goal(s)>] [<phase(s)>]
+
+Options:
+ -am,--also-make                        If project list is specified, also
+                                        build projects required by the
+                                        list
+ -amd,--also-make-dependents            If project list is specified, also
+                                        build projects that depend on
+                                        projects on the list
+ -B,--batch-mode                        Run in non-interactive (batch)
+                                        mode
+ -b,--builder <arg>                     The id of the build strategy to
+                                        use.
+ -C,--strict-checksums                  Fail the build if checksums don't
+                                        match
+ -c,--lax-checksums                     Warn if checksums don't match
+ -cpu,--check-plugin-updates            Ineffective, only kept for
+                                        backward compatibility
+ -D,--define <arg>                      Define a system property
+ -e,--errors                            Produce execution error messages
+ -emp,--encrypt-master-password <arg>   Encrypt master security password
+ -ep,--encrypt-password <arg>           Encrypt server password
+ -f,--file <arg>                        Force the use of an alternate POM
+                                        file (or directory with pom.xml).
+ -fae,--fail-at-end                     Only fail the build afterwards;
+                                        allow all non-impacted builds to
+                                        continue
+ -ff,--fail-fast                        Stop at first failure in
+                                        reactorized builds
+ -fn,--fail-never                       NEVER fail the build, regardless
+                                        of project result
+ -gs,--global-settings <arg>            Alternate path for the global
+                                        settings file
+ -h,--help                              Display help information
+ -l,--log-file <arg>                    Log file to where all build output
+                                        will go.
+ -llr,--legacy-local-repository         Use Maven 2 Legacy Local
+                                        Repository behaviour, ie no use of
+                                        _remote.repositories. Can also be
+                                        activated by using
+                                        -Dmaven.legacyLocalRepo=true
+ -N,--non-recursive                     Do not recurse into sub-projects
+ -npr,--no-plugin-registry              Ineffective, only kept for
+                                        backward compatibility
+ -npu,--no-plugin-updates               Ineffective, only kept for
+                                        backward compatibility
+ -nsu,--no-snapshot-updates             Suppress SNAPSHOT updates
+ -o,--offline                           Work offline
+ -P,--activate-profiles <arg>           Comma-delimited list of profiles
+                                        to activate
+ -pl,--projects <arg>                   Comma-delimited list of specified
+                                        reactor projects to build instead
+                                        of all projects. A project can be
+                                        specified by [groupId]:artifactId
+                                        or by its relative path.
+ -q,--quiet                             Quiet output - only show errors
+ -rf,--resume-from <arg>                Resume reactor from specified
+                                        project
+ -s,--settings <arg>                    Alternate path for the user
+                                        settings file
+ -T,--threads <arg>                     Thread count, for instance 2.0C
+                                        where C is core multiplied
+ -t,--toolchains <arg>                  Alternate path for the user
+                                        toolchains file
+ -U,--update-snapshots                  Forces a check for missing
+                                        releases and updated snapshots on
+                                        remote repositories
+ -up,--update-plugins                   Ineffective, only kept for
+                                        backward compatibility
+ -V,--show-version                      Display version information
+                                        WITHOUT stopping build
+ -v,--version                           Display version information
+ -X,--debug                             Produce execution debug output
+Build step 'Invoke top-level Maven targets' marked build as failure
+Finished: FAILURE

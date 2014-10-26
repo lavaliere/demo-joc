@@ -1,0 +1,9 @@
+commit 174c0586a125d61751e27d271affd0d8aba4e80b
+tree f1c975b6c785c0720bfc9607d1fa535db439652d
+parent 3a73d32364bd8aadcc066d81d71092c19708d14c
+author lavaliere <kennedy.tracy@yahoo.com> 1414340342 -0400
+committer lavaliere <kennedy.tracy@yahoo.com> 1414340342 -0400
+
+    fixed pom formatting problem
+
+:100644 100644 7c67e46be8730b41600235a1adf4a471af03d145 8a2a0325b6d54590ff91ccdfdfe8022f9c65d1c8 M	pom.xml

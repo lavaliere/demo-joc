@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hudson.maven.MavenBuild plugin="maven-plugin@2.3">
+  <actions/>
+  <number>49</number>
+  <startTime>1414303903874</startTime>
+  <result>NOT_BUILT</result>
+  <duration>4</duration>
+  <charset>US-ASCII</charset>
+  <keepLog>false</keepLog>
+  <artifactManager class="com.cloudbees.jenkins.plugins.jsync.archiver.JSyncArtifactManager" plugin="cloudbees-jsync-archiver@5.2"/>
+  <builtOn></builtOn>
+  <workspace>/data/var/lib/jenkins/api-team/workspace/Wildfly/build</workspace>
+</hudson.maven.MavenBuild>

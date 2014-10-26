@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<org.jenkinsci.plugins.configfiles.maven.DefaultGlobalMavenSettingsProvider plugin="config-file-provider@2.7.5">
+  <configs>
+    <entry>
+      <string>org.jenkinsci.plugins.configfiles.maven.GlobalMavenSettingsConfig1414300594997</string>
+      <org.jenkinsci.plugins.configfiles.maven.GlobalMavenSettingsConfig>
+        <id>org.jenkinsci.plugins.configfiles.maven.GlobalMavenSettingsConfig1414300594997</id>
+        <name>CustomGlobal</name>
+        <comment>global settings</comment>
+        <content>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+
+&lt;settings xmlns=&quot;http://maven.apache.org/SETTINGS/1.0.0&quot; 
+          xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; 
+          xsi:schemaLocation=&quot;http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd&quot;&gt;
+          
+  &lt;pluginGroups&gt;
+
+  &lt;/pluginGroups&gt;
+  &lt;proxies&gt;
+
+  &lt;/proxies&gt;
+
+  &lt;servers&gt;
+    &lt;server&gt;
+      &lt;id&gt;wildfly-release&lt;/id&gt;
+      &lt;username&gt;admin&lt;/username&gt;
+      &lt;password&gt;admin123&lt;/password&gt;
+    &lt;/server&gt;
+  &lt;/servers&gt;
+
+
+  &lt;mirrors&gt;
+   
+  &lt;/mirrors&gt;
+  
+ 
+  &lt;profiles&gt;
+  
+
+  &lt;/profiles&gt;
+
+&lt;/settings&gt;
+</content>
+        <serverCredentialMappings/>
+      </org.jenkinsci.plugins.configfiles.maven.GlobalMavenSettingsConfig>
+    </entry>
+  </configs>
+</org.jenkinsci.plugins.configfiles.maven.DefaultGlobalMavenSettingsProvider>
