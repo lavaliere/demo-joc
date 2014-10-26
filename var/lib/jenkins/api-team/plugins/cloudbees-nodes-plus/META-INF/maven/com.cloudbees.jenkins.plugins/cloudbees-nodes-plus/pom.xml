@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2013 CloudBees, Inc.
+  ~ This is proprietary code. All rights reserved.
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.cloudbees.jenkins.plugins</groupId>
+    <artifactId>jenkins-plugins</artifactId>
+    <version>22</version>
+  </parent>
+
+  <artifactId>cloudbees-nodes-plus</artifactId>
+  <version>1.9</version>
+  <packaging>hpi</packaging>
+
+  <name>CloudBees Nodes Plus Plugin</name>
+  <description>
+    This plugin adds enterprise extensions to the standard node functionality in Jenkins.
+  </description>
+  <url>http://release-notes.cloudbees.com/product/Nodes+Plus+Plugin</url>
+
+  <scm>
+    <connection>scm:git:ssh://git@git.cloudbees.com/cloudbees/cloudbees-nodes-plus-plugin.git</connection>
+    <developerConnection>scm:git:ssh://git@git.cloudbees.com/cloudbees/cloudbees-nodes-plus-plugin.git</developerConnection>
+    <tag>cloudbees-nodes-plus-1.9</tag>
+  </scm>
+
+  <properties>
+    <!-- todo turn on strict checking -->
+    <maven.findbugs.failure.strict>false</maven.findbugs.failure.strict>
+    <com.cloudbees.Domain>cloudbees.com</com.cloudbees.Domain>
+  </properties>
+
+  <dependencies>
+    <!-- static analysis -->
+    <dependency>
+      <groupId>net.jcip</groupId>
+      <artifactId>jcip-annotations</artifactId>
+      <scope>provided</scope>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>com.github.stephenc.findbugs</groupId>
+      <artifactId>findbugs-annotations</artifactId>
+      <scope>provided</scope>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>com.google.code.findbugs</groupId>
+      <artifactId>jsr305</artifactId>
+      <scope>provided</scope>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbees.nectar.plugins</groupId>
+      <artifactId>cloudbees-license</artifactId>
+      <version>5.3</version>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbees.nectar.plugins</groupId>
+      <artifactId>nectar-license</artifactId>
+      <version>5.3</version>
+    </dependency>
+    <dependency>
+      <artifactId>instance-identity</artifactId>
+      <groupId>org.jenkins-ci.modules</groupId>
+      <version>1.3</version>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbees.nectar</groupId>
+      <artifactId>nectar-rbac</artifactId>
+      <version>4.5</version>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins</groupId>
+      <artifactId>credentials</artifactId>
+      <version>1.10</version>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins</groupId>
+      <artifactId>mailer</artifactId>
+      <version>1.5</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>findbugs-maven-plugin</artifactId>
+        <configuration>
+          <excludeFilterFile>src/findbugs/excludesFilter.xml</excludeFilterFile>
+          <failOnError>${maven.findbugs.failure.strict}</failOnError>
+        </configuration>
+        <executions>
+          <execution>
+            <phase>verify</phase>
+            <goals>
+              <goal>check</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

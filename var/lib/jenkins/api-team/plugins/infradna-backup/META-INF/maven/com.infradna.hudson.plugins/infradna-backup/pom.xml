@@ -1,0 +1,82 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.cloudbees.jenkins.plugins</groupId>
+    <artifactId>jenkins-plugins</artifactId>
+    <version>21</version>
+  </parent>
+
+  <groupId>com.infradna.hudson.plugins</groupId>
+  <artifactId>infradna-backup</artifactId>
+  <version>3.12</version>
+  <packaging>hpi</packaging>
+
+  <name>CloudBees Back-up Plugin</name>
+  <description>This plugin simplifies backing up Jenkins. Administrators can now save hours by easily backing up and recovering from crashes using the backup. 
+Users can easily create a new job type called "Backup" and back up build records, job and system configurations. The backups can be stored on a local machine or a sftp server. The plugin offers multiple retention policies for the records such as keeping the last 'n' records, keep all backups or an exponential decay algorithm to save space.</description>
+  <url>http://release-notes.cloudbees.com/product/Backup+Plugin</url>
+
+  <scm>
+    <connection>scm:git:ssh://git@git.cloudbees.com/cloudbees/nectar-backup-plugin.git</connection>
+    <developerConnection>scm:git:ssh://git@git.cloudbees.com/cloudbees/nectar-backup-plugin.git</developerConnection>
+    <tag>infradna-backup-3.12</tag>
+  </scm>
+  <build>
+    <plugins>
+      <plugin>
+          <groupId>org.jenkins-ci.tools</groupId>
+          <artifactId>maven-hpi-plugin</artifactId>
+          <configuration>
+            <maskClasses>com.trilead.ssh2.</maskClasses>
+          </configuration>
+      </plugin>
+      <plugin>
+          <artifactId>maven-enforcer-plugin</artifactId>
+          <executions>
+              <execution>
+                  <id>display-info</id>
+                  <configuration>
+                      <rules>
+                          <enforceBytecodeVersion>
+                              <excludes combine.children="append">
+                                  <!-- DAVStore not loadable on Java 5: -->
+                                  <exclude>com.sun.jersey*:*</exclude>
+                              </excludes>
+                          </enforceBytecodeVersion>
+                      </rules>
+                  </configuration>
+              </execution>
+          </executions>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+    <dependency>
+      <groupId>com.cloudbees.nectar.plugins</groupId>
+      <artifactId>cloudbees-license</artifactId>
+      <version>5.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbees.nectar.plugins</groupId>
+      <artifactId>nectar-license</artifactId>
+      <version>5.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.sun.jersey</groupId>
+      <artifactId>jersey-client</artifactId>
+      <version>1.12</version>
+    </dependency>
+    <dependency>
+      <groupId>com.sun.jersey.contribs</groupId>
+      <artifactId>jersey-apache-client</artifactId>
+      <version>1.12</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci</groupId>
+      <artifactId>trilead-ssh2</artifactId>
+      <version>build217-jenkins-3</version>
+    </dependency>
+  </dependencies>
+
+</project>

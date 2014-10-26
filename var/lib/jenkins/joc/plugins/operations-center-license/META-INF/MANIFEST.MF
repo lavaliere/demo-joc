@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: stephenc
+Build-Jdk: 1.7.0_51
+Extension-Name: operations-center-license
+Specification-Title: Verifies that the installation is properly licens
+ ed for Jenkins Operations Center by CloudBees.
+Implementation-Title: operations-center-license
+Implementation-Version: 1.5
+Group-Id: com.cloudbees.operations-center.server
+Short-Name: operations-center-license
+Long-Name: Operations Center Server License Entitlement Check
+Url: http://release-notes.cloudbees.com/product/Operations+Center+Lice
+ nse+Entitlement+Check
+Plugin-Version: 1.5
+Hudson-Version: 1.532.1
+Jenkins-Version: 1.532.1
+PluginFirstClassLoader: true
+Plugin-Dependencies: cloudbees-license:5.3,nectar-license:5.4
+Plugin-Developers: 
+Support-Dynamic-Loading: false
+

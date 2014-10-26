@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<l:dependencies xmlns:l='licenses' groupId='com.cloudbees.nectar.plugins' artifactId='cloudbees-label-throttling-plugin' version='3.3'><l:dependency name='CloudBees Label Throttling Plugin' groupId='com.cloudbees.nectar.plugins' artifactId='cloudbees-label-throttling-plugin' version='3.3' url='http://release-notes.cloudbees.com/product/Label+Throttle+Plugin'><l:description>This plugin allows you to define a limit to the number of concurrent builds on a group of slaves.
+    You can group slaves together, then assign a limit that specifies how many concurrent builds can
+    happen on the slaves that belong to that group. In this way, you can avoid overloading your
+    hypervisor host machine.</l:description></l:dependency></l:dependencies>

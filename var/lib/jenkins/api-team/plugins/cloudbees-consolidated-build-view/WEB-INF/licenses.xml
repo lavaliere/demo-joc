@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<l:dependencies xmlns:l='licenses' groupId='com.cloudbees.jenkins.plugins' artifactId='cloudbees-consolidated-build-view' version='1.2'><l:dependency name='CloudBees Consolidated Build View Plugin' groupId='com.cloudbees.jenkins.plugins' artifactId='cloudbees-consolidated-build-view' version='1.2' url='http://release-notes.cloudbees.com/product/Consolidated+Build+View+Plugin'><l:description>Adds a UI to a build that shows all the relevant builds.</l:description></l:dependency></l:dependencies>

@@ -20,7 +20,7 @@
     <ignored>false</ignored>
     <freeSpaceThreshold>1GB</freeSpaceThreshold>
   </hudson.node__monitors.TemporarySpaceMonitor>
-  <com.cloudbees.jenkins.plugins.nodesplus.OwnerNodeProperty_-NodeMonitorImpl plugin="cloudbees-nodes-plus@1.10">
+  <com.cloudbees.jenkins.plugins.nodesplus.OwnerNodeProperty_-NodeMonitorImpl plugin="cloudbees-nodes-plus@1.9">
     <ignored>false</ignored>
   </com.cloudbees.jenkins.plugins.nodesplus.OwnerNodeProperty_-NodeMonitorImpl>
   <hudson.node__monitors.ResponseTimeMonitor>

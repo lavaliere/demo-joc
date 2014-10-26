@@ -26,7 +26,6 @@ Temporary Items
 *.log
 *.tmp
 *.old
-*.bak
 *.jar
 *.json
 
@@ -56,30 +55,18 @@ tools/
 **/shelvedProjects/
 **/updates/
 **/jobs/*/workspace/
-**/plugins/*.bak
 **/updates/default.json
 **/war/
-*.bak
 
 # Tools that Hudson manages
 /tools/
-
-# Extracted plugins
-**/plugins/*
-
-# Job state
-
-**/workspace/
-**/lastStable
-**/lastSuccessful
-**/nextBuildNumber
-**/modules/
 
 # Project specific stuff
 **/custom_deps/
 **/slave/workspace/
 **/slave-slave.log.*
-jdks/
+cache/
+fingerprints/
 
 # JEBC
 **/jgroups/*

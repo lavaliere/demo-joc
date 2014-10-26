@@ -1,0 +1,5 @@
+<l:dependencies xmlns:l='licenses' groupId='org.jenkins-ci.plugins' artifactId='suppress-stack-trace' version='1.2'>
+  <l:dependency name='Stack Trace Suppression Plugin' groupId='org.jenkins-ci.plugins' artifactId='suppress-stack-trace' version='1.2' url='https://wiki.jenkins-ci.org/display/JENKINS/Suppress+Stack+Trace+Plugin'>
+    <l:description>Hide stack trace from ordinary users for security-sensitive deployments</l:description>
+  </l:dependency>
+</l:dependencies>

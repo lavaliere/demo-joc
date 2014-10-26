@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2014 CloudBees, Inc.
+  ~ This is proprietary code. All rights reserved.
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.cloudbees.jenkins.plugins</groupId>
+    <artifactId>jenkins-plugins</artifactId>
+    <version>22</version>
+  </parent>
+
+  <artifactId>cloudbees-monitoring</artifactId>
+  <version>1.7</version>
+  <packaging>hpi</packaging>
+
+  <name>CloudBees Monitoring Plugin</name>
+  <description>
+    This plugin provides metrics based monitoring for Jenkins.
+  </description>
+  <url>http://release-notes.cloudbees.com/product/CloudBees+Monitoring+Plugin</url>
+
+  <prerequisites>
+    <maven>2.2.1</maven>
+  </prerequisites>
+
+  <scm>
+    <connection>scm:git:ssh://git@git.cloudbees.com/cloudbees/cloudbees-monitoring-plugin.git</connection>
+    <developerConnection>scm:git:ssh://git@git.cloudbees.com/cloudbees/cloudbees-monitoring-plugin.git</developerConnection>
+    <tag>cloudbees-monitoring-1.7</tag>
+  </scm>
+
+  <properties>
+    <maven.findbugs.failure.strict>true</maven.findbugs.failure.strict>
+  </properties>
+
+  <dependencies>
+    <!-- regular dependencies -->
+    <!-- regular dependencies -->
+    <!-- plugin dependencies -->
+    <dependency>
+      <groupId>org.jenkins-ci.plugins</groupId>
+      <artifactId>metrics</artifactId>
+      <version>3.0.5</version>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbees.nectar.plugins</groupId>
+      <artifactId>cloudbees-license</artifactId>
+      <version>5.3</version>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbees.nectar.plugins</groupId>
+      <artifactId>nectar-license</artifactId>
+      <version>5.4</version>
+    </dependency>
+    <dependency>
+      <artifactId>instance-identity</artifactId>
+      <groupId>org.jenkins-ci.modules</groupId>
+      <version>1.3</version>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins</groupId>
+      <artifactId>mailer</artifactId>
+      <version>1.5</version>
+    </dependency>
+    <!-- jenkins dependencies -->
+    <!-- test dependencies -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>findbugs-maven-plugin</artifactId>
+        <version>2.5.2</version>
+        <configuration>
+          <excludeFilterFile>src/findbugs/excludesFilter.xml</excludeFilterFile>
+          <failOnError>${maven.findbugs.failure.strict}</failOnError>
+        </configuration>
+        <executions>
+          <execution>
+            <phase>verify</phase>
+            <goals>
+              <goal>check</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

@@ -1,0 +1,25 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.cloudbees.jenkins.plugins</groupId>
+        <artifactId>jenkins-plugins</artifactId>
+        <version>12</version>
+    </parent>
+    <artifactId>cloudbees-view-creation-filter</artifactId>
+    <version>1.0</version>
+    <packaging>hpi</packaging>
+    <name>CloudBees View Creation Filter Plugin</name>
+    <description>Allows you to specify that a view may only contain certain item types. Useful in conjunction with Templates.</description>
+    <url>http://release-notes.cloudbees.com/product/CloudBees+View+Creation+Filter+Plugin</url>
+    <dependencies>
+        <dependency>
+            <groupId>com.cloudbees.nectar.plugins</groupId>
+            <artifactId>nectar-license</artifactId>
+            <version>4.0</version>
+        </dependency>
+    </dependencies>
+    <scm>
+        <connection>scm:git:ssh://git@git.cloudbees.com/cloudbees/${project.artifactId}-plugin.git</connection>
+        <developerConnection>scm:git:ssh://git@git.cloudbees.com/cloudbees/${project.artifactId}-plugin.git</developerConnection>
+    </scm>
+</project>

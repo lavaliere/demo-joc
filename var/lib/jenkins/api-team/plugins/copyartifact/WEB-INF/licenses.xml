@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<l:dependencies xmlns:l='licenses' groupId='org.jenkins-ci.plugins' artifactId='copyartifact' version='1.30'><l:dependency name='Copy Artifact Plugin' groupId='org.jenkins-ci.plugins' artifactId='copyartifact' version='1.30' url='http://wiki.jenkins-ci.org/display/JENKINS/Copy+Artifact+Plugin'><l:description/><l:license name='The MIT license' url='http://www.opensource.org/licenses/mit-license.php'/></l:dependency></l:dependencies>

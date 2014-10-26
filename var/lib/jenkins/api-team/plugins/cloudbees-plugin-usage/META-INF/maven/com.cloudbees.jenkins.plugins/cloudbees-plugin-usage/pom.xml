@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.cloudbees.jenkins.plugins</groupId>
+        <artifactId>jenkins-plugins</artifactId>
+        <version>21</version>
+    </parent>
+    <artifactId>cloudbees-plugin-usage</artifactId>
+    <version>1.4</version>
+    <packaging>hpi</packaging>
+    <name>CloudBees Plugin Usage Plugin</name>
+    <description>Summarizes usage of installed plugins insofar as that can be determined.</description>
+    <url>http://release-notes.cloudbees.com/product/Plugin+Usage+Plugin</url>
+    <dependencies>
+        <dependency>
+            <groupId>com.cloudbees.nectar.plugins</groupId>
+            <artifactId>nectar-license</artifactId>
+            <version>4.1</version>
+        </dependency>
+    </dependencies>
+    <scm>
+        <connection>scm:git:ssh://git@git.cloudbees.com/cloudbees/cloudbees-plugin-usage-plugin.git</connection>
+        <developerConnection>scm:git:ssh://git@git.cloudbees.com/cloudbees/cloudbees-plugin-usage-plugin.git</developerConnection>
+      <tag>cloudbees-plugin-usage-1.4</tag>
+  </scm>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.jenkins-ci.tools</groupId>
+                <artifactId>maven-hpi-plugin</artifactId>
+                <configuration>
+                    <disabledTestInjection>true</disabledTestInjection>
+                    <loggers>
+                        <com.cloudbees.jenkins.plugins.pluginusage>FINER</com.cloudbees.jenkins.plugins.pluginusage>
+                    </loggers>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

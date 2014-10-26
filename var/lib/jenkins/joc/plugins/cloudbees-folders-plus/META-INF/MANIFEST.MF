@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: jenkins
+Build-Jdk: 1.7.0_51
+Extension-Name: cloudbees-folders-plus
+Specification-Title: This plugin adds enterprise extensions to the Clo
+ udBees Folders Plugin.
+Implementation-Title: cloudbees-folders-plus
+Implementation-Version: 2.9
+Group-Id: com.cloudbees.jenkins.plugins
+Short-Name: cloudbees-folders-plus
+Long-Name: CloudBees Folders Plus Plugin
+Url: http://release-notes.cloudbees.com/product/Folders+Plus+Plugin
+Compatible-Since-Version: 1.6
+Plugin-Version: 2.9
+Hudson-Version: 1.548
+Jenkins-Version: 1.548
+Plugin-Dependencies: nectar-license:4.3,cloudbees-folder:4.4
+Plugin-Developers: 
+

@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: stephenc
+Build-Jdk: 1.7.0_51
+Extension-Name: cloudbees-ssh-slaves
+Specification-Title: This plugin provides an SSH Slaves connector base
+ d on Apache SSHd.
+Implementation-Title: cloudbees-ssh-slaves
+Implementation-Version: 1.1
+Plugin-Class: com.cloudbees.jenkins.plugins.sshslaves.PluginImpl
+Group-Id: com.cloudbees.jenkins.plugins
+Short-Name: cloudbees-ssh-slaves
+Long-Name: CloudBees SSH Slaves Plugin
+Url: http://release-notes.cloudbees.com/product/CloudBees+SSH+Slaves+P
+ lugin
+Plugin-Version: 1.1
+Hudson-Version: 1.532.2
+Jenkins-Version: 1.532.2
+PluginFirstClassLoader: true
+Plugin-Dependencies: nectar-license:5.4,ssh-credentials:1.6.1,cloudbee
+ s-license:5.3,credentials:1.10
+Plugin-Developers: 
+

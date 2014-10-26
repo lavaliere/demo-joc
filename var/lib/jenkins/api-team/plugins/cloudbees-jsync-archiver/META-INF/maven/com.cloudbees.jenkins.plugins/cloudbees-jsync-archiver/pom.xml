@@ -1,0 +1,39 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.cloudbees.jenkins.plugins</groupId>
+    <artifactId>jenkins-plugins</artifactId>
+    <version>22</version>
+  </parent>
+
+  <artifactId>cloudbees-jsync-archiver</artifactId>
+  <version>5.2</version>
+  <packaging>hpi</packaging>
+
+  <name>CloudBees Fast Archiving Plugin</name>
+  <description>
+    This plugin reduces the time taken for build jobs by uploading archives faster from slaves to masters. It does so by replacing the default artifact archiver with an implementation that transfers a zipped version of the difference between subsequent archives.
+  </description>
+  <url>http://release-notes.cloudbees.com/product/Fast+Archiver+Plugin</url>
+
+  <scm>
+    <connection>scm:git:git@git.cloudbees.com:cloudbees/cloudbees-jsync-archiver.git</connection>
+    <developerConnection>scm:git:git@git.cloudbees.com:cloudbees/cloudbees-jsync-archiver.git</developerConnection>
+    <tag>cloudbees-jsync-archiver-5.2</tag>
+  </scm>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.cloudbees</groupId>
+      <artifactId>jsync</artifactId>
+      <version>1.7</version>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbees.nectar.plugins</groupId>
+      <artifactId>nectar-license</artifactId>
+      <version>5.0</version>
+    </dependency>
+  </dependencies>
+
+</project>

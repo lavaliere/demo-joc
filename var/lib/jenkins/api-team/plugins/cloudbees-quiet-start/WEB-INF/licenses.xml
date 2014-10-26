@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<l:dependencies xmlns:l='licenses' groupId='com.cloudbees.jenkins.plugins' artifactId='cloudbees-quiet-start' version='1.0'><l:dependency name='CloudBees Quiet Start Plugin' groupId='com.cloudbees.jenkins.plugins' artifactId='cloudbees-quiet-start' version='1.0' url='http://release-notes.cloudbees.com/product/CloudBees+Quiet+Start+Plugin'><l:description>Allows you to request that Jenkins be in the “quieting down” state after a restart.</l:description></l:dependency></l:dependencies>

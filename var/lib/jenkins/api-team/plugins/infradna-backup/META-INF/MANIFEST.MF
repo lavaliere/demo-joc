@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: jenkins
+Build-Jdk: 1.7.0_51
+Extension-Name: infradna-backup
+Specification-Title: This plugin simplifies backing up Jenkins. Admini
+ strators can now save hours by easily backing up and recovering from 
+ crashes using the backup. 
+ Users can easily create a new job type called "Backup" and back up bu
+ ild records, job and system configurations. The backups can be stored
+  on a local machine or a sftp server. The plugin offers multiple rete
+ ntion policies for the records such as keeping the last 'n' records, 
+ keep all backups or an exponential decay algorithm to save space.
+Implementation-Title: infradna-backup
+Implementation-Version: 3.12
+Group-Id: com.infradna.hudson.plugins
+Short-Name: infradna-backup
+Long-Name: CloudBees Back-up Plugin
+Url: http://release-notes.cloudbees.com/product/Backup+Plugin
+Plugin-Version: 3.12
+Hudson-Version: 1.509.4
+Jenkins-Version: 1.509.4
+Mask-Classes: com.trilead.ssh2.
+Plugin-Dependencies: cloudbees-license:5.0,nectar-license:5.0
+Plugin-Developers: 
+

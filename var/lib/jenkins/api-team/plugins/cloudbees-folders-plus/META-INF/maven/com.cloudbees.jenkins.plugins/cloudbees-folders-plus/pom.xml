@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2011 CloudBees, Inc.
+  ~ This is proprietary code. All rights reserved.
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.cloudbees.jenkins.plugins</groupId>
+    <artifactId>jenkins-plugins</artifactId>
+    <version>22</version>
+  </parent>
+
+  <artifactId>cloudbees-folders-plus</artifactId>
+  <version>2.9</version>
+  <packaging>hpi</packaging>
+
+  <name>CloudBees Folders Plus Plugin</name>
+  <description>
+    This plugin adds enterprise extensions to the CloudBees Folders Plugin.
+  </description>
+  <url>http://release-notes.cloudbees.com/product/Folders+Plus+Plugin</url>
+
+  <scm>
+    <connection>scm:git:ssh://git@git.cloudbees.com/cloudbees/cloudbees-folders-plus-plugin.git</connection>
+    <developerConnection>scm:git:ssh://git@git.cloudbees.com/cloudbees/cloudbees-folders-plus-plugin.git</developerConnection>
+    <tag>cloudbees-folders-plus-2.9</tag>
+  </scm>
+
+  <properties>
+    <!-- todo turn on strict checking -->
+    <maven.findbugs.failure.strict>false</maven.findbugs.failure.strict>
+    <com.cloudbees.Domain>cloudbees.com</com.cloudbees.Domain>
+    <jenkins.version>1.548</jenkins.version>
+  </properties>
+
+  <dependencies>
+    <!-- static analysis -->
+    <dependency>
+      <groupId>net.jcip</groupId>
+      <artifactId>jcip-annotations</artifactId>
+      <scope>provided</scope>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>com.github.stephenc.findbugs</groupId>
+      <artifactId>findbugs-annotations</artifactId>
+      <scope>provided</scope>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>com.google.code.findbugs</groupId>
+      <artifactId>jsr305</artifactId>
+      <scope>provided</scope>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins</groupId>
+      <artifactId>cloudbees-folder</artifactId>
+      <version>4.4</version>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbees.nectar.plugins</groupId>
+      <artifactId>nectar-license</artifactId>
+      <version>4.3</version>
+    </dependency>
+    <!-- TODO JENKINS-20412 unnecessary to include transitive dependencies as of 1.535: -->
+    <dependency>
+      <groupId>org.jenkins-ci.plugins</groupId>
+      <artifactId>credentials</artifactId>
+      <version>1.8.3</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.main</groupId>
+      <artifactId>maven-plugin</artifactId>
+      <version>1.480.4</version>
+      <scope>test</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>org.sonatype.sisu</groupId>
+          <artifactId>sisu-guice</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins</groupId>
+      <artifactId>matrix-auth</artifactId>
+      <version>1.0.2</version>
+      <scope>test</scope>
+    </dependency>
+    <!-- Otherwise we pick up r6, which was incompatible in ImmutableSet.copyOf overload signatures (and r7 apparently lacks CacheBuilder): -->
+    <dependency>
+      <artifactId>guava</artifactId>
+      <groupId>com.google.guava</groupId>
+      <version>11.0.1</version>
+      <!-- Maven madness: -->
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.jenkins-ci.tools</groupId>
+        <artifactId>maven-hpi-plugin</artifactId>
+        <configuration>
+          <compatibleSinceVersion>1.6</compatibleSinceVersion>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-jar-plugin</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>test-jar</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>findbugs-maven-plugin</artifactId>
+        <configuration>
+          <excludeFilterFile>src/findbugs/excludesFilter.xml</excludeFilterFile>
+          <failOnError>${maven.findbugs.failure.strict}</failOnError>
+        </configuration>
+        <executions>
+          <execution>
+            <phase>verify</phase>
+            <goals>
+              <goal>check</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

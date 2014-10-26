@@ -1,0 +1,33 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: stephenc
+Build-Jdk: 1.7.0_51
+Extension-Name: nectar-rbac
+Specification-Title: The Role-Based Access Control plugin gives a Jenk
+ ins administrator the ability to
+     define various security roles that will apply to the system they 
+ administer. Once roles
+     have been defined the Jenkins administrator can assign those role
+ s to groups of users.
+     The assignment of roles can take place either at the global level
+ , or limited to specific
+     objects within the system. And, additionally, the Jenkins adminis
+ trator can even
+     delegate the management of groups for specific objects to specifi
+ c users.
+Implementation-Title: nectar-rbac
+Implementation-Version: 4.8
+Plugin-Class: nectar.plugins.rbac.strategy.RoleMatrixAuthorizationPlugin
+Group-Id: com.cloudbees.nectar
+Short-Name: nectar-rbac
+Long-Name: CloudBees Role-Based Access Control Plugin
+Url: http://release-notes.cloudbees.com/product/Role+Based+Access+Cont
+ rol+Plugin
+Compatible-Since-Version: 4.0
+Plugin-Version: 4.8
+Hudson-Version: 1.532.2
+Jenkins-Version: 1.532.2
+Plugin-Dependencies: nectar-license:5.4,cloudbees-folder:4.2.1
+Plugin-Developers: 
+

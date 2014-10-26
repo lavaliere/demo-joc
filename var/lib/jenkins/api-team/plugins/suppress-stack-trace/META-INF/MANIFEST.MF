@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: jglick
+Build-Jdk: 1.7.0_25
+Extension-Name: suppress-stack-trace
+Specification-Title: Hide stack trace from ordinary users for security
+ -sensitive deployments
+Implementation-Title: suppress-stack-trace
+Implementation-Version: 1.2
+Plugin-Class: org.jenkinsci.plugins.suppress_stack_trace.PluginImpl
+Group-Id: org.jenkins-ci.plugins
+Short-Name: suppress-stack-trace
+Long-Name: Stack Trace Suppression Plugin
+Url: https://wiki.jenkins-ci.org/display/JENKINS/Suppress+Stack+Trace+
+ Plugin
+Plugin-Version: 1.2
+Hudson-Version: 1.480.3
+Jenkins-Version: 1.480.3
+Plugin-Developers: 
+

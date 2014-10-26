@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: jenkins
+Build-Jdk: 1.7.0_51
+Extension-Name: cloudbees-nodes-plus
+Specification-Title: This plugin adds enterprise extensions to the sta
+ ndard node functionality in Jenkins.
+Implementation-Title: cloudbees-nodes-plus
+Implementation-Version: 1.9
+Group-Id: com.cloudbees.jenkins.plugins
+Short-Name: cloudbees-nodes-plus
+Long-Name: CloudBees Nodes Plus Plugin
+Url: http://release-notes.cloudbees.com/product/Nodes+Plus+Plugin
+Plugin-Version: 1.9
+Hudson-Version: 1.532.2
+Jenkins-Version: 1.532.2
+Plugin-Dependencies: credentials:1.10;resolution:=optional,cloudbees-l
+ icense:5.3,mailer:1.5,nectar-license:5.3,nectar-rbac:4.5;resolution:=
+ optional
+Plugin-Developers: 
+

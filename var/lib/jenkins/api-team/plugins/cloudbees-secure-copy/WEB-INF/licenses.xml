@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<l:dependencies xmlns:l='licenses' groupId='com.cloudbees.jenkins.plugins' artifactId='cloudbees-secure-copy' version='3.7'><l:dependency name='CloudBees Secure Copy Plugin' groupId='com.cloudbees.jenkins.plugins' artifactId='cloudbees-secure-copy' version='3.7' url='http://release-notes.cloudbees.com/product/Secure+Copy+Plugin'><l:description>This plugin faciliates secure exchange or archives between teams on different or even the same Jenkins instance.</l:description></l:dependency></l:dependencies>

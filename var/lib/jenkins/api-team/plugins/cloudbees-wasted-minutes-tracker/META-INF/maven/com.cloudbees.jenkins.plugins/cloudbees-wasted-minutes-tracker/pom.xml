@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2011 CloudBees, Inc.
+  ~ This is proprietary code. All rights reserved.
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.cloudbees.jenkins.plugins</groupId>
+    <artifactId>jenkins-plugins</artifactId>
+    <version>12</version>
+    <relativePath />
+  </parent>
+
+  <artifactId>cloudbees-wasted-minutes-tracker</artifactId>
+  <version>3.6</version>
+  <packaging>hpi</packaging>
+
+  <name>CloudBees Wasted Minutes Tracker Plugin</name>
+  <url>http://release-notes.cloudbees.com/product/Wasted+Minutes+Tracker</url>
+  <description>
+    This plugin figures out the time wasted by jobs waiting for a build machine. If your jobs take a lot of time to 
+    finish, turning this plugin can give you insight if you need to add more slaves.
+  </description>
+
+  <scm>
+    <connection>scm:git:git@git.cloudbees.com:cloudbees/jenkins-wasted-minutes-tracker-plugin.git</connection>
+    <developerConnection>scm:git:git@git.cloudbees.com:cloudbees/jenkins-wasted-minutes-tracker-plugin.git</developerConnection>
+  </scm>
+
+</project>

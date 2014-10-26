@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2013 CloudBees, Inc.
+  ~ This is proprietary code. All rights reserved.
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.cloudbees.jenkins.plugins</groupId>
+    <artifactId>jenkins-plugins</artifactId>
+    <version>21</version>
+  </parent>
+
+  <artifactId>cloudbees-support</artifactId>
+  <version>3.0</version>
+  <packaging>hpi</packaging>
+
+  <name>CloudBees Support Plugin</name>
+  <description>
+    This plugin allows generation of a support request bundle that contains diagnostic information to aid
+    resolution of support requests.
+  </description>
+  <url>http://release-notes.cloudbees.com/product/CloudBees+Support+Plugin</url>
+
+  <scm>
+    <connection>scm:git:git@git.cloudbees.com:cloudbees/cloudbees-support-plugin.git</connection>
+    <developerConnection>scm:git:git@git.cloudbees.com:cloudbees/cloudbees-support-plugin.git
+    </developerConnection>
+    <tag>cloudbees-support-3.0</tag>
+  </scm>
+
+  <properties>
+    <maven.findbugs.failure.strict>true</maven.findbugs.failure.strict>
+    <jenkins.version>1.532</jenkins.version>
+    <java.level>6</java.level> <!-- support-core has 6+ dependencies -->
+  </properties>
+
+  <dependencies>
+    <!-- regular dependencies -->
+
+    <!-- plugin dependencies -->
+    <dependency>
+      <groupId>com.cloudbees.nectar.plugins</groupId>
+      <artifactId>cloudbees-license</artifactId>
+      <version>4.0</version>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins</groupId>
+      <artifactId>support-core</artifactId>
+      <version>2.0</version>
+    </dependency>
+
+    <!-- jenkins dependencies -->
+
+    <!-- test dependencies -->
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>findbugs-maven-plugin</artifactId>
+        <version>2.5.2</version>
+        <configuration>
+          <excludeFilterFile>src/findbugs/excludesFilter.xml</excludeFilterFile>
+          <failOnError>${maven.findbugs.failure.strict}</failOnError>
+        </configuration>
+        <executions>
+          <execution>
+            <phase>verify</phase>
+            <goals>
+              <goal>check</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

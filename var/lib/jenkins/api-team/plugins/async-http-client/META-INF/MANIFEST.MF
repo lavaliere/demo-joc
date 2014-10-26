@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: stephenc
+Build-Jdk: 1.6.0_37
+Extension-Name: async-http-client
+Specification-Title: This plugin provides a shared dependency on the n
+ ing.com async-http-client library so that other plugins can co-operat
+ e when using this library.
+Implementation-Title: async-http-client
+Implementation-Version: 1.7.8
+Plugin-Class: jenkins.plugins.asynchttpclient.AHCPlugin
+Group-Id: org.jenkins-ci.plugins
+Short-Name: async-http-client
+Long-Name: Async Http Client
+Url: http://wiki.jenkins-ci.org/display/JENKINS/Async+Http+Client+Plugin
+Plugin-Version: 1.7.8
+Hudson-Version: 1.424
+Jenkins-Version: 1.424
+Plugin-Developers: Stephen Connolly:stephenc:
+

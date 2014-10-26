@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<l:dependencies xmlns:l='licenses' groupId='com.cloudbees.jenkins.plugins' artifactId='cloudbees-ha' version='4.3'><l:dependency name='CloudBees High Availability Management plugin' groupId='com.cloudbees.jenkins.plugins' artifactId='cloudbees-ha' version='4.3' url='http://release-notes.cloudbees.com/product/High+Availability'><l:description>This plugin eliminates downtime due to a Jenkins master crash due to a software or hardware failure.
+    Administrators define a cluster of Jenkins masters with one acting as a primary.
+    The plugin automatically detects failure on the primary and a backup quickly takes over.</l:description></l:dependency></l:dependencies>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<l:dependencies xmlns:l='licenses' groupId='com.cloudbees.nectar' artifactId='nectar-rbac' version='4.8'><l:dependency name='CloudBees Role-Based Access Control Plugin' groupId='com.cloudbees.nectar' artifactId='nectar-rbac' version='4.8' url='http://release-notes.cloudbees.com/product/Role+Based+Access+Control+Plugin'><l:description>The Role-Based Access Control plugin gives a Jenkins administrator the ability to
+    define various security roles that will apply to the system they administer. Once roles
+    have been defined the Jenkins administrator can assign those roles to groups of users.
+    The assignment of roles can take place either at the global level, or limited to specific
+    objects within the system. And, additionally, the Jenkins administrator can even
+    delegate the management of groups for specific objects to specific users.</l:description></l:dependency></l:dependencies>

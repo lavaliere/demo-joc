@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: stephenc
+Build-Jdk: 1.7.0_51
+Extension-Name: operations-center-updatecenter
+Specification-Title: Allows managing update center(s) used by client m
+ asters from within Operations Center Server
+Implementation-Title: operations-center-updatecenter
+Implementation-Version: 1.5
+Group-Id: com.cloudbees.operations-center.server
+Short-Name: operations-center-updatecenter
+Long-Name: Operations Center Update Center Plugin
+Url: http://release-notes.cloudbees.com/product/Operations+Center+Upda
+ te+Center+Plugin
+Plugin-Version: 1.5
+Hudson-Version: 1.532.1
+Jenkins-Version: 1.532.1
+Plugin-Dependencies: operations-center-license:1.5,cloudbees-license:5
+ .3,cloudbees-update-center-plugin:4.12,operations-center-server:1.5,n
+ ectar-license:5.4
+Plugin-Developers: 
+

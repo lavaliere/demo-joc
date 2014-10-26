@@ -1,0 +1,78 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.cloudbees.jenkins.plugins</groupId>
+    <artifactId>jenkins-plugins</artifactId>
+    <version>21</version>
+  </parent>
+
+  <groupId>com.cloudbees.nectar.plugins</groupId>
+  <artifactId>wikitext</artifactId>
+  <version>3.6</version>
+  <packaging>hpi</packaging>
+
+  <name>CloudBees WikiText Security Plugin</name>
+  <description>
+    This plugin lets you put wikitext instead of HTML in Jenkins descriptions fields. This is useful for organizations that are worried about XSS attacks on their publicly facing Jenkins instances.
+  </description>
+  <url>http://release-notes.cloudbees.com/product/Wikitext+Plugin</url>
+
+  <developers>
+    <developer>
+      <id>kohsuke</id>
+      <name>Kohsuke Kawaguchi</name>
+      <email>kkawaguchi@cloudbees.com</email>
+    </developer>
+  </developers>
+
+  <scm>
+    <connection>scm:git:ssh://git@git.cloudbees.com/cloudbees/nectar-wikitext-plugin.git</connection>
+    <developerConnection>scm:git:ssh://git@git.cloudbees.com/cloudbees/nectar-wikitext-plugin.git</developerConnection>
+    <tag>wikitext-3.6</tag>
+  </scm>
+
+  <properties>
+    <java.level>6</java.level>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.cloudbees.nectar.plugins</groupId>
+      <artifactId>nectar-license</artifactId>
+      <version>4.2</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.cloudbees.wikitext</groupId>
+      <artifactId>core</artifactId>
+      <version>1.9.0.20130621-1305</version>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbees.wikitext</groupId>
+      <artifactId>mediawiki.core</artifactId>
+      <version>1.9.0.20130621-1305</version>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbees.wikitext</groupId>
+      <artifactId>tracwiki.core</artifactId>
+      <version>1.9.0.20130621-1305</version>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbees.wikitext</groupId>
+      <artifactId>twiki.core</artifactId>
+      <version>1.9.0.20130621-1305</version>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbees.wikitext</groupId>
+      <artifactId>textile.core</artifactId>
+      <version>1.9.0.20130621-1305</version>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbees.wikitext</groupId>
+      <artifactId>confluence.core</artifactId>
+      <version>1.9.0.20130621-1305</version>
+    </dependency>
+  </dependencies>
+
+</project>

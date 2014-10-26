@@ -1,0 +1,128 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.cloudbees.jenkins.plugins</groupId>
+    <artifactId>jenkins-plugins</artifactId>
+    <version>22</version>
+  </parent>
+
+  <groupId>com.cloudbees.nectar.plugins</groupId>
+  <artifactId>cloudbees-template</artifactId>
+  <version>4.10</version>
+  <packaging>hpi</packaging>
+
+  <name>CloudBees Template Plugin</name>
+  <description>
+    This plugin captures "sameness of jobs". Adminstratores can define templates of jobs &amp; builders. Teams can instantiate new jobs based on the template. A change to a template automatically is reflected on all jobs, thus saving hours in configuration. Administrators can talk in the domain-specific language of users and only expose those configuration options that make "sense" in the users environment rather than exposing the user to the entire job configuration screen. This reduces potential errors by users when defining jobs.
+    Another way to look at this is that it lets you write rudimentary plugins without coding in Java. 
+  </description>
+  <url>http://release-notes.cloudbees.com/product/Template+plugin</url>
+
+  <scm>
+    <connection>scm:git:ssh://git@git.cloudbees.com/cloudbees/nectar-template-plugin.git</connection>
+    <developerConnection>scm:git:ssh://git@git.cloudbees.com/cloudbees/nectar-template-plugin.git</developerConnection>
+    <tag>cloudbees-template-4.10</tag>
+  </scm>
+
+  <properties>
+    <jenkins.version>1.554.1</jenkins.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.cloudbees.nectar.plugins</groupId>
+      <artifactId>nectar-license</artifactId>
+      <version>5.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins</groupId>
+      <artifactId>cloudbees-folder</artifactId>
+      <version>4.4</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins</groupId>
+      <artifactId>script-security</artifactId>
+      <version>1.1</version>
+    </dependency>
+    <!-- TODO until we can kill AbstractModelingTest: -->
+    <dependency>
+      <groupId>org.jenkins-ci.plugins</groupId>
+      <artifactId>cloudbees-folder</artifactId>
+      <version>4.4</version>
+      <scope>test</scope>
+      <classifier>tests</classifier>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins</groupId>
+      <artifactId>credentials</artifactId>
+      <version>1.9.4</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbees.nectar</groupId>
+      <artifactId>nectar-rbac</artifactId>
+      <version>4.5.1</version>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbees.jenkins.plugins</groupId>
+      <artifactId>cloudbees-folders-plus</artifactId>
+      <version>2.6</version>
+    </dependency>
+    <dependency>
+      <!-- optional integration with promotion plugin -->
+      <groupId>org.jenkins-ci.plugins</groupId>
+      <artifactId>promoted-builds</artifactId>
+      <version>2.11</version>
+      <optional>true</optional>
+      <exclusions>
+        <exclusion>
+          <groupId>org.jenkins-ci.main</groupId>
+          <artifactId>maven-plugin</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <!-- needed for testing -->
+      <groupId>org.jenkins-ci.plugins</groupId>
+      <artifactId>javadoc</artifactId>
+      <version>1.1</version>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.codehaus.mojo</groupId>
+      <artifactId>animal-sniffer-annotations</artifactId>
+      <version>1.9</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-core</artifactId>
+      <version>1.9.5</version>
+      <scope>test</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>org.hamcrest</groupId>
+          <artifactId>hamcrest-core</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.jenkins-ci.tools</groupId>
+        <artifactId>maven-hpi-plugin</artifactId>
+        <configuration>
+          <compatibleSinceVersion>4.8</compatibleSinceVersion>
+          <loggers>
+            <com.cloudbees.hudson.plugins.modeling>FINE</com.cloudbees.hudson.plugins.modeling>
+          </loggers>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

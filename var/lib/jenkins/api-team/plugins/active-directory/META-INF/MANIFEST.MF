@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: kohsuke
+Build-Jdk: 1.7.0_07
+Extension-Name: active-directory
+Implementation-Title: active-directory
+Implementation-Version: 1.38
+Group-Id: org.jenkins-ci.plugins
+Short-Name: active-directory
+Long-Name: Jenkins Active Directory plugin
+Url: http://wiki.jenkins-ci.org/display/JENKINS/Active+Directory+Plugin
+Plugin-Version: 1.38
+Hudson-Version: 1.532
+Jenkins-Version: 1.532
+Plugin-Dependencies: mailer:1.5
+Plugin-Developers: Kohsuke Kawaguchi:kohsuke:
+

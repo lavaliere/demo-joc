@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2011-2013 CloudBees, Inc.
+  ~ This is proprietary code. All rights reserved.
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.cloudbees.operations-center.common</groupId>
+    <artifactId>operations-center-parent</artifactId>
+    <version>1.5</version>
+    <relativePath>../operations-center-parent/pom.xml</relativePath>
+  </parent>
+
+  <groupId>com.cloudbees.operations-center.server</groupId>
+  <artifactId>operations-center-jnlp-controller</artifactId>
+  <version>1.0</version>
+  <packaging>hpi</packaging>
+
+  <name>Operations Center JNLP Slave Controller Plugin</name>
+  <description>Controls JNLP slaves and attach them to masters</description>
+  <url>http://release-notes.cloudbees.com/product/Operations+Center+JNLP+Slave+Controller+Plugin</url>
+
+  <scm>
+    <connection>scm:git:git@git.cloudbees.com:cloudbees/${project.artifactId}.git</connection>
+    <developerConnection>scm:git:git@git.cloudbees.com:cloudbees/${project.artifactId}.git</developerConnection>
+    <tag>operations-center-jnlp-controller-1.0</tag>
+  </scm>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.cloudbees.operations-center.server</groupId>
+      <artifactId>operations-center-server</artifactId>
+      <version>1.5</version>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbees.operations-center.server</groupId>
+      <artifactId>operations-center-license</artifactId>
+      <version>1.5</version>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbees.nectar.plugins</groupId>
+      <artifactId>openid-server</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins</groupId>
+      <artifactId>openid</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbees.nectar.plugins</groupId>
+      <artifactId>cloudbees-license</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbees.nectar.plugins</groupId>
+      <artifactId>nectar-license</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins</groupId>
+      <artifactId>cloudbees-folder</artifactId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+</project>

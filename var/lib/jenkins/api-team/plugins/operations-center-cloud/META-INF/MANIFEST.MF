@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: stephenc
+Build-Jdk: 1.7.0_51
+Extension-Name: operations-center-cloud
+Specification-Title: This plugin allows a Jenkins instance to use buil
+ d slaves provisioned on demand from the Operations Center cluster
+Implementation-Title: operations-center-cloud
+Implementation-Version: 1.5
+Plugin-Class: com.cloudbees.opscenter.client.cloud.PluginImpl
+Group-Id: com.cloudbees.operations-center.client
+Short-Name: operations-center-cloud
+Long-Name: Operations Center Cloud
+Url: http://release-notes.cloudbees.com/product/Operations+Center+Clou
+ d+Plugin
+Plugin-Version: 1.5
+Hudson-Version: 1.532.1
+Jenkins-Version: 1.532.1
+Plugin-Dependencies: cloudbees-license:5.3,operations-center-client:1.
+ 5,operations-center-context:1.5,mapdb-api:1.0.1.0,nectar-license:5.4,
+ nectar-rbac:4.8,node-iterator-api:1.5
+Plugin-Developers: 
+

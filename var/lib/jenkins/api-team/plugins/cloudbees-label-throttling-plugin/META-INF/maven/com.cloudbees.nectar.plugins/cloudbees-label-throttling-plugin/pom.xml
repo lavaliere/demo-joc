@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2011-2012 CloudBees, Inc.
+  ~ This is proprietary code. All rights reserved.
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.cloudbees.jenkins.plugins</groupId>
+    <artifactId>jenkins-plugins</artifactId>
+    <version>16</version>
+  </parent>
+
+  <groupId>com.cloudbees.nectar.plugins</groupId>
+  <artifactId>cloudbees-label-throttling-plugin</artifactId>
+  <version>3.3</version>
+  <packaging>hpi</packaging>
+
+  <name>CloudBees Label Throttling Plugin</name>
+  <description>
+    This plugin allows you to define a limit to the number of concurrent builds on a group of slaves.
+    You can group slaves together, then assign a limit that specifies how many concurrent builds can
+    happen on the slaves that belong to that group. In this way, you can avoid overloading your
+    hypervisor host machine.
+  </description>
+  <url>http://release-notes.cloudbees.com/product/Label+Throttle+Plugin</url>
+
+  <scm>
+    <connection>scm:git:ssh://git@git.cloudbees.com/cloudbees/nectar-label-throttling-plugin.git</connection>
+    <developerConnection>scm:git:ssh://git@git.cloudbees.com/cloudbees/nectar-label-throttling-plugin.git</developerConnection>
+  </scm>
+
+  <properties>
+    <maven.findbugs.failure.strict>true</maven.findbugs.failure.strict>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.cloudbees.nectar.plugins</groupId>
+      <artifactId>nectar-license</artifactId>
+      <version>4.0</version>
+    </dependency>
+  </dependencies>
+
+</project>

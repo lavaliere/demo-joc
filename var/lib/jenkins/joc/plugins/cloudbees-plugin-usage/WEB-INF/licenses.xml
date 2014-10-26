@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<l:dependencies xmlns:l='licenses' groupId='com.cloudbees.jenkins.plugins' artifactId='cloudbees-plugin-usage' version='1.4'><l:dependency name='CloudBees Plugin Usage Plugin' groupId='com.cloudbees.jenkins.plugins' artifactId='cloudbees-plugin-usage' version='1.4' url='http://release-notes.cloudbees.com/product/Plugin+Usage+Plugin'><l:description>Summarizes usage of installed plugins insofar as that can be determined.</l:description></l:dependency></l:dependencies>

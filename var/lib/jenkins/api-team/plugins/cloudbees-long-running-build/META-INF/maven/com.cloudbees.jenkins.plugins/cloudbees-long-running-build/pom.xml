@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.cloudbees.jenkins.plugins</groupId>
+        <artifactId>jenkins-plugins</artifactId>
+        <version>22</version>
+    </parent>
+    <artifactId>cloudbees-long-running-build</artifactId>
+    <version>1.0-beta-2</version>
+    <packaging>hpi</packaging>
+    <name>CloudBees Long-Running Build Plugin</name>
+    <description>Defines a project type similar to “freestyle” but with a main build step that can keep running even if Jenkins is restarted or the slave disconnected.</description>
+    <url>http://release-notes.cloudbees.com/product/CloudBees+Long-Running+Build+Plugin</url>
+    <scm>
+        <connection>scm:git:ssh://git@git.cloudbees.com/cloudbees/cloudbees-asynch-job-plugin.git</connection>
+        <developerConnection>scm:git:ssh://git@git.cloudbees.com/cloudbees/cloudbees-asynch-job-plugin.git</developerConnection>
+      <tag>cloudbees-long-running-build-1.0-beta-2</tag>
+  </scm>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.jenkins-ci.tools</groupId>
+                <artifactId>maven-hpi-plugin</artifactId>
+                <configuration>
+                    <loggers>
+                        <org.jenkinsci.plugins.durabletask>FINE</org.jenkinsci.plugins.durabletask>
+                        <com.cloudbees.jenkins.plugins.longrunning>FINE</com.cloudbees.jenkins.plugins.longrunning>
+                    </loggers>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <dependencies>
+        <dependency>
+            <groupId>com.cloudbees.nectar.plugins</groupId>
+            <artifactId>nectar-license</artifactId>
+            <version>5.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jenkins-ci.plugins</groupId>
+            <artifactId>durable-task</artifactId>
+            <version>0.1</version>
+        </dependency>
+    </dependencies>
+</project>

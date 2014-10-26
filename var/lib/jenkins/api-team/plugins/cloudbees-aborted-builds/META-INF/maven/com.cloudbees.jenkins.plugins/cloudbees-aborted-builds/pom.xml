@@ -1,0 +1,39 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.cloudbees.jenkins.plugins</groupId>
+        <artifactId>jenkins-plugins</artifactId>
+        <version>22</version>
+    </parent>
+    <artifactId>cloudbees-aborted-builds</artifactId>
+    <version>1.6</version>
+    <packaging>hpi</packaging>
+    <name>CloudBees Restart Aborted Builds Plugin</name>
+    <description>Tracks builds interrupted by abrupt halts and offers to restart them.</description>
+    <url>http://release-notes.cloudbees.com/product/CloudBees+Restart+Aborted+Builds+Plugin</url>
+    <dependencies>
+        <dependency>
+            <groupId>com.cloudbees.nectar.plugins</groupId>
+            <artifactId>nectar-license</artifactId>
+            <version>5.0</version>
+        </dependency>
+    </dependencies>
+    <scm>
+        <connection>scm:git:ssh://git@git.cloudbees.com/cloudbees/cloudbees-aborted-builds-plugin.git</connection>
+        <developerConnection>scm:git:ssh://git@git.cloudbees.com/cloudbees/cloudbees-aborted-builds-plugin.git</developerConnection>
+      <tag>cloudbees-aborted-builds-1.6</tag>
+  </scm>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.jenkins-ci.tools</groupId>
+                <artifactId>maven-hpi-plugin</artifactId>
+                <configuration>
+                    <loggers>
+                        <com.cloudbees.jenkins.plugins.abortedbuilds>FINEST</com.cloudbees.jenkins.plugins.abortedbuilds>
+                    </loggers>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

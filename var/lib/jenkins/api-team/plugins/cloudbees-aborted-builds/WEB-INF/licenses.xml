@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<l:dependencies xmlns:l='licenses' groupId='com.cloudbees.jenkins.plugins' artifactId='cloudbees-aborted-builds' version='1.6'><l:dependency name='CloudBees Restart Aborted Builds Plugin' groupId='com.cloudbees.jenkins.plugins' artifactId='cloudbees-aborted-builds' version='1.6' url='http://release-notes.cloudbees.com/product/CloudBees+Restart+Aborted+Builds+Plugin'><l:description>Tracks builds interrupted by abrupt halts and offers to restart them.</l:description></l:dependency></l:dependencies>

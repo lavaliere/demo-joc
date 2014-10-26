@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2011-2013 CloudBees, Inc.
+  ~ This is proprietary code. All rights reserved.
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.cloudbees.operations-center.common</groupId>
+    <artifactId>operations-center-parent</artifactId>
+    <version>1.5</version>
+    <relativePath>../operations-center-parent/pom.xml</relativePath>
+  </parent>
+
+  <groupId>com.cloudbees.operations-center.server</groupId>
+  <artifactId>operations-center-monitoring</artifactId>
+  <version>1.0</version>
+  <packaging>hpi</packaging>
+
+  <name>Operations Center Monitoring Plugin</name>
+  <description>
+    Metrics based monitoring for Jenkins Operations Center Server
+  </description>
+  <url>http://release-notes.cloudbees.com/product/Operations+Center+Monitoring+Plugin</url>
+
+  <scm>
+    <connection>scm:git:ssh://git@git.cloudbees.com/cloudbees/operations-center-monitoring.git</connection>
+    <developerConnection>scm:git:ssh://git@git.cloudbees.com/cloudbees/operations-center-monitoring.git
+    </developerConnection>
+    <tag>operations-center-monitoring-1.0</tag>
+  </scm>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.cloudbees.operations-center.server</groupId>
+      <artifactId>operations-center-license</artifactId>
+      <version>1.5</version>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbees.operations-center.server</groupId>
+      <artifactId>operations-center-server</artifactId>
+      <version>1.5</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins</groupId>
+      <artifactId>metrics</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbees.jenkins.plugins</groupId>
+      <artifactId>cloudbees-monitoring</artifactId>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>findbugs-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2011-2013 CloudBees, Inc.
+  ~ This is proprietary code. All rights reserved.
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.cloudbees.operations-center.common</groupId>
+    <artifactId>operations-center-parent</artifactId>
+    <version>1.5</version>
+    <relativePath>../operations-center-parent/pom.xml</relativePath>
+  </parent>
+
+  <artifactId>operations-center-context</artifactId>
+  <version>1.5</version>
+  <packaging>hpi</packaging>
+
+  <name>Operations Center Context</name>
+  <description>
+    This plugin provides an API to resolve the context of a Jenkins instances within an Operations Center cluster.
+  </description>
+  <url>http://release-notes.cloudbees.com/product/Operations+Center+Context+Plugin</url>
+
+  <scm>
+    <connection>scm:git:git@git.cloudbees.com:cloudbees/operations-center-context.git</connection>
+    <developerConnection>scm:git:git@git.cloudbees.com:cloudbees/operations-center-context.git</developerConnection>
+    <tag>operations-center-context-1.5</tag>
+  </scm>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.cloudbees.nectar.plugins</groupId>
+      <artifactId>cloudbees-license</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbees.nectar.plugins</groupId>
+      <artifactId>nectar-license</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins</groupId>
+      <artifactId>credentials</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>findbugs-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

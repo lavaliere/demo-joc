@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: stephenc
+Build-Jdk: 1.7.0_51
+Extension-Name: cloudbees-monitoring
+Specification-Title: This plugin provides metrics based monitoring for
+  Jenkins.
+Implementation-Title: cloudbees-monitoring
+Implementation-Version: 1.7
+Group-Id: com.cloudbees.jenkins.plugins
+Short-Name: cloudbees-monitoring
+Long-Name: CloudBees Monitoring Plugin
+Url: http://release-notes.cloudbees.com/product/CloudBees+Monitoring+P
+ lugin
+Plugin-Version: 1.7
+Hudson-Version: 1.532.2
+Jenkins-Version: 1.532.2
+Plugin-Dependencies: nectar-license:5.4,cloudbees-license:5.3,metrics:
+ 3.0.5,mailer:1.5
+Plugin-Developers: 
+

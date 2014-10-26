@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2011-2013 CloudBees, Inc.
+  ~ This is proprietary code. All rights reserved.
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.cloudbees.operations-center.common</groupId>
+    <artifactId>operations-center-parent</artifactId>
+    <version>1.5</version>
+    <relativePath>../operations-center-parent/pom.xml</relativePath>
+  </parent>
+
+  <artifactId>operations-center-openid-cse</artifactId>
+  <version>1.1</version>
+  <packaging>hpi</packaging>
+
+  <name>Operations Center OpenID Cluster Session Extension</name>
+  <description>The OpenID Jenkins Operations Center Cluster Session Extension</description>
+
+  <scm>
+    <connection>scm:ssh://git@git.cloudbees.com/cloudbees/operations-center-openid-cse.git</connection>
+    <developerConnection>scm:git:ssh://git@git.cloudbees.com/cloudbees/operations-center-openid-cse.git
+    </developerConnection>
+    <tag>operations-center-openid-cse-1.1</tag>
+  </scm>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins</groupId>
+      <artifactId>openid4java</artifactId>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>findbugs-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

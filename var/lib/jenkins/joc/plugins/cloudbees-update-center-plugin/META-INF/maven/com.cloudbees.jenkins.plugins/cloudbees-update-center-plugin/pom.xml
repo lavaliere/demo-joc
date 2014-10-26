@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2011 CloudBees, Inc.
+  ~ This is proprietary code. All rights reserved.
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.cloudbees.jenkins.plugins</groupId>
+    <artifactId>jenkins-plugins</artifactId>
+    <version>21</version>
+  </parent>
+
+  <artifactId>cloudbees-update-center-plugin</artifactId>
+  <version>4.12</version>
+  <packaging>hpi</packaging>
+
+  <name>CloudBees Update Center Plugin</name>
+  <url>http://release-notes.cloudbees.com/product/Custom+Update+Center+Plugin</url>
+  <description>
+    This plugin provides Jenkins with the ability to host update centers. Administrators can ensure that teams using Jenkins use "blessed" version of plugins and binaries. Update Centers can inherit from other update centers thus making it easier to share plugins/binaries across an organization. 
+    Administrators easily setup an Update Center by adding a new job type called "Update Center" and uploading the right artifacts.
+  </description>
+
+  <properties>
+    <maven.findbugs.failure.strict>true</maven.findbugs.failure.strict>
+  </properties>
+
+  <dependencies>
+    <!-- static analysis -->
+    <dependency>
+      <groupId>net.jcip</groupId>
+      <artifactId>jcip-annotations</artifactId>
+      <version>1.0</version>
+      <scope>provided</scope>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>com.github.stephenc.findbugs</groupId>
+      <artifactId>findbugs-annotations</artifactId>
+      <version>1.3.9-1</version>
+      <scope>provided</scope>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>com.google.code.findbugs</groupId>
+      <artifactId>jsr305</artifactId>
+      <version>1.3.9</version>
+      <scope>provided</scope>
+      <optional>true</optional>
+    </dependency>
+    <!-- regular dependencies -->
+    <dependency>
+      <groupId>org.jsoup</groupId>
+      <artifactId>jsoup</artifactId>
+      <version>1.7.3</version>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbees.jenkins.updates</groupId>
+      <artifactId>update-center-data</artifactId>
+      <version>4.12</version>
+      <exclusions>
+        <exclusion>
+          <groupId>org.kohsuke.stapler</groupId>
+          <artifactId>json-lib</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbees.jenkins.updates</groupId>
+      <artifactId>local-ca</artifactId>
+      <version>4.12</version>
+    </dependency>
+    <!-- plugin dependencies -->
+    <dependency>
+      <groupId>org.jenkins-ci.plugins</groupId>
+      <artifactId>async-http-client</artifactId>
+      <version>1.7.8</version>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbees.nectar.plugins</groupId>
+      <artifactId>cloudbees-license</artifactId>
+      <version>5.3</version>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbees.nectar.plugins</groupId>
+      <artifactId>nectar-license</artifactId>
+      <version>5.4</version>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbees.nectar</groupId>
+      <artifactId>nectar-rbac</artifactId>
+      <version>4.5.1</version>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbees.jenkins.plugins</groupId>
+      <artifactId>cloudbees-update-center-installer-plugin</artifactId>
+      <version>4.12</version>
+      <type>hpi</type>
+      <scope>test</scope>
+      <optional>true</optional>
+    </dependency>
+    <!-- jenkins dependencies -->
+    <!-- test dependencies -->
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-core</artifactId>
+      <version>1.9.5</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.hamcrest</groupId>
+      <artifactId>hamcrest-core</artifactId>
+      <version>1.3</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.hamcrest</groupId>
+      <artifactId>hamcrest-library</artifactId>
+      <version>1.3</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.maven</groupId>
+      <artifactId>maven-model</artifactId>
+      <version>3.0.3</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.jenkins-ci.tools</groupId>
+        <artifactId>maven-hpi-plugin</artifactId>
+        <configuration>
+          <compatibleSinceVersion>4.0</compatibleSinceVersion>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <version>2.4</version>
+        <executions>
+          <execution>
+            <id>bundle-installer-plugin</id>
+            <phase>prepare-package</phase>
+            <goals>
+              <goal>copy-dependencies</goal>
+            </goals>
+            <configuration>
+              <includeGroupIds>com.cloudbees.jenkins.plugins</includeGroupIds>
+              <includeArtifactIds>cloudbees-update-center-installer-plugin</includeArtifactIds>
+              <includeTypes>hpi</includeTypes>
+              <excludeTransitive>true</excludeTransitive>
+              <outputDirectory>${project.build.outputDirectory}/META-INF</outputDirectory>
+              <stripVersion>true</stripVersion>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>findbugs-maven-plugin</artifactId>
+        <version>2.5.2</version>
+        <configuration>
+          <excludeFilterFile>${basedir}/src/findbugs/excludesFilter.xml</excludeFilterFile>
+          <failOnError>${maven.findbugs.failure.strict}</failOnError>
+        </configuration>
+        <executions>
+          <execution>
+            <phase>verify</phase>
+            <goals>
+              <goal>check</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+  <scm>
+    <tag>cloudbees-update-center-4.12</tag>
+  </scm>
+</project>

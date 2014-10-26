@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2011 CloudBees, Inc.
+  ~ This is proprietary code. All rights reserved.
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.cloudbees.jenkins.plugins</groupId>
+    <artifactId>jenkins-plugins</artifactId>
+    <version>20</version>
+    <relativePath />
+  </parent>
+
+  <groupId>com.cloudbees.nectar.plugins</groupId>
+  <artifactId>cloudbees-license</artifactId>
+  <version>5.3</version>
+  <packaging>hpi</packaging>
+
+  <name>CloudBees License Manager</name>
+  <description>
+    This plugin provides licensing services for all the CloudBees licensed plugins.
+  </description>
+  <url>http://release-notes.cloudbees.com/product/CloudBees+License+Manager</url>
+
+  <scm>
+    <connection>scm:git:ssh://git@git.cloudbees.com/cloudbees/cloudbees-license-plugin.git</connection>
+    <developerConnection>scm:git:ssh://git@git.cloudbees.com/cloudbees/cloudbees-license-plugin.git
+    </developerConnection>
+    <tag>cloudbees-license-5.3</tag>
+  </scm>
+
+  <properties>
+    <!-- todo turn on strict checking -->
+    <maven.findbugs.failure.strict>false</maven.findbugs.failure.strict>
+    <com.cloudbees.Domain>cloudbees.com</com.cloudbees.Domain>
+  </properties>
+
+  <dependencies>
+    <!-- static analysis -->
+    <!-- regular dependencies -->
+    <dependency>
+      <groupId>com.cloudbees</groupId>
+      <artifactId>endpoints</artifactId>
+      <version>0.7</version>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbees.bouncycastle</groupId>
+      <artifactId>lcrypto-jdk15on</artifactId>
+      <version>1.48</version>
+    </dependency>
+    <!-- plugin dependencies -->
+    <dependency>
+      <groupId>org.jenkins-ci.plugins</groupId>
+      <artifactId>async-http-client</artifactId>
+      <version>1.7.8</version>
+    </dependency>
+    <!--<dependency>-->
+      <!--<groupId>org.jenkins-ci.plugins</groupId>-->
+      <!--<artifactId>mailer</artifactId>-->
+      <!--<version>1.4</version>-->
+    <!--</dependency>-->
+    <!-- jenkins dependencies -->
+    <!-- test dependencies -->
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+          <systemPropertyVariables>
+            <com.cloudbees.Domain>${com.cloudbees.Domain}</com.cloudbees.Domain>
+          </systemPropertyVariables>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.jenkins-ci.tools</groupId>
+        <artifactId>maven-hpi-plugin</artifactId>
+        <configuration>
+          <pluginFirstClassLoader>true</pluginFirstClassLoader>
+          <archive>
+            <manifestEntries combine.children="append">
+              <Support-Dynamic-Loading>false</Support-Dynamic-Loading>
+            </manifestEntries>
+          </archive>
+          <systemProperties>
+            <systemProperty>
+              <name>com.cloudbees.Domain</name>
+              <value>${com.cloudbees.Domain}</value>
+            </systemProperty>
+          </systemProperties>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>findbugs-maven-plugin</artifactId>
+        <version>2.4.0</version>
+        <configuration>
+          <excludeFilterFile>${basedir}/src/findbugs/excludesFilter.xml</excludeFilterFile>
+          <failOnError>${maven.findbugs.failure.strict}</failOnError>
+        </configuration>
+        <executions>
+          <execution>
+            <phase>verify</phase>
+            <goals>
+              <goal>check</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+  <profiles>
+    <profile>
+      <id>staging</id>
+      <properties>
+        <com.cloudbees.Domain>beescloud.com</com.cloudbees.Domain>
+      </properties>
+    </profile>
+  </profiles>
+
+</project>

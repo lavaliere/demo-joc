@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: jenkins
+Build-Jdk: 1.7.0_25
+Extension-Name: wikitext
+Specification-Title: This plugin lets you put wikitext instead of HTML
+  in Jenkins descriptions fields. This is useful for organizations tha
+ t are worried about XSS attacks on their publicly facing Jenkins inst
+ ances.
+Implementation-Title: wikitext
+Implementation-Version: 3.6
+Group-Id: com.cloudbees.nectar.plugins
+Short-Name: wikitext
+Long-Name: CloudBees WikiText Security Plugin
+Url: http://release-notes.cloudbees.com/product/Wikitext+Plugin
+Plugin-Version: 3.6
+Hudson-Version: 1.509.4
+Jenkins-Version: 1.509.4
+Plugin-Dependencies: nectar-license:4.2
+Plugin-Developers: Kohsuke Kawaguchi:kohsuke:kkawaguchi@cloudbees.com
+

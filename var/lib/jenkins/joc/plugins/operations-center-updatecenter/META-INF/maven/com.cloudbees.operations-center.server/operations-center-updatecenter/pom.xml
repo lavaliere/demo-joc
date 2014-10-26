@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2011-2013 CloudBees, Inc.
+  ~ This is proprietary code. All rights reserved.
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.cloudbees.operations-center.common</groupId>
+    <artifactId>operations-center-parent</artifactId>
+    <version>1.5</version>
+    <relativePath>../operations-center-parent/pom.xml</relativePath>
+  </parent>
+
+  <groupId>com.cloudbees.operations-center.server</groupId>
+  <artifactId>operations-center-updatecenter</artifactId>
+  <version>1.5</version>
+  <packaging>hpi</packaging>
+
+  <name>Operations Center Update Center Plugin</name>
+  <description>
+    Allows managing update center(s) used by client masters from within Operations Center Server
+  </description>
+  <url>http://release-notes.cloudbees.com/product/Operations+Center+Update+Center+Plugin</url>
+
+  <scm>
+    <connection>scm:git:ssh://git@git.cloudbees.com/cloudbees/operations-center-updatecenter.git</connection>
+    <developerConnection>scm:git:ssh://git@git.cloudbees.com/cloudbees/operations-center-updatecenter.git
+    </developerConnection>
+    <tag>operations-center-updatecenter-1.5</tag>
+  </scm>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.cloudbees.operations-center.server</groupId>
+      <artifactId>operations-center-license</artifactId>
+      <version>1.5</version>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbees.operations-center.server</groupId>
+      <artifactId>operations-center-server</artifactId>
+      <version>1.5</version>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbees.jenkins.plugins</groupId>
+      <artifactId>cloudbees-update-center-plugin</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbees.nectar.plugins</groupId>
+      <artifactId>cloudbees-license</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbees.nectar.plugins</groupId>
+      <artifactId>nectar-license</artifactId>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>findbugs-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

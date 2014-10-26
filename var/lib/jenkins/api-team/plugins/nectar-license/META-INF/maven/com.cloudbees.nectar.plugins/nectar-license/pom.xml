@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2011 CloudBees, Inc.
+  ~ This is proprietary code. All rights reserved.
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.cloudbees.jenkins.plugins</groupId>
+    <artifactId>jenkins-plugins</artifactId>
+    <version>20</version>
+    <relativePath />
+  </parent>
+
+  <groupId>com.cloudbees.nectar.plugins</groupId>
+  <artifactId>nectar-license</artifactId>
+  <version>5.4</version>
+  <packaging>hpi</packaging>
+  <name>Jenkins Enterprise License Entitlement Check</name>
+  <description>
+    This plugin is used by CloudBees to give access to the Jenkins Enterprise by CloudBees plugins.
+  </description>
+  <url>http://release-notes.cloudbees.com/product/Jenkins+Enterprise+License+Entitlement+Check</url>
+
+  <scm>
+    <connection>scm:git:ssh://git@git.cloudbees.com/cloudbees/nectar-license-plugin.git</connection>
+    <developerConnection>scm:git:ssh://git@git.cloudbees.com/cloudbees/nectar-license-plugin.git</developerConnection>
+    <tag>nectar-license-5.4</tag>
+  </scm>
+
+  <properties>
+    <maven.findbugs.failure.strict>true</maven.findbugs.failure.strict>
+    <com.cloudbees.Domain>cloudbees.com</com.cloudbees.Domain>
+  </properties>
+
+  <dependencies>
+    <!-- static analysis -->
+    <!-- regular dependencies -->
+    <dependency>
+      <groupId>com.cloudbees</groupId>
+      <artifactId>endpoints</artifactId>
+      <version>0.7</version>
+    </dependency>
+    <!-- plugin dependencies -->
+    <dependency>
+      <groupId>org.jenkins-ci.plugins</groupId>
+      <artifactId>async-http-client</artifactId>
+      <version>1.7.8</version>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbees.nectar.plugins</groupId>
+      <artifactId>cloudbees-license</artifactId>
+      <version>5.3</version>
+    </dependency>
+    <!-- jenkins dependencies -->
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+          <systemPropertyVariables>
+            <com.cloudbees.Domain>${com.cloudbees.Domain}</com.cloudbees.Domain>
+          </systemPropertyVariables>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.jenkins-ci.tools</groupId>
+        <artifactId>maven-hpi-plugin</artifactId>
+        <configuration>
+          <archive>
+            <manifestEntries combine.children="append">
+              <Support-Dynamic-Loading>false</Support-Dynamic-Loading>
+            </manifestEntries>
+          </archive>
+          <systemProperties>
+            <systemProperty>
+              <name>com.cloudbees.Domain</name>
+              <value>${com.cloudbees.Domain}</value>
+            </systemProperty>
+          </systemProperties>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <profiles>
+    <profile>
+      <id>staging</id>
+      <properties>
+        <com.cloudbees.Domain>beescloud.com</com.cloudbees.Domain>
+      </properties>
+    </profile>
+  </profiles>
+
+</project>

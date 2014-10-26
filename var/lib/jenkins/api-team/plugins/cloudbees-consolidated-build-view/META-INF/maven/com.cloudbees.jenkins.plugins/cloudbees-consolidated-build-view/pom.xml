@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2011 CloudBees, Inc.
+  ~ This is proprietary code. All rights reserved.
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.cloudbees.jenkins.plugins</groupId>
+    <artifactId>jenkins-plugins</artifactId>
+    <version>22</version>
+  </parent>
+
+  <artifactId>cloudbees-consolidated-build-view</artifactId>
+  <version>1.2</version>
+  <packaging>hpi</packaging>
+
+  <name>CloudBees Consolidated Build View Plugin</name>
+  <url>http://release-notes.cloudbees.com/product/Consolidated+Build+View+Plugin</url>
+  <description>Adds a UI to a build that shows all the relevant builds.</description>
+
+  <dependencies>
+    <dependency>
+       <groupId>org.jenkins-ci.plugins</groupId>
+       <artifactId>build-view-column</artifactId>
+       <version>0.1</version>
+     </dependency>
+    <dependency>
+       <!-- optional integration -->
+       <groupId>org.jenkins-ci.plugins</groupId>
+       <artifactId>parameterized-trigger</artifactId>
+       <version>2.13</version>
+       <optional>true</optional>
+     </dependency>
+    <dependency>
+       <!-- optional integration -->
+       <groupId>org.jenkins-ci.plugins</groupId>
+       <artifactId>promoted-builds</artifactId>
+       <version>2.6</version>
+       <optional>true</optional>
+      <exclusions>
+        <exclusion>
+          <groupId>org.jenkins-ci.main</groupId>
+          <artifactId>maven-plugin</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+  </dependencies>
+
+  <scm>
+    <connection>scm:git:git@git.cloudbees.com:cloudbees/${project.artifactId}.git</connection>
+    <developerConnection>scm:git:git@git.cloudbees.com:cloudbees/${project.artifactId}.git</developerConnection>
+    <tag>cloudbees-consolidated-build-view-1.2</tag>
+  </scm>
+</project>

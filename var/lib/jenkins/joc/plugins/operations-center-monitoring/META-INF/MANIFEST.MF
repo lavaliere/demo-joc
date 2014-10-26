@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: stephenc
+Build-Jdk: 1.7.0_51
+Extension-Name: operations-center-monitoring
+Specification-Title: Metrics based monitoring for Jenkins Operations C
+ enter Server
+Implementation-Title: operations-center-monitoring
+Implementation-Version: 1.0
+Group-Id: com.cloudbees.operations-center.server
+Short-Name: operations-center-monitoring
+Long-Name: Operations Center Monitoring Plugin
+Url: http://release-notes.cloudbees.com/product/Operations+Center+Moni
+ toring+Plugin
+Plugin-Version: 1.0
+Hudson-Version: 1.532.1
+Jenkins-Version: 1.532.1
+Plugin-Dependencies: metrics:3.0.5,cloudbees-monitoring:1.7,operations
+ -center-license:1.5,operations-center-server:1.5
+Plugin-Developers: 
+
