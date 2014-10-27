@@ -30,14 +30,11 @@
       <mavenName>Maven_2</mavenName>
       <usePrivateRepository>false</usePrivateRepository>
       <settings class="jenkins.mvn.DefaultSettingsProvider"/>
-      <globalSettings class="org.jenkinsci.plugins.configfiles.maven.job.MvnGlobalSettingsProvider" plugin="config-file-provider@2.7.5">
-        <settingsConfigId>org.jenkinsci.plugins.configfiles.maven.GlobalMavenSettingsConfig1414300594997</settingsConfigId>
-      </globalSettings>
     </hudson.tasks.Maven>
   </builders>
   <publishers>
     <hudson.tasks.BuildTrigger>
-      <childProjects>Wildfly/qa, Wildfly/deploy</childProjects>
+      <childProjects>Wildfly/qa</childProjects>
       <threshold>
         <name>SUCCESS</name>
         <ordinal>0</ordinal>

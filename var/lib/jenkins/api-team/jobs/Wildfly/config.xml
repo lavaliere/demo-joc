@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<com.cloudbees.hudson.plugins.folder.Folder plugin="cloudbees-folder@4.6.1">
+<com.cloudbees.hudson.plugins.folder.Folder plugin="cloudbees-folder@4.5">
   <actions/>
   <description></description>
   <properties>
@@ -9,7 +9,7 @@
     <com.cloudbees.hudson.plugins.folder.properties.FolderCredentialsProvider_-FolderCredentialsProperty>
       <domainCredentialsMap class="hudson.util.CopyOnWriteMap$Hash">
         <entry>
-          <com.cloudbees.plugins.credentials.domains.Domain plugin="credentials@1.18">
+          <com.cloudbees.plugins.credentials.domains.Domain plugin="credentials@1.13">
             <specifications/>
           </com.cloudbees.plugins.credentials.domains.Domain>
           <java.util.concurrent.CopyOnWriteArrayList/>

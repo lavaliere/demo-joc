@@ -1,0 +1,344 @@
+Started by upstream project "[8mha:AAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZx/az8JP3wzJyUtJxKMDupFMjRBwCIKZfmzAAAAA==[0mWildfly/build" build number [8mha:AAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgZJ/az8JP3wzJyUtJxKMDupFMjRNzUGAPXhndvOAAAA[0m53
+originally caused by:
+ Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace /data/var/lib/jenkins/api-team/workspace/Wildfly/archive
+Copied 3 artifacts from "[8mha:AAAAkx+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMjgL2EQ18/KT9IPz8xJScupBLOTSoEcfQDuMU6EnAAAAA==[0mWildfly ? build" build number [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgKmGQ0s/KT9IPz8xJScupBLOTSoEcfVNjfQCs58ROnwAAAA==[0m53
+Copied 0 artifacts from "[8mha:AAAAnR+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMiQKWHQ1c/KT9IPz8xJScupBLOTSoEc/eQU3XKIoAqCqQ8AUv1o3LIAAAA=[0mWildfly ? build ? cd-wildfly" build number [8mha:AAAAoB+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgKmEw0M/KT9IPz8xJScupBLOTSoEc/eQU3XKIoAqCqW9qrA8Adz/PlLUAAAA=[0m53
+Unpacking http://archive.apache.org/dist/maven/binaries/apache-maven-2.2.1-bin.zip to /data/var/lib/jenkins/api-team/tools/hudson.tasks.Maven_MavenInstallation/Maven_2 on Jenkins
+[archive] $ /data/var/lib/jenkins/api-team/tools/hudson.tasks.Maven_MavenInstallation/Maven_2/bin/mvn deploy -Preleases -e
++ Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Building cd-wildfly
+[INFO]    task-segment: [deploy]
+[INFO] ------------------------------------------------------------------------
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-resources-plugin/2.3/maven-resources-plugin-2.3.pom
+0/4K4/4K4K downloaded  (maven-resources-plugin-2.3.pom)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-plugins/12/maven-plugins-12.pom
+0/11K4/11K5/11K7/11K10/11K11/11K11K downloaded  (maven-plugins-12.pom)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-resources-plugin/2.3/maven-resources-plugin-2.3.jar
+3/20K6/20K7/20K11/20K13/20K17/20K18/20K19/20K20/20K20K downloaded  (maven-resources-plugin-2.3.jar)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/2.0.2/maven-compiler-plugin-2.0.2.pom
+2/2K2K downloaded  (maven-compiler-plugin-2.0.2.pom)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-plugins/8/maven-plugins-8.pom
+3/5K5/5K5K downloaded  (maven-plugins-8.pom)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/2.0.2/maven-compiler-plugin-2.0.2.jar
+4/17K6/17K7/17K11/17K11/17K15/17K17/17K17K downloaded  (maven-compiler-plugin-2.0.2.jar)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.4.3/maven-surefire-plugin-2.4.3.pom
+4/6K6/6K6/6K6K downloaded  (maven-surefire-plugin-2.4.3.pom)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/surefire/surefire/2.4.3/surefire-2.4.3.pom
+4/7K6/7K7/7K7K downloaded  (surefire-2.4.3.pom)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.4.3/maven-surefire-plugin-2.4.3.jar
+3/22K5/22K6/22K10/22K14/22K14/22K18/22K22/22K22/22K22/22K22K downloaded  (maven-surefire-plugin-2.4.3.jar)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-war-plugin/2.1-alpha-2/maven-war-plugin-2.1-alpha-2.pom
+4/7K7/7K7K downloaded  (maven-war-plugin-2.1-alpha-2.pom)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-plugins/11/maven-plugins-11.pom
+2/10K5/10K7/10K9/10K10/10K10K downloaded  (maven-plugins-11.pom)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-war-plugin/2.1-alpha-2/maven-war-plugin-2.1-alpha-2.jar
+4/72K5/72K7/72K10/72K11/72K15/72K15/72K19/72K21/72K22/72K23/72K26/72K29/72K32/72K33/72K36/72K37/72K41/72K41/72K44/72K45/72K46/72K48/72K50/72K52/72K53/72K56/72K57/72K59/72K63/72K63/72K64/72K67/72K68/72K71/72K72/72K72K downloaded  (maven-war-plugin-2.1-alpha-2.jar)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-install-plugin/2.2/maven-install-plugin-2.2.pom
+2/2K2K downloaded  (maven-install-plugin-2.2.pom)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-install-plugin/2.2/maven-install-plugin-2.2.jar
+4/15K8/15K10/15K11/15K15/15K15K downloaded  (maven-install-plugin-2.2.jar)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.4/maven-deploy-plugin-2.4.pom
+4/6K6/6K6K downloaded  (maven-deploy-plugin-2.4.pom)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.4/maven-deploy-plugin-2.4.jar
+0/33K4/33K8/33K10/33K14/33K18/33K21/33K25/33K26/33K30/33K30/33K32/33K33/33K33K downloaded  (maven-deploy-plugin-2.4.jar)
+Downloading: http://repo1.maven.org/maven2/org/wildfly/plugins/wildfly-maven-plugin/1.0.0.Final/wildfly-maven-plugin-1.0.0.Final.pom
+4/13K8/13K10/13K11/13K13/13K13K downloaded  (wildfly-maven-plugin-1.0.0.Final.pom)
+Downloading: http://repo1.maven.org/maven2/org/wildfly/plugins/wildfly-maven-plugin/1.0.0.Final/wildfly-maven-plugin-1.0.0.Final.jar
+0/111K4/111K8/111K10/111K11/111K15/111K19/111K21/111K22/111K26/111K26/111K30/111K30/111K32/111K33/111K36/111K38/111K40/111K41/111K42/111K44/111K48/111K48/111K50/111K52/111K53/111K55/111K56/111K59/111K60/111K63/111K65/111K67/111K68/111K71/111K75/111K75/111K76/111K79/111K80/111K84/111K87/111K88/111K92/111K92/111K94/111K96/111K99/111K100/111K103/111K105/111K106/111K110/111K111/111K111K downloaded  (wildfly-maven-plugin-1.0.0.Final.jar)
+Downloading: http://repo1.maven.org/maven2/org/sonatype/plugins/nexus-staging-maven-plugin/1.4.4/nexus-staging-maven-plugin-1.4.4.pom
+4/11K8/11K10/11K11/11K11K downloaded  (nexus-staging-maven-plugin-1.4.4.pom)
+Downloading: http://repo1.maven.org/maven2/org/sonatype/nexus/maven/nexus-staging/1.4.4/nexus-staging-1.4.4.pom
+3/3K3K downloaded  (nexus-staging-1.4.4.pom)
+Downloading: http://repo1.maven.org/maven2/org/sonatype/nexus/maven/nexus-maven-plugins/1.4.4/nexus-maven-plugins-1.4.4.pom
+0/19K2/19K6/19K10/19K13/19K14/19K17/19K19/19K19K downloaded  (nexus-maven-plugins-1.4.4.pom)
+Downloading: http://repo1.maven.org/maven2/org/sonatype/forge/forge-parent/34/forge-parent-34.pom
+4/18K8/18K12/18K13/18K14/18K18/18K18/18K18K downloaded  (forge-parent-34.pom)
+Downloading: http://repo1.maven.org/maven2/org/sonatype/plugins/nexus-staging-maven-plugin/1.4.4/nexus-staging-maven-plugin-1.4.4.jar
+4/210K8/210K12/210K13/210K14/210K18/210K22/210K25/210K26/210K30/210K34/210K38/210K40/210K44/210K48/210K52/210K55/210K57/210K61/210K65/210K68/210K72/210K76/210K80/210K82/210K83/210K84/210K88/210K92/210K96/210K96/210K98/210K100/210K104/210K107/210K110/210K111/210K115/210K115/210K119/210K122/210K125/210K129/210K129/210K130/210K133/210K137/210K138/210K140/210K144/210K148/210K149/210K151/210K155/210K155/210K157/210K160/210K164/210K165/210K169/210K169/210K171/210K175/210K179/210K183/210K184/210K186/210K190/210K194/210K198/210K199/210K201/210K202/210K206/210K206/210K210/210K210/210K210K downloaded  (nexus-staging-maven-plugin-1.4.4.jar)
+Downloading: http://repository.jboss.org/nexus/content/groups/public//org/apache/maven/wagon/wagon-provider-api/1.0-beta-2/wagon-provider-api-1.0-beta-2.pom
+[INFO] Unable to find resource 'org.apache.maven.wagon:wagon-provider-api:pom:1.0-beta-2' in repository jboss-public-repository-group (http://repository.jboss.org/nexus/content/groups/public/)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/wagon/wagon-provider-api/1.0-beta-2/wagon-provider-api-1.0-beta-2.pom
+680/680b680b downloaded  (wagon-provider-api-1.0-beta-2.pom)
+Downloading: http://repository.jboss.org/nexus/content/groups/public//org/apache/maven/wagon/wagon/1.0-beta-2/wagon-1.0-beta-2.pom
+[INFO] Unable to find resource 'org.apache.maven.wagon:wagon:pom:1.0-beta-2' in repository jboss-public-repository-group (http://repository.jboss.org/nexus/content/groups/public/)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/wagon/wagon/1.0-beta-2/wagon-1.0-beta-2.pom
+4/5K5/5K5K downloaded  (wagon-1.0-beta-2.pom)
+Downloading: http://repository.jboss.org/nexus/content/groups/public//org/apache/maven/maven-parent/4/maven-parent-4.pom
+[INFO] Unable to find resource 'org.apache.maven:maven-parent:pom:4' in repository jboss-public-repository-group (http://repository.jboss.org/nexus/content/groups/public/)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/maven-parent/4/maven-parent-4.pom
+4/9K8/9K9/9K9K downloaded  (maven-parent-4.pom)
+Downloading: http://repository.jboss.org/nexus/content/groups/public//org/apache/maven/wagon/wagon-file/1.0-beta-2/wagon-file-1.0-beta-2.pom
+[INFO] Unable to find resource 'org.apache.maven.wagon:wagon-file:pom:1.0-beta-2' in repository jboss-public-repository-group (http://repository.jboss.org/nexus/content/groups/public/)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/wagon/wagon-file/1.0-beta-2/wagon-file-1.0-beta-2.pom
+637/637b637b downloaded  (wagon-file-1.0-beta-2.pom)
+Downloading: http://repository.jboss.org/nexus/content/groups/public//org/apache/maven/wagon/wagon-providers/1.0-beta-2/wagon-providers-1.0-beta-2.pom
+[INFO] Unable to find resource 'org.apache.maven.wagon:wagon-providers:pom:1.0-beta-2' in repository jboss-public-repository-group (http://repository.jboss.org/nexus/content/groups/public/)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/wagon/wagon-providers/1.0-beta-2/wagon-providers-1.0-beta-2.pom
+1/1K1K downloaded  (wagon-providers-1.0-beta-2.pom)
+Downloading: http://repository.jboss.org/nexus/content/groups/public//org/apache/maven/wagon/wagon-http-lightweight/1.0-beta-2/wagon-http-lightweight-1.0-beta-2.pom
+[INFO] Unable to find resource 'org.apache.maven.wagon:wagon-http-lightweight:pom:1.0-beta-2' in repository jboss-public-repository-group (http://repository.jboss.org/nexus/content/groups/public/)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/wagon/wagon-http-lightweight/1.0-beta-2/wagon-http-lightweight-1.0-beta-2.pom
+1/1K1K downloaded  (wagon-http-lightweight-1.0-beta-2.pom)
+Downloading: http://repository.jboss.org/nexus/content/groups/public//org/apache/maven/wagon/wagon-http-shared/1.0-beta-2/wagon-http-shared-1.0-beta-2.pom
+[INFO] Unable to find resource 'org.apache.maven.wagon:wagon-http-shared:pom:1.0-beta-2' in repository jboss-public-repository-group (http://repository.jboss.org/nexus/content/groups/public/)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/wagon/wagon-http-shared/1.0-beta-2/wagon-http-shared-1.0-beta-2.pom
+845/845b845b downloaded  (wagon-http-shared-1.0-beta-2.pom)
+Downloading: http://repository.jboss.org/nexus/content/groups/public//jtidy/jtidy/4aug2000r7-dev/jtidy-4aug2000r7-dev.pom
+[INFO] Unable to find resource 'jtidy:jtidy:pom:4aug2000r7-dev' in repository jboss-public-repository-group (http://repository.jboss.org/nexus/content/groups/public/)
+Downloading: http://repo1.maven.org/maven2/jtidy/jtidy/4aug2000r7-dev/jtidy-4aug2000r7-dev.pom
+1/1K1K downloaded  (jtidy-4aug2000r7-dev.pom)
+Downloading: http://repository.jboss.org/nexus/content/groups/public//org/apache/maven/wagon/wagon-ssh-external/1.0-beta-2/wagon-ssh-external-1.0-beta-2.pom
+[INFO] Unable to find resource 'org.apache.maven.wagon:wagon-ssh-external:pom:1.0-beta-2' in repository jboss-public-repository-group (http://repository.jboss.org/nexus/content/groups/public/)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/wagon/wagon-ssh-external/1.0-beta-2/wagon-ssh-external-1.0-beta-2.pom
+1/1K1K downloaded  (wagon-ssh-external-1.0-beta-2.pom)
+Downloading: http://repository.jboss.org/nexus/content/groups/public//org/apache/maven/wagon/wagon-ssh-common/1.0-beta-2/wagon-ssh-common-1.0-beta-2.pom
+[INFO] Unable to find resource 'org.apache.maven.wagon:wagon-ssh-common:pom:1.0-beta-2' in repository jboss-public-repository-group (http://repository.jboss.org/nexus/content/groups/public/)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/wagon/wagon-ssh-common/1.0-beta-2/wagon-ssh-common-1.0-beta-2.pom
+851/851b851b downloaded  (wagon-ssh-common-1.0-beta-2.pom)
+Downloading: http://repository.jboss.org/nexus/content/groups/public//org/codehaus/plexus/plexus-container-default/1.0-alpha-7/plexus-container-default-1.0-alpha-7.pom
+1/1K1K downloaded  (plexus-container-default-1.0-alpha-7.pom)
+Downloading: http://repository.jboss.org/nexus/content/groups/public//plexus/plexus-containers/1.0.2/plexus-containers-1.0.2.pom
+[INFO] Unable to find resource 'plexus:plexus-containers:pom:1.0.2' in repository jboss-public-repository-group (http://repository.jboss.org/nexus/content/groups/public/)
+Downloading: http://repo1.maven.org/maven2/plexus/plexus-containers/1.0.2/plexus-containers-1.0.2.pom
+471/471b471b downloaded  (plexus-containers-1.0.2.pom)
+Downloading: http://repository.jboss.org/nexus/content/groups/public//plexus/plexus-root/1.0.3/plexus-root-1.0.3.pom
+[INFO] Unable to find resource 'plexus:plexus-root:pom:1.0.3' in repository jboss-public-repository-group (http://repository.jboss.org/nexus/content/groups/public/)
+Downloading: http://repo1.maven.org/maven2/plexus/plexus-root/1.0.3/plexus-root-1.0.3.pom
+2/5K3/5K5/5K5K downloaded  (plexus-root-1.0.3.pom)
+Downloading: http://repository.jboss.org/nexus/content/groups/public//plexus/plexus-utils/1.0.2/plexus-utils-1.0.2.pom
+[INFO] Unable to find resource 'plexus:plexus-utils:pom:1.0.2' in repository jboss-public-repository-group (http://repository.jboss.org/nexus/content/groups/public/)
+Downloading: http://repo1.maven.org/maven2/plexus/plexus-utils/1.0.2/plexus-utils-1.0.2.pom
+740/740b740b downloaded  (plexus-utils-1.0.2.pom)
+Downloading: http://repository.jboss.org/nexus/content/groups/public//org/apache/maven/wagon/wagon-ssh/1.0-beta-2/wagon-ssh-1.0-beta-2.pom
+[INFO] Unable to find resource 'org.apache.maven.wagon:wagon-ssh:pom:1.0-beta-2' in repository jboss-public-repository-group (http://repository.jboss.org/nexus/content/groups/public/)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/wagon/wagon-ssh/1.0-beta-2/wagon-ssh-1.0-beta-2.pom
+1/1K1K downloaded  (wagon-ssh-1.0-beta-2.pom)
+Downloading: http://repository.jboss.org/nexus/content/groups/public//com/jcraft/jsch/0.1.27/jsch-0.1.27.pom
+[INFO] Unable to find resource 'com.jcraft:jsch:pom:0.1.27' in repository jboss-public-repository-group (http://repository.jboss.org/nexus/content/groups/public/)
+Downloading: http://repo1.maven.org/maven2/com/jcraft/jsch/0.1.27/jsch-0.1.27.pom
+965/965b965b downloaded  (jsch-0.1.27.pom)
+Downloading: http://repository.jboss.org/nexus/content/groups/public//org/codehaus/plexus/plexus-interpolation/1.6/plexus-interpolation-1.6.jar
+4/49K7/49K11/49K11/49K13/49K17/49K21/49K23/49K25/49K29/49K33/49K34/49K38/49K42/49K43/49K46/49K49/49K49K downloaded  (plexus-interpolation-1.6.jar)
+[8mha:AAAAXx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P0+vJLE4u1gvPjexLDVPzxdE+uZn5fvll6T+rlY5WiYVksXEwFBRxCAFVZ+cn1ecn5Oq5wyhQQoZIIARpLAAAFkNeyJfAAAA[0m[INFO] [resources:resources {execution: default-resources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data/var/lib/jenkins/api-team/workspace/Wildfly/archive/src/main/resources
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] POM for 'org.osgi:org.osgi.core:pom:5.0.0:test' is invalid.
+
+Its dependencies (if any) will NOT be available to the current build.
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/maven-plugin-api/2.0/maven-plugin-api-2.0.pom
+601/601b601b downloaded  (maven-plugin-api-2.0.pom)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/maven/2.0/maven-2.0.pom
+4/8K8/8K8/8K8K downloaded  (maven-2.0.pom)
+Downloading: http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler-api/1.5.3/plexus-compiler-api-1.5.3.pom
+624/624b624b downloaded  (plexus-compiler-api-1.5.3.pom)
+Downloading: http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler/1.5.3/plexus-compiler-1.5.3.pom
+1/1K1K downloaded  (plexus-compiler-1.5.3.pom)
+Downloading: http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-components/1.1.6/plexus-components-1.1.6.pom
+1/1K1K downloaded  (plexus-components-1.1.6.pom)
+Downloading: http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler-manager/1.5.3/plexus-compiler-manager-1.5.3.pom
+634/634b634b downloaded  (plexus-compiler-manager-1.5.3.pom)
+Downloading: http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler-javac/1.5.3/plexus-compiler-javac-1.5.3.pom
+797/797b797b downloaded  (plexus-compiler-javac-1.5.3.pom)
+Downloading: http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compilers/1.5.3/plexus-compilers-1.5.3.pom
+4/7K5/7K7/7K7K downloaded  (plexus-compilers-1.5.3.pom)
+Downloading: http://repository.jboss.org/nexus/content/groups/public//org/codehaus/plexus/plexus-utils/1.0.5/plexus-utils-1.0.5.pom
+918/918b918b downloaded  (plexus-utils-1.0.5.pom)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/maven-artifact/2.0/maven-artifact-2.0.pom
+723/723b723b downloaded  (maven-artifact-2.0.pom)
+Downloading: http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/1.0.4/plexus-utils-1.0.4.jar
+4/159K8/159K9/159K10/159K14/159K15/159K19/159K23/159K26/159K28/159K32/159K34/159K38/159K38/159K42/159K42/159K46/159K48/159K52/159K55/159K57/159K59/159K60/159K61/159K65/159K68/159K71/159K73/159K77/159K80/159K84/159K86/159K90/159K90/159K92/159K96/159K96/159K98/159K102/159K106/159K110/159K113/159K117/159K121/159K125/159K128/159K130/159K133/159K137/159K140/159K142/159K146/159K146/159K150/159K153/159K157/159K159/159K159K downloaded  (plexus-utils-1.0.4.jar)
+Downloading: http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler-api/1.5.3/plexus-compiler-api-1.5.3.jar
+3/19K7/19K11/19K15/19K19/19K19K downloaded  (plexus-compiler-api-1.5.3.jar)
+Downloading: http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler-manager/1.5.3/plexus-compiler-manager-1.5.3.jar
+4/5K5/5K5K downloaded  (plexus-compiler-manager-1.5.3.jar)
+Downloading: http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler-javac/1.5.3/plexus-compiler-javac-1.5.3.jar
+4/13K8/13K12/13K13/13K13K downloaded  (plexus-compiler-javac-1.5.3.jar)
+[8mha:AAAAXx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P0+vJLE4u1gvPjexLDVPzxdE+uZn5fvll6T+rlY5WiYVksXEwFBRxCAFVZ+cn1ecn5Oq5wyhQQoZIIARpLAAAFkNeyJfAAAA[0m[INFO] [compiler:compile {execution: default-compile}]
+[INFO] No sources to compile
+[8mha:AAAAXx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P0+vJLE4u1gvPjexLDVPzxdE+uZn5fvll6T+rlY5WiYVksXEwFBRxCAFVZ+cn1ecn5Oq5wyhQQoZIIARpLAAAFkNeyJfAAAA[0m[INFO] [resources:testResources {execution: default-testResources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data/var/lib/jenkins/api-team/workspace/Wildfly/archive/src/test/resources
+Downloading: http://repository.jboss.org/nexus/content/groups/public//org/jboss/remoting/jboss-remoting/4.0.0.Beta3/jboss-remoting-4.0.0.Beta3.jar
+4/255K8/255K11/255K12/255K16/255K20/255K22/255K26/255K28/255K29/255K31/255K32/255K36/255K39/255K43/255K44/255K48/255K52/255K56/255K60/255K61/255K64/255K65/255K69/255K73/255K77/255K78/255K82/255K86/255K90/255K91/255K95/255K97/255K100/255K102/255K103/255K104/255K108/255K112/255K116/255K120/255K124/255K128/255K132/255K136/255K139/255K140/255K141/255K145/255K148/255K150/255K154/255K158/255K161/255K162/255K166/255K170/255K174/255K178/255K179/255K183/255K187/255K190/255K193/255K197/255K201/255K205/255K209/255K211/255K215/255K216/255K220/255K222/255K226/255K230/255K234/255K236/255K240/255K244/255K248/255K252/255K255/255K255K downloaded  (jboss-remoting-4.0.0.Beta3.jar)
+[8mha:AAAAXx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P0+vJLE4u1gvPjexLDVPzxdE+uZn5fvll6T+rlY5WiYVksXEwFBRxCAFVZ+cn1ecn5Oq5wyhQQoZIIARpLAAAFkNeyJfAAAA[0m[INFO] [compiler:testCompile {execution: default-testCompile}]
+[INFO] No sources to compile
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/surefire/surefire-booter/2.4.3/surefire-booter-2.4.3.pom
+1/1K1K downloaded  (surefire-booter-2.4.3.pom)
+Downloading: http://repository.jboss.org/nexus/content/groups/public//org/apache/maven/surefire/surefire-api/2.4.3/surefire-api-2.4.3.pom
+[INFO] Unable to find resource 'org.apache.maven.surefire:surefire-api:pom:2.4.3' in repository jboss-public-repository-group (http://repository.jboss.org/nexus/content/groups/public/)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/surefire/surefire-api/2.4.3/surefire-api-2.4.3.pom
+2/2K2K downloaded  (surefire-api-2.4.3.pom)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/surefire/surefire-booter/2.4.3/surefire-booter-2.4.3.jar
+3/261K7/261K11/261K15/261K19/261K23/261K27/261K28/261K29/261K30/261K34/261K34/261K38/261K42/261K46/261K50/261K54/261K57/261K61/261K65/261K69/261K73/261K77/261K78/261K79/261K83/261K83/261K86/261K87/261K91/261K91/261K95/261K99/261K102/261K106/261K107/261K109/261K113/261K117/261K118/261K122/261K126/261K129/261K133/261K137/261K140/261K141/261K144/261K148/261K151/261K155/261K159/261K163/261K167/261K171/261K172/261K176/261K176/261K180/261K184/261K188/261K192/261K196/261K200/261K204/261K206/261K207/261K209/261K211/261K215/261K217/261K221/261K225/261K229/261K230/261K234/261K238/261K240/261K241/261K242/261K246/261K246/261K250/261K254/261K258/261K260/261K261/261K261K downloaded  (surefire-booter-2.4.3.jar)
+Downloading: http://repository.jboss.org/nexus/content/groups/public//org/apache/maven/surefire/surefire-api/2.4.3/surefire-api-2.4.3.jar
+[INFO] Unable to find resource 'org.apache.maven.surefire:surefire-api:jar:2.4.3' in repository jboss-public-repository-group (http://repository.jboss.org/nexus/content/groups/public/)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/surefire/surefire-api/2.4.3/surefire-api-2.4.3.jar
+4/503K8/503K12/503K16/503K20/503K24/503K26/503K30/503K34/503K38/503K38/503K40/503K44/503K48/503K52/503K56/503K60/503K64/503K68/503K72/503K73/503K77/503K81/503K85/503K89/503K93/503K97/503K101/503K105/503K107/503K109/503K110/503K114/503K114/503K118/503K122/503K126/503K130/503K134/503K138/503K142/503K144/503K145/503K149/503K153/503K157/503K161/503K165/503K167/503K168/503K172/503K172/503K176/503K180/503K180/503K184/503K188/503K188/503K190/503K194/503K195/503K199/503K203/503K207/503K211/503K215/503K215/503K219/503K219/503K223/503K227/503K229/503K233/503K237/503K240/503K244/503K245/503K249/503K253/503K256/503K260/503K263/503K267/503K271/503K275/503K279/503K283/503K283/503K286/503K288/503K292/503K295/503K299/503K303/503K305/503K309/503K309/503K313/503K313/503K317/503K321/503K322/503K326/503K330/503K334/503K336/503K338/503K342/503K346/503K350/503K354/503K358/503K359/503K361/503K365/503K369/503K373/503K377/503K381/503K385/503K389/503K393/503K394/503K398/503K398/503K401/503K405/503K409/503K413/503K413/503K417/503K421/503K422/503K424/503K428/503K432/503K433/503K437/503K441/503K442/503K444/503K448/503K452/503K456/503K459/503K461/503K465/503K469/503K473/503K477/503K481/503K482/503K486/503K490/503K492/503K496/503K497/503K498/503K499/503K503/503K503K downloaded  (surefire-api-2.4.3.jar)
+[8mha:AAAAXx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P0+vJLE4u1gvPjexLDVPzxdE+uZn5fvll6T+rlY5WiYVksXEwFBRxCAFVZ+cn1ecn5Oq5wyhQQoZIIARpLAAAFkNeyJfAAAA[0m[INFO] [surefire:test {execution: default-test}]
+[INFO] No tests to run.
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/maven-archiver/2.3/maven-archiver-2.3.pom
+3/3K3K downloaded  (maven-archiver-2.3.pom)
+Downloading: http://repository.jboss.org/nexus/content/groups/public//org/apache/maven/maven-model/2.0/maven-model-2.0.pom
+[INFO] Unable to find resource 'org.apache.maven:maven-model:pom:2.0' in repository jboss-public-repository-group (http://repository.jboss.org/nexus/content/groups/public/)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/maven-model/2.0/maven-model-2.0.pom
+2/2K2K downloaded  (maven-model-2.0.pom)
+Downloading: http://repository.jboss.org/nexus/content/groups/public//org/apache/maven/maven-project/2.0/maven-project-2.0.pom
+[INFO] Unable to find resource 'org.apache.maven:maven-project:pom:2.0' in repository jboss-public-repository-group (http://repository.jboss.org/nexus/content/groups/public/)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/maven-project/2.0/maven-project-2.0.pom
+1/1K1K downloaded  (maven-project-2.0.pom)
+Downloading: http://repository.jboss.org/nexus/content/groups/public//org/apache/maven/maven-profile/2.0/maven-profile-2.0.pom
+[INFO] Unable to find resource 'org.apache.maven:maven-profile:pom:2.0' in repository jboss-public-repository-group (http://repository.jboss.org/nexus/content/groups/public/)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/maven-profile/2.0/maven-profile-2.0.pom
+1/1K1K downloaded  (maven-profile-2.0.pom)
+Downloading: http://repository.jboss.org/nexus/content/groups/public//org/apache/maven/maven-artifact-manager/2.0/maven-artifact-manager-2.0.pom
+[INFO] Unable to find resource 'org.apache.maven:maven-artifact-manager:pom:2.0' in repository jboss-public-repository-group (http://repository.jboss.org/nexus/content/groups/public/)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/maven-artifact-manager/2.0/maven-artifact-manager-2.0.pom
+1/1K1K downloaded  (maven-artifact-manager-2.0.pom)
+Downloading: http://repository.jboss.org/nexus/content/groups/public//org/apache/maven/maven-repository-metadata/2.0/maven-repository-metadata-2.0.pom
+[INFO] Unable to find resource 'org.apache.maven:maven-repository-metadata:pom:2.0' in repository jboss-public-repository-group (http://repository.jboss.org/nexus/content/groups/public/)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/maven-repository-metadata/2.0/maven-repository-metadata-2.0.pom
+1/1K1K downloaded  (maven-repository-metadata-2.0.pom)
+Downloading: http://repository.jboss.org/nexus/content/groups/public//org/apache/maven/wagon/wagon-provider-api/1.0-alpha-5/wagon-provider-api-1.0-alpha-5.pom
+[INFO] Unable to find resource 'org.apache.maven.wagon:wagon-provider-api:pom:1.0-alpha-5' in repository jboss-public-repository-group (http://repository.jboss.org/nexus/content/groups/public/)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/wagon/wagon-provider-api/1.0-alpha-5/wagon-provider-api-1.0-alpha-5.pom
+4/4K4/4K4K downloaded  (wagon-provider-api-1.0-alpha-5.pom)
+Downloading: http://repository.jboss.org/nexus/content/groups/public//org/codehaus/plexus/plexus-archiver/1.0-alpha-9/plexus-archiver-1.0-alpha-9.pom
+1/1K1K downloaded  (plexus-archiver-1.0-alpha-9.pom)
+Downloading: http://repository.jboss.org/nexus/content/groups/public//org/codehaus/plexus/plexus-container-default/1.0-alpha-15/plexus-container-default-1.0-alpha-15.pom
+1/1K1K downloaded  (plexus-container-default-1.0-alpha-15.pom)
+Downloading: http://repository.jboss.org/nexus/content/groups/public//org/codehaus/plexus/plexus-containers/1.0-alpha-15/plexus-containers-1.0-alpha-15.pom
+1/1K1K downloaded  (plexus-containers-1.0-alpha-15.pom)
+Downloading: http://repository.jboss.org/nexus/content/groups/public//org/codehaus/plexus/plexus-component-api/1.0-alpha-15/plexus-component-api-1.0-alpha-15.pom
+948/948b948b downloaded  (plexus-component-api-1.0-alpha-15.pom)
+Downloading: http://repository.jboss.org/nexus/content/groups/public//org/codehaus/plexus/plexus-classworlds/1.2-alpha-6/plexus-classworlds-1.2-alpha-6.pom
+2/2K2K downloaded  (plexus-classworlds-1.2-alpha-6.pom)
+Downloading: http://repository.jboss.org/nexus/content/groups/public//org/codehaus/plexus/plexus-io/1.0-alpha-1/plexus-io-1.0-alpha-1.pom
+1/1K1K downloaded  (plexus-io-1.0-alpha-1.pom)
+Downloading: http://repository.jboss.org/nexus/content/groups/public//org/codehaus/plexus/plexus-component-api/1.0-alpha-16/plexus-component-api-1.0-alpha-16.pom
+2/2K2K downloaded  (plexus-component-api-1.0-alpha-16.pom)
+Downloading: http://repository.jboss.org/nexus/content/groups/public//org/codehaus/plexus/plexus-containers/1.0-alpha-16/plexus-containers-1.0-alpha-16.pom
+1/1K1K downloaded  (plexus-containers-1.0-alpha-16.pom)
+Downloading: http://repository.jboss.org/nexus/content/groups/public//org/codehaus/plexus/plexus-utils/1.4.9/plexus-utils-1.4.9.pom
+2/2K2K downloaded  (plexus-utils-1.4.9.pom)
+Downloading: http://repo1.maven.org/maven2/com/thoughtworks/xstream/xstream/1.2.2/xstream-1.2.2.pom
+4/10K8/10K10/10K10K downloaded  (xstream-1.2.2.pom)
+Downloading: http://repo1.maven.org/maven2/com/thoughtworks/xstream/xstream-parent/1.2.2/xstream-parent-1.2.2.pom
+4/11K8/11K9/11K10/11K11/11K11K downloaded  (xstream-parent-1.2.2.pom)
+Downloading: http://repository.jboss.org/nexus/content/groups/public//xpp3/xpp3_min/1.1.3.4.O/xpp3_min-1.1.3.4.O.pom
+[INFO] Unable to find resource 'xpp3:xpp3_min:pom:1.1.3.4.O' in repository jboss-public-repository-group (http://repository.jboss.org/nexus/content/groups/public/)
+Downloading: http://repository.codehaus.org/xpp3/xpp3_min/1.1.3.4.O/xpp3_min-1.1.3.4.O.pom
+[INFO] Unable to find resource 'xpp3:xpp3_min:pom:1.1.3.4.O' in repository codehaus-repository (http://repository.codehaus.org)
+Downloading: http://repo1.maven.org/maven2/xpp3/xpp3_min/1.1.3.4.O/xpp3_min-1.1.3.4.O.pom
+638/638b638b downloaded  (xpp3_min-1.1.3.4.O.pom)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/shared/maven-filtering/1.0-beta-1/maven-filtering-1.0-beta-1.pom
+3/3K3K downloaded  (maven-filtering-1.0-beta-1.pom)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-components/9/maven-shared-components-9.pom
+3/3K3K downloaded  (maven-shared-components-9.pom)
+Downloading: http://repository.jboss.org/nexus/content/groups/public//org/codehaus/plexus/plexus-interpolation/1.2/plexus-interpolation-1.2.pom
+2/2K2/2K2K downloaded  (plexus-interpolation-1.2.pom)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/shared/maven-filtering/1.0-beta-1/maven-filtering-1.0-beta-1.jar
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/maven-archiver/2.3/maven-archiver-2.3.jar
+Downloading: http://repo1.maven.org/maven2/com/thoughtworks/xstream/xstream/1.2.2/xstream-1.2.2.jar
+Downloading: http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/1.5.5/plexus-utils-1.5.5.jar
+Downloading: http://repository.jboss.org/nexus/content/groups/public//xpp3/xpp3_min/1.1.3.4.O/xpp3_min-1.1.3.4.O.jar
+4/28K5/28K9/28K13/28K17/28K21/28K25/28K28/28K28K downloaded  (maven-filtering-1.0-beta-1.jar)
+2/364K6/364K7/364K11/364K13/364K13/364K 4/245K13/364K 4/245K 4/17K13/364K 8/245K 4/17K13/364K 12/245K 4/17K13/364K 13/245K 4/17K13/364K 13/245K 8/17K13/364K 13/245K 12/17K13/364K 13/245K 13/17K14/364K 13/245K 13/17K18/364K 13/245K 13/17K19/364K 13/245K 13/17K23/364K 13/245K 13/17K26/364K 13/245K 13/17K26/364K 15/245K 13/17K26/364K 17/245K 13/17K26/364K 21/245K 13/17K26/364K 21/245K 17/17K26/364K 21/245K 17/17K26/364K 21/245K 17/17K26/364K 22/245K 17/17K26/364K 22/245K 17/17K17K downloaded  (maven-archiver-2.3.jar)
+30/364K 22/245K33/364K 22/245K36/364K 22/245K38/364K 22/245K42/364K 22/245K42/364K 26/245K42/364K 29/245K45/364K 29/245K45/364K 33/245K45/364K 37/245K45/364K 37/245K46/364K 37/245K50/364K 37/245K54/364K 37/245K58/364K 37/245K59/364K 37/245K60/364K 37/245K60/364K 38/245K63/364K 38/245K63/364K 42/245K67/364K 42/245K67/364K 45/245K68/364K 45/245K68/364K 49/245K68/364K 53/245K68/364K 57/245K68/364K 57/245K69/364K 57/245K73/364K 57/245K73/364K 57/245K77/364K 57/245K81/364K 57/245K84/364K 57/245K84/364K 61/245K84/364K 65/245K84/364K 69/245K84/364K 69/245K88/364K 69/245K92/364K 69/245K94/364K 69/245K95/364K 69/245K[INFO] Unable to find resource 'xpp3:xpp3_min:jar:1.1.3.4.O' in repository jboss-public-repository-group (http://repository.jboss.org/nexus/content/groups/public/)
+Downloading: http://repository.codehaus.org/xpp3/xpp3_min/1.1.3.4.O/xpp3_min-1.1.3.4.O.jar
+95/364K 73/245K95/364K 77/245K95/364K 81/245K95/364K 85/245K95/364K 86/245K99/364K 86/245K99/364K 86/245K102/364K 86/245K106/364K 86/245K110/364K 86/245K114/364K 86/245K118/364K 86/245K122/364K 86/245K125/364K 86/245K125/364K 90/245K125/364K 90/245K125/364K 94/245K125/364K 96/245K125/364K 100/245K125/364K 100/245K125/364K 104/245K125/364K 106/245K125/364K 110/245K125/364K 114/245K125/364K 118/245K125/364K 122/245K125/364K 122/245K126/364K 122/245K130/364K 122/245K133/364K 122/245K137/364K 122/245K137/364K 122/245K141/364K 122/245K142/364K 122/245K146/364K 122/245K150/364K 122/245K154/364K 122/245K158/364K 122/245K161/364K 122/245K161/364K 126/245K161/364K 126/245K161/364K 130/245K161/364K 132/245K161/364K 136/245K161/364K 140/245K161/364K 144/245K161/364K 148/245K161/364K 148/245K161/364K 150/245K161/364K 154/245K161/364K 155/245K161/364K 159/245K161/364K 163/245K161/364K 167/245K161/364K 171/245K161/364K 175/245K161/364K 176/245K161/364K 178/245K165/364K 178/245K165/364K 178/245K169/364K 178/245K169/364K 178/245K171/364K 178/245K172/364K 178/245K175/364K 178/245K179/364K 178/245K180/364K 178/245K184/364K 178/245K188/364K 178/245K192/364K 178/245K196/364K 178/245K200/364K 178/245K201/364K 178/245K201/364K 182/245K201/364K 186/245K201/364K 190/245K201/364K 194/245K201/364K 198/245K201/364K 202/245K201/364K 206/245K201/364K 210/245K201/364K 210/245K201/364K 214/245K201/364K 215/245K201/364K 219/245K201/364K 223/245K201/364K 225/245K201/364K 229/245K201/364K 233/245K201/364K 237/245K201/364K 241/245K201/364K 245/245K201/364K 245/245K245K downloaded  (plexus-utils-1.5.5.jar)
+202/364K206/364K206/364K210/364K214/364K218/364K219/364K221/364K225/364K229/364K232/364K236/364K240/364K242/364K246/364K248/364KDownloading: http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-archiver/1.0-alpha-9/plexus-archiver-1.0-alpha-9.jar
+249/364K252/364K256/364K260/364K264/364K268/364K272/364K276/364K280/364K284/364K288/364K292/364K296/364K298/364K302/364K302/364K[INFO] Unable to find resource 'xpp3:xpp3_min:jar:1.1.3.4.O' in repository codehaus-repository (http://repository.codehaus.org)
+Downloading: http://repo1.maven.org/maven2/xpp3/xpp3_min/1.1.3.4.O/xpp3_min-1.1.3.4.O.jar
+302/364K 3/153K302/364K 7/153K302/364K 11/153K302/364K 15/153K302/364K 19/153K302/364K 23/153K302/364K 27/153K302/364K 31/153K302/364K 35/153K302/364K 39/153K302/364K 40/153K306/364K 40/153K310/364K 40/153K314/364K 40/153K317/364K 40/153K317/364K 44/153K321/364K 44/153K325/364K 44/153K325/364K 48/153K329/364K 48/153K333/364K 48/153K337/364K 48/153K341/364K 48/153K345/364K 48/153K349/364K 48/153K353/364K 48/153K353/364K 52/153K353/364K 56/153K357/364K 56/153K361/364K 56/153K361/364K 60/153K363/364K 60/153K363/364K 64/153K363/364K 68/153K363/364K 72/153K363/364K 76/153K363/364K 76/153K363/364K 80/153K363/364K 82/153K363/364K 86/153K363/364K 90/153K363/364K 91/153K363/364K 95/153K363/364K 99/153K363/364K 103/153K363/364K 107/153K363/364K 107/153K 4/24K363/364K 111/153K 4/24K363/364K 111/153K 8/24K363/364K 111/153K 8/24K363/364K 111/153K 12/24K363/364K 111/153K 13/24K364/364K 111/153K 13/24K364K downloaded  (xstream-1.2.2.jar)
+114/153K 13/24K118/153K 13/24K122/153K 13/24K126/153K 13/24K130/153K 13/24K134/153K 13/24K138/153K 13/24K142/153K 13/24K146/153K 13/24K150/153K 13/24K153/153K 13/24K153K downloaded  (plexus-archiver-1.0-alpha-9.jar)
+17/24K17/24K21/24K22/24K24/24K24K downloaded  (xpp3_min-1.1.3.4.O.jar)
+Downloading: http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-io/1.0-alpha-1/plexus-io-1.0-alpha-1.jar
+4/11K5/11K9/11K11/11K11K downloaded  (plexus-io-1.0-alpha-1.jar)
+Downloading: http://repository.jboss.org/nexus/content/groups/public//org/codehaus/plexus/plexus-interpolation/1.2/plexus-interpolation-1.2.jar
+2/35K6/35K7/35K11/35K11/35K14/35K18/35K22/35K26/35K27/35K29/35K31/35K33/35K35/35K35K downloaded  (plexus-interpolation-1.2.jar)
+[8mha:AAAAXx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P0+vJLE4u1gvPjexLDVPzxdE+uZn5fvll6T+rlY5WiYVksXEwFBRxCAFVZ+cn1ecn5Oq5wyhQQoZIIARpLAAAFkNeyJfAAAA[0m[INFO] [war:war {execution: default-war}]
+[INFO] Packaging webapp
+[INFO] Assembling webapp[cd-wildfly] in [/data/var/lib/jenkins/api-team/workspace/Wildfly/archive/target/cd-wildfly-1.0]
+[INFO] Processing war project
+[INFO] Copying webapp resources[/data/var/lib/jenkins/api-team/workspace/Wildfly/archive/src/main/webapp]
+[INFO] Webapp assembled in[53 msecs]
+[INFO] Building war: /data/var/lib/jenkins/api-team/workspace/Wildfly/archive/target/cd-wildfly-1.0.war
+Downloading: http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/1.1/plexus-utils-1.1.jar
+4/164K8/164K12/164K14/164K18/164K22/164K26/164K30/164K34/164K36/164K40/164K44/164K48/164K52/164K56/164K60/164K61/164K63/164K67/164K67/164K69/164K73/164K73/164K77/164K81/164K82/164K86/164K90/164K94/164K98/164K102/164K106/164K110/164K114/164K118/164K122/164K126/164K129/164K130/164K132/164K136/164K136/164K138/164K142/164K142/164K146/164K148/164K152/164K155/164K156/164K160/164K163/164K164/164K164K downloaded  (plexus-utils-1.1.jar)
+[8mha:AAAAXx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P0+vJLE4u1gvPjexLDVPzxdE+uZn5fvll6T+rlY5WiYVksXEwFBRxCAFVZ+cn1ecn5Oq5wyhQQoZIIARpLAAAFkNeyJfAAAA[0m[INFO] [install:install {execution: default-install}]
+[INFO] Installing /data/var/lib/jenkins/api-team/workspace/Wildfly/archive/target/cd-wildfly-1.0.war to /home/jenkins/.m2/repository/cd-wildfly/cd-wildfly/1.0/cd-wildfly-1.0.war
+[8mha:AAAAXx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P0+vJLE4u1gvPjexLDVPzxdE+uZn5fvll6T+rlY5WiYVksXEwFBRxCAFVZ+cn1ecn5Oq5wyhQQoZIIARpLAAAFkNeyJfAAAA[0m[INFO] [deploy:deploy {execution: default-deploy}]
+Uploading: http://nexus.nexus.dev.wildfly.io:8081/nexus/content/repositories/wildfly-release//cd-wildfly/cd-wildfly/1.0/cd-wildfly-1.0.war
+[INFO] ------------------------------------------------------------------------
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] BUILD ERROR
+[INFO] ------------------------------------------------------------------------
+[INFO] Error deploying artifact: Error transferring file
+
+nexus.nexus.dev.wildfly.io
+[INFO] ------------------------------------------------------------------------
+[INFO] Trace
+org.apache.maven.lifecycle.LifecycleExecutionException: Error deploying artifact: Error transferring file
+	at org.apache.maven.lifecycle.DefaultLifecycleExecutor.executeGoals(DefaultLifecycleExecutor.java:719)
+	at org.apache.maven.lifecycle.DefaultLifecycleExecutor.executeGoalWithLifecycle(DefaultLifecycleExecutor.java:556)
+	at org.apache.maven.lifecycle.DefaultLifecycleExecutor.executeGoal(DefaultLifecycleExecutor.java:535)
+	at org.apache.maven.lifecycle.DefaultLifecycleExecutor.executeGoalAndHandleFailures(DefaultLifecycleExecutor.java:387)
+	at org.apache.maven.lifecycle.DefaultLifecycleExecutor.executeTaskSegments(DefaultLifecycleExecutor.java:348)
+	at org.apache.maven.lifecycle.DefaultLifecycleExecutor.execute(DefaultLifecycleExecutor.java:180)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:328)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:138)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:362)
+	at org.apache.maven.cli.compat.CompatibleMain.main(CompatibleMain.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.codehaus.classworlds.Launcher.launchEnhanced(Launcher.java:315)
+	at org.codehaus.classworlds.Launcher.launch(Launcher.java:255)
+	at org.codehaus.classworlds.Launcher.mainWithExitCode(Launcher.java:430)
+	at org.codehaus.classworlds.Launcher.main(Launcher.java:375)
+Caused by: org.apache.maven.plugin.MojoExecutionException: Error deploying artifact: Error transferring file
+	at org.apache.maven.plugin.deploy.DeployMojo.execute(DeployMojo.java:195)
+	at org.apache.maven.plugin.DefaultPluginManager.executeMojo(DefaultPluginManager.java:490)
+	at org.apache.maven.lifecycle.DefaultLifecycleExecutor.executeGoals(DefaultLifecycleExecutor.java:694)
+	... 17 more
+Caused by: org.apache.maven.artifact.deployer.ArtifactDeploymentException: Error deploying artifact: Error transferring file
+	at org.apache.maven.artifact.deployer.DefaultArtifactDeployer.deploy(DefaultArtifactDeployer.java:121)
+	at org.apache.maven.plugin.deploy.DeployMojo.execute(DeployMojo.java:173)
+	... 19 more
+Caused by: org.apache.maven.wagon.TransferFailedException: Error transferring file
+	at org.apache.maven.wagon.providers.http.LightweightHttpWagon.fillOutputData(LightweightHttpWagon.java:176)
+	at org.apache.maven.wagon.StreamWagon.getOutputStream(StreamWagon.java:188)
+	at org.apache.maven.wagon.StreamWagon.put(StreamWagon.java:159)
+	at org.apache.maven.artifact.manager.DefaultWagonManager.putRemoteFile(DefaultWagonManager.java:317)
+	at org.apache.maven.artifact.manager.DefaultWagonManager.putArtifact(DefaultWagonManager.java:227)
+	at org.apache.maven.artifact.deployer.DefaultArtifactDeployer.deploy(DefaultArtifactDeployer.java:107)
+	... 20 more
+Caused by: java.net.UnknownHostException: nexus.nexus.dev.wildfly.io
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1167)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1103)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:997)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:931)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1281)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1256)
+	at org.apache.maven.wagon.providers.http.LightweightHttpWagon.fillOutputData(LightweightHttpWagon.java:172)
+	... 25 more
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 38 seconds
+[INFO] Finished at: Mon Oct 27 18:33:26 UTC 2014
+[INFO] Final Memory: 42M/174M
+[INFO] ------------------------------------------------------------------------
+Build step 'Invoke top-level Maven targets' marked build as failure
+Finished: FAILURE

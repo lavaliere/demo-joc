@@ -1,0 +1,19 @@
+commit 02541b3b597f4a1c2ba4a4daf783f8b24651602b
+tree 0c2a3fc153237e2d8940a99a82c45fcad158d0e5
+parent 21432d09a1cf3de2418991b871055bacc1d2a236
+author lavaliere <kennedy.tracy@yahoo.com> 1414358798 -0400
+committer lavaliere <kennedy.tracy@yahoo.com> 1414358798 -0400
+
+    edit pom to add wildfly deployment target:
+
+:100644 100644 7e8e862aaaf615b76600eecc1e8f15e6012e39f0 ae9102b498f35a4aeb36fe57e82d946e34696246 M	pom.xml
+
+commit 21432d09a1cf3de2418991b871055bacc1d2a236
+tree b0b73feba559a3c2d723d794408ddd33e90a33f3
+parent 980391f91f07d17d4e5c256a74b6821462c38e11
+author lavaliere <kennedy.tracy@yahoo.com> 1414358020 -0400
+committer lavaliere <kennedy.tracy@yahoo.com> 1414358020 -0400
+
+    Going to try this with Maven2 build to deploy to Maven2 repo, commented out extensions
+
+:100644 100644 bbd76b3ec78e0b7543eb39b05645a9e1529143ed 7e8e862aaaf615b76600eecc1e8f15e6012e39f0 M	pom.xml
