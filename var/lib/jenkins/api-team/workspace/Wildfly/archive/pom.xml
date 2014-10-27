@@ -247,7 +247,7 @@
         <repository>
             <id>wildfly-release</id>
             <name>wildfly-release</name>
-            <url>http://nexus.nexus.dev.wildfly.io:8081/nexus/content/repositories/wildfly-release/</url>
+            <url>nexus.nexus.dev.wildfly.io:8081/nexus/content/repositories/wildfly-release/</url>
         </repository>
     </distributionManagement>
 </project>
