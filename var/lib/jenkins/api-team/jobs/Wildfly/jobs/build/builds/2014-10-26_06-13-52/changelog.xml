@@ -1,9 +1,0 @@
-commit 980391f91f07d17d4e5c256a74b6821462c38e11
-tree 9f5039357734c25c123adad99bb535838a6ae7cd
-parent 1e81633c317d8da0c1a086a4dc25d45fb652dc11
-author lavaliere <kennedy.tracy@yahoo.com> 1414340478 -0400
-committer lavaliere <kennedy.tracy@yahoo.com> 1414340478 -0400
-
-    removed wagon
-
-:100644 100644 c01085fad79fd81e32129545a24e451c107ce098 bbd76b3ec78e0b7543eb39b05645a9e1529143ed M	pom.xml

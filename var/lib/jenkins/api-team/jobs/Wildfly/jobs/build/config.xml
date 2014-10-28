@@ -54,7 +54,7 @@
   <reporters/>
   <publishers>
     <hudson.tasks.ArtifactArchiver>
-      <artifacts>target/cd-wildfly-*.*.war, pom.xml, src/main/webapp/WEB-INF/web.xml</artifacts>
+      <artifacts>target/cd-wildfly-1.0.war, pom.xml, src/main/webapp/WEB-INF/web.xml</artifacts>
       <latestOnly>false</latestOnly>
       <allowEmptyArchive>false</allowEmptyArchive>
     </hudson.tasks.ArtifactArchiver>

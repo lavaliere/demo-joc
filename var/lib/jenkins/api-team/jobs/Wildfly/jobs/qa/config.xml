@@ -10,9 +10,11 @@
   </logRotator>
   <keepDependencies>false</keepDependencies>
   <properties>
-    <org.jenkinsci.plugins.mavenrepocleaner.MavenRepoCleanerProperty plugin="maven-repo-cleaner@1.2">
-      <notOnThisProject>false</notOnThisProject>
-    </org.jenkinsci.plugins.mavenrepocleaner.MavenRepoCleanerProperty>
+    <hudson.plugins.promoted__builds.JobPropertyImpl plugin="promoted-builds@2.17">
+      <activeProcessNames>
+        <string>Promote</string>
+      </activeProcessNames>
+    </hudson.plugins.promoted__builds.JobPropertyImpl>
   </properties>
   <scm class="hudson.scm.NullSCM"/>
   <canRoam>true</canRoam>
@@ -22,16 +24,6 @@
   <triggers/>
   <concurrentBuild>false</concurrentBuild>
   <builders/>
-  <publishers>
-    <hudson.tasks.BuildTrigger>
-      <childProjects>Wildfly/deploy</childProjects>
-      <threshold>
-        <name>SUCCESS</name>
-        <ordinal>0</ordinal>
-        <color>BLUE</color>
-        <completeBuild>true</completeBuild>
-      </threshold>
-    </hudson.tasks.BuildTrigger>
-  </publishers>
+  <publishers/>
   <buildWrappers/>
 </project>

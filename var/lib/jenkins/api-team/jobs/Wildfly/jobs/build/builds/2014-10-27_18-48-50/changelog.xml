@@ -1,9 +1,0 @@
-commit 0bbaf56607c4ae7be312b9cad47040c42ba2d66b
-tree 91aee382705f46f88253a3b44b08ac25dc75af4f
-parent 02541b3b597f4a1c2ba4a4daf783f8b24651602b
-author lavaliere <kennedy.tracy@yahoo.com> 1414435706 -0400
-committer lavaliere <kennedy.tracy@yahoo.com> 1414435706 -0400
-
-    edited url for nexus
-
-:100644 100644 ae9102b498f35a4aeb36fe57e82d946e34696246 51f50edb93f064c4231fe06dae5316950907332f M	pom.xml

@@ -9,7 +9,13 @@
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
-  <triggers/>
+  <triggers>
+    <hudson.plugins.promoted__builds.PromotionTrigger plugin="promoted-builds@2.17">
+      <spec></spec>
+      <jobName>Wildfly/qa</jobName>
+      <process></process>
+    </hudson.plugins.promoted__builds.PromotionTrigger>
+  </triggers>
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.plugins.copyartifact.CopyArtifact plugin="copyartifact@1.30">

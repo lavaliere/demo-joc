@@ -1,133 +1,0 @@
-Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
-Building in workspace /data/var/lib/jenkins/api-team/workspace/Wildfly/archive
-Copied 3 artifacts from "[8mha:AAAAkx+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMjgL2EQ18/KT9IPz8xJScupBLOTSoEcfQDuMU6EnAAAAA==[0mWildfly ? build" build number [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgKmGQ0s/KT9IPz8xJScupBLOTSoEcfVMTfQBrcYUBnwAAAA==[0m54
-Copied 0 artifacts from "[8mha:AAAAnR+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMiQKWHQ1c/KT9IPz8xJScupBLOTSoEc/eQU3XKIoAqCqQ8AUv1o3LIAAAA=[0mWildfly ? build ? cd-wildfly" build number [8mha:AAAAoB+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgKmEw0M/KT9IPz8xJScupBLOTSoEc/eQU3XKIoAqCqW9qog8AsKmO27UAAAA=[0m54
-[archive] $ /data/var/lib/jenkins/api-team/tools/hudson.tasks.Maven_MavenInstallation/Maven_3/bin/mvn deploy -Preleases -e
-[INFO] Error stacktraces are turned on.
-[INFO] Scanning for projects...
-[INFO]                                                                         
-[INFO] ------------------------------------------------------------------------
-[INFO] Building cd-wildfly 1.0
-[INFO] ------------------------------------------------------------------------
-Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.12.4/maven-surefire-plugin-2.12.4.pom
-1/11 KB   5/11 KB   9/11 KB   11/11 KB              Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.12.4/maven-surefire-plugin-2.12.4.pom (11 KB at 29.6 KB/sec)
-Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.12.4/surefire-2.12.4.pom
-3/14 KB    4/14 KB   8/14 KB   11/14 KB   12/14 KB   14/14 KB              Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.12.4/surefire-2.12.4.pom (14 KB at 102.8 KB/sec)
-Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.12.4/maven-surefire-plugin-2.12.4.jar
-4/30 KB    7/30 KB   10/30 KB   14/30 KB   16/30 KB   19/30 KB   20/30 KB   22/30 KB   26/30 KB   26/30 KB   27/30 KB   28/30 KB   30/30 KB              Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.12.4/maven-surefire-plugin-2.12.4.jar (30 KB at 187.1 KB/sec)
-[INFO] 
-[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cd-wildfly ---
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] skip non existing resourceDirectory /data/var/lib/jenkins/api-team/workspace/Wildfly/archive/src/main/resources
-[INFO] 
-[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ cd-wildfly ---
-[INFO] No sources to compile
-[INFO] 
-[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cd-wildfly ---
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] skip non existing resourceDirectory /data/var/lib/jenkins/api-team/workspace/Wildfly/archive/src/test/resources
-[INFO] 
-[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ cd-wildfly ---
-[INFO] No sources to compile
-[INFO] 
-[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ cd-wildfly ---
-Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.12.4/surefire-booter-2.12.4.pom
-3/3 KB              Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.12.4/surefire-booter-2.12.4.pom (3 KB at 38.0 KB/sec)
-Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.12.4/surefire-api-2.12.4.pom
-1/3 KB   3/3 KB            Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.12.4/surefire-api-2.12.4.pom (3 KB at 33.8 KB/sec)
-Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.12.4/maven-surefire-common-2.12.4.pom
-1/6 KB   5/6 KB   6/6 KB            Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.12.4/maven-surefire-common-2.12.4.pom (6 KB at 75.0 KB/sec)
-Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.1/maven-plugin-annotations-3.1.pom
-1/2 KB   2/2 KB            Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.1/maven-plugin-annotations-3.1.pom (2 KB at 18.7 KB/sec)
-Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-tools/3.1/maven-plugin-tools-3.1.pom
-1/16 KB   5/16 KB   9/16 KB   11/16 KB   15/16 KB   16/16 KB              Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-tools/3.1/maven-plugin-tools-3.1.pom (16 KB at 130.6 KB/sec)
-Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/1.3/maven-common-artifact-filters-1.3.pom
-1/4 KB     4/4 KB            Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/1.3/maven-common-artifact-filters-1.3.pom (4 KB at 51.6 KB/sec)
-Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/12/maven-shared-components-12.pom
-1/10 KB   5/10 KB   9/10 KB   10/10 KB              Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/12/maven-shared-components-12.pom (10 KB at 108.5 KB/sec)
-Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/13/maven-parent-13.pom
-4/23 KB    8/23 KB   12/23 KB   14/23 KB   18/23 KB   19/23 KB   20/23 KB   23/23 KB              Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/13/maven-parent-13.pom (23 KB at 210.5 KB/sec)
-Downloading: http://repo.maven.apache.org/maven2/org/apache/apache/6/apache-6.pom
-4/13 KB    8/13 KB   12/13 KB   13/13 KB              Downloaded: http://repo.maven.apache.org/maven2/org/apache/apache/6/apache-6.pom (13 KB at 183.8 KB/sec)
-Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.12.4/surefire-booter-2.12.4.jar
-Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.12.4/surefire-api-2.12.4.jar
-Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.12.4/maven-surefire-common-2.12.4.jar
-Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/1.3/maven-common-artifact-filters-1.3.jar
-Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.1/maven-plugin-annotations-3.1.jar
-1/34 KB    5/34 KB   9/34 KB   13/34 KB   17/34 KB   18/34 KB   22/34 KB   23/34 KB   26/34 KB   30/34 KB   34/34 KB   34/34 KB   34/34 KB   3/257 KB   34/34 KB   7/257 KB   34/34 KB   11/257 KB   34/34 KB   14/257 KB   34/34 KB   14/257 KB   3/115 KB   34/34 KB   14/257 KB   7/115 KB   34/34 KB   14/257 KB   11/115 KB   34/34 KB   14/257 KB   14/115 KB   34/34 KB   3/31 KB   14/257 KB   14/115 KB   34/34 KB   3/31 KB   14/257 KB   14/115 KB   3/14 KB   34/34 KB   7/31 KB   14/257 KB   14/115 KB   3/14 KB   34/34 KB   7/31 KB   14/257 KB   14/115 KB   7/14 KB   34/34 KB   8/31 KB   14/257 KB   14/115 KB   7/14 KB   34/34 KB   8/31 KB   14/257 KB   14/115 KB   8/14 KB   34/34 KB   12/31 KB   14/257 KB   14/115 KB   8/14 KB   34/34 KB   12/31 KB   14/257 KB   14/115 KB   12/14 KB   34/34 KB   14/31 KB   14/257 KB   14/115 KB   14/14 KB   34/34 KB   14/31 KB   14/257 KB   14/115 KB   14/14 KB   34/34 KB   14/31 KB   16/257 KB   14/115 KB   14/14 KB   34/34 KB   14/31 KB   19/257 KB   14/115 KB   14/14 KB   34/34 KB   14/31 KB   20/257 KB   14/115 KB   14/14 KB   34/34 KB   14/31 KB   23/257 KB   14/115 KB   14/14 KB   34/34 KB   14/31 KB   23/257 KB   15/115 KB   14/14 KB   34/34 KB   14/31 KB   23/257 KB   19/115 KB   14/14 KB   34/34 KB   14/31 KB   23/257 KB   23/115 KB   14/14 KB   34/34 KB   14/31 KB   23/257 KB   27/115 KB   14/14 KB   34/34 KB   14/31 KB   23/257 KB   27/115 KB   14/14 KB                                                            Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.12.4/surefire-booter-2.12.4.jar (34 KB at 289.5 KB/sec)
-14/31 KB   23/257 KB   27/115 KB   14/14 KB              15/31 KB   23/257 KB   27/115 KB   14/14 KB   19/31 KB   23/257 KB   27/115 KB   14/14 KB   23/31 KB   23/257 KB   27/115 KB   14/14 KB   27/31 KB   23/257 KB   27/115 KB   14/14 KB   27/31 KB   23/257 KB   27/115 KB   14/14 KB   27/31 KB   27/257 KB   27/115 KB   14/14 KB   27/31 KB   27/257 KB   27/115 KB   14/14 KB   27/31 KB   31/257 KB   27/115 KB   14/14 KB   27/31 KB   34/257 KB   27/115 KB   14/14 KB   27/31 KB   34/257 KB   31/115 KB   14/14 KB   27/31 KB   34/257 KB   31/115 KB   14/14 KB   27/31 KB   38/257 KB   35/115 KB   14/14 KB   27/31 KB   38/257 KB   35/115 KB   14/14 KB   27/31 KB   41/257 KB   35/115 KB   14/14 KB   27/31 KB   41/257 KB   39/115 KB   14/14 KB   27/31 KB   41/257 KB   39/115 KB   14/14 KB   27/31 KB   41/257 KB   41/115 KB   14/14 KB   27/31 KB   41/257 KB   42/115 KB   14/14 KB   27/31 KB   41/257 KB   46/115 KB   14/14 KB   27/31 KB   41/257 KB   46/115 KB   14/14 KB   28/31 KB   41/257 KB   46/115 KB   14/14 KB   30/31 KB   41/257 KB   46/115 KB   14/14 KB   31/31 KB   41/257 KB   46/115 KB   14/14 KB                                                 Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.1/maven-plugin-annotations-3.1.jar (14 KB at 90.1 KB/sec)
-31/31 KB   42/257 KB   46/115 KB              31/31 KB   46/257 KB   46/115 KB   31/31 KB   47/257 KB   46/115 KB   31/31 KB   50/257 KB   46/115 KB   31/31 KB   50/257 KB   50/115 KB   31/31 KB   54/257 KB   50/115 KB   31/31 KB   55/257 KB   53/115 KB   31/31 KB   55/257 KB   53/115 KB   31/31 KB   58/257 KB   55/115 KB   31/31 KB   58/257 KB   55/115 KB   31/31 KB   61/257 KB   59/115 KB   31/31 KB   61/257 KB   59/115 KB   31/31 KB   61/257 KB   62/115 KB   31/31 KB   61/257 KB   65/115 KB   31/31 KB   65/257 KB   65/115 KB   31/31 KB   66/257 KB   65/115 KB   31/31 KB   66/257 KB   69/115 KB   31/31 KB   66/257 KB   73/115 KB   31/31 KB   66/257 KB   74/115 KB   31/31 KB   66/257 KB   76/115 KB   31/31 KB   68/257 KB   76/115 KB   31/31 KB   70/257 KB   76/115 KB   31/31 KB   73/257 KB   76/115 KB   31/31 KB   74/257 KB   76/115 KB                                      Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/1.3/maven-common-artifact-filters-1.3.jar (31 KB at 162.2 KB/sec)
-74/257 KB   77/115 KB              74/257 KB   80/115 KB   74/257 KB   84/115 KB   78/257 KB   84/115 KB   78/257 KB   85/115 KB   81/257 KB   85/115 KB   85/257 KB   85/115 KB   85/257 KB   87/115 KB   88/257 KB   87/115 KB   88/257 KB   88/115 KB   91/257 KB   88/115 KB   91/257 KB   91/115 KB   92/257 KB   91/115 KB   92/257 KB   92/115 KB   92/257 KB   93/115 KB   92/257 KB   97/115 KB   92/257 KB   101/115 KB   96/257 KB   101/115 KB   96/257 KB   101/115 KB   100/257 KB   101/115 KB   103/257 KB   101/115 KB   103/257 KB   103/115 KB   103/257 KB   104/115 KB   103/257 KB   108/115 KB   103/257 KB   108/115 KB   107/257 KB   108/115 KB   107/257 KB   112/115 KB   111/257 KB   112/115 KB   111/257 KB   115/115 KB   111/257 KB   115/115 KB   115/257 KB   115/115 KB   115/257 KB   115/115 KB   116/257 KB   115/115 KB   120/257 KB   115/115 KB   124/257 KB   115/115 KB   128/257 KB   115/115 KB   132/257 KB   115/115 KB   136/257 KB   115/115 KB   139/257 KB   115/115 KB   141/257 KB   115/115 KB   145/257 KB   115/115 KB   149/257 KB   115/115 KB   153/257 KB   115/115 KB   157/257 KB   115/115 KB   161/257 KB   115/115 KB   165/257 KB   115/115 KB   169/257 KB   115/115 KB   173/257 KB   115/115 KB   174/257 KB   115/115 KB                             Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.12.4/surefire-api-2.12.4.jar (115 KB at 443.3 KB/sec)
-178/257 KB                180/257 KB   184/257 KB   185/257 KB   189/257 KB   193/257 KB   197/257 KB   201/257 KB   204/257 KB   206/257 KB   207/257 KB   211/257 KB   215/257 KB   219/257 KB   223/257 KB   227/257 KB   231/257 KB   235/257 KB   239/257 KB   243/257 KB   247/257 KB   250/257 KB   254/257 KB   254/257 KB   257/257 KB                Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.12.4/maven-surefire-common-2.12.4.jar (257 KB at 754.3 KB/sec)
-[INFO] No tests to run.
-[INFO] 
-[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-war-plugin:2.2:war (default-war) @ cd-wildfly ---
-[INFO] Packaging webapp
-[INFO] Assembling webapp [cd-wildfly] in [/data/var/lib/jenkins/api-team/workspace/Wildfly/archive/target/cd-wildfly-1.0]
-[INFO] Processing war project
-[INFO] Copying webapp resources [/data/var/lib/jenkins/api-team/workspace/Wildfly/archive/src/main/webapp]
-[INFO] Webapp assembled in [46 msecs]
-[INFO] Building war: /data/var/lib/jenkins/api-team/workspace/Wildfly/archive/target/cd-wildfly-1.0.war
-[INFO] WEB-INF/web.xml already added, skipping
-[INFO] 
-[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-install-plugin:2.4:install (default-install) @ cd-wildfly ---
-[INFO] Installing /data/var/lib/jenkins/api-team/workspace/Wildfly/archive/target/cd-wildfly-1.0.war to /home/jenkins/.m2/repository/cd-wildfly/cd-wildfly/1.0/cd-wildfly-1.0.war
-[INFO] Installing /data/var/lib/jenkins/api-team/workspace/Wildfly/archive/pom.xml to /home/jenkins/.m2/repository/cd-wildfly/cd-wildfly/1.0/cd-wildfly-1.0.pom
-[INFO] 
-[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-deploy-plugin:2.7:deploy (default-deploy) @ cd-wildfly ---
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time: 6.143 s
-[INFO] Finished at: 2014-10-27T18:54:07+00:00
-[INFO] Final Memory: 19M/181M
-[INFO] ------------------------------------------------------------------------
-[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] Failed to execute goal org.apache.maven.plugins:maven-deploy-plugin:2.7:deploy (default-deploy) on project cd-wildfly: Failed to deploy artifacts/metadata: No connector available to access repository wildfly-release (nexus.nexus.dev.wildfly.io:8081/nexus/content/repositories/wildfly-release/) of type default using the available factories WagonRepositoryConnectorFactory -> [Help 1]
-org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-deploy-plugin:2.7:deploy (default-deploy) on project cd-wildfly: Failed to deploy artifacts/metadata: No connector available to access repository wildfly-release (nexus.nexus.dev.wildfly.io:8081/nexus/content/repositories/wildfly-release/) of type default using the available factories WagonRepositoryConnectorFactory
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:216)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
-	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
-	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
-	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
-	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:120)
-	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:347)
-	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:154)
-	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:584)
-	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:213)
-	at org.apache.maven.cli.MavenCli.main(MavenCli.java:157)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
-Caused by: org.apache.maven.plugin.MojoExecutionException: Failed to deploy artifacts/metadata: No connector available to access repository wildfly-release (nexus.nexus.dev.wildfly.io:8081/nexus/content/repositories/wildfly-release/) of type default using the available factories WagonRepositoryConnectorFactory
-	at org.apache.maven.plugin.deploy.DeployMojo.execute(DeployMojo.java:193)
-	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:132)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
-	... 19 more
-Caused by: org.apache.maven.artifact.deployer.ArtifactDeploymentException: Failed to deploy artifacts/metadata: No connector available to access repository wildfly-release (nexus.nexus.dev.wildfly.io:8081/nexus/content/repositories/wildfly-release/) of type default using the available factories WagonRepositoryConnectorFactory
-	at org.apache.maven.artifact.deployer.DefaultArtifactDeployer.deploy(DefaultArtifactDeployer.java:143)
-	at org.apache.maven.plugin.deploy.AbstractDeployMojo.deploy(AbstractDeployMojo.java:167)
-	at org.apache.maven.plugin.deploy.DeployMojo.execute(DeployMojo.java:157)
-	... 21 more
-Caused by: org.eclipse.aether.deployment.DeploymentException: Failed to deploy artifacts/metadata: No connector available to access repository wildfly-release (nexus.nexus.dev.wildfly.io:8081/nexus/content/repositories/wildfly-release/) of type default using the available factories WagonRepositoryConnectorFactory
-	at org.eclipse.aether.internal.impl.DefaultDeployer.deploy(DefaultDeployer.java:292)
-	at org.eclipse.aether.internal.impl.DefaultDeployer.deploy(DefaultDeployer.java:268)
-	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.deploy(DefaultRepositorySystem.java:413)
-	at org.apache.maven.artifact.deployer.DefaultArtifactDeployer.deploy(DefaultArtifactDeployer.java:139)
-	... 23 more
-Caused by: org.eclipse.aether.transfer.NoRepositoryConnectorException: No connector available to access repository wildfly-release (nexus.nexus.dev.wildfly.io:8081/nexus/content/repositories/wildfly-release/) of type default using the available factories WagonRepositoryConnectorFactory
-	at org.eclipse.aether.internal.impl.DefaultRepositoryConnectorProvider.newRepositoryConnector(DefaultRepositoryConnectorProvider.java:193)
-	at org.eclipse.aether.internal.impl.DefaultDeployer.deploy(DefaultDeployer.java:288)
-	... 26 more
-[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 
-[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 
-[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
-Build step 'Invoke top-level Maven targets' marked build as failure
-Finished: FAILURE

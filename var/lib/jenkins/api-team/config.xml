@@ -9,7 +9,9 @@
   <mode>NORMAL</mode>
   <useSecurity>true</useSecurity>
   <authorizationStrategy class="hudson.security.AuthorizationStrategy$Unsecured"/>
-  <securityRealm class="hudson.security.SecurityRealm$None"/>
+  <securityRealm class="hudson.security.PAMSecurityRealm" plugin="pam-auth@1.1">
+    <serviceName>sshd</serviceName>
+  </securityRealm>
   <disableRememberMe>false</disableRememberMe>
   <projectNamingStrategy class="jenkins.model.ProjectNamingStrategy$DefaultProjectNamingStrategy"/>
   <workspaceDir>${JENKINS_HOME}/workspace/${ITEM_FULLNAME}</workspaceDir>
@@ -46,7 +48,7 @@
     </hudson.model.AllView>
   </views>
   <primaryView>All</primaryView>
-  <slaveAgentPort>0</slaveAgentPort>
+  <slaveAgentPort>443</slaveAgentPort>
   <label></label>
   <nodeProperties/>
   <globalNodeProperties/>
