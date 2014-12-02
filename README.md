@@ -31,6 +31,7 @@ To run JE in an HA setup with mounted storage for its $JENKINS_HOME:
     docker run -d --dns=172.17.42.1 --name api-team-2 --volumes-from storage -e JENKINS_HOME=/data/var/lib/jenkins/api-team lavaliere/jenkins-enterprise --prefix="/"
 
 To create shared slaves:
+
     docker run -d --dns=172.17.42.1 --name slave-1 apemberton/jenkins-slave
     docker run -d --dns=172.17.42.1 --name slave-2 apemberton/jenkins-slave
 
@@ -39,6 +40,7 @@ To allow a load balancer to run in front of these containers:
     docker run -i -t --dns=172.17.42.1 -p 80:80 --name proxy lavaliere/demo-joc-haproxy  /bin/bash
 
 Then:
+
     service haproxy start
 
 To access the applications, you'll also need to edit your hosts file. On a Mac, this can be found under /private/etc/hosts. Add the following lines to this file:
@@ -73,11 +75,12 @@ If deploying an artifact to Nexus:
     docker run -d -p 8081:8081 --dns=172.17.42.1 --name nexus lavaliere/nexus
 
 Username: admin
+
 Password: admin123
 
 You'll also have to add this line to your hosts file:
 
-    192.168.59.103  nexus.beedemo.io'
+    192.168.59.103  nexus.beedemo.io
 
 If deploying to a Wildfly container:
 
@@ -85,6 +88,7 @@ If deploying to a Wildfly container:
     docker run --dns=172.17.42.1 -p 9991:9990 --name wildfly-2 -d lavaliere/wildfly
 
 Username: alexis
+
 Password: hassler
 
 You'll also have to add this line to your hosts file:
