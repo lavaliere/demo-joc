@@ -7,7 +7,6 @@ This demo features a CD pipeline for a Wildfly application, located at https://g
 
 
 
-
 Usage:
 -----
 
@@ -50,6 +49,8 @@ To access the applications, you'll also need to edit your hosts file. On a Mac, 
     192.168.59.103  jebc.beedemo.io
 
 Where 192.168.59.103 is the ip address for boot2docker.
+
+joc.beedemo.io will take you to the UI for Jenkins Operations Center, while jebc.beedemo.io will take you to the UI for Jenkins Enterprise.
 
 
 Optional:
