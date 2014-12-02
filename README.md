@@ -197,3 +197,15 @@ Then run
 To mass remove all stopped Docker containers:
 
     docker rm $(docker ps -a -q)
+
+Docker Hub
+----------
+
+To view the Dockerfile and repository for the Jenkins Operations Center image:
+    
+    https://registry.hub.docker.com/u/lavaliere/jenkins-operations-center/
+
+To view the Dockerfile and repository for the Jenkins Enterprise image:
+
+    https://registry.hub.docker.com/u/lavaliere/jenkins-enterprise/
+
