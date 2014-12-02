@@ -2,6 +2,7 @@
 ---------
 * Updated README.md with detailed instructions on the Docker demo usage and how to customize it
 * Created changelog.md
+* Created automated build repos for Dockerfiles for JE and JOC so they get updated to the 11.14 releases
 
 10/28/2014
 ---------
