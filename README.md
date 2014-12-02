@@ -93,12 +93,13 @@ Username: alexis
 Password: hassler
 
 You'll also have to add this line to your hosts file:
+    
     192.168.59.103  wildfly.beedemo.io
 
 
 If running a custom setup, editing the HAproxy.cfg:
 
-docker attach proxy
+    docker attach proxy
     sudo vi /etc/haproxy/haproxy.cfg
     service haproxy restart
 
@@ -172,6 +173,11 @@ Here is a sample HAproxy config with Nexus, Wildfly, and JE/JOC running in a hig
     server nexus nexus.nexus.dev.beedemo.io:8081
 
 
+If running a forked Docker image, be sure to edit any associated SkyDock urls to refer to your Docker hub id and the new image name. The syntax for a SkyDock URL is:
+
+    <CONTAINER_NAME>.<IMAGE_NAME>.<ENVIRONMENT>.<DOMAIN>
+
+This demo's environment name is "dev" and the domain is "beedemo.io".
 
 
 Tricks for working with Docker/boot2docker
@@ -184,7 +190,7 @@ docker-enter + NSEnter: https://github.com/jpetazzo/nsenter
     boot2docker ssh -t sudo /var/lib/boot2docker/docker-enter "$CONTAINER_NAME"
 
 
-2. If you're using a Mac, you've' restarted boot2docker and the ip address has changed, go to /etc/hosts and edit ip address to the new b2d address.
+2. If you're using a Mac, you've restarted boot2docker and the ip address has changed, go to /etc/hosts and edit ip address to the new b2d address.
 
 Then run 
 
