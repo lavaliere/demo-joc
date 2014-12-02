@@ -204,6 +204,10 @@ To mass remove all stopped Docker containers:
 
     docker rm $(docker ps -a -q)
 
+4. If you restart a conatiner, you'll also have to restart the HAproxy service so that HAproxy can get the new IP address for the container from SkyDock.
+
+5. If boot2docker is left running for more than a few days, it will need to be restarted because the VirtualBox VM's clock will be out of sync with the actual local time. This can cause the license for Jenkins Enterprise/JOC to appear to have been issued in the future, which will make the license invalid. No new licenses issued during this mis-sync will work either, as they'll be dated for the correct time but out of sync with the server/VM's internal clock.
+
 Docker Hub
 ----------
 
