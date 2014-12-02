@@ -177,8 +177,7 @@ Tricks for working with Docker/boot2docker
 docker-enter + NSEnter: https://github.com/jpetazzo/nsenter
 
     boot2docker ssh -t sudo /var/lib/boot2docker/docker-enter "$CONTAINER_NAME"
-    apt-get install vim
-    vim /etc/ssh/ssh_config
+
 
 2. If you're using a Mac, you've' restarted boot2docker and the ip address has changed, go to /etc/hosts and edit ip address to the new b2d address.
 
