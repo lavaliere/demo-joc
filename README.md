@@ -172,6 +172,7 @@ Here is a sample HAproxy config with Nexus, Wildfly, and JE/JOC running in a hig
     backend nexus
     server nexus nexus.nexus.dev.beedemo.io:8081
 
+By default, the Wildfly and Nexus backends are commented out.
 
 If running a forked Docker image, be sure to edit any associated SkyDock urls to refer to your Docker hub id and the new image name. The syntax for a SkyDock URL is:
 
@@ -187,6 +188,7 @@ Tricks for working with Docker/boot2docker
 
 docker-enter + NSEnter: https://github.com/jpetazzo/nsenter
 
+    docker run --rm -v /usr/local/bin:/target jpetazzo/nsenter
     boot2docker ssh -t sudo /var/lib/boot2docker/docker-enter "$CONTAINER_NAME"
 
 
