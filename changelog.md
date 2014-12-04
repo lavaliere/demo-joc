@@ -3,6 +3,14 @@
 * Updated JOC $JENKINS_HOME files
 * Updated slave agent port on JE
 * Edited README.md with more info/tips
+* Updated JE and JOC homes with new configs
+* Changed Jenkins location configs to the host file names - will it break?
+
+-To do:
+* Fix JOC config - update to JOC 1.6 seemed to have corrupted the home
+* Fix file perm problem for the workflow executor - mvn doesn't have sh execute permissions
+* Finish migrating jobs from the jockey.local demo
+* Need to add line in dockerfiles to edit images' host files
 
 12/2/2014
 ---------
