@@ -60,7 +60,11 @@ To expose the mounted storage volume to your local machine:
  
     docker run --rm -v /usr/local/bin/docker:/docker -v /var/run/docker.sock:/docker.sock svendowideit/samba storage
 
-To connect to it on an Apple machine, open up finder and click on the "Go">>"Connect to Server" menu item. Then
+Note: I have found that as the $JENKINS_HOME grows, samba seems to struggle to allow files to be read through CIFS, making it impossible to commit changes from my local machine. Instead, I've been having to NSenter a running instance of JE or JOC and commit changes through the mounted folder in the container.
+
+However, in case you don't run into this same problem:
+
+To connect to the samba server contain to your Apple machine, open up finder and click on the "Go">>"Connect to Server" menu item. Then
 enter your boot2docker ip address as the server address:
 
     cifs://192.168.59.103/
@@ -188,8 +192,17 @@ Tricks for working with Docker/boot2docker
 
 docker-enter + NSEnter: https://github.com/jpetazzo/nsenter
 
+Do this by first entering your boot2docker VM:
+
+    boot2docker ssh
+
+Then install NSenter:
+
     docker run --rm -v /usr/local/bin:/target jpetazzo/nsenter
-    boot2docker ssh -t sudo /var/lib/boot2docker/docker-enter "$CONTAINER_NAME"
+    
+Finally, use NSEnter to enter your running container:
+
+    docker-enter "$CONTAINER_NAME"
 
 
 2. If you're using a Mac, you've restarted boot2docker and the ip address has changed, go to /etc/hosts and edit ip address to the new b2d address.
@@ -209,6 +222,8 @@ To mass remove all stopped Docker containers:
 4. If you restart a conatiner, you'll also have to restart the HAproxy service so that HAproxy can get the new IP address for the container from SkyDock.
 
 5. If boot2docker is left running for more than a few days, it will need to be restarted because the VirtualBox VM's clock will be out of sync with the actual local time. This can cause the license for Jenkins Enterprise/JOC to appear to have been issued in the future, which will make the license invalid. No new licenses issued during this mis-sync will work either, as they'll be dated for the correct time but out of sync with the server/VM's internal clock.
+
+6. To exit a running container WITHOUT killing it, use Ctrl+P followed by Ctrl+Q, rather than Ctrl+C. 
 
 Docker Hub
 ----------

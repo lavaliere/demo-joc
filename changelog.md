@@ -1,3 +1,9 @@
+12/4/2014
+--------
+* Updated JOC $JENKINS_HOME files
+* Updated slave agent port on JE
+* Edited README.md with more info/tips
+
 12/2/2014
 ---------
 * Updated README.md with detailed instructions on the Docker demo usage and how to customize it
