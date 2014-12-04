@@ -5,22 +5,29 @@ Running: Allocate node : Body : Start
 Running: Git
  > git rev-parse --is-inside-work-tree # timeout=10
 Fetching changes from the remote Git repository
- > git config remote.origin.url https://github.com/jenkinsci/workflow-plugin-pipeline-demo.git # timeout=10
-Fetching upstream changes from https://github.com/jenkinsci/workflow-plugin-pipeline-demo.git
+ > git config remote.origin.url https://github.com/lavaliere/workflow-plugin-pipeline-demo.git # timeout=10
+Fetching upstream changes from https://github.com/lavaliere/workflow-plugin-pipeline-demo.git
  > git --version # timeout=10
- > git fetch --tags --progress https://github.com/jenkinsci/workflow-plugin-pipeline-demo.git +refs/heads/*:refs/remotes/origin/*
+ > git fetch --tags --progress https://github.com/lavaliere/workflow-plugin-pipeline-demo.git +refs/heads/*:refs/remotes/origin/*
  > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
  > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
-Checking out Revision 641a3491d49570f4f8b9e3e583eb71bad1aa493f (refs/remotes/origin/master)
+Checking out Revision 93e099e099ec78b18d732dc2784edab594ca4b6d (refs/remotes/origin/master)
  > git config core.sparsecheckout # timeout=10
- > git checkout -f 641a3491d49570f4f8b9e3e583eb71bad1aa493f
- > git rev-list 641a3491d49570f4f8b9e3e583eb71bad1aa493f # timeout=10
+ > git checkout -f 93e099e099ec78b18d732dc2784edab594ca4b6d
 Running: Loaded script: flow.groovy
 Running: Evaluate a Groovy source file into the workflow script : Body : Start
 Running: Evaluate a Groovy source file into the workflow script : Body : End
 Running: Install a tool
+Unpacking http://archive.apache.org/dist/maven/binaries/apache-maven-3.2.2-bin.zip to /usr/bin/mvn on Jenkins
+Running: Dev
+Entering stage Dev
+Proceeding
+Running: Shell Script
+[cd-workflow] Running shell script
++ mvn -o clean package
+/data/var/lib/jenkins/api-team/workspace/cd-workflow/.74697cde/script.sh: 2: /data/var/lib/jenkins/api-team/workspace/cd-workflow/.74697cde/script.sh: mvn: Permission denied
 Running: Allocate node : Body : End
 Running: Allocate node : End
 Running: End of Workflow
-ERROR: No tool named Maven 3.x found
+ERROR: script returned exit code 127
 [8mha:AAAAWB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mFinished: FAILURE
