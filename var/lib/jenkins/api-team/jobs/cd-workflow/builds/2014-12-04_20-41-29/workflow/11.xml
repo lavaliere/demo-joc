@@ -1,17 +1,22 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <org.jenkinsci.plugins.workflow.support.storage.SimpleXStreamFlowNodeStorage_-Tag plugin="workflow-support@1.0">
-  <node class="org.jenkinsci.plugins.workflow.cps.nodes.StepEndNode" plugin="workflow-cps@1.0">
+  <node class="org.jenkinsci.plugins.workflow.cps.nodes.StepAtomNode" plugin="workflow-cps@1.0">
     <parents class="com.google.common.collect.ImmutableList">
-      <org.jenkinsci.plugins.workflow.cps.nodes.StepAtomNode>7</org.jenkinsci.plugins.workflow.cps.nodes.StepAtomNode>
+      <org.jenkinsci.plugins.workflow.cps.nodes.StepAtomNode>10</org.jenkinsci.plugins.workflow.cps.nodes.StepAtomNode>
     </parents>
-    <id>8</id>
-    <start class="org.jenkinsci.plugins.workflow.cps.nodes.StepStartNode">4</start>
+    <id>11</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.durable_task.ShellStep</descriptorId>
   </node>
   <actions>
-    <org.jenkinsci.plugins.workflow.actions.BodyInvocationAction plugin="workflow-api@1.0"/>
+    <org.jenkinsci.plugins.workflow.support.actions.LogActionImpl>
+      <charset>US-ASCII</charset>
+    </org.jenkinsci.plugins.workflow.support.actions.LogActionImpl>
+    <org.jenkinsci.plugins.workflow.actions.TimingAction plugin="workflow-api@1.0">
+      <startTime>1417725690338</startTime>
+    </org.jenkinsci.plugins.workflow.actions.TimingAction>
     <org.jenkinsci.plugins.workflow.actions.ErrorAction plugin="workflow-api@1.0">
       <error class="hudson.AbortException">
-        <detailMessage>script returned exit code 1</detailMessage>
+        <detailMessage>script returned exit code 127</detailMessage>
         <stackTrace>
           <trace>org.jenkinsci.plugins.workflow.steps.durable_task.DurableTaskStep$Execution.check(DurableTaskStep.java:205)</trace>
           <trace>org.jenkinsci.plugins.workflow.steps.durable_task.DurableTaskStep$Execution.run(DurableTaskStep.java:159)</trace>
@@ -29,8 +34,5 @@
         </suppressedExceptions>
       </error>
     </org.jenkinsci.plugins.workflow.actions.ErrorAction>
-    <org.jenkinsci.plugins.workflow.actions.TimingAction plugin="workflow-api@1.0">
-      <startTime>1417724646702</startTime>
-    </org.jenkinsci.plugins.workflow.actions.TimingAction>
   </actions>
 </org.jenkinsci.plugins.workflow.support.storage.SimpleXStreamFlowNodeStorage_-Tag>
