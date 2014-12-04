@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: stephenc
+Build-Jdk: 1.7.0_71
+Extension-Name: operations-center-clusterops
+Specification-Title: Provides cluster operations for executing against
+  client masters connected to Jenkins Operations Center.
+Implementation-Title: operations-center-clusterops
+Implementation-Version: 1.6
+Group-Id: com.cloudbees.operations-center.server
+Short-Name: operations-center-clusterops
+Long-Name: Operations Center Server Cluster Operations
+Url: http://release-notes.cloudbees.com/product/Operations+Center+Clus
+ ter+Operations+Plugin
+Plugin-Version: 1.6
+Hudson-Version: 1.580.1
+Jenkins-Version: 1.580.1
+Plugin-Dependencies: operations-center-server:1.6,infradna-backup:3.20
+ ,nectar-license:6.0,operations-center-context:1.6,icon-shim:1.0.4,ope
+ rations-center-updatecenter:1.6,cloudbees-license:6.0,operations-cent
+ er-license:1.6,token-macro:1.10
+Plugin-Developers: 
+

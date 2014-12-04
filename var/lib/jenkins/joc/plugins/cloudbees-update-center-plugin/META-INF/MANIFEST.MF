@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Archiver-Version: Plexus Archiver
 Created-By: Apache Maven
 Built-By: jenkins
-Build-Jdk: 1.7.0_51
+Build-Jdk: 1.7.0_65
 Extension-Name: cloudbees-update-center-plugin
 Specification-Title: This plugin provides Jenkins with the ability to 
  host update centers. Administrators can ensure that teams using Jenki
@@ -12,7 +12,7 @@ Specification-Title: This plugin provides Jenkins with the ability to
      Administrators easily setup an Update Center by adding a new job 
  type called "Update Center" and uploading the right artifacts.
 Implementation-Title: cloudbees-update-center-plugin
-Implementation-Version: 4.12
+Implementation-Version: 4.15
 Plugin-Class: com.cloudbees.plugins.updatecenter.PluginImpl
 Group-Id: com.cloudbees.jenkins.plugins
 Short-Name: cloudbees-update-center-plugin
@@ -20,10 +20,10 @@ Long-Name: CloudBees Update Center Plugin
 Url: http://release-notes.cloudbees.com/product/Custom+Update+Center+P
  lugin
 Compatible-Since-Version: 4.0
-Plugin-Version: 4.12
-Hudson-Version: 1.509.4
-Jenkins-Version: 1.509.4
-Plugin-Dependencies: nectar-license:5.4,nectar-rbac:4.5.1;resolution:=
- optional,cloudbees-license:5.3,async-http-client:1.7.8
+Plugin-Version: 4.15
+Hudson-Version: 1.532.3
+Jenkins-Version: 1.532.3
+Plugin-Dependencies: nectar-rbac:4.5.1;resolution:=optional,nectar-lic
+ ense:5.4,async-http-client:1.7.8,cloudbees-license:5.3
 Plugin-Developers: 
 

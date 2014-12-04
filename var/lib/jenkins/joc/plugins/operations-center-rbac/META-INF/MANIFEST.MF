@@ -2,22 +2,22 @@ Manifest-Version: 1.0
 Archiver-Version: Plexus Archiver
 Created-By: Apache Maven
 Built-By: stephenc
-Build-Jdk: 1.7.0_51
+Build-Jdk: 1.7.0_71
 Extension-Name: operations-center-rbac
 Specification-Title: Enables RBAC functionality for Operations Center 
  Server top level items.
 Implementation-Title: operations-center-rbac
-Implementation-Version: 1.5.1
+Implementation-Version: 1.6
 Group-Id: com.cloudbees.operations-center.server
 Short-Name: operations-center-rbac
 Long-Name: Operations Center Server Role Based Access Control
 Url: http://release-notes.cloudbees.com/product/Operations+Center+RBAC
  +Plugin
-Plugin-Version: 1.5.1
+Plugin-Version: 1.6
 Hudson-Version: 1.554.1
 Jenkins-Version: 1.554.1
-Plugin-Dependencies: operations-center-license:1.5,cloudbees-license:5
- .3,nectar-rbac:4.8,operations-center-context:1.5,operations-center-se
- rver:1.5.1,nectar-license:5.4
+Plugin-Dependencies: operations-center-server:1.6,nectar-license:6.0,o
+ perations-center-context:1.6,nectar-rbac:4.12,cloudbees-license:6.0,o
+ perations-center-license:1.6
 Plugin-Developers: 
 

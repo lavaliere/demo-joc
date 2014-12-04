@@ -3,20 +3,18 @@
   ~ Copyright © 2011-2013 CloudBees, Inc.
   ~ This is proprietary code. All rights reserved.
   -->
-
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>com.cloudbees.operations-center.common</groupId>
-    <artifactId>operations-center-parent</artifactId>
-    <version>1.5</version>
-    <relativePath>../operations-center-parent/pom.xml</relativePath>
+    <groupId>com.cloudbees.operations-center.server</groupId>
+    <artifactId>operations-center-parent-server</artifactId>
+    <version>1.6.7</version>
+    <relativePath>../operations-center-parent-server/pom.xml</relativePath>
   </parent>
 
-  <groupId>com.cloudbees.operations-center.server</groupId>
   <artifactId>operations-center-rbac</artifactId>
-  <version>1.5.1</version>
+  <version>1.6</version>
   <packaging>hpi</packaging>
 
   <name>Operations Center Server Role Based Access Control</name>
@@ -26,9 +24,9 @@
   <url>http://release-notes.cloudbees.com/product/Operations+Center+RBAC+Plugin</url>
 
   <scm>
-    <connection>scm:git:git@git.cloudbees.com:cloudbees/operations-center-rbac.git</connection>
-    <developerConnection>scm:git:git@git.cloudbees.com:cloudbees/operations-center-rbac.git</developerConnection>
-    <tag>operations-center-rbac-1.5.1</tag>
+    <connection>scm:git:ssh://git@github.com/cloudbees/${project.artifactId}.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/cloudbees/${project.artifactId}.git</developerConnection>
+    <tag>operations-center-rbac-1.6</tag>
   </scm>
 
   <properties>
@@ -49,17 +47,17 @@
     <dependency>
       <groupId>com.cloudbees.operations-center.common</groupId>
       <artifactId>operations-center-context</artifactId>
-      <version>1.5</version>
+      <version>1.6</version>
     </dependency>
     <dependency>
       <groupId>com.cloudbees.operations-center.server</groupId>
       <artifactId>operations-center-server</artifactId>
-      <version>1.5.1</version>
+      <version>1.6</version>
     </dependency>
     <dependency>
       <groupId>com.cloudbees.operations-center.server</groupId>
       <artifactId>operations-center-license</artifactId>
-      <version>1.5</version>
+      <version>1.6</version>
     </dependency>
     <dependency>
       <groupId>com.cloudbees.nectar.plugins</groupId>

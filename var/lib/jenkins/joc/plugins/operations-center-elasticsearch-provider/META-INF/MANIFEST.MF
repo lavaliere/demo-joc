@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: stephenc
+Build-Jdk: 1.7.0_71
+Extension-Name: operations-center-elasticsearch-provider
+Specification-Title: Extensible framework for location Elasticsearch i
+ nstances.
+Implementation-Title: operations-center-elasticsearch-provider
+Implementation-Version: 1.6
+Group-Id: com.cloudbees.operations-center.server
+Short-Name: operations-center-elasticsearch-provider
+Long-Name: Operations Center Elasticsearch Provider
+Url: http://release-notes.cloudbees.com/product/Operations+Center+Elas
+ ticsearch+Provider+Plugin
+Plugin-Version: 1.6
+Hudson-Version: 1.580.1
+Jenkins-Version: 1.580.1
+Plugin-Developers: 
+

@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: stephenc
+Build-Jdk: 1.7.0_71
+Extension-Name: operations-center-embedded-elasticsearch
+Specification-Title: Embeds an elasticsearch instance in Jenkins Opera
+ tions Center
+Implementation-Title: operations-center-embedded-elasticsearch
+Implementation-Version: 1.6-1.3.5.0
+Group-Id: com.cloudbees.operations-center.server
+Short-Name: operations-center-embedded-elasticsearch
+Long-Name: Operations Center Embedded elasticsearch
+Url: http://release-notes.cloudbees.com/product/Operations+Center+Embe
+ dded+elasticsearch
+Plugin-Version: 1.6-1.3.5.0
+Hudson-Version: 1.580.1
+Jenkins-Version: 1.580.1
+Plugin-Dependencies: operations-center-elasticsearch-provider:1.6,infr
+ adna-backup:3.20
+Plugin-Developers: 
+

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2011-2014 CloudBees, Inc.
+  ~ This is proprietary code. All rights reserved.
+  -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.cloudbees.operations-center.server</groupId>
+    <artifactId>operations-center-parent-server</artifactId>
+    <version>1.6.7</version>
+    <relativePath>../operations-center-parent-server/pom.xml</relativePath>
+  </parent>
+
+  <artifactId>operations-center-clusterops</artifactId>
+  <version>1.6</version>
+  <packaging>hpi</packaging>
+
+  <name>Operations Center Server Cluster Operations</name>
+  <description>
+    Provides cluster operations for executing against client masters connected to Jenkins Operations Center.
+  </description>
+  <url>http://release-notes.cloudbees.com/product/Operations+Center+Cluster+Operations+Plugin</url>
+
+  <scm>
+    <connection>scm:git:ssh://git@github.com/cloudbees/${project.artifactId}.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/cloudbees/${project.artifactId}.git</developerConnection>
+    <tag>operations-center-clusterops-1.6</tag>
+  </scm>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.cloudbees.operations-center.common</groupId>
+      <artifactId>operations-center-context</artifactId>
+      <version>1.6</version>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbees.operations-center.server</groupId>
+      <artifactId>operations-center-server</artifactId>
+      <version>1.6</version>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbees.operations-center.server</groupId>
+      <artifactId>operations-center-license</artifactId>
+      <version>1.6</version>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbees.operations-center.server</groupId>
+      <artifactId>operations-center-updatecenter</artifactId>
+      <version>1.6</version>
+    </dependency>
+    <dependency>
+      <groupId>com.infradna.hudson.plugins</groupId>
+      <artifactId>infradna-backup</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.cloudbees.nectar.plugins</groupId>
+      <artifactId>cloudbees-license</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbees.nectar.plugins</groupId>
+      <artifactId>nectar-license</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins.icon-shim</groupId>
+      <artifactId>icon-shim</artifactId>
+      <version>1.0.4</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins</groupId>
+      <artifactId>token-macro</artifactId>
+      <version>1.10</version>
+    </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins</groupId>
+      <artifactId>cloudbees-folder</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbees.jenkins.plugins</groupId>
+      <artifactId>cloudbees-folders-plus</artifactId>
+      <version>2.9</version>
+      <type>hpi</type>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-core</artifactId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>findbugs-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<l:dependencies xmlns:l='licenses' groupId='org.jenkins-ci.plugins' artifactId='unique-id' version='1.2'><l:dependency name='Unique ID Library Plugin' groupId='org.jenkins-ci.plugins' artifactId='unique-id' version='1.2' url='http://wiki.jenkins-ci.org/display/JENKINS/Unique+Id+Plugin'><l:description/></l:dependency></l:dependencies>

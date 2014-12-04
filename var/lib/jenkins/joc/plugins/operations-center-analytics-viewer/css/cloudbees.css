@@ -1,0 +1,37 @@
+.panel { border-color: transparent; } 
+
+.navbar .brand img { display: none; } 
+
+.navbar .brand {
+  color: black;
+  text-shadow: none;
+} 
+
+.navbar .navbar-inner {
+  background-color: white;
+}
+
+.navbar .nav>li>a {
+  color: black;
+  text-shadow: none; 
+}
+
+.navbar .nav li.dropdown.open>.dropdown-toggle,
+.navbar .nav li.dropdown.active>.dropdown-toggle,
+.navbar .nav li.dropdown.open.active>.dropdown-toggle { 
+  color: black;
+  text-shadow: none; 
+}
+
+
+
+
+.panel-content {
+  position: relative;
+}
+
+.histogram-chart {
+  /* absolute positioning causes canvas not to render unless you apply it after render is complete - strange */
+  pxosition: absolute !important;
+  bottom: 0; 
+}

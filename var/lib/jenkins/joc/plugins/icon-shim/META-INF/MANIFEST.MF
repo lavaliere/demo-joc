@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: tfennelly
+Build-Jdk: 1.7.0_51
+Extension-Name: icon-shim
+Specification-Title: Allows plugins make full use of the <l:icon> layo
+ ut tag when running on newer versions of Jenkins,
+     while still being compatible with older versions.
+Implementation-Title: icon-shim
+Implementation-Version: 1.0.4
+Group-Id: org.jenkins-ci.plugins.icon-shim
+Short-Name: icon-shim
+Long-Name: Icon Shim Plugin
+Url: https://wiki.jenkins-ci.org/display/JENKINS/Icon+Shim+Plugin/icon
+ -shim
+Plugin-Version: 1.0.4
+Hudson-Version: 1.520
+Jenkins-Version: 1.520
+Plugin-Dependencies: uithemes:1.0
+Plugin-Developers: Tom Fennelly:tfennelly:
+Support-Dynamic-Loading: true
+

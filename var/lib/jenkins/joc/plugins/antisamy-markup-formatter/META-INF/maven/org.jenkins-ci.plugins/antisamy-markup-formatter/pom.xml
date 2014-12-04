@@ -3,14 +3,14 @@
     <parent>
         <groupId>org.jenkins-ci.plugins</groupId>
         <artifactId>plugin</artifactId>
-        <version>1.551</version> <!-- TODO 1.553 when released -->
+        <version>1.553</version>
     </parent>
     <artifactId>antisamy-markup-formatter</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
     <packaging>hpi</packaging>
-    <name>AntiSamy Markup Formatter Plugin</name>
+    <name>OWASP Markup Formatter Plugin</name>
     <description>Uses policy definitions to allow limited HTML markup in user-submitted text.</description>
-    <url>http://wiki.jenkins-ci.org/display/JENKINS/AntiSamy+Markup+Formatter+Plugin</url>
+    <url>http://wiki.jenkins-ci.org/display/JENKINS/OWASP+Markup+Formatter+Plugin</url>
     <licenses>
         <license>
             <name>MIT</name>

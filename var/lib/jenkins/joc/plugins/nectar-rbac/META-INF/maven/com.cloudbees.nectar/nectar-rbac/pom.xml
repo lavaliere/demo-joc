@@ -10,12 +10,12 @@
   <parent>
     <groupId>com.cloudbees.jenkins.plugins</groupId>
     <artifactId>jenkins-plugins</artifactId>
-    <version>22</version>
+    <version>24</version>
   </parent>
 
   <groupId>com.cloudbees.nectar</groupId>
   <artifactId>nectar-rbac</artifactId>
-  <version>4.8</version>
+  <version>4.12</version>
   <packaging>hpi</packaging>
 
   <name>CloudBees Role-Based Access Control Plugin</name>
@@ -30,9 +30,9 @@
   <url>http://release-notes.cloudbees.com/product/Role+Based+Access+Control+Plugin</url>
 
   <scm>
-    <connection>scm:git:git@git.cloudbees.com:cloudbees/nectar-rbac-plugin.git</connection>
-    <developerConnection>scm:git:git@git.cloudbees.com:cloudbees/nectar-rbac-plugin.git</developerConnection>
-    <tag>nectar-rbac-4.8</tag>
+    <connection>scm:git:ssh://git@github.com/cloudbees/${project.artifactId}-plugin.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/cloudbees/${project.artifactId}-plugin.git</developerConnection>
+    <tag>nectar-rbac-4.12</tag>
   </scm>
 
   <properties>
@@ -97,6 +97,11 @@
       <version>4.3.3</version>
       <scope>test</scope>
     </dependency>
+      <dependency>
+          <groupId>org.kohsuke.metainf-services</groupId>
+          <artifactId>metainf-services</artifactId>
+          <version>1.2</version>
+      </dependency>
   </dependencies>
 
   <build>

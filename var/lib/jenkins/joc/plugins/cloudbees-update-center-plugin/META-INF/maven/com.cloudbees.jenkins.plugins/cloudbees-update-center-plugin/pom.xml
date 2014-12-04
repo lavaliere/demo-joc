@@ -10,11 +10,11 @@
   <parent>
     <groupId>com.cloudbees.jenkins.plugins</groupId>
     <artifactId>jenkins-plugins</artifactId>
-    <version>21</version>
+    <version>24</version>
   </parent>
 
   <artifactId>cloudbees-update-center-plugin</artifactId>
-  <version>4.12</version>
+  <version>4.15</version>
   <packaging>hpi</packaging>
 
   <name>CloudBees Update Center Plugin</name>
@@ -60,7 +60,7 @@
     <dependency>
       <groupId>com.cloudbees.jenkins.updates</groupId>
       <artifactId>update-center-data</artifactId>
-      <version>4.12</version>
+      <version>4.15</version>
       <exclusions>
         <exclusion>
           <groupId>org.kohsuke.stapler</groupId>
@@ -71,7 +71,7 @@
     <dependency>
       <groupId>com.cloudbees.jenkins.updates</groupId>
       <artifactId>local-ca</artifactId>
-      <version>4.12</version>
+      <version>4.15</version>
     </dependency>
     <!-- plugin dependencies -->
     <dependency>
@@ -98,7 +98,7 @@
     <dependency>
       <groupId>com.cloudbees.jenkins.plugins</groupId>
       <artifactId>cloudbees-update-center-installer-plugin</artifactId>
-      <version>4.12</version>
+      <version>4.15</version>
       <type>hpi</type>
       <scope>test</scope>
       <optional>true</optional>
@@ -169,7 +169,7 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>findbugs-maven-plugin</artifactId>
-        <version>2.5.2</version>
+        <version>2.5.5</version>
         <configuration>
           <excludeFilterFile>${basedir}/src/findbugs/excludesFilter.xml</excludeFilterFile>
           <failOnError>${maven.findbugs.failure.strict}</failOnError>
@@ -187,6 +187,6 @@
   </build>
 
   <scm>
-    <tag>cloudbees-update-center-4.12</tag>
+    <tag>cloudbees-update-center-4.15</tag>
   </scm>
 </project>

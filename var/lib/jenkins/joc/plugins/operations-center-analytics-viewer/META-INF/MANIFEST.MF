@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: stephenc
+Build-Jdk: 1.7.0_71
+Extension-Name: operations-center-analytics-viewer
+Specification-Title: The CloudBees Jenkins Plugins Parent Project
+Implementation-Title: operations-center-analytics-viewer
+Implementation-Version: 1.6
+Plugin-Class: com.cloudbees.opscenter.analytics.viewer.PluginImpl
+Group-Id: com.cloudbees.operations-center.server
+Short-Name: operations-center-analytics-viewer
+Long-Name: Operations Center Analytics Viewer
+Url: http://release-notes.cloudbees.com/product/Jenkins+Operations+Cen
+ ter/operations-center-analytics-viewer
+Plugin-Version: 1.6
+Hudson-Version: 1.580.1
+Jenkins-Version: 1.580.1
+Plugin-Developers: 
+Support-Dynamic-Loading: true
+

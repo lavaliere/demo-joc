@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.cloudbees.operations-center.server</groupId>
+    <artifactId>operations-center-parent-server</artifactId>
+    <version>1.6.7</version>
+    <relativePath>../../operations-center-parent-server/pom.xml</relativePath>
+  </parent>
+
+  <artifactId>operations-center-analytics-viewer</artifactId>
+  <version>1.6</version>
+  <packaging>hpi</packaging>
+
+  <name>Operations Center Analytics Viewer</name>
+
+  <properties>
+    <port>8083</port>
+  </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>findbugs-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+
+  <scm>
+    <tag>operations-center-analytics-project-1.6</tag>
+  </scm>
+</project>

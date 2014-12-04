@@ -2,22 +2,22 @@ Manifest-Version: 1.0
 Archiver-Version: Plexus Archiver
 Created-By: Apache Maven
 Built-By: jenkins
-Build-Jdk: 1.7.0_25
+Build-Jdk: 1.7.0_65
 Extension-Name: nectar-license
 Specification-Title: This plugin is used by CloudBees to give access t
  o the Jenkins Enterprise by CloudBees plugins.
 Implementation-Title: nectar-license
-Implementation-Version: 5.4
+Implementation-Version: 5.7
 Plugin-Class: com.cloudbees.jenkins.plugins.license.nectar.PluginImpl
 Group-Id: com.cloudbees.nectar.plugins
 Short-Name: nectar-license
 Long-Name: Jenkins Enterprise License Entitlement Check
 Url: http://release-notes.cloudbees.com/product/Jenkins+Enterprise+Lic
  ense+Entitlement+Check
-Plugin-Version: 5.4
-Hudson-Version: 1.509.4
-Jenkins-Version: 1.509.4
-Plugin-Dependencies: cloudbees-license:5.3,async-http-client:1.7.8
+Plugin-Version: 5.7
+Hudson-Version: 1.532.3
+Jenkins-Version: 1.532.3
+Plugin-Dependencies: async-http-client:1.7.8,cloudbees-license:5.3
 Plugin-Developers: 
 Support-Dynamic-Loading: false
 

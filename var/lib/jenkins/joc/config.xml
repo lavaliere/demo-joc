@@ -26,6 +26,20 @@
       <filterQueue>false</filterQueue>
       <properties class="hudson.model.View$PropertyList"/>
     </hudson.model.AllView>
+    <com.cloudbees.opscenter.analytics.view.BuildAnalyticsView plugin="operations-center-analytics@1.6">
+      <owner class="hudson" reference="../../.."/>
+      <name>Build Analytics</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+    </com.cloudbees.opscenter.analytics.view.BuildAnalyticsView>
+    <com.cloudbees.opscenter.analytics.view.PerformanceAnalyticsView plugin="operations-center-analytics@1.6">
+      <owner class="hudson" reference="../../.."/>
+      <name>Performance Analytics</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+    </com.cloudbees.opscenter.analytics.view.PerformanceAnalyticsView>
   </views>
   <primaryView>All</primaryView>
   <slaveAgentPort>0</slaveAgentPort>

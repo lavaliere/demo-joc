@@ -2,21 +2,21 @@ Manifest-Version: 1.0
 Archiver-Version: Plexus Archiver
 Created-By: Apache Maven
 Built-By: stephenc
-Build-Jdk: 1.7.0_51
+Build-Jdk: 1.7.0_71
 Extension-Name: operations-center-jnlp-controller
 Specification-Title: Controls JNLP slaves and attach them to masters
 Implementation-Title: operations-center-jnlp-controller
-Implementation-Version: 1.0
+Implementation-Version: 1.6
 Group-Id: com.cloudbees.operations-center.server
 Short-Name: operations-center-jnlp-controller
 Long-Name: Operations Center JNLP Slave Controller Plugin
 Url: http://release-notes.cloudbees.com/product/Operations+Center+JNLP
  +Slave+Controller+Plugin
-Plugin-Version: 1.0
-Hudson-Version: 1.532.1
-Jenkins-Version: 1.532.1
-Plugin-Dependencies: operations-center-license:1.5,openid:2.1,openid-s
- erver:2.0,operations-center-server:1.5,cloudbees-license:5.3,nectar-l
- icense:5.4
+Plugin-Version: 1.6
+Hudson-Version: 1.580.1
+Jenkins-Version: 1.580.1
+Plugin-Dependencies: operations-center-license:1.6,operations-center-s
+ erver:1.6,cloudbees-license:6.0,openid-server:2.0,openid:2.1.1,nectar
+ -license:6.0
 Plugin-Developers: 
 
