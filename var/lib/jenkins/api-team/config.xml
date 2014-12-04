@@ -48,7 +48,7 @@
     </hudson.model.AllView>
   </views>
   <primaryView>All</primaryView>
-  <slaveAgentPort>443</slaveAgentPort>
+  <slaveAgentPort>0</slaveAgentPort>
   <label></label>
   <nodeProperties/>
   <globalNodeProperties/>
