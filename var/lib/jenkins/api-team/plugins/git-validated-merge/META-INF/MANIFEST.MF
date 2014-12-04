@@ -1,8 +1,8 @@
 Manifest-Version: 1.0
 Archiver-Version: Plexus Archiver
 Created-By: Apache Maven
-Built-By: kohsuke
-Build-Jdk: 1.7.0_07
+Built-By: jenkins
+Build-Jdk: 1.7.0_65
 Extension-Name: git-validated-merge
 Specification-Title: This plugin prevents broken builds due to bad che
  ckins. A commit by a user is pushed to a branch, Jenkins then merges 
@@ -10,15 +10,15 @@ Specification-Title: This plugin prevents broken builds due to bad che
  ld. Thus, a bad checkin only impacts the developer and not the whole 
  team. The feature works with git repositories.
 Implementation-Title: git-validated-merge
-Implementation-Version: 3.15
+Implementation-Version: 3.17
 Group-Id: com.cloudbees.jenkins.plugins
 Short-Name: git-validated-merge
 Long-Name: CloudBees Git Validated Merge Plugin
 Url: http://release-notes.cloudbees.com/product/Validated+Merge
-Plugin-Version: 3.15
-Hudson-Version: 1.509.4
-Jenkins-Version: 1.509.4
-Plugin-Dependencies: credentials:1.7.6,ssh-credentials:1.4,git:2.0,mai
- ler:1.5,git-client:1.5.1,nectar-license:4.0
+Plugin-Version: 3.17
+Hudson-Version: 1.532.3
+Jenkins-Version: 1.532.3
+Plugin-Dependencies: git-client:1.9.1,nectar-license:4.0,ssh-credentia
+ ls:1.4,mailer:1.5,credentials:1.15,git:2.2.2
 Plugin-Developers: 
 

@@ -2,24 +2,24 @@ Manifest-Version: 1.0
 Archiver-Version: Plexus Archiver
 Created-By: Apache Maven
 Built-By: stephenc
-Build-Jdk: 1.7.0_51
+Build-Jdk: 1.7.0_71
 Extension-Name: operations-center-client
 Specification-Title: This plugin allows a Jenkins instance to join a a
  n Operations Center cluster as a client.
 Implementation-Title: operations-center-client
-Implementation-Version: 1.5.1
+Implementation-Version: 1.6
 Plugin-Class: com.cloudbees.opscenter.client.plugin.PluginImpl
 Group-Id: com.cloudbees.operations-center.client
 Short-Name: operations-center-client
 Long-Name: Operations Center Client Plugin
 Url: http://release-notes.cloudbees.com/product/Operations+Center+Clie
  nt+Plugin
-Plugin-Version: 1.5.1
-Hudson-Version: 1.532.1
-Jenkins-Version: 1.532.1
-Plugin-Dependencies: nectar-license:5.4,cloudbees-ssh-slaves:1.1,opera
- tions-center-openid-cse:1.1,nectar-rbac:4.8,operations-center-agent:1
- .5,operations-center-context:1.5,metrics:3.0.5,credentials:1.13,openi
- d:2.1,cloudbees-license:5.3
+Plugin-Version: 1.6
+Hudson-Version: 1.554.1
+Jenkins-Version: 1.554.1
+Plugin-Dependencies: operations-center-agent:1.6,credentials:1.18,nect
+ ar-license:6.0,nectar-rbac:4.12,cloudbees-ssh-slaves:1.2,openid:2.1.1
+ ,operations-center-context:1.6,mapdb-api:1.0.6.0,cloudbees-license:6.
+ 0,metrics:3.0.9,operations-center-openid-cse:1.6
 Plugin-Developers: 
 

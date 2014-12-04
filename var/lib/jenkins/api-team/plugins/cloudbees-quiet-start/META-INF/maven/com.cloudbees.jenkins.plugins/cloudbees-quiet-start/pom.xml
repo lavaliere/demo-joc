@@ -3,10 +3,10 @@
     <parent>
         <groupId>com.cloudbees.jenkins.plugins</groupId>
         <artifactId>jenkins-plugins</artifactId>
-        <version>13</version>
+        <version>27</version>
     </parent>
     <artifactId>cloudbees-quiet-start</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
     <packaging>hpi</packaging>
     <name>CloudBees Quiet Start Plugin</name>
     <description>Allows you to request that Jenkins be in the “quieting down” state after a restart.</description>
@@ -15,11 +15,12 @@
         <dependency>
             <groupId>com.cloudbees.nectar.plugins</groupId>
             <artifactId>nectar-license</artifactId>
-            <version>4.3</version>
+            <version>5.7</version>
         </dependency>
     </dependencies>
     <scm>
-        <connection>scm:git:ssh://git@git.cloudbees.com/cloudbees/${project.artifactId}-plugin.git</connection>
-        <developerConnection>scm:git:ssh://git@git.cloudbees.com/cloudbees/${project.artifactId}-plugin.git</developerConnection>
-    </scm>
+        <connection>scm:git:ssh://git@github.com/cloudbees/${project.artifactId}-plugin.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/cloudbees/${project.artifactId}-plugin.git</developerConnection>
+      <tag>cloudbees-quiet-start-1.1</tag>
+  </scm>
 </project>

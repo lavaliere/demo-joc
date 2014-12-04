@@ -3,7 +3,7 @@
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>1.509</version>
+    <version>1.568</version>
   </parent>
   
   <licenses>
@@ -15,15 +15,31 @@
   </licenses>
 
   <artifactId>git</artifactId>
-  <version>2.2.1</version>
+  <version>2.3</version>
   <packaging>hpi</packaging>
   <name>Jenkins GIT plugin</name>
   <description>Integrates Jenkins with GIT SCM</description>
   <url>http://wiki.jenkins-ci.org/display/JENKINS/Git+Plugin</url>
+  
+  <properties>
+    <findbugs-maven-plugin.version>3.0.0</findbugs-maven-plugin.version>
+    <jacoco-maven-plugin.version>0.7.2.201409121644</jacoco-maven-plugin.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+  </properties>
 
   <build>
     <pluginManagement>
       <plugins>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>findbugs-maven-plugin</artifactId>
+          <version>${findbugs-maven-plugin.version}</version>
+          <configuration>
+            <excludeFilterFile>src/findbugs/excludesFilter.xml</excludeFilterFile>
+            <failOnError>${maven.findbugs.failure.strict}</failOnError>
+          </configuration>
+        </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-enforcer-plugin</artifactId>
@@ -144,7 +160,7 @@
       <plugin>
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
-        <version>0.6.4.201312101107</version>
+        <version>${jacoco-maven-plugin.version}</version>
         <executions>
           <execution>
             <id>pre-unit-test</id>
@@ -179,11 +195,6 @@
       </plugin>
     </plugins>
   </build>
-  
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-  </properties>
 
   <repositories>
     <repository>
@@ -214,6 +225,11 @@
             <name>Nicolas De Loof</name>
             <email>nicolas.deloof@gmail.com</email>
         </developer>
+        <developer>
+            <id>MarkEWaite</id>
+            <name>Mark Waite</name>
+            <email>mark.earl.waite@gmail.com</email>
+        </developer>
     </developers>
 
 
@@ -221,12 +237,12 @@
     <dependency>
       <groupId>org.eclipse.jgit</groupId>
       <artifactId>org.eclipse.jgit</artifactId>
-      <version>3.3.1.201403241930-r</version>
+      <version>3.5.1.201410131835-r</version>
     </dependency>
     <dependency>
       <groupId>joda-time</groupId>
       <artifactId>joda-time</artifactId>
-      <version>2.3</version>
+      <version>2.5</version>
     </dependency>
     <dependency>
       <groupId>com.google.guava</groupId>
@@ -236,28 +252,38 @@
     <dependency>
       <groupId>com.infradna.tool</groupId>
       <artifactId>bridge-method-annotation</artifactId>
-      <version>1.12</version>
+      <version>1.13</version>
     </dependency>
 
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>git-client</artifactId>
-      <version>1.8.0</version>
+      <version>1.11.1</version>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>credentials</artifactId>
-      <version>1.10</version>
+      <version>1.18</version>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>ssh-credentials</artifactId>
-      <version>1.6.1</version>
+      <version>1.10</version>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>scm-api</artifactId>
       <version>0.2</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins</groupId>
+      <artifactId>matrix-project</artifactId>
+      <version>1.4</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins</groupId>
+      <artifactId>mailer</artifactId>
+      <version>1.11</version>
     </dependency>
 
 
@@ -270,13 +296,13 @@
     <dependency>
       <groupId>org.mockito</groupId>
       <artifactId>mockito-all</artifactId>
-      <version>1.9.5</version>
+      <version>1.10.10</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
       <artifactId>httpclient</artifactId>
-      <version>4.3.3</version>
+      <version>4.3.4</version>
       <scope>test</scope>
     </dependency>
 
@@ -302,13 +328,13 @@
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>multiple-scms</artifactId>
-      <version>0.2</version>
-      <optional>true</optional>
+      <version>0.4-beta-1</version>
+      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>promoted-builds</artifactId>
-      <version>2.17</version>
+      <version>2.19</version>
       <optional>true</optional>
       <exclusions>
         <exclusion>
@@ -330,7 +356,7 @@
     <connection>scm:git:git://github.com/jenkinsci/${project.artifactId}-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/${project.artifactId}-plugin.git</developerConnection>
     <url>http://github.com/jenkinsci/${project.artifactId}-plugin</url>
-    <tag>git-2.2.1</tag>
+    <tag>git-2.3</tag>
   </scm>
 
     <pluginRepositories>

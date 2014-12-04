@@ -3,10 +3,10 @@
     <parent>
         <groupId>com.cloudbees.jenkins.plugins</groupId>
         <artifactId>jenkins-plugins</artifactId>
-        <version>12</version>
+        <version>27</version>
     </parent>
     <artifactId>cloudbees-view-creation-filter</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
     <packaging>hpi</packaging>
     <name>CloudBees View Creation Filter Plugin</name>
     <description>Allows you to specify that a view may only contain certain item types. Useful in conjunction with Templates.</description>
@@ -15,11 +15,12 @@
         <dependency>
             <groupId>com.cloudbees.nectar.plugins</groupId>
             <artifactId>nectar-license</artifactId>
-            <version>4.0</version>
+            <version>5.7</version>
         </dependency>
     </dependencies>
     <scm>
-        <connection>scm:git:ssh://git@git.cloudbees.com/cloudbees/${project.artifactId}-plugin.git</connection>
-        <developerConnection>scm:git:ssh://git@git.cloudbees.com/cloudbees/${project.artifactId}-plugin.git</developerConnection>
-    </scm>
+        <connection>scm:git:ssh://git@github.com/cloudbees/${project.artifactId}-plugin.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/cloudbees/${project.artifactId}-plugin.git</developerConnection>
+      <tag>cloudbees-view-creation-filter-1.1</tag>
+  </scm>
 </project>

@@ -1,23 +1,23 @@
 Manifest-Version: 1.0
 Archiver-Version: Plexus Archiver
 Created-By: Apache Maven
-Built-By: jglick
-Build-Jdk: 1.7.0_45
+Built-By: jenkins
+Build-Jdk: 1.7.0_65
 Extension-Name: cloudbees-even-scheduler
 Specification-Title: This plugin provides an alternative job scheduler
   that can be enabled to force jobs to run on idle nodes in preference
   to the previous node the job ran on. This is useful where jobs alway
  s hit stressed machines while others are sitting idly.
 Implementation-Title: cloudbees-even-scheduler
-Implementation-Version: 3.3
+Implementation-Version: 3.5
 Plugin-Class: com.cloudbees.jenkins.plugins.evenscheduler.PluginImpl
 Group-Id: com.cloudbees.nectar.plugins
 Short-Name: cloudbees-even-scheduler
 Long-Name: CloudBees Even Scheduler Plugin
 Url: http://release-notes.cloudbees.com/product/Even+Scheduler+Plugin
-Plugin-Version: 3.3
-Hudson-Version: 1.480.4
-Jenkins-Version: 1.480.4
-Plugin-Dependencies: nectar-license:3.1
+Plugin-Version: 3.5
+Hudson-Version: 1.532.3
+Jenkins-Version: 1.532.3
+Plugin-Dependencies: nectar-license:5.7
 Plugin-Developers: 
 

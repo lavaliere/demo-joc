@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Archiver-Version: Plexus Archiver
 Created-By: Apache Maven
 Built-By: jenkins
-Build-Jdk: 1.7.0_51
+Build-Jdk: 1.7.0_65
 Extension-Name: nectar-vmware
 Specification-Title: This plugin lets you rent machines from VMWare vS
  phere installations  to use as slaves. These machines act as "private
@@ -10,16 +10,16 @@ Specification-Title: This plugin lets you rent machines from VMWare vS
  ly or dynamically (drop machines into folders)  added machines.   
  This results in an efficient usage of machines across an organization.
 Implementation-Title: nectar-vmware
-Implementation-Version: 4.1
+Implementation-Version: 4.3.2
 Group-Id: com.cloudbees.nectar
 Short-Name: nectar-vmware
 Long-Name: CloudBees VMWare Autoscaling Plugin
 Url: http://release-notes.cloudbees.com/product/VMWare+ESXi+Auto-scali
  ng+Plugin
-Plugin-Version: 4.1
+Plugin-Version: 4.3.2
 Hudson-Version: 1.532.2
 Jenkins-Version: 1.532.2
-Plugin-Dependencies: ssh-slaves:0.14,node-iterator-api:1.0,nectar-lice
- nse:5.0
+Plugin-Dependencies: durable-task:0.5,node-iterator-api:1.0,ssh-slaves
+ :0.14,nectar-license:5.0
 Plugin-Developers: 
 

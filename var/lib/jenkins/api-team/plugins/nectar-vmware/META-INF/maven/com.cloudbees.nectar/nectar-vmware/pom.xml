@@ -15,7 +15,7 @@
 
   <groupId>com.cloudbees.nectar</groupId>
   <artifactId>nectar-vmware</artifactId>
-  <version>4.1</version>
+  <version>4.3.2</version>
   <packaging>hpi</packaging>
 
   <name>CloudBees VMWare Autoscaling Plugin</name>
@@ -26,9 +26,9 @@ This results in an efficient usage of machines across an organization.
   <url>http://release-notes.cloudbees.com/product/VMWare+ESXi+Auto-scaling+Plugin</url>
 
   <scm>
-    <connection>scm:git:ssh://git@git.cloudbees.com/cloudbees/nectar-vmware-plugin.git</connection>
-    <developerConnection>scm:git:ssh://git@git.cloudbees.com/cloudbees/nectar-vmware-plugin.git</developerConnection>
-    <tag>nectar-vmware-4.1</tag>
+    <connection>scm:git:ssh://git@github.com/cloudbees/${project.artifactId}-plugin.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/cloudbees/${project.artifactId}-plugin.git</developerConnection>
+    <tag>nectar-vmware-4.3.2</tag>
   </scm>
 
   <properties>
@@ -67,6 +67,11 @@ This results in an efficient usage of machines across an organization.
       <groupId>com.cloudbees.nectar.plugins</groupId>
       <artifactId>nectar-license</artifactId>
       <version>5.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins</groupId>
+      <artifactId>durable-task</artifactId>
+      <version>0.5</version>
     </dependency>
     <!-- jenkins dependencies -->
     <dependency>

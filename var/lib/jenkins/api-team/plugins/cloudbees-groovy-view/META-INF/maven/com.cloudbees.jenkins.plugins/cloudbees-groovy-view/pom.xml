@@ -1,0 +1,39 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.cloudbees.jenkins.plugins</groupId>
+        <artifactId>jenkins-plugins</artifactId>
+        <version>24</version>
+    </parent>
+    <artifactId>cloudbees-groovy-view</artifactId>
+    <version>1.4</version>
+    <packaging>hpi</packaging>
+    <name>CloudBees Groovy View Plugin</name>
+    <description>Adds a view type rendering a Groovy script. Useful in conjunction with Templates.</description>
+    <url>http://release-notes.cloudbees.com/product/CloudBees+Groovy+View+Plugin</url>
+    <properties>
+        <jenkins.version>1.554.1</jenkins.version>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>com.cloudbees.nectar.plugins</groupId>
+            <artifactId>nectar-license</artifactId>
+            <version>4.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.cloudbees.nectar.plugins</groupId>
+            <artifactId>cloudbees-template</artifactId>
+            <version>4.13</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jenkins-ci.plugins</groupId>
+            <artifactId>script-security</artifactId>
+            <version>1.9</version>
+        </dependency>
+    </dependencies>
+    <scm>
+        <connection>scm:git:ssh://git@github.com/cloudbees/${project.artifactId}-plugin.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/cloudbees/${project.artifactId}-plugin.git</developerConnection>
+      <tag>cloudbees-groovy-view-1.4</tag>
+  </scm>
+</project>

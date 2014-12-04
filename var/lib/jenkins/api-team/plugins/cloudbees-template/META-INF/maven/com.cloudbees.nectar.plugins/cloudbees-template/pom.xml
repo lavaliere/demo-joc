@@ -4,29 +4,30 @@
   <parent>
     <groupId>com.cloudbees.jenkins.plugins</groupId>
     <artifactId>jenkins-plugins</artifactId>
-    <version>22</version>
+    <version>24</version>
   </parent>
 
   <groupId>com.cloudbees.nectar.plugins</groupId>
   <artifactId>cloudbees-template</artifactId>
-  <version>4.10</version>
+  <version>4.15</version>
   <packaging>hpi</packaging>
 
   <name>CloudBees Template Plugin</name>
   <description>
-    This plugin captures "sameness of jobs". Adminstratores can define templates of jobs &amp; builders. Teams can instantiate new jobs based on the template. A change to a template automatically is reflected on all jobs, thus saving hours in configuration. Administrators can talk in the domain-specific language of users and only expose those configuration options that make "sense" in the users environment rather than exposing the user to the entire job configuration screen. This reduces potential errors by users when defining jobs.
-    Another way to look at this is that it lets you write rudimentary plugins without coding in Java. 
+    Captures commonalities in configuration between jobs.
+    Permits administrators to create new job types, builders, and more, using a simplified custom configuration UI.
   </description>
   <url>http://release-notes.cloudbees.com/product/Template+plugin</url>
 
   <scm>
-    <connection>scm:git:ssh://git@git.cloudbees.com/cloudbees/nectar-template-plugin.git</connection>
-    <developerConnection>scm:git:ssh://git@git.cloudbees.com/cloudbees/nectar-template-plugin.git</developerConnection>
-    <tag>cloudbees-template-4.10</tag>
+    <connection>scm:git:ssh://git@github.com/cloudbees/${project.artifactId}-plugin.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/cloudbees/${project.artifactId}-plugin.git</developerConnection>
+    <tag>cloudbees-template-4.15</tag>
   </scm>
 
   <properties>
     <jenkins.version>1.554.1</jenkins.version>
+    <concurrency>1C</concurrency>
   </properties>
 
   <dependencies>
@@ -43,7 +44,7 @@
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>script-security</artifactId>
-      <version>1.1</version>
+      <version>1.9</version>
     </dependency>
     <!-- TODO until we can kill AbstractModelingTest: -->
     <dependency>
@@ -56,8 +57,7 @@
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>credentials</artifactId>
-      <version>1.9.4</version>
-      <scope>test</scope>
+      <version>1.14</version>
     </dependency>
     <dependency>
       <groupId>com.cloudbees.nectar</groupId>

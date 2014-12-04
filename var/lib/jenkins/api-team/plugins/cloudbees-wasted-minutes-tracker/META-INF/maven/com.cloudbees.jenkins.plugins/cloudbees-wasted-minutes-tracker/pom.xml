@@ -10,12 +10,11 @@
   <parent>
     <groupId>com.cloudbees.jenkins.plugins</groupId>
     <artifactId>jenkins-plugins</artifactId>
-    <version>12</version>
-    <relativePath />
+    <version>27</version>
   </parent>
 
   <artifactId>cloudbees-wasted-minutes-tracker</artifactId>
-  <version>3.6</version>
+  <version>3.7</version>
   <packaging>hpi</packaging>
 
   <name>CloudBees Wasted Minutes Tracker Plugin</name>
@@ -26,8 +25,9 @@
   </description>
 
   <scm>
-    <connection>scm:git:git@git.cloudbees.com:cloudbees/jenkins-wasted-minutes-tracker-plugin.git</connection>
-    <developerConnection>scm:git:git@git.cloudbees.com:cloudbees/jenkins-wasted-minutes-tracker-plugin.git</developerConnection>
+    <connection>scm:git:ssh://git@github.com/cloudbees/${project.artifactId}-plugin.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/cloudbees/${project.artifactId}-plugin.git</developerConnection>
+    <tag>cloudbees-wasted-minutes-tracker-3.7</tag>
   </scm>
 
 </project>

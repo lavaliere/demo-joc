@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: jglick
+Build-Jdk: 1.7.0_67
+Extension-Name: cloudbees-workflow-rest-api
+Specification-Title: The CloudBees Jenkins Plugins Parent Project
+Implementation-Title: cloudbees-workflow-rest-api
+Implementation-Version: 1.0
+Group-Id: com.cloudbees.jenkins.plugins.workflow
+Short-Name: cloudbees-workflow-rest-api
+Long-Name: CloudBees Workflow: REST API Plugin
+Url: http://release-notes.cloudbees.com/product/CloudBees+Workflow
+Plugin-Version: 1.0
+Hudson-Version: 1.580.1
+Jenkins-Version: 1.580.1
+Plugin-Dependencies: workflow-basic-steps:1.0,workflow-cps-checkpoint:
+ 1.0,nectar-license:5.0,workflow-job:1.0,workflow-cps:1.0
+Plugin-Developers: 
+

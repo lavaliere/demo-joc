@@ -3,12 +3,12 @@
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>1.480.3</version><!-- which version of Jenkins is this plugin built against? -->
+    <version>1.554.3</version>
   </parent>
 
   <groupId>org.jenkins-ci.plugins</groupId>
   <artifactId>suppress-stack-trace</artifactId>
-  <version>1.2</version>
+  <version>1.3</version>
   <packaging>hpi</packaging>
   <url>https://wiki.jenkins-ci.org/display/JENKINS/Suppress+Stack+Trace+Plugin</url>
 
@@ -33,5 +33,6 @@
   <scm>
     <connection>scm:git:git://github.com/jenkinsci/${project.artifactId}-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/${project.artifactId}-plugin.git</developerConnection>
+    <tag>suppress-stack-trace-1.3</tag>
   </scm>
 </project>

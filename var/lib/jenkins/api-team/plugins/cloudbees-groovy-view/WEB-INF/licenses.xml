@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<l:dependencies xmlns:l='licenses' groupId='com.cloudbees.jenkins.plugins' artifactId='cloudbees-groovy-view' version='1.4'><l:dependency name='CloudBees Groovy View Plugin' groupId='com.cloudbees.jenkins.plugins' artifactId='cloudbees-groovy-view' version='1.4' url='http://release-notes.cloudbees.com/product/CloudBees+Groovy+View+Plugin'><l:description>Adds a view type rendering a Groovy script. Useful in conjunction with Templates.</l:description></l:dependency></l:dependencies>

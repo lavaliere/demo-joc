@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: jglick
+Build-Jdk: 1.7.0_67
+Extension-Name: workflow-aggregator
+Implementation-Title: workflow-aggregator
+Implementation-Version: 1.0
+Group-Id: org.jenkins-ci.plugins.workflow
+Short-Name: workflow-aggregator
+Long-Name: Workflow: Aggregator
+Url: https://github.com/jenkinsci/workflow-plugin
+Plugin-Version: 1.0
+Hudson-Version: 1.580.1
+Jenkins-Version: 1.580.1
+Plugin-Dependencies: workflow-api:1.0,workflow-cps:1.0,workflow-durabl
+ e-task-step:1.0,workflow-basic-steps:1.0,workflow-scm-step:1.0,workfl
+ ow-support:1.0,workflow-step-api:1.0,workflow-job:1.0,workflow-cps-gl
+ obal-lib:1.0
+Plugin-Developers: 
+Support-Dynamic-Loading: true
+

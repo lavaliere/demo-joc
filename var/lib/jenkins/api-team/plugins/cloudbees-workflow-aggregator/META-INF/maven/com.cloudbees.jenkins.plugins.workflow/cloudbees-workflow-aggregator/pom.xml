@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.cloudbees.jenkins.plugins.workflow</groupId>
+        <artifactId>cloudbees-workflow-pom</artifactId>
+        <version>1.0</version>
+    </parent>
+    <artifactId>cloudbees-workflow-aggregator</artifactId>
+    <packaging>hpi</packaging>
+    <name>CloudBees Workflow: Aggregator</name>
+    <url>http://release-notes.cloudbees.com/product/CloudBees+Workflow</url>
+    <dependencies>
+        <dependency>
+            <groupId>com.cloudbees.nectar.plugins</groupId>
+            <artifactId>nectar-license</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>workflow-cps-checkpoint</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>cloudbees-workflow-rest-api</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>cloudbees-workflow-ui</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jenkins-ci.plugins.workflow</groupId>
+            <artifactId>workflow-aggregator</artifactId>
+        </dependency>
+        <!-- TODO workflow-aggregator dep does not automatically pull in sufficiently new versions of these (compared to jenkins-test-harness): -->
+        <dependency>
+            <groupId>org.jenkins-ci.plugins</groupId>
+            <artifactId>javadoc</artifactId>
+            <version>1.3-beta-1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.jenkins-ci.plugins</groupId>
+            <artifactId>mailer</artifactId>
+            <version>1.12-beta-1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.jenkins-ci.plugins</groupId>
+            <artifactId>junit</artifactId>
+            <version>1.2-beta-1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.jenkins-ci.plugins</groupId>
+            <artifactId>git</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.jenkins-ci.plugins</groupId>
+            <artifactId>mercurial</artifactId>
+            <version>1.51-beta-2</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.jenkins-ci.plugins</groupId>
+            <artifactId>subversion</artifactId>
+            <version>2.5-beta-2</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.jenkins-ci.tools</groupId>
+                <artifactId>maven-hpi-plugin</artifactId>
+                <configuration>
+                    <loggers>
+                        <org.jenkinsci.plugins.workflow>FINE</org.jenkinsci.plugins.workflow>
+                        <org.jenkinsci.plugins.durabletask>FINE</org.jenkinsci.plugins.durabletask>
+                        <com.cloudbees.workflow>FINE</com.cloudbees.workflow>
+                    </loggers>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.gmaven</groupId>
+                <artifactId>groovy-maven-plugin</artifactId>
+                <version>2.0</version>
+                <executions>
+                    <execution>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>execute</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <source>
+                        def plugins = new File(basedir, 'work/plugins');
+                        for (dep in project.dependencies) {
+                            if (dep.groupId != project.groupId) {
+                                continue;
+                            }
+                            def a = dep.artifactId;
+                            def theHpl = new File(new File(basedir.parentFile, a.replaceFirst('^(cloudbees-)?workflow-', '')), 'target/test-classes/the.hpl');
+                            if (theHpl.file) {
+                                plugins.mkdirs();
+                                ant.copy(file: theHpl, tofile: new File(plugins, a + '.hpl'), overwrite: true, verbose: true);
+                            } else {
+                                println('Warning: no such file ' + theHpl);
+                            }
+                        }
+                    </source>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

@@ -10,12 +10,12 @@
   <parent>
     <groupId>com.cloudbees.jenkins.plugins</groupId>
     <artifactId>jenkins-plugins</artifactId>
-    <version>16</version>
+    <version>27</version>
   </parent>
 
   <groupId>com.cloudbees.nectar.plugins</groupId>
   <artifactId>cloudbees-label-throttling-plugin</artifactId>
-  <version>3.3</version>
+  <version>3.4</version>
   <packaging>hpi</packaging>
 
   <name>CloudBees Label Throttling Plugin</name>
@@ -28,8 +28,9 @@
   <url>http://release-notes.cloudbees.com/product/Label+Throttle+Plugin</url>
 
   <scm>
-    <connection>scm:git:ssh://git@git.cloudbees.com/cloudbees/nectar-label-throttling-plugin.git</connection>
-    <developerConnection>scm:git:ssh://git@git.cloudbees.com/cloudbees/nectar-label-throttling-plugin.git</developerConnection>
+    <connection>scm:git:ssh://git@github.com/cloudbees/cloudbees-label-throttling-plugin.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/cloudbees/cloudbees-label-throttling-plugin.git</developerConnection>
+    <tag>cloudbees-label-throttling-plugin-3.4</tag>
   </scm>
 
   <properties>
@@ -40,7 +41,7 @@
     <dependency>
       <groupId>com.cloudbees.nectar.plugins</groupId>
       <artifactId>nectar-license</artifactId>
-      <version>4.0</version>
+      <version>5.7</version>
     </dependency>
   </dependencies>
 

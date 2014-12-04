@@ -1,8 +1,8 @@
 Manifest-Version: 1.0
 Archiver-Version: Plexus Archiver
 Created-By: Apache Maven
-Built-By: jglick
-Build-Jdk: 1.7.0_45
+Built-By: jenkins
+Build-Jdk: 1.7.0_65
 Extension-Name: skip-plugin
 Specification-Title: This plugin allows jobs to be temporarily disable
  d for a fixed period of time. After the fixed period the job will aut
@@ -12,14 +12,14 @@ Specification-Title: This plugin allows jobs to be temporarily disable
   of time. Instead of dealing with false errors, the job can be disabl
  ed and automatically woken up.
 Implementation-Title: skip-plugin
-Implementation-Version: 3.5
+Implementation-Version: 3.6
 Group-Id: com.cloudbees.nectar.plugins
 Short-Name: skip-plugin
 Long-Name: CloudBees Skip Next Build Plugin
 Url: http://release-notes.cloudbees.com/product/Skip+Next+Build+Plugin
-Plugin-Version: 3.5
-Hudson-Version: 1.480.4
-Jenkins-Version: 1.480.4
+Plugin-Version: 3.6
+Hudson-Version: 1.532.3
+Jenkins-Version: 1.532.3
 Plugin-Dependencies: nectar-license:4.0
 Plugin-Developers: 
 

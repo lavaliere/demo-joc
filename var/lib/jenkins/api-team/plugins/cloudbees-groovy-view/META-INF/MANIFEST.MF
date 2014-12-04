@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: jenkins
+Build-Jdk: 1.7.0_65
+Extension-Name: cloudbees-groovy-view
+Specification-Title: Adds a view type rendering a Groovy script. Usefu
+ l in conjunction with Templates.
+Implementation-Title: cloudbees-groovy-view
+Implementation-Version: 1.4
+Group-Id: com.cloudbees.jenkins.plugins
+Short-Name: cloudbees-groovy-view
+Long-Name: CloudBees Groovy View Plugin
+Url: http://release-notes.cloudbees.com/product/CloudBees+Groovy+View+
+ Plugin
+Plugin-Version: 1.4
+Hudson-Version: 1.554.1
+Jenkins-Version: 1.554.1
+Plugin-Dependencies: cloudbees-template:4.13,nectar-license:4.0,script
+ -security:1.9
+Plugin-Developers: 
+

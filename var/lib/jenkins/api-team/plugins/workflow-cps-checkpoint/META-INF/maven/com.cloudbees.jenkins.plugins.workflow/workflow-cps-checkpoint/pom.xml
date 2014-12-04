@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.cloudbees.jenkins.plugins.workflow</groupId>
+        <artifactId>cloudbees-workflow-pom</artifactId>
+        <version>1.0</version>
+    </parent>
+    <artifactId>workflow-cps-checkpoint</artifactId> <!-- TODO is it too late to add cloudbees- prefix? -->
+    <packaging>hpi</packaging>
+    <name>CloudBees Workflow: Groovy Checkpoint</name>
+    <url>http://release-notes.cloudbees.com/product/CloudBees+Workflow</url>
+    <dependencies>
+        <dependency>
+            <groupId>org.jenkins-ci.plugins.workflow</groupId>
+            <artifactId>workflow-cps</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.jenkins-ci.plugins.workflow</groupId>
+            <artifactId>workflow-job</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.cloudbees.nectar.plugins</groupId>
+            <artifactId>nectar-license</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.jenkins-ci.plugins.workflow</groupId>
+            <artifactId>workflow-support</artifactId>
+            <classifier>tests</classifier>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.jenkins-ci.plugins.workflow</groupId>
+            <artifactId>workflow-cps</artifactId>
+            <classifier>tests</classifier>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.jenkins-ci.plugins.workflow</groupId>
+            <artifactId>workflow-aggregator</artifactId>
+            <classifier>tests</classifier>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+          <groupId>org.jenkins-ci.plugins.workflow</groupId>
+          <artifactId>workflow-basic-steps</artifactId>
+          <scope>test</scope>
+        </dependency>
+        <dependency>
+          <groupId>org.jenkins-ci.plugins.workflow</groupId>
+          <artifactId>workflow-durable-task-step</artifactId>
+          <scope>test</scope>
+        </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <!-- TODO cf. same configuration in jenkinsci/workflow-plugin/pom.xml -->
+                <groupId>org.codehaus.gmaven</groupId>
+                <artifactId>gmaven-plugin</artifactId>
+                <configuration>
+                    <providerSelection>1.8</providerSelection>
+                    <!-- Use a more conventional location: -->
+                    <outputDirectory>${project.build.directory}/generated-test-sources/groovy-stubs</outputDirectory>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

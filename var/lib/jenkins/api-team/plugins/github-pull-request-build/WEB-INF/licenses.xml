@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<l:dependencies xmlns:l='licenses' groupId='com.cloudbees.jenkins.plugins' artifactId='github-pull-request-build' version='1.4'><l:dependency name='CloudBees Pull Request Builder for GitHub' groupId='com.cloudbees.jenkins.plugins' artifactId='github-pull-request-build' version='1.4' url='http://www.cloudbees.com/'><l:description>Automatically build GitHub pull requests</l:description></l:dependency></l:dependencies>

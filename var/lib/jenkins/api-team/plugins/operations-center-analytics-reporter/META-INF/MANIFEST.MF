@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: stephenc
+Build-Jdk: 1.7.0_71
+Extension-Name: operations-center-analytics-reporter
+Specification-Title: Monitoring Reporter for Jenkins Operations Center
+  by CloudBees
+Implementation-Title: operations-center-analytics-reporter
+Implementation-Version: 1.6
+Group-Id: com.cloudbees.operations-center.client
+Short-Name: operations-center-analytics-reporter
+Long-Name: Operations Center Analytics Reporter
+Url: http://release-notes.cloudbees.com/product/Monitoring+Reporter+Joc
+Plugin-Version: 1.6
+Hudson-Version: 1.554.1
+Jenkins-Version: 1.554.1
+Plugin-Dependencies: metrics:3.0.9,async-http-client:1.7.8,unique-id:1
+ .2,operations-center-context:1.6
+Plugin-Developers: 
+

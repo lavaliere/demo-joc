@@ -2,21 +2,22 @@ Manifest-Version: 1.0
 Archiver-Version: Plexus Archiver
 Created-By: Apache Maven
 Built-By: stephenc
-Build-Jdk: 1.7.0_51
+Build-Jdk: 1.7.0_71
 Extension-Name: operations-center-context
 Specification-Title: This plugin provides an API to resolve the contex
  t of a Jenkins instances within an Operations Center cluster.
 Implementation-Title: operations-center-context
-Implementation-Version: 1.5
+Implementation-Version: 1.6
+Plugin-Class: com.cloudbees.opscenter.context.PluginImpl
 Group-Id: com.cloudbees.operations-center.common
 Short-Name: operations-center-context
 Long-Name: Operations Center Context
 Url: http://release-notes.cloudbees.com/product/Operations+Center+Cont
  ext+Plugin
-Plugin-Version: 1.5
-Hudson-Version: 1.532.1
-Jenkins-Version: 1.532.1
-Plugin-Dependencies: nectar-license:5.4,credentials:1.13,cloudbees-lic
- ense:5.3
+Plugin-Version: 1.6
+Hudson-Version: 1.554.1
+Jenkins-Version: 1.554.1
+Plugin-Dependencies: cloudbees-license:6.0,mapdb-api:1.0.6.0,credentia
+ ls:1.18,nectar-license:6.0
 Plugin-Developers: 
 

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2013-2014, CloudBees, Inc.
+  ~
+  ~ All rights reserved.
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.cloudbees.jenkins.plugins.workflow</groupId>
+        <artifactId>cloudbees-workflow-pom</artifactId>
+        <version>1.0</version>
+    </parent>
+
+    <artifactId>cloudbees-workflow-rest-api</artifactId>
+    <name>CloudBees Workflow: REST API Plugin</name>
+    <url>http://release-notes.cloudbees.com/product/CloudBees+Workflow</url>
+    <packaging>hpi</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.cloudbees.nectar.plugins</groupId>
+            <artifactId>nectar-license</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.jenkins-ci.plugins.workflow</groupId>
+            <artifactId>workflow-job</artifactId>
+        </dependency>
+        <dependency> <!-- TODO kill this dep; cf. RunExt -->
+            <groupId>org.jenkins-ci.plugins.workflow</groupId>
+            <artifactId>workflow-cps</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.jenkins-ci.plugins.workflow</groupId>
+            <artifactId>workflow-basic-steps</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.cloudbees.jenkins.plugins.workflow</groupId>
+            <artifactId>workflow-cps-checkpoint</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.jenkins-ci.plugins.workflow</groupId>
+            <artifactId>workflow-durable-task-step</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>

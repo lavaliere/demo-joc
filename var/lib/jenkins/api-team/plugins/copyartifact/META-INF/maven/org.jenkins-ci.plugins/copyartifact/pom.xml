@@ -10,7 +10,7 @@
     <artifactId>copyartifact</artifactId>
     <packaging>hpi</packaging>
     <name>Copy Artifact Plugin</name>
-    <version>1.30</version>
+    <version>1.32.1</version>
     <url>http://wiki.jenkins-ci.org/display/JENKINS/Copy+Artifact+Plugin</url>
 
     <licenses>
@@ -27,6 +27,13 @@
         <artifactId>maven-plugin</artifactId>
         <version>1.509</version>
         <optional>true</optional>
+      </dependency>
+      <!-- Used for UI test -->
+      <dependency>
+        <groupId>org.jenkins-ci.plugins</groupId>
+        <artifactId>cloudbees-folder</artifactId>
+        <version>4.0</version>
+        <scope>test</scope>
       </dependency>
     </dependencies>
     <build>

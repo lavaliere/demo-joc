@@ -1,6 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <hudson>
-  <disabledAdministrativeMonitors/>
+  <disabledAdministrativeMonitors>
+    <string>hudson.diagnosis.ReverseProxySetupMonitor</string>
+  </disabledAdministrativeMonitors>
   <version>1.554.1.2 (Jenkins Operations Center by CloudBees 1.1)</version>
   <numExecutors>2</numExecutors>
   <mode>NORMAL</mode>

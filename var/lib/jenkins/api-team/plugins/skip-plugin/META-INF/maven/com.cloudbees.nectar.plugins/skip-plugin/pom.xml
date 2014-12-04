@@ -10,12 +10,12 @@
   <parent>
     <groupId>com.cloudbees.jenkins.plugins</groupId>
     <artifactId>jenkins-plugins</artifactId>
-    <version>16</version>
+    <version>24</version>
   </parent>
 
   <groupId>com.cloudbees.nectar.plugins</groupId>
   <artifactId>skip-plugin</artifactId>
-  <version>3.5</version>
+  <version>3.6</version>
   <packaging>hpi</packaging>
 
   <name>CloudBees Skip Next Build Plugin</name>
@@ -26,8 +26,9 @@
   <url>http://release-notes.cloudbees.com/product/Skip+Next+Build+Plugin</url>
 
   <scm>
-    <connection>scm:git:git@git.cloudbees.com:cloudbees/nectar-skip-plugin.git</connection>
-    <developerConnection>scm:git:git@git.cloudbees.com:cloudbees/nectar-skip-plugin.git</developerConnection>
+    <connection>scm:git:ssh://git@github.com/cloudbees/skip-plugin.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/cloudbees/skip-plugin.git</developerConnection>
+    <tag>skip-plugin-3.6</tag>
   </scm>
 
   <properties>
@@ -38,21 +39,18 @@
     <dependency>
       <groupId>net.jcip</groupId>
       <artifactId>jcip-annotations</artifactId>
-      <version>1.0</version>
       <scope>provided</scope>
       <optional>true</optional>
     </dependency>
     <dependency>
       <groupId>com.github.stephenc.findbugs</groupId>
       <artifactId>findbugs-annotations</artifactId>
-      <version>1.3.9-1</version>
       <scope>provided</scope>
       <optional>true</optional>
     </dependency>
     <dependency>
       <groupId>com.google.code.findbugs</groupId>
       <artifactId>jsr305</artifactId>
-      <version>1.3.9</version>
       <scope>provided</scope>
       <optional>true</optional>
     </dependency>
@@ -74,7 +72,6 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>findbugs-maven-plugin</artifactId>
-        <version>2.3.2</version>
         <configuration>
           <excludeFilterFile>src/findbugs/excludesFilter.xml</excludeFilterFile>
           <failOnError>${maven.findbugs.failure.strict}</failOnError>

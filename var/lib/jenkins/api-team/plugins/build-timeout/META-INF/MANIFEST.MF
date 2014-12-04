@@ -6,13 +6,14 @@ Build-Jdk: 1.6.0_45
 Extension-Name: build-timeout
 Specification-Title: Aborts a build if it's taking too long
 Implementation-Title: build-timeout
-Implementation-Version: 1.13
+Implementation-Version: 1.14
 Group-Id: org.jenkins-ci.plugins
 Short-Name: build-timeout
 Long-Name: Jenkins build timeout plugin
 Url: http://wiki.jenkins-ci.org/display/JENKINS/Build-timeout+Plugin
-Plugin-Version: 1.13
-Hudson-Version: 1.447
-Jenkins-Version: 1.447
+Plugin-Version: 1.14
+Hudson-Version: 1.466
+Jenkins-Version: 1.466
+Plugin-Dependencies: token-macro:1.5.1
 Plugin-Developers: 
 

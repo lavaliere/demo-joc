@@ -4,12 +4,12 @@
   <parent>
     <groupId>com.cloudbees.jenkins.plugins</groupId>
     <artifactId>jenkins-plugins</artifactId>
-    <version>21</version>
+    <version>24</version>
   </parent>
 
   <groupId>com.infradna.hudson.plugins</groupId>
   <artifactId>infradna-backup</artifactId>
-  <version>3.12</version>
+  <version>3.20</version>
   <packaging>hpi</packaging>
 
   <name>CloudBees Back-up Plugin</name>
@@ -17,10 +17,11 @@
 Users can easily create a new job type called "Backup" and back up build records, job and system configurations. The backups can be stored on a local machine or a sftp server. The plugin offers multiple retention policies for the records such as keeping the last 'n' records, keep all backups or an exponential decay algorithm to save space.</description>
   <url>http://release-notes.cloudbees.com/product/Backup+Plugin</url>
 
+
   <scm>
-    <connection>scm:git:ssh://git@git.cloudbees.com/cloudbees/nectar-backup-plugin.git</connection>
-    <developerConnection>scm:git:ssh://git@git.cloudbees.com/cloudbees/nectar-backup-plugin.git</developerConnection>
-    <tag>infradna-backup-3.12</tag>
+    <connection>scm:git:ssh://git@github.com/cloudbees/${project.artifactId}-plugin.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/cloudbees/${project.artifactId}-plugin.git</developerConnection>
+    <tag>infradna-backup-3.20</tag>
   </scm>
   <build>
     <plugins>
@@ -28,26 +29,11 @@ Users can easily create a new job type called "Backup" and back up build records
           <groupId>org.jenkins-ci.tools</groupId>
           <artifactId>maven-hpi-plugin</artifactId>
           <configuration>
-            <maskClasses>com.trilead.ssh2.</maskClasses>
+            <compatibleSinceVersion>3.13</compatibleSinceVersion>
+            <loggers>
+                <com.infradna.hudson.plugins.backup>FINE</com.infradna.hudson.plugins.backup>
+            </loggers>
           </configuration>
-      </plugin>
-      <plugin>
-          <artifactId>maven-enforcer-plugin</artifactId>
-          <executions>
-              <execution>
-                  <id>display-info</id>
-                  <configuration>
-                      <rules>
-                          <enforceBytecodeVersion>
-                              <excludes combine.children="append">
-                                  <!-- DAVStore not loadable on Java 5: -->
-                                  <exclude>com.sun.jersey*:*</exclude>
-                              </excludes>
-                          </enforceBytecodeVersion>
-                      </rules>
-                  </configuration>
-              </execution>
-          </executions>
       </plugin>
     </plugins>
   </build>
@@ -63,6 +49,16 @@ Users can easily create a new job type called "Backup" and back up build records
       <version>5.0</version>
     </dependency>
     <dependency>
+      <groupId>org.jenkins-ci.plugins</groupId>
+      <artifactId>credentials</artifactId>
+      <version>1.16.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins</groupId>
+      <artifactId>ssh-credentials</artifactId>
+      <version>1.9</version>
+    </dependency>
+    <dependency>
       <groupId>com.sun.jersey</groupId>
       <artifactId>jersey-client</artifactId>
       <version>1.12</version>
@@ -71,11 +67,6 @@ Users can easily create a new job type called "Backup" and back up build records
       <groupId>com.sun.jersey.contribs</groupId>
       <artifactId>jersey-apache-client</artifactId>
       <version>1.12</version>
-    </dependency>
-    <dependency>
-      <groupId>org.jenkins-ci</groupId>
-      <artifactId>trilead-ssh2</artifactId>
-      <version>build217-jenkins-3</version>
     </dependency>
   </dependencies>
 

@@ -14,7 +14,7 @@
   </parent>
 
   <artifactId>cloudbees-nodes-plus</artifactId>
-  <version>1.9</version>
+  <version>1.10</version>
   <packaging>hpi</packaging>
 
   <name>CloudBees Nodes Plus Plugin</name>
@@ -24,9 +24,9 @@
   <url>http://release-notes.cloudbees.com/product/Nodes+Plus+Plugin</url>
 
   <scm>
-    <connection>scm:git:ssh://git@git.cloudbees.com/cloudbees/cloudbees-nodes-plus-plugin.git</connection>
-    <developerConnection>scm:git:ssh://git@git.cloudbees.com/cloudbees/cloudbees-nodes-plus-plugin.git</developerConnection>
-    <tag>cloudbees-nodes-plus-1.9</tag>
+    <connection>scm:git:ssh://git@github.com/cloudbees/${project.artifactId}-plugin.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/cloudbees/${project.artifactId}-plugin.git</developerConnection>
+    <tag>cloudbees-nodes-plus-1.10</tag>
   </scm>
 
   <properties>

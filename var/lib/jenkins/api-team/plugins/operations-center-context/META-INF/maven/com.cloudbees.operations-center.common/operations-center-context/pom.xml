@@ -3,19 +3,18 @@
   ~ Copyright © 2011-2013 CloudBees, Inc.
   ~ This is proprietary code. All rights reserved.
   -->
-
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
     <groupId>com.cloudbees.operations-center.common</groupId>
     <artifactId>operations-center-parent</artifactId>
-    <version>1.5</version>
+    <version>1.6.6</version>
     <relativePath>../operations-center-parent/pom.xml</relativePath>
   </parent>
 
   <artifactId>operations-center-context</artifactId>
-  <version>1.5</version>
+  <version>1.6</version>
   <packaging>hpi</packaging>
 
   <name>Operations Center Context</name>
@@ -25,9 +24,9 @@
   <url>http://release-notes.cloudbees.com/product/Operations+Center+Context+Plugin</url>
 
   <scm>
-    <connection>scm:git:git@git.cloudbees.com:cloudbees/operations-center-context.git</connection>
-    <developerConnection>scm:git:git@git.cloudbees.com:cloudbees/operations-center-context.git</developerConnection>
-    <tag>operations-center-context-1.5</tag>
+    <connection>scm:git:ssh://git@github.com/cloudbees/${project.artifactId}.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/cloudbees/${project.artifactId}.git</developerConnection>
+    <tag>operations-center-context-1.6</tag>
   </scm>
 
   <dependencies>
@@ -43,6 +42,15 @@
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>credentials</artifactId>
     </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins</groupId>
+      <artifactId>mapdb-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci</groupId>
+      <artifactId>SECURITY-144-compat</artifactId>
+      <version>1.0</version>
+    </dependency>
 
     <dependency>
       <groupId>junit</groupId>
@@ -56,6 +64,14 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>findbugs-maven-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+          <classpathDependencyExcludes>
+            <classpathDependencyExclude>org.jenkins-ci:SECURITY-144-compat</classpathDependencyExclude>
+          </classpathDependencyExcludes>
+        </configuration>
       </plugin>
     </plugins>
   </build>

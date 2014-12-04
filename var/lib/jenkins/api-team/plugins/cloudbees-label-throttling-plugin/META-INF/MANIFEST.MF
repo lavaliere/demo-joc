@@ -1,8 +1,8 @@
 Manifest-Version: 1.0
 Archiver-Version: Plexus Archiver
 Created-By: Apache Maven
-Built-By: jglick
-Build-Jdk: 1.7.0_45
+Built-By: jenkins
+Build-Jdk: 1.7.0_65
 Extension-Name: cloudbees-label-throttling-plugin
 Specification-Title: This plugin allows you to define a limit to the n
  umber of concurrent builds on a group of slaves.
@@ -12,14 +12,14 @@ Specification-Title: This plugin allows you to define a limit to the n
  can avoid overloading your
      hypervisor host machine.
 Implementation-Title: cloudbees-label-throttling-plugin
-Implementation-Version: 3.3
+Implementation-Version: 3.4
 Group-Id: com.cloudbees.nectar.plugins
 Short-Name: cloudbees-label-throttling-plugin
 Long-Name: CloudBees Label Throttling Plugin
 Url: http://release-notes.cloudbees.com/product/Label+Throttle+Plugin
-Plugin-Version: 3.3
-Hudson-Version: 1.480.4
-Jenkins-Version: 1.480.4
-Plugin-Dependencies: nectar-license:4.0
+Plugin-Version: 3.4
+Hudson-Version: 1.532.3
+Jenkins-Version: 1.532.3
+Plugin-Dependencies: nectar-license:5.7
 Plugin-Developers: 
 
