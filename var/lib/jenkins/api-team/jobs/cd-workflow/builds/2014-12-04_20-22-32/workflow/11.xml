@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<org.jenkinsci.plugins.workflow.support.storage.SimpleXStreamFlowNodeStorage_-Tag plugin="workflow-support@1.0">
+  <node class="org.jenkinsci.plugins.workflow.cps.nodes.StepEndNode" plugin="workflow-cps@1.0">
+    <parents class="com.google.common.collect.ImmutableList">
+      <org.jenkinsci.plugins.workflow.cps.nodes.StepEndNode>10</org.jenkinsci.plugins.workflow.cps.nodes.StepEndNode>
+    </parents>
+    <id>11</id>
+    <start class="org.jenkinsci.plugins.workflow.cps.nodes.StepStartNode">3</start>
+  </node>
+  <actions>
+    <org.jenkinsci.plugins.workflow.actions.ErrorAction plugin="workflow-api@1.0">
+      <error class="hudson.AbortException">
+        <detailMessage>No tool named Maven 3.x found</detailMessage>
+        <stackTrace>
+          <trace>org.jenkinsci.plugins.workflow.steps.ToolStep$Execution.run(ToolStep.java:135)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.ToolStep$Execution.run(ToolStep.java:109)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.AbstractSynchronousStepExecution.start(AbstractSynchronousStepExecution.java:34)</trace>
+          <trace>org.jenkinsci.plugins.workflow.cps.DSL.invokeMethod(DSL.java:137)</trace>
+          <trace>org.jenkinsci.plugins.workflow.cps.CpsScript.invokeMethod(CpsScript.java:98)</trace>
+          <trace>org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:45)</trace>
+          <trace>org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:42)</trace>
+          <trace>org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)</trace>
+          <trace>com.cloudbees.groovy.cps.sandbox.DefaultInvoker.methodCall(DefaultInvoker.java:15)</trace>
+          <trace>com.cloudbees.groovy.cps.impl.ContinuationGroup.methodCall(ContinuationGroup.java:69)</trace>
+          <trace>com.cloudbees.groovy.cps.impl.FunctionCallBlock$ContinuationImpl.dispatchOrArg(FunctionCallBlock.java:100)</trace>
+          <trace>com.cloudbees.groovy.cps.impl.FunctionCallBlock$ContinuationImpl.fixArg(FunctionCallBlock.java:76)</trace>
+          <trace>sun.reflect.GeneratedMethodAccessor447.invoke(Unknown Source)</trace>
+          <trace>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)</trace>
+          <trace>java.lang.reflect.Method.invoke(Method.java:606)</trace>
+          <trace>com.cloudbees.groovy.cps.impl.ContinuationPtr$ContinuationImpl.receive(ContinuationPtr.java:72)</trace>
+          <trace>com.cloudbees.groovy.cps.impl.ConstantBlock.eval(ConstantBlock.java:21)</trace>
+          <trace>com.cloudbees.groovy.cps.Next.step(Next.java:58)</trace>
+          <trace>com.cloudbees.groovy.cps.Continuable.run0(Continuable.java:145)</trace>
+          <trace>org.jenkinsci.plugins.workflow.cps.CpsThread.runNextChunk(CpsThread.java:164)</trace>
+          <trace>org.jenkinsci.plugins.workflow.cps.CpsThreadGroup.run(CpsThreadGroup.java:262)</trace>
+          <trace>org.jenkinsci.plugins.workflow.cps.CpsThreadGroup.access$000(CpsThreadGroup.java:70)</trace>
+          <trace>org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$2.call(CpsThreadGroup.java:174)</trace>
+          <trace>org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$2.call(CpsThreadGroup.java:172)</trace>
+          <trace>org.jenkinsci.plugins.workflow.cps.CpsVmExecutorService$2.call(CpsVmExecutorService.java:47)</trace>
+          <trace>java.util.concurrent.FutureTask.run(FutureTask.java:262)</trace>
+          <trace>hudson.remoting.SingleLaneExecutorService$1.run(SingleLaneExecutorService.java:111)</trace>
+          <trace>jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)</trace>
+          <trace>java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)</trace>
+          <trace>java.util.concurrent.FutureTask.run(FutureTask.java:262)</trace>
+          <trace>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)</trace>
+          <trace>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)</trace>
+          <trace>java.lang.Thread.run(Thread.java:745)</trace>
+        </stackTrace>
+        <suppressedExceptions class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list"/>
+          <list reference="../c"/>
+        </suppressedExceptions>
+      </error>
+    </org.jenkinsci.plugins.workflow.actions.ErrorAction>
+    <org.jenkinsci.plugins.workflow.actions.TimingAction plugin="workflow-api@1.0">
+      <startTime>1417724553175</startTime>
+    </org.jenkinsci.plugins.workflow.actions.TimingAction>
+    <org.jenkinsci.plugins.workflow.actions.ErrorAction plugin="workflow-api@1.0">
+      <error class="hudson.AbortException" reference="../../org.jenkinsci.plugins.workflow.actions.ErrorAction/error"/>
+    </org.jenkinsci.plugins.workflow.actions.ErrorAction>
+  </actions>
+</org.jenkinsci.plugins.workflow.support.storage.SimpleXStreamFlowNodeStorage_-Tag>

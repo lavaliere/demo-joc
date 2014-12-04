@@ -9,7 +9,13 @@
     <artifactNumToKeep>-1</artifactNumToKeep>
   </logRotator>
   <keepDependencies>false</keepDependencies>
-  <properties/>
+  <properties>
+    <org.jenkinsci.plugins.uniqueid.impl.JobIdStore_-JobIdProperty plugin="unique-id@1.2">
+      <id>
+        <id>ZjMzMGFjYjktODEyOS00OWIwLTg3Yj</id>
+      </id>
+    </org.jenkinsci.plugins.uniqueid.impl.JobIdStore_-JobIdProperty>
+  </properties>
   <scm class="hudson.plugins.git.GitSCM" plugin="git@2.3">
     <configVersion>2</configVersion>
     <userRemoteConfigs>

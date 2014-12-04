@@ -1,0 +1,26 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Running: Allocate node : Start
+Running on master in /data/var/lib/jenkins/api-team/workspace/cd-workflow
+Running: Allocate node : Body : Start
+Running: Git
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/jenkinsci/workflow-plugin-pipeline-demo.git # timeout=10
+Fetching upstream changes from https://github.com/jenkinsci/workflow-plugin-pipeline-demo.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/jenkinsci/workflow-plugin-pipeline-demo.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 641a3491d49570f4f8b9e3e583eb71bad1aa493f (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 641a3491d49570f4f8b9e3e583eb71bad1aa493f
+ > git rev-list 641a3491d49570f4f8b9e3e583eb71bad1aa493f # timeout=10
+Running: Loaded script: flow.groovy
+Running: Evaluate a Groovy source file into the workflow script : Body : Start
+Running: Evaluate a Groovy source file into the workflow script : Body : End
+Running: Install a tool
+Running: Allocate node : Body : End
+Running: Allocate node : End
+Running: End of Workflow
+ERROR: No tool named Maven 3.x found
+[8mha:AAAAWB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mFinished: FAILURE

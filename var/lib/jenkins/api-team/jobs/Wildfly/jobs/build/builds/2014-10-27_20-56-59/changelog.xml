@@ -1,9 +1,0 @@
-commit 14aa094b7d06fe5aeb613957ac2d8d7bb39f7fd1
-tree 832e8ed0abde0d9bb0fcfc2abcff2e325dc9349f
-parent 0bbaf56607c4ae7be312b9cad47040c42ba2d66b
-author lavaliere <kennedy.tracy@yahoo.com> 1414443149 -0400
-committer lavaliere <kennedy.tracy@yahoo.com> 1414443149 -0400
-
-    added wildfly plugin to pom
-
-:100644 100644 51f50edb93f064c4231fe06dae5316950907332f 1b5e57817faca07202fc5814dd7c4f472dbae419 M	pom.xml

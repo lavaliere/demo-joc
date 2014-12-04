@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<org.jenkinsci.plugins.workflow.support.storage.SimpleXStreamFlowNodeStorage_-Tag plugin="workflow-support@1.0">
+  <node class="org.jenkinsci.plugins.workflow.cps.nodes.StepStartNode" plugin="workflow-cps@1.0">
+    <parents class="com.google.common.collect.ImmutableList">
+      <org.jenkinsci.plugins.workflow.cps.nodes.StepAtomNode>6</org.jenkinsci.plugins.workflow.cps.nodes.StepAtomNode>
+    </parents>
+    <id>7</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.cps.steps.LoadStep</descriptorId>
+  </node>
+  <actions>
+    <org.jenkinsci.plugins.workflow.actions.BodyInvocationAction plugin="workflow-api@1.0"/>
+    <org.jenkinsci.plugins.workflow.actions.TimingAction plugin="workflow-api@1.0">
+      <startTime>1417724553142</startTime>
+    </org.jenkinsci.plugins.workflow.actions.TimingAction>
+  </actions>
+</org.jenkinsci.plugins.workflow.support.storage.SimpleXStreamFlowNodeStorage_-Tag>
