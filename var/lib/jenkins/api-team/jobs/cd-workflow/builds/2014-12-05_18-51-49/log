@@ -1,0 +1,169 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Running: Allocate node : Start
+Running on master in /data/var/lib/jenkins/api-team/workspace/cd-workflow@2
+Running: Allocate node : Body : Start
+Running: Git
+Cloning the remote Git repository
+Cloning repository https://github.com/lavaliere/workflow-plugin-pipeline-demo.git
+ > git init /data/var/lib/jenkins/api-team/workspace/cd-workflow@2 # timeout=10
+Fetching upstream changes from https://github.com/lavaliere/workflow-plugin-pipeline-demo.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/lavaliere/workflow-plugin-pipeline-demo.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/lavaliere/workflow-plugin-pipeline-demo.git # timeout=10
+ > git config remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/lavaliere/workflow-plugin-pipeline-demo.git # timeout=10
+Fetching upstream changes from https://github.com/lavaliere/workflow-plugin-pipeline-demo.git
+ > git fetch --tags --progress https://github.com/lavaliere/workflow-plugin-pipeline-demo.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 4fc88619cec240b2003996e29547d93f78bd6996 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 4fc88619cec240b2003996e29547d93f78bd6996
+Running: Loaded script: flow.groovy
+Running: Evaluate a Groovy source file into the workflow script : Body : Start
+Running: Evaluate a Groovy source file into the workflow script : Body : End
+Running: Install a tool
+Running: Dev
+Entering stage Dev
+Proceeding
+Running: Shell Script
+[cd-workflow@2] Running shell script
++ mvn install clean package
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building demo-war Maven Webapp 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.3:resources (default-resources) @ demo-war ---
+[WARNING] Using platform encoding (ANSI_X3.4-1968 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /data/var/lib/jenkins/api-team/workspace/cd-workflow@2/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.0.2:compile (default-compile) @ demo-war ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.3:testResources (default-testResources) @ demo-war ---
+[WARNING] Using platform encoding (ANSI_X3.4-1968 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /data/var/lib/jenkins/api-team/workspace/cd-workflow@2/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.0.2:testCompile (default-testCompile) @ demo-war ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.10:test (default-test) @ demo-war ---
+[INFO] No tests to run.
+[INFO] Surefire report directory: /data/var/lib/jenkins/api-team/workspace/cd-workflow@2/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-war-plugin:2.1.1:war (default-war) @ demo-war ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [demo-war] in [/data/var/lib/jenkins/api-team/workspace/cd-workflow@2/target/x]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/data/var/lib/jenkins/api-team/workspace/cd-workflow@2/src/main/webapp]
+[INFO] Webapp assembled in [86 msecs]
+[INFO] Building war: /data/var/lib/jenkins/api-team/workspace/cd-workflow@2/target/x.war
+[INFO] WEB-INF/web.xml already added, skipping
+[INFO] 
+[INFO] --- maven-install-plugin:2.3:install (default-install) @ demo-war ---
+[INFO] Installing /data/var/lib/jenkins/api-team/workspace/cd-workflow@2/target/x.war to /root/.m2/repository/org/jenkinsci/plugins/workflow/demo/demo-war/1.0-SNAPSHOT/demo-war-1.0-SNAPSHOT.war
+[INFO] Installing /data/var/lib/jenkins/api-team/workspace/cd-workflow@2/pom.xml to /root/.m2/repository/org/jenkinsci/plugins/workflow/demo/demo-war/1.0-SNAPSHOT/demo-war-1.0-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ demo-war ---
+[INFO] Deleting /data/var/lib/jenkins/api-team/workspace/cd-workflow@2/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.3:resources (default-resources) @ demo-war ---
+[WARNING] Using platform encoding (ANSI_X3.4-1968 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /data/var/lib/jenkins/api-team/workspace/cd-workflow@2/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.0.2:compile (default-compile) @ demo-war ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.3:testResources (default-testResources) @ demo-war ---
+[WARNING] Using platform encoding (ANSI_X3.4-1968 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /data/var/lib/jenkins/api-team/workspace/cd-workflow@2/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.0.2:testCompile (default-testCompile) @ demo-war ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.10:test (default-test) @ demo-war ---
+[INFO] No tests to run.
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO] 
+[INFO] --- maven-war-plugin:2.1.1:war (default-war) @ demo-war ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [demo-war] in [/data/var/lib/jenkins/api-team/workspace/cd-workflow@2/target/x]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/data/var/lib/jenkins/api-team/workspace/cd-workflow@2/src/main/webapp]
+[INFO] Webapp assembled in [47 msecs]
+[INFO] Building war: /data/var/lib/jenkins/api-team/workspace/cd-workflow@2/target/x.war
+[INFO] WEB-INF/web.xml already added, skipping
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 8.336s
+[INFO] Finished at: Fri Dec 05 18:52:02 UTC 2014
+[INFO] Final Memory: 14M/163M
+[INFO] ------------------------------------------------------------------------
+Running: Archive Artifacts
+Running: QA
+Entering stage QA
+Proceeding
+Running: Execute sub-workflows in parallel : Start
+Running: Parallel branch: longerTests
+Running: Parallel branch: quickerTests
+Running: Execute sub-workflows in parallel : Body : End
+Running: Execute sub-workflows in parallel : Body : End
+Running: Execute sub-workflows in parallel : End
+Running: Allocate node : Body : End
+Running: Allocate node : End
+Running: End of Workflow
+org.jenkinsci.plugins.workflow.cps.steps.ParallelStepException: Parallel step quickerTests failed
+	at org.jenkinsci.plugins.workflow.cps.steps.ParallelStep$ResultHandler$Callback.checkAllDone(ParallelStep.java:126)
+	at org.jenkinsci.plugins.workflow.cps.steps.ParallelStep$ResultHandler$Callback.onFailure(ParallelStep.java:105)
+	at org.jenkinsci.plugins.workflow.cps.CpsBodyExecution$FailureAdapter.receive(CpsBodyExecution.java:295)
+	at com.cloudbees.groovy.cps.impl.ContinuationGroup.throwException(ContinuationGroup.java:203)
+	at com.cloudbees.groovy.cps.impl.ContinuationGroup.methodCall(ContinuationGroup.java:75)
+	at com.cloudbees.groovy.cps.impl.FunctionCallBlock$ContinuationImpl.dispatchOrArg(FunctionCallBlock.java:100)
+	at com.cloudbees.groovy.cps.impl.FunctionCallBlock$ContinuationImpl.fixArg(FunctionCallBlock.java:76)
+	at sun.reflect.GeneratedMethodAccessor399.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.cloudbees.groovy.cps.impl.ContinuationPtr$ContinuationImpl.receive(ContinuationPtr.java:72)
+	at com.cloudbees.groovy.cps.impl.ClosureBlock.eval(ClosureBlock.java:25)
+	at com.cloudbees.groovy.cps.Next.step(Next.java:58)
+	at com.cloudbees.groovy.cps.Continuable.run0(Continuable.java:145)
+	at org.jenkinsci.plugins.workflow.cps.CpsThread.runNextChunk(CpsThread.java:164)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup.run(CpsThreadGroup.java:262)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup.access$000(CpsThreadGroup.java:70)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$2.call(CpsThreadGroup.java:174)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$2.call(CpsThreadGroup.java:172)
+	at org.jenkinsci.plugins.workflow.cps.CpsVmExecutorService$2.call(CpsVmExecutorService.java:47)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at hudson.remoting.SingleLaneExecutorService$1.run(SingleLaneExecutorService.java:111)
+	at jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NoSuchMethodError: No such DSL method grep `hostname` /etc/hosts |awk  found among [archive, bat, build, catchError, checkout, checkpoint, dir, echo, git, input, load, node, parallel, pwd, readFile, retry, sh, stage, step, timeout, tool, unarchive, writeFile, ws]
+	at org.jenkinsci.plugins.workflow.cps.DSL.invokeMethod(DSL.java:107)
+	at org.jenkinsci.plugins.workflow.cps.CpsScript.invokeMethod(CpsScript.java:98)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:42)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at com.cloudbees.groovy.cps.sandbox.DefaultInvoker.methodCall(DefaultInvoker.java:15)
+	at Script1.runWithServer(Script1.groovy:49)
+	at Script1.devQAStaging(Script1.groovy:14)
+	at Unknown.Unknown(Unknown)
+	at ___cps.transform___(Native Method)
+	at com.cloudbees.groovy.cps.impl.ContinuationGroup.methodCall(ContinuationGroup.java:69)
+	... 23 more
+Finished: FAILURE
