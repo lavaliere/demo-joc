@@ -1,79 +1,115 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <nectar.plugins.rbac.strategy.RoleMatrixAuthorizationPlugin plugin="nectar-rbac@4.12">
-  <configuration class="nectar.plugins.rbac.strategy.DefaultRoleMatrixAuthorizationConfig">
-    <role name="anonymous" filterable="true"/>
-    <role name="authenticated" filterable="true">
-      <permission id="jenkins.metrics.api.Metrics.View"/>
-      <permission id="hudson.model.View.Delete"/>
-      <permission id="nectar.plugins.rbac.roles.Role.View"/>
-      <permission id="hudson.model.Computer.Configure"/>
-      <permission id="nectar.plugins.rbac.groups.Group.View"/>
-      <permission id="hudson.security.Permission.GenericConfigure"/>
-      <permission id="hudson.model.Item.Workspace"/>
-      <permission id="nectar.plugins.rbac.groups.Group.Manage"/>
-      <permission id="hudson.model.Run.Delete"/>
-      <permission id="com.cloudbees.nectar.plugins.skip.SkipAction.Remove"/>
-      <permission id="com.cloudbees.plugins.updatecenter.UpdateCenter.Upload"/>
-      <permission id="hudson.model.Hudson.UploadPlugins"/>
-      <permission id="hudson.model.Item.Discover"/>
-      <permission id="hudson.security.Permission.GenericUpdate"/>
-      <permission id="hudson.security.Permission.GenericWrite"/>
-      <permission id="hudson.model.Hudson.Read"/>
-      <permission id="hudson.model.Item.Delete"/>
-      <permission id="hudson.model.Item.Request"/>
-      <permission id="hudson.model.Hudson.ConfigureUpdateCenter"/>
-      <permission id="com.cloudbees.jenkins.plugins.git.vmerge.CommitSpoolRepository.Pull"/>
-      <permission id="com.cloudbees.nectar.plugins.skip.SkipAction.Apply"/>
-      <permission id="hudson.model.Hudson.RunScripts"/>
-      <permission id="hudson.model.Computer.Delete"/>
-      <permission id="com.cloudbees.plugins.updatecenter.UpdateCenter.Promote"/>
-      <permission id="hudson.model.Item.Create"/>
-      <permission id="hudson.model.Item.Build"/>
-      <permission id="hudson.security.Permission.GenericDelete"/>
-      <permission id="hudson.model.Run.Update"/>
-      <permission id="hudson.scm.SCM.Tag"/>
-      <permission id="hudson.model.Run.Artifacts"/>
-      <permission id="hudson.security.Permission.FullControl"/>
-      <permission id="nectar.plugins.rbac.roles.Role.Filter"/>
-      <permission id="com.cloudbees.plugins.credentials.CredentialsProvider.Delete"/>
-      <permission id="hudson.model.Computer.Disconnect"/>
-      <permission id="hudson.model.Item.ExtendedRead"/>
-      <permission id="hudson.model.Item.Configure"/>
-      <permission id="com.cloudbees.jenkins.plugin.metrics.views.Alerter.Mute"/>
-      <permission id="hudson.model.View.Create"/>
-      <permission id="hudson.model.View.Read"/>
-      <permission id="com.cloudbees.jenkins.plugins.securecopy.ExportsRootAction.Delete"/>
-      <permission id="com.cloudbees.jenkins.plugin.metrics.views.Alerter.View"/>
-      <permission id="hudson.model.Computer.ExtendedRead"/>
-      <permission id="hudson.model.Computer.Connect"/>
-      <permission id="nectar.plugins.rbac.groups.Group.Configure"/>
-      <permission id="hudson.model.Item.WipeOut"/>
-      <permission id="com.cloudbees.plugins.credentials.CredentialsProvider.View"/>
-      <permission id="com.cloudbees.plugins.credentials.CredentialsProvider.Create"/>
-      <permission id="hudson.model.View.Configure"/>
-      <permission id="com.cloudbees.jenkins.plugins.securecopy.ExportsRootAction.Create"/>
-      <permission id="hudson.security.Permission.GenericRead"/>
-      <permission id="nectar.plugins.rbac.groups.Group.Create"/>
-      <permission id="hudson.model.Item.Move"/>
-      <permission id="com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains"/>
-      <permission id="hudson.model.Item.Read"/>
-      <permission id="com.cloudbees.jenkins.plugins.git.vmerge.CommitSpoolRepository.Push"/>
-      <permission id="com.cloudbees.jenkins.plugins.TrackerWidget.View"/>
-      <permission id="jenkins.metrics.api.Metrics.ThreadDump"/>
-      <permission id="hudson.model.Hudson.Administer"/>
-      <permission id="hudson.security.Permission.GenericCreate"/>
-      <permission id="hudson.plugins.vmware.Root.Configure"/>
-      <permission id="hudson.model.Computer.ViewOwners"/>
-      <permission id="jenkins.metrics.api.Metrics.HealthCheck"/>
-      <permission id="com.cloudbees.plugins.updatecenter.UpdateCenter.Configure"/>
-      <permission id="hudson.model.Computer.Create"/>
-      <permission id="com.cloudbees.jenkins.plugins.securecopy.ExportsRootAction.View"/>
-      <permission id="com.cloudbees.jenkins.support.SupportPlugin.DownloadBundle"/>
-      <permission id="hudson.model.Computer.Secure"/>
-      <permission id="hudson.model.Computer.Build"/>
-      <permission id="hudson.model.Item.Cancel"/>
-      <permission id="nectar.plugins.rbac.groups.Group.Delete"/>
-      <permission id="com.cloudbees.plugins.credentials.CredentialsProvider.Update"/>
-    </role>
+  <lastModified>2014-12-10 19:53:49.392 UTC</lastModified>
+  <configuration class="com.cloudbees.opscenter.client.plugin.OperationsCenterRoleMatrixAuthorizationConfig" plugin="operations-center-client@1.6">
+    <cache>
+      <parent class="nectar.plugins.rbac.groups.ContextGroupContainer" plugin="nectar-rbac@4.12">
+        <parent class="nectar.plugins.rbac.groups.ContextGroupContainer">
+          <parent class="nectar.plugins.rbac.groups.ContextGroupContainer">
+            <name>Jenkins</name>
+            <groups class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+              <c class="list">
+                <nectar.plugins.rbac.groups.ReadOnlyGroup>
+                  <name>Administrators</name>
+                  <member>admin-ext</member>
+                  <member>harpreet</member>
+                  <role>administer</role>
+                </nectar.plugins.rbac.groups.ReadOnlyGroup>
+                <nectar.plugins.rbac.groups.ReadOnlyGroup>
+                  <name>Developers</name>
+                  <member>developer-ext</member>
+                  <role>develop</role>
+                </nectar.plugins.rbac.groups.ReadOnlyGroup>
+                <nectar.plugins.rbac.groups.ReadOnlyGroup>
+                  <name>Browsers</name>
+                  <member>alyssa</member>
+                  <role>browse</role>
+                </nectar.plugins.rbac.groups.ReadOnlyGroup>
+              </c>
+              <list reference="../c"/>
+            </groups>
+            <roleFilters class="java.util.Collections$UnmodifiableSet">
+              <c class="set"/>
+            </roleFilters>
+          </parent>
+          <name>masters</name>
+          <groups class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+            <c class="list">
+              <nectar.plugins.rbac.groups.ReadOnlyGroup>
+                <name>devs</name>
+                <member>kohsuke</member>
+                <role>develop</role>
+              </nectar.plugins.rbac.groups.ReadOnlyGroup>
+              <nectar.plugins.rbac.groups.ReadOnlyGroup>
+                <name>admins</name>
+                <member>harpreet</member>
+                <member>stephen</member>
+                <role>administer</role>
+              </nectar.plugins.rbac.groups.ReadOnlyGroup>
+            </c>
+            <list reference="../c"/>
+          </groups>
+          <roleFilters class="java.util.Collections$UnmodifiableSet">
+            <c class="set">
+              <string>anonymous</string>
+              <string>browse</string>
+              <string>authenticated</string>
+              <string>develop</string>
+            </c>
+          </roleFilters>
+        </parent>
+        <name>api-team</name>
+        <groups class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list">
+            <nectar.plugins.rbac.groups.ReadOnlyGroup>
+              <name>api-team</name>
+              <member>kohsuke</member>
+              <member>stephen</member>
+              <role>develop</role>
+            </nectar.plugins.rbac.groups.ReadOnlyGroup>
+          </c>
+          <list reference="../c"/>
+        </groups>
+        <roleFilters class="java.util.Collections$UnmodifiableSet">
+          <c class="set">
+            <string>anonymous</string>
+            <string>browse</string>
+            <string>authenticated</string>
+            <string>develop</string>
+          </c>
+        </roleFilters>
+      </parent>
+      <role name="administer" filterable="true">
+        <permission id="hudson.model.Hudson.ConfigureUpdateCenter"/>
+        <permission id="hudson.model.Hudson.Administer"/>
+        <permission id="hudson.model.Hudson.RunScripts"/>
+        <permission id="hudson.model.Hudson.UploadPlugins"/>
+      </role>
+      <role name="anonymous" filterable="true"/>
+      <role name="authenticated" filterable="true">
+        <permission id="hudson.model.Hudson.Read"/>
+      </role>
+      <role name="browse" filterable="true">
+        <permission id="hudson.model.Item.Read"/>
+        <permission id="hudson.model.Hudson.Read"/>
+      </role>
+      <role name="develop" filterable="true">
+        <permission id="hudson.scm.SCM.Tag"/>
+        <permission id="hudson.model.View.Delete"/>
+        <permission id="hudson.model.Item.Read"/>
+        <permission id="hudson.model.Item.Move"/>
+        <permission id="hudson.model.Item.Workspace"/>
+        <permission id="hudson.model.Item.Configure"/>
+        <permission id="hudson.model.View.Create"/>
+        <permission id="hudson.model.Run.Delete"/>
+        <permission id="hudson.model.View.Read"/>
+        <permission id="hudson.model.Item.Create"/>
+        <permission id="hudson.model.Item.Build"/>
+        <permission id="hudson.model.Hudson.Read"/>
+        <permission id="hudson.model.Item.Delete"/>
+        <permission id="hudson.model.Run.Update"/>
+        <permission id="hudson.model.View.Configure"/>
+      </role>
+    </cache>
   </configuration>
 </nectar.plugins.rbac.strategy.RoleMatrixAuthorizationPlugin>

@@ -1,0 +1,10 @@
+Started by timer
+Building on master in workspace /var/lib/jenkins/jobs/long-running/workspace
+[workspace] Running shell script
+Finished: SUCCESS
++ echo start
+start
++ sleep 200
++ echo end
+end
+Task passed

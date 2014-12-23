@@ -1,0 +1,5 @@
+Started by timer
+Building in workspace /var/lib/jenkins-oc/workspace/hourly-backup-jockey
+Creating a backup to /tmp/backup-jockey/backup-hourly-backup-jockey-69.tar.gz
+Warning: excluding /var/lib/jenkins-oc/secrets/master.key from backup; make sure this is kept on secure storage
+100: cluster-ops/presets/quiet-down/builds/2014-11-25_21-44-02/log

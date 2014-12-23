@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<com.infradna.hudson.plugins.backup.BackupBuilder_-DescriptorImpl plugin="infradna-backup@3.20">
+  <configurers>
+    <entry>
+      <string>16fc37313164d84c5abbc95cafcc30d4f82711c3</string>
+      <string>harpreet</string>
+    </entry>
+    <entry>
+      <string>f54997ad8961f4f622eb831d57aa86ab9f2562ec</string>
+      <string>harpreet</string>
+    </entry>
+    <entry>
+      <string>aed89256e78bbc0a559a6e3a2b8fee3142f45ec9</string>
+      <string>harpreet</string>
+    </entry>
+    <entry>
+      <string>4807b7a25f7b12fb8b9b7fa2020a8913cdc9bbc6</string>
+      <string>harpreet</string>
+    </entry>
+    <entry>
+      <string>bb690b71c3368f50a3bc9de69a373b111d5d947c</string>
+      <string>harpreet</string>
+    </entry>
+  </configurers>
+</com.infradna.hudson.plugins.backup.BackupBuilder_-DescriptorImpl>

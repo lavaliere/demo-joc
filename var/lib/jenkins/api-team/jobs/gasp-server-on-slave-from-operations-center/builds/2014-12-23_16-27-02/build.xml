@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causes>
+        <hudson.triggers.TimerTrigger_-TimerTriggerCause/>
+      </causes>
+    </hudson.model.CauseAction>
+    <jenkins.metrics.impl.TimeInQueueAction plugin="metrics@3.0.9">
+      <queuingDurationMillis>2548</queuingDurationMillis>
+    </jenkins.metrics.impl.TimeInQueueAction>
+    <hudson.plugins.git.util.BuildData plugin="git@2.3.1">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@1.12.0">
+              <sha1>e6b289b81ceec778d56280312d3b18f5a15d3f43</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>300</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <scmName></scmName>
+      <remoteUrls>
+        <string>https://github.com/CloudBees-community/gasp-server.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction plugin="git@2.3.1">
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>/home/ec2-user/1797faba/workspace/gasp-server-on-slave-from-operations-center</ws>
+    </hudson.plugins.git.GitTagAction>
+    <hudson.scm.SCMRevisionState_-None/>
+    <hudson.plugins.parameterizedtrigger.CapturedEnvironmentAction plugin="parameterized-trigger@2.25">
+      <env serialization="custom">
+        <unserializable-parents/>
+        <tree-map>
+          <default>
+            <comparator class="hudson.util.CaseInsensitiveComparator"/>
+          </default>
+          <int>55</int>
+          <string>_</string>
+          <string>/usr/bin/java</string>
+          <string>AWS_AUTO_SCALING_HOME</string>
+          <string>/opt/aws/apitools/as</string>
+          <string>AWS_CLOUDWATCH_HOME</string>
+          <string>/opt/aws/apitools/mon</string>
+          <string>AWS_ELB_HOME</string>
+          <string>/opt/aws/apitools/elb</string>
+          <string>AWS_PATH</string>
+          <string>/opt/aws</string>
+          <string>AWS_RDS_HOME</string>
+          <string>/opt/aws/apitools/rds</string>
+          <string>BUILD_DISPLAY_NAME</string>
+          <string>#300</string>
+          <string>BUILD_ID</string>
+          <string>2014-12-23_16-27-02</string>
+          <string>BUILD_NUMBER</string>
+          <string>300</string>
+          <string>BUILD_TAG</string>
+          <string>jenkins-gasp-server-on-slave-from-operations-center-300</string>
+          <string>BUILD_URL</string>
+          <string>http://54.174.120.135:8080/job/gasp-server-on-slave-from-operations-center/300/</string>
+          <string>CLASSPATH</string>
+          <string></string>
+          <string>EC2_AMITOOL_HOME</string>
+          <string>/opt/aws/amitools/ec2</string>
+          <string>EC2_HOME</string>
+          <string>/opt/aws/apitools/ec2</string>
+          <string>EXECUTOR_NUMBER</string>
+          <string>1</string>
+          <string>GIT_BRANCH</string>
+          <string>origin/master</string>
+          <string>GIT_COMMIT</string>
+          <string>e6b289b81ceec778d56280312d3b18f5a15d3f43</string>
+          <string>GIT_PREVIOUS_COMMIT</string>
+          <string>e6b289b81ceec778d56280312d3b18f5a15d3f43</string>
+          <string>GIT_PREVIOUS_SUCCESSFUL_COMMIT</string>
+          <string>e6b289b81ceec778d56280312d3b18f5a15d3f43</string>
+          <string>GIT_URL</string>
+          <string>https://github.com/CloudBees-community/gasp-server.git</string>
+          <string>HOME</string>
+          <string>/home/ec2-user</string>
+          <string>HUDSON_HOME</string>
+          <string>/var/lib/jenkins</string>
+          <string>HUDSON_SERVER_COOKIE</string>
+          <string>e166c0c441e60245</string>
+          <string>HUDSON_URL</string>
+          <string>http://54.174.120.135:8080/</string>
+          <string>JAVA_HOME</string>
+          <string>/usr/lib/jvm/java</string>
+          <string>JENKINS_HOME</string>
+          <string>/var/lib/jenkins</string>
+          <string>JENKINS_SERVER_COOKIE</string>
+          <string>e166c0c441e60245</string>
+          <string>JENKINS_URL</string>
+          <string>http://54.174.120.135:8080/</string>
+          <string>JOB_NAME</string>
+          <string>gasp-server-on-slave-from-operations-center</string>
+          <string>JOB_URL</string>
+          <string>http://54.174.120.135:8080/job/gasp-server-on-slave-from-operations-center/</string>
+          <string>LANG</string>
+          <string>en_US.UTF-8</string>
+          <string>LESS_TERMCAP_mb</string>
+          <string>&#x1b;[01;31m</string>
+          <string>LESS_TERMCAP_md</string>
+          <string>&#x1b;[01;38;5;208m</string>
+          <string>LESS_TERMCAP_me</string>
+          <string>&#x1b;[0m</string>
+          <string>LESS_TERMCAP_se</string>
+          <string>&#x1b;[0m</string>
+          <string>LESS_TERMCAP_ue</string>
+          <string>&#x1b;[0m</string>
+          <string>LESS_TERMCAP_us</string>
+          <string>&#x1b;[04;38;5;111m</string>
+          <string>LESSOPEN</string>
+          <string>||/usr/bin/lesspipe.sh %s</string>
+          <string>LOGNAME</string>
+          <string>ec2-user</string>
+          <string>M2</string>
+          <string>/usr/local/apache-maven/bin</string>
+          <string>M2_HOME</string>
+          <string>/usr/local/apache-maven</string>
+          <string>MAIL</string>
+          <string>/var/mail/ec2-user</string>
+          <string>NLSPATH</string>
+          <string>/usr/dt/lib/nls/msg/%L/%N.cat</string>
+          <string>NODE_LABELS</string>
+          <string>shared shared-slave-2</string>
+          <string>NODE_NAME</string>
+          <string>shared-slave-2</string>
+          <string>OLDPWD</string>
+          <string>/home/ec2-user</string>
+          <string>PATH</string>
+          <string>/usr/local/apache-maven/bin:/usr/local/bin:/bin:/usr/bin:/opt/aws/bin</string>
+          <string>PWD</string>
+          <string>/home/ec2-user</string>
+          <string>SHELL</string>
+          <string>/bin/bash</string>
+          <string>SHLVL</string>
+          <string>1</string>
+          <string>SSH_CLIENT</string>
+          <string>54.174.120.135 47201 22</string>
+          <string>SSH_CONNECTION</string>
+          <string>54.174.120.135 47201 172.31.14.143 22</string>
+          <string>USER</string>
+          <string>ec2-user</string>
+          <string>WORKSPACE</string>
+          <string>/home/ec2-user/1797faba/workspace/gasp-server-on-slave-from-operations-center</string>
+          <string>XFILESEARCHPATH</string>
+          <string>/usr/dt/app-defaults/%L/Dt</string>
+        </tree-map>
+      </env>
+    </hudson.plugins.parameterizedtrigger.CapturedEnvironmentAction>
+    <org.jenkinsci.plugins.uniqueid.impl.Id plugin="unique-id@1.2">
+      <id>ZjU4MmU2NWMtYzFkYi00Y2JhLWE4NT</id>
+    </org.jenkinsci.plugins.uniqueid.impl.Id>
+  </actions>
+  <number>300</number>
+  <startTime>1419352022865</startTime>
+  <result>SUCCESS</result>
+  <duration>7311</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn>shared-slave-2</builtOn>
+  <workspace>/home/ec2-user/1797faba/workspace/gasp-server-on-slave-from-operations-center</workspace>
+  <hudsonVersion>1.580.1.1 (Jenkins Enterprise by CloudBees 14.11)</hudsonVersion>
+  <scm class="hudson.plugins.git.GitChangeLogParser" plugin="git@2.3.1">
+    <authorOrCommitter>false</authorOrCommitter>
+  </scm>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

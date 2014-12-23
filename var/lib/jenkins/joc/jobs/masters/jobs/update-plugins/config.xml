@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<com.cloudbees.opscenter.server.clusterops.ClusterOpProject plugin="operations-center-clusterops@1.6">
+  <actions/>
+  <description></description>
+  <logRotator class="hudson.tasks.LogRotator">
+    <daysToKeep>2</daysToKeep>
+    <numToKeep>4</numToKeep>
+    <artifactDaysToKeep>-1</artifactDaysToKeep>
+    <artifactNumToKeep>-1</artifactNumToKeep>
+  </logRotator>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <org.jenkinsci.plugins.uniqueid.impl.JobIdStore_-JobIdProperty plugin="unique-id@1.2">
+      <id>
+        <id>ZjAwMDRjNjUtMjE0OC00Y2U2LTg2OD</id>
+      </id>
+    </org.jenkinsci.plugins.uniqueid.impl.JobIdStore_-JobIdProperty>
+    <nectar.plugins.rbac.groups.JobProxyGroupContainer plugin="nectar-rbac@4.12">
+      <groups/>
+      <roleFilters>
+        <string>anonymous</string>
+        <string>browse</string>
+        <string>authenticated</string>
+        <string>develop</string>
+      </roleFilters>
+    </nectar.plugins.rbac.groups.JobProxyGroupContainer>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers>
+    <hudson.triggers.TimerTrigger>
+      <spec> H H(0-7) * * *
+</spec>
+    </hudson.triggers.TimerTrigger>
+  </triggers>
+  <concurrentBuild>true</concurrentBuild>
+  <builders/>
+  <publishers/>
+  <buildWrappers/>
+  <operations>
+    <com.cloudbees.opscenter.server.clusterops.operations.UpdateCenterClusterOperation>
+      <itemSource class="com.cloudbees.opscenter.server.clusterops.sources.ProjectParentItemSource"/>
+      <filters>
+        <com.cloudbees.opscenter.server.clusterops.filter.MatchingPath>
+          <pattern>**/masters/**</pattern>
+        </com.cloudbees.opscenter.server.clusterops.filter.MatchingPath>
+      </filters>
+      <clusterOpSteps>
+        <com.cloudbees.opscenter.server.clusterops.steps.updatecenter.RefeshUpstreamSourcesClusterOpStep/>
+        <com.cloudbees.opscenter.server.clusterops.steps.updatecenter.PullNewVersionsClusterOpStep/>
+      </clusterOpSteps>
+      <noRetries>0</noRetries>
+      <inParallel>0</inParallel>
+      <timeoutSeconds>0</timeoutSeconds>
+      <failureMode>IMMEDIATELY</failureMode>
+      <failAs>
+        <name>FAILURE</name>
+        <ordinal>2</ordinal>
+        <color>RED</color>
+        <completeBuild>true</completeBuild>
+      </failAs>
+    </com.cloudbees.opscenter.server.clusterops.operations.UpdateCenterClusterOperation>
+    <com.cloudbees.opscenter.server.clusterops.operations.MasterClusterOperation>
+      <itemSource class="com.cloudbees.opscenter.server.clusterops.sources.ProjectParentItemSource"/>
+      <filters>
+        <com.cloudbees.opscenter.server.clusterops.filter.MatchingPath>
+          <pattern>**/masters/**</pattern>
+        </com.cloudbees.opscenter.server.clusterops.filter.MatchingPath>
+        <com.cloudbees.opscenter.server.clusterops.filter.IsMasterOnlineFilter/>
+      </filters>
+      <clusterOpSteps>
+        <com.cloudbees.opscenter.server.clusterops.steps.clientmaster.RefreshUpdateCenterMetadataClusterOpStep/>
+        <com.cloudbees.opscenter.server.clusterops.steps.clientmaster.UpgradePluginsClusterOpStep>
+          <force>false</force>
+        </com.cloudbees.opscenter.server.clusterops.steps.clientmaster.UpgradePluginsClusterOpStep>
+        <com.cloudbees.opscenter.server.clusterops.steps.SafeRestartMasterClusterOpStep/>
+      </clusterOpSteps>
+      <noRetries>0</noRetries>
+      <inParallel>0</inParallel>
+      <timeoutSeconds>0</timeoutSeconds>
+      <failureMode>IMMEDIATELY</failureMode>
+      <failAs>
+        <name>FAILURE</name>
+        <ordinal>2</ordinal>
+        <color>RED</color>
+        <completeBuild>true</completeBuild>
+      </failAs>
+    </com.cloudbees.opscenter.server.clusterops.operations.MasterClusterOperation>
+  </operations>
+</com.cloudbees.opscenter.server.clusterops.ClusterOpProject>

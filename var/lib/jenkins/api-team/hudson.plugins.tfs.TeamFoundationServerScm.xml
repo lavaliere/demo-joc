@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hudson.plugins.tfs.TeamFoundationServerScm_-DescriptorImpl plugin="tfs@3.1.1">
+  <generation>1</generation>
+  <tfExecutable>tf</tfExecutable>
+</hudson.plugins.tfs.TeamFoundationServerScm_-DescriptorImpl>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<com.cloudbees.jenkins.plugins.longrunning.LongRunningBuild plugin="cloudbees-long-running-build@1.1">
+  <actions>
+    <hudson.model.CauseAction>
+      <causes>
+        <hudson.triggers.TimerTrigger_-TimerTriggerCause/>
+      </causes>
+    </hudson.model.CauseAction>
+    <jenkins.metrics.impl.TimeInQueueAction plugin="metrics@3.0.9">
+      <queuingDurationMillis>4</queuingDurationMillis>
+    </jenkins.metrics.impl.TimeInQueueAction>
+    <org.jenkinsci.plugins.uniqueid.impl.Id plugin="unique-id@1.2">
+      <id>ZmE0Yjg2ZWEtYzQ4YS00MDdkLTg3Nj</id>
+    </org.jenkinsci.plugins.uniqueid.impl.Id>
+  </actions>
+  <number>115</number>
+  <startTime>1418560080330</startTime>
+  <result>SUCCESS</result>
+  <duration>15</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/var/lib/jenkins/jobs/long-running/workspace</workspace>
+  <hudsonVersion>1.580.1.1 (Jenkins Enterprise by CloudBees 14.11)</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+  <controller class="org.jenkinsci.plugins.durabletask.BourneShellScript$ShellController" plugin="durable-task@1.1">
+    <id>a3ff1848</id>
+    <lastLocation>46</lastLocation>
+    <pid>16606</pid>
+  </controller>
+</com.cloudbees.jenkins.plugins.longrunning.LongRunningBuild>

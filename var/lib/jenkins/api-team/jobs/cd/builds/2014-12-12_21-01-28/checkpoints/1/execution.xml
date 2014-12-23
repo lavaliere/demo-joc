@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<org.jenkinsci.plugins.workflow.cps.CpsFlowExecution>
+  <result>
+    <name>SUCCESS</name>
+    <ordinal>0</ordinal>
+    <color>BLUE</color>
+    <completeBuild>true</completeBuild>
+  </result>
+  <script>def flow
+node(&apos;shared&apos;) {
+    git branch: &apos;master&apos;, changelog: false, poll: false, url: &apos;https://github.com/lavaliere/workflow-plugin-pipeline-demo.git&apos;
+    flow = load &apos;flow.groovy&apos;
+    flow.devQAStaging()
+}
+flow.production()</script>
+  <loadedScripts class="map">
+    <entry>
+      <string>Script1</string>
+      <string>def devQAStaging() {
+    env.PATH=&quot;${tool &apos;Maven 3.x&apos;}/bin:${env.PATH}&quot;
+    stage &apos;Dev&apos;
+    sh &apos;mvn clean install package&apos;
+    archive &apos;target/x.war&apos;
+  try {
+        checkpoint(&apos;Archived war&apos;)
+    } catch (NoSuchMethodError _) {
+        echo &apos;Checkpoint feature available in Jenkins Enterprise by CloudBees.&apos;
+    }
+    stage &apos;QA&apos;
+
+    parallel(longerTests: {
+        runWithServer {url -&gt;
+            sh &quot;mvn -f sometests/pom.xml test -Durl=${url} -Dduration=30&quot;
+        }
+    }, quickerTests: {
+        runWithServer {url -&gt;
+            sh &quot;mvn -f sometests/pom.xml test -Durl=${url} -Dduration=20&quot;
+        }
+    })
+    stage name: &apos;Staging&apos;, concurrency: 1
+    deploy &apos;target/x.war&apos;, &apos;staging&apos;
+}
+
+def production() {
+    input message: &quot;Does http://localhost:8888/staging/ look good?&quot;
+    try {
+        checkpoint(&apos;Before production&apos;)
+    } catch (NoSuchMethodError _) {
+        echo &apos;Checkpoint feature available in Jenkins Enterprise by CloudBees.&apos;
+    }
+    stage name: &apos;Production&apos;, concurrency: 1
+    node {
+        unarchive mapping: [&apos;target/x.war&apos; : &apos;x.war&apos;]
+        deploy &apos;x.war&apos;, &apos;production&apos;
+        echo &apos;Deployed to http://localhost:8888/production/&apos;
+    }
+}
+
+def deploy(war, id) {
+    sh &quot;cp ${war} /tmp/webapps/${id}.war&quot;
+}
+
+def undeploy(id) {
+    sh &quot;rm /tmp/webapps/${id}.war&quot;
+}
+
+def runWithServer(body) {
+
+}
+
+return this;
+</string>
+    </entry>
+  </loadedScripts>
+  <iota>13</iota>
+  <head>1:13</head>
+  <start>2</start>
+</org.jenkinsci.plugins.workflow.cps.CpsFlowExecution>

@@ -4,9 +4,9 @@
     <parent>
         <groupId>com.cloudbees.jenkins.plugins.workflow</groupId>
         <artifactId>cloudbees-workflow-pom</artifactId>
-        <version>1.0</version>
+        <version>1.1</version>
     </parent>
-    <artifactId>workflow-cps-checkpoint</artifactId> <!-- TODO is it too late to add cloudbees- prefix? -->
+    <artifactId>workflow-cps-checkpoint</artifactId>
     <packaging>hpi</packaging>
     <name>CloudBees Workflow: Groovy Checkpoint</name>
     <url>http://release-notes.cloudbees.com/product/CloudBees+Workflow</url>

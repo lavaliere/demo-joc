@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<com.cloudbees.workflow.cps.checkpoint.CpsCheckpoint plugin="workflow-cps-checkpoint@1.1">
+  <name>Before production</name>
+  <threadId>0</threadId>
+  <ownerId>cd#60</ownerId>
+</com.cloudbees.workflow.cps.checkpoint.CpsCheckpoint>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<org.jenkinsci.plugins.workflow.support.storage.SimpleXStreamFlowNodeStorage_-Tag plugin="workflow-support@1.1">
+  <node class="org.jenkinsci.plugins.workflow.cps.nodes.StepAtomNode" plugin="workflow-cps@1.1">
+    <parents class="com.google.common.collect.ImmutableList">
+      <org.jenkinsci.plugins.workflow.cps.nodes.StepAtomNode>26</org.jenkinsci.plugins.workflow.cps.nodes.StepAtomNode>
+    </parents>
+    <id>27</id>
+    <descriptorId>com.cloudbees.workflow.cps.checkpoint.CheckpointStep</descriptorId>
+  </node>
+  <actions>
+    <org.jenkinsci.plugins.workflow.actions.TimingAction plugin="workflow-api@1.1">
+      <startTime>1418418134781</startTime>
+    </org.jenkinsci.plugins.workflow.actions.TimingAction>
+    <com.cloudbees.workflow.cps.checkpoint.CheckpointNodeAction plugin="workflow-cps-checkpoint@1.1">
+      <checkpointId>2</checkpointId>
+      <checkpointName>Before production</checkpointName>
+      <baseUrl>job/cd/60/</baseUrl>
+    </com.cloudbees.workflow.cps.checkpoint.CheckpointNodeAction>
+    <org.jenkinsci.plugins.workflow.actions.TimingAction plugin="workflow-api@1.1">
+      <startTime>1418418134807</startTime>
+    </org.jenkinsci.plugins.workflow.actions.TimingAction>
+  </actions>
+</org.jenkinsci.plugins.workflow.support.storage.SimpleXStreamFlowNodeStorage_-Tag>

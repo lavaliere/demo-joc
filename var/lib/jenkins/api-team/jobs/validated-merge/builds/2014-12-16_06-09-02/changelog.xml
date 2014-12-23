@@ -1,0 +1,9 @@
+commit d47b4b62596a0ec49c89da6735c872deb49463e5
+tree 17085443d4c4e9f5e35e2fe48aed44bc59465fb8
+parent b968e9f872069805907ff1835ddef0dada90545b
+author Andy Pemberton <apemberton@cloudbees.com> 1418673783 -0500
+committer Andy Pemberton <apemberton@cloudbees.com> 1418673783 -0500
+
+    adding a literate build
+
+:000000 100644 0000000000000000000000000000000000000000 c57fc1e7aa77d93c44b5190d083df04310f1edd5 A	.cloudbees.md

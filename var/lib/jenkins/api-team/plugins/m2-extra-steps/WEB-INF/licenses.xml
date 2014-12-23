@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<l:dependencies xmlns:l='licenses' groupId='org.jenkins-ci.plugins' artifactId='m2-extra-steps' version='1.1.8'><l:dependency name='Jenkins M2 Extra Steps Plugin' groupId='org.jenkins-ci.plugins' artifactId='m2-extra-steps' version='1.1.8' url='http://wiki.jenkins-ci.org/display/JENKINS/M2+Extra+Steps+Plugin'><l:description>A plugin providing the ability to add pre- and post-build steps to Maven 2 projects.</l:description></l:dependency></l:dependencies>

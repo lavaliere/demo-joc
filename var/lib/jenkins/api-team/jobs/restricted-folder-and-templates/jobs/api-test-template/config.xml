@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<job-template plugin="cloudbees-template@4.15">
+  <actions/>
+  <description></description>
+  <displayName>api-test-template</displayName>
+  <attributes>
+    <template-attribute>
+      <name>name</name>
+      <displayName>Name</displayName>
+      <control class="com.cloudbees.hudson.plugins.modeling.controls.TextFieldControl"/>
+    </template-attribute>
+    <template-attribute>
+      <name>branch</name>
+      <displayName>Branch to test</displayName>
+      <control class="com.cloudbees.hudson.plugins.modeling.controls.TextFieldControl"/>
+    </template-attribute>
+    <template-attribute>
+      <name>goal</name>
+      <displayName>Maven goals</displayName>
+      <control class="com.cloudbees.hudson.plugins.modeling.controls.TextFieldControl"/>
+    </template-attribute>
+  </attributes>
+  <properties>
+    <com.cloudbees.hudson.plugins.modeling.properties.BuildNowTextProperty>
+      <text>Begin test</text>
+    </com.cloudbees.hudson.plugins.modeling.properties.BuildNowTextProperty>
+    <com.cloudbees.hudson.plugins.modeling.properties.CustomPronounProperty>
+      <text>Test</text>
+    </com.cloudbees.hudson.plugins.modeling.properties.CustomPronounProperty>
+  </properties>
+  <instantiable>true</instantiable>
+  <transformer class="com.cloudbees.hudson.plugins.modeling.transformer.GroovyTemplateModelTransformer">
+    <template>&lt;project&gt;
+&lt;actions/&gt;
+&lt;description/&gt;
+&lt;logRotator class=&quot;hudson.tasks.LogRotator&quot;&gt;
+&lt;daysToKeep&gt;2&lt;/daysToKeep&gt;
+&lt;numToKeep&gt;4&lt;/numToKeep&gt;
+&lt;artifactDaysToKeep&gt;-1&lt;/artifactDaysToKeep&gt;
+&lt;artifactNumToKeep&gt;-1&lt;/artifactNumToKeep&gt;
+&lt;/logRotator&gt;
+&lt;keepDependencies&gt;false&lt;/keepDependencies&gt;
+&lt;properties&gt;
+&lt;org.jenkinsci.plugins.uniqueid.impl.JobIdStore_-JobIdProperty plugin=&quot;unique-id@1.2&quot;&gt;
+&lt;id&gt;
+&lt;id&gt;MDNhMzRlODQtMjVmOC00ZWI0LTk4M2&lt;/id&gt;
+&lt;/id&gt;
+&lt;/org.jenkinsci.plugins.uniqueid.impl.JobIdStore_-JobIdProperty&gt;
+&lt;com.cloudbees.opscenter.analytics.reporter.items.AnalyticsJobProperty plugin=&quot;operations-center-analytics-reporter@1.6-beta-6&quot;&gt;
+&lt;created&gt;1418151066082&lt;/created&gt;
+&lt;/com.cloudbees.opscenter.analytics.reporter.items.AnalyticsJobProperty&gt;
+&lt;/properties&gt;
+&lt;scm class=&quot;hudson.plugins.git.GitSCM&quot; plugin=&quot;git@2.3&quot;&gt;
+&lt;configVersion&gt;2&lt;/configVersion&gt;
+&lt;userRemoteConfigs&gt;
+&lt;hudson.plugins.git.UserRemoteConfig&gt;
+&lt;url&gt;https://github.com/apemberton/${name}.git&lt;/url&gt;
+&lt;/hudson.plugins.git.UserRemoteConfig&gt;
+&lt;/userRemoteConfigs&gt;
+&lt;branches&gt;
+&lt;hudson.plugins.git.BranchSpec&gt;
+&lt;name&gt;${branch}&lt;/name&gt;
+&lt;/hudson.plugins.git.BranchSpec&gt;
+&lt;/branches&gt;
+&lt;doGenerateSubmoduleConfigurations&gt;false&lt;/doGenerateSubmoduleConfigurations&gt;
+&lt;submoduleCfg class=&quot;list&quot;/&gt;
+&lt;extensions/&gt;
+&lt;/scm&gt;
+&lt;assignedNode&gt;shared&lt;/assignedNode&gt;
+&lt;canRoam&gt;false&lt;/canRoam&gt;
+&lt;disabled&gt;false&lt;/disabled&gt;
+&lt;blockBuildWhenDownstreamBuilding&gt;false&lt;/blockBuildWhenDownstreamBuilding&gt;
+&lt;blockBuildWhenUpstreamBuilding&gt;false&lt;/blockBuildWhenUpstreamBuilding&gt;
+&lt;triggers&gt;
+&lt;hudson.triggers.TimerTrigger&gt;
+&lt;spec&gt;H * * * *&lt;/spec&gt;
+&lt;/hudson.triggers.TimerTrigger&gt;
+&lt;/triggers&gt;
+&lt;concurrentBuild&gt;false&lt;/concurrentBuild&gt;
+&lt;builders&gt;
+&lt;hudson.tasks.Maven&gt;
+&lt;targets&gt;${goal}&lt;/targets&gt;
+&lt;mavenName&gt;Maven 3&lt;/mavenName&gt;
+&lt;usePrivateRepository&gt;false&lt;/usePrivateRepository&gt;
+&lt;settings class=&quot;jenkins.mvn.DefaultSettingsProvider&quot;/&gt;
+&lt;globalSettings class=&quot;jenkins.mvn.DefaultGlobalSettingsProvider&quot;/&gt;
+&lt;/hudson.tasks.Maven&gt;
+&lt;/builders&gt;
+&lt;publishers/&gt;
+&lt;buildWrappers/&gt;
+&lt;/project&gt;</template>
+    <sandbox>false</sandbox>
+  </transformer>
+</job-template>

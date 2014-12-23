@@ -5,15 +5,15 @@ Built-By: jglick
 Build-Jdk: 1.7.0_67
 Extension-Name: workflow-scm-step
 Implementation-Title: workflow-scm-step
-Implementation-Version: 1.0
+Implementation-Version: 1.1
 Group-Id: org.jenkins-ci.plugins.workflow
 Short-Name: workflow-scm-step
 Long-Name: Workflow: SCM Step
 Url: https://github.com/jenkinsci/workflow-plugin
-Plugin-Version: 1.0
+Plugin-Version: 1.1
 Hudson-Version: 1.580.1
 Jenkins-Version: 1.580.1
-Plugin-Dependencies: subversion:2.5-beta-4;resolution:=optional,workfl
- ow-step-api:1.0,git:2.3;resolution:=optional
+Plugin-Dependencies: git:2.3;resolution:=optional,subversion:2.5-beta-
+ 4;resolution:=optional,workflow-step-api:1.1
 Plugin-Developers: 
 

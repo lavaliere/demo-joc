@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<l:dependencies xmlns:l='licenses' groupId='org.jenkins-ci.plugins' artifactId='chef-tracking' version='1.0'><l:dependency name='chef-tracking' groupId='org.jenkins-ci.plugins' artifactId='chef-tracking' version='1.0' url='http://jenkins-ci.org/plugin/chef-tracking/'><l:description/></l:dependency></l:dependencies>

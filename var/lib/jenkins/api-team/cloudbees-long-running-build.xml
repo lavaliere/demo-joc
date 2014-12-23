@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<com.cloudbees.jenkins.plugins.longrunning.State plugin="cloudbees-long-running-build@1.1">
+  <runningBuilds class="sorted-set"/>
+</com.cloudbees.jenkins.plugins.longrunning.State>

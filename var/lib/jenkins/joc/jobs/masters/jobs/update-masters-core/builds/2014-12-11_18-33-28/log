@@ -1,0 +1,5 @@
+Started by user [8mha:AAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyOEgY+/dLi1CL9jMSigqLU1BIAPxyXUsMAAAA=[0mharpreet
+Building in workspace /var/lib/jenkins-oc/workspace/masters/update-masters-core
+[8mha:AAAAfB+LCAAAAAAAAP9b85aBtbiIwTE5P1cvOSe/NCUpNbVYL7+gODk1ryS1SK84tagMSCXnlBYDuUBxvdCSzByV8MSivMy8dOf8vOL8nFS//JLUYwVdKftvL5dgYmCoKGKQyihNKc7P00uGKNBDUsgAAYwghQUABw2Bo38AAAA=[0mWARNING: No Masters to run the operation on.
+Warning: this build has no associated authentication, so build permissions may be lacking, and downstream projects which cannot even be seen by an anonymous user will be silently skipped
+Finished: SUCCESS

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<com.cloudbees.plugins.updatecenter.UpdateCenter plugin="cloudbees-update-center-plugin@4.15">
+  <properties class="com.cloudbees.plugins.updatecenter.AbstractUpdateCenter$PropertyList">
+    <com.cloudbees.plugins.updatecenter.UpdateCenterProxyGroupContainer/>
+  </properties>
+  <coreData/>
+  <pluginsData/>
+  <ignoreDownloadIntegrity>false</ignoreDownloadIntegrity>
+  <certificationProvider class="com.cloudbees.plugins.updatecenter.signature.SelfCertificationProvider"/>
+  <newPluginVersionStrategy>NONE</newPluginVersionStrategy>
+  <downloadTimeout>900000</downloadTimeout>
+  <maintenanceTriggers/>
+</com.cloudbees.plugins.updatecenter.UpdateCenter>

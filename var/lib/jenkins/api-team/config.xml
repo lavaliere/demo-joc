@@ -1,26 +1,24 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <hudson>
-  <disabledAdministrativeMonitors>
-    <string>jenkins.diagnostics.SecurityIsOffMonitor</string>
-    <string>OldData</string>
-    <string>hudson.diagnosis.ReverseProxySetupMonitor</string>
-  </disabledAdministrativeMonitors>
-  <version>1.580.1.1 (Jenkins Enterprise by CloudBees 14.11)</version>
-  <numExecutors>2</numExecutors>
+  <disabledAdministrativeMonitors/>
+  <version>1.580.1.1-beta-6 (Jenkins Enterprise by CloudBees 14.11)</version>
+  <numExecutors>5</numExecutors>
   <mode>NORMAL</mode>
   <useSecurity>true</useSecurity>
-  <authorizationStrategy class="hudson.security.AuthorizationStrategy$Unsecured"/>
-  <securityRealm class="hudson.security.PAMSecurityRealm" plugin="pam-auth@1.2">
-    <serviceName>sshd</serviceName>
-  </securityRealm>
+  <authorizationStrategy class="nectar.plugins.rbac.strategy.RoleMatrixAuthorizationStrategyImpl"/>
+  <securityRealm class="com.cloudbees.opscenter.security.OperationsCenterSecurityRealm" plugin="operations-center-context@1.6"/>
   <disableRememberMe>false</disableRememberMe>
   <projectNamingStrategy class="jenkins.model.ProjectNamingStrategy$DefaultProjectNamingStrategy"/>
-  <workspaceDir>${JENKINS_HOME}/workspace/${ITEM_FULLNAME}</workspaceDir>
+  <workspaceDir>${ITEM_ROOTDIR}/workspace</workspaceDir>
   <buildsDir>${ITEM_ROOTDIR}/builds</buildsDir>
   <jdks/>
   <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
   <myViewsTabBar class="hudson.views.DefaultMyViewsTabBar"/>
-  <clouds/>
+  <clouds>
+    <com.cloudbees.opscenter.client.cloud.CloudImpl plugin="operations-center-cloud@1.6">
+      <name>Operations Center Slave Provisioning Service</name>
+    </com.cloudbees.opscenter.client.cloud.CloudImpl>
+  </clouds>
   <slaves/>
   <quietPeriod>5</quietPeriod>
   <scmCheckoutRetryCount>0</scmCheckoutRetryCount>
@@ -36,6 +34,16 @@
   <primaryView>All</primaryView>
   <slaveAgentPort>0</slaveAgentPort>
   <label></label>
-  <nodeProperties/>
+  <nodeProperties>
+    <com.cloudbees.jenkins.plugins.nodesplus.OwnerNodeProperty plugin="cloudbees-nodes-plus@1.10">
+      <owners>stephen</owners>
+      <onOnline>true</onOnline>
+      <onOffline>true</onOffline>
+      <onLaunchFailure>true</onLaunchFailure>
+      <onTemporaryOfflineApplied>true</onTemporaryOfflineApplied>
+      <onTemporaryOfflineRemoved>true</onTemporaryOfflineRemoved>
+      <onFirstLaunchFailure>true</onFirstLaunchFailure>
+    </com.cloudbees.jenkins.plugins.nodesplus.OwnerNodeProperty>
+  </nodeProperties>
   <globalNodeProperties/>
 </hudson>

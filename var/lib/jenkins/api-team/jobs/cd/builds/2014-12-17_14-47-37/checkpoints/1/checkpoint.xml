@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<com.cloudbees.workflow.cps.checkpoint.CpsCheckpoint plugin="workflow-cps-checkpoint@1.1">
+  <name>Archived war</name>
+  <threadId>2</threadId>
+  <ownerId>cd#61</ownerId>
+</com.cloudbees.workflow.cps.checkpoint.CpsCheckpoint>

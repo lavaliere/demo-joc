@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<com.cloudbees.opscenter.server.model.ClientMaster plugin="operations-center-server@1.6">
+  <actions/>
+  <description></description>
+  <id>1</id>
+  <encodedName>jenkins-master-web-team</encodedName>
+  <idName>1-jenkins-master-web-team</idName>
+  <timeStamp>1418241435166</timeStamp>
+  <grantId>cce9cc3f-8047-4857-89a3-6fe213ce899b</grantId>
+  <approved>true</approved>
+  <localEndpoint>http://54.173.121.244:8080/</localEndpoint>
+  <identity>MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn6c7+dmL3RZcPjUu7UT8x30tTftY4Zea
+vc/2hWszJxc6pvUBzks/gU1gTPej0vATAThP03YNbM905tmBqNhukKotM9EXxeYMqHteAgbwwoI5
+HIhPJ624IxRXDJ41U4nSEpTb6Z7sHqZEPYsDAS9pobWqdFXujFEqpkZB3+kfgVi/sQMZBiu+ofMk
+jPavIc9ke5vpoWDNWdHfS/1b7K4KqwrM/REhBB5gHtl09GV67RbZb6VfMOnzbf1fEGU3VQj8kxwa
+FLwh/WuNVRQU+m693P6IkQVoBY+S6Wc1UAHwJBGyn7jF2GaeZ6bPg1hkOpMg0OVRN8bep7e4ilw4
+JOo8NwIDAQAB</identity>
+  <properties class="com.cloudbees.opscenter.server.model.ConnectedMaster$PropertyList">
+    <com.cloudbees.opscenter.analytics.MasterReportingProperty plugin="operations-center-analytics@1.6">
+      <enabled>true</enabled>
+    </com.cloudbees.opscenter.analytics.MasterReportingProperty>
+    <com.cloudbees.opscenter.server.properties.ConnectedMasterOwnerProperty>
+      <owners></owners>
+      <delay>5</delay>
+    </com.cloudbees.opscenter.server.properties.ConnectedMasterOwnerProperty>
+    <com.cloudbees.opscenter.server.properties.ConnectedMasterLicenseServerProperty>
+      <strategy class="com.cloudbees.opscenter.server.properties.ConnectedMasterLicenseServerProperty$NoExecutorsStrategy"/>
+    </com.cloudbees.opscenter.server.properties.ConnectedMasterLicenseServerProperty>
+    <com.cloudbees.opscenter.plugins.updatecenter.ConnectedMasterUpdateCenterProperty plugin="operations-center-updatecenter@1.6">
+      <source class="com.cloudbees.plugins.updatecenter.sources.LocalUpdateSource" plugin="cloudbees-update-center-plugin@4.15">
+        <source>masters/web-team/web-update-center</source>
+      </source>
+    </com.cloudbees.opscenter.plugins.updatecenter.ConnectedMasterUpdateCenterProperty>
+  </properties>
+  <state>Approved</state>
+</com.cloudbees.opscenter.server.model.ClientMaster>

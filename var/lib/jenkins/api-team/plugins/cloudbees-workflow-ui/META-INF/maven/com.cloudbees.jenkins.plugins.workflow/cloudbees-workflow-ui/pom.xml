@@ -10,7 +10,7 @@
     <parent>
         <groupId>com.cloudbees.jenkins.plugins.workflow</groupId>
         <artifactId>cloudbees-workflow-pom</artifactId>
-        <version>1.0</version>
+        <version>1.1</version>
     </parent>
 
     <artifactId>cloudbees-workflow-ui</artifactId>
@@ -32,6 +32,11 @@
         <dependency>
             <groupId>org.jenkins-ci.plugins.workflow</groupId>
             <artifactId>workflow-durable-task-step</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.jenkins-ci.plugins.workflow</groupId>
+            <artifactId>workflow-basic-steps</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>

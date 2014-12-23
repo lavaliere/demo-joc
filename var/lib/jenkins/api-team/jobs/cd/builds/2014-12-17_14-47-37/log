@@ -1,0 +1,144 @@
+Started by user [8mha:AAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyOEgY+/dLi1CL9jMSigqLU1BIAPxyXUsMAAAA=[0mharpreet
+Running: Allocate node : Start
+Running on shared-slave-2 in /home/ec2-user/1797faba/workspace/cd
+Running: Allocate node : Body : Start
+Running: Git
+ > /usr/bin/git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > /usr/bin/git config remote.origin.url https://github.com/lavaliere/workflow-plugin-pipeline-demo.git # timeout=10
+Fetching upstream changes from https://github.com/lavaliere/workflow-plugin-pipeline-demo.git
+ > /usr/bin/git --version # timeout=10
+ > /usr/bin/git fetch --tags --progress https://github.com/lavaliere/workflow-plugin-pipeline-demo.git +refs/heads/*:refs/remotes/origin/*
+ > /usr/bin/git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > /usr/bin/git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 3c21f12bc94d4c4a221882920da7e9e3bd51aa59 (refs/remotes/origin/master)
+ > /usr/bin/git config core.sparsecheckout # timeout=10
+ > /usr/bin/git checkout -f 3c21f12bc94d4c4a221882920da7e9e3bd51aa59
+Running: Loaded script: flow.groovy
+Running: Evaluate a Groovy source file into the workflow script : Body : Start
+Running: Evaluate a Groovy source file into the workflow script : Body : End
+Running: Install a tool
+Running: Dev
+Entering stage Dev
+Proceeding
+Running: Shell Script
+[cd] Running shell script
++ mvn clean install package
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building demo-war Maven Webapp 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ demo-war ---
+[INFO] Deleting /home/ec2-user/1797faba/workspace/cd/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ demo-war ---
+[debug] execute contextualize
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/ec2-user/1797faba/workspace/cd/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ demo-war ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ demo-war ---
+[debug] execute contextualize
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/ec2-user/1797faba/workspace/cd/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ demo-war ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.10:test (default-test) @ demo-war ---
+[INFO] No tests to run.
+[INFO] Surefire report directory: /home/ec2-user/1797faba/workspace/cd/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-war-plugin:2.1.1:war (default-war) @ demo-war ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [demo-war] in [/home/ec2-user/1797faba/workspace/cd/target/x]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/home/ec2-user/1797faba/workspace/cd/src/main/webapp]
+[INFO] Webapp assembled in [71 msecs]
+[INFO] Building war: /home/ec2-user/1797faba/workspace/cd/target/x.war
+[INFO] WEB-INF/web.xml already added, skipping
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ demo-war ---
+[INFO] Installing /home/ec2-user/1797faba/workspace/cd/target/x.war to /home/ec2-user/.m2/repository/org/jenkinsci/plugins/workflow/demo/demo-war/1.0-SNAPSHOT/demo-war-1.0-SNAPSHOT.war
+[INFO] Installing /home/ec2-user/1797faba/workspace/cd/pom.xml to /home/ec2-user/.m2/repository/org/jenkinsci/plugins/workflow/demo/demo-war/1.0-SNAPSHOT/demo-war-1.0-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ demo-war ---
+[debug] execute contextualize
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/ec2-user/1797faba/workspace/cd/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ demo-war ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ demo-war ---
+[debug] execute contextualize
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/ec2-user/1797faba/workspace/cd/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ demo-war ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.10:test (default-test) @ demo-war ---
+[INFO] No tests to run.
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO] 
+[INFO] --- maven-war-plugin:2.1.1:war (default-war) @ demo-war ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [demo-war] in [/home/ec2-user/1797faba/workspace/cd/target/x]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/home/ec2-user/1797faba/workspace/cd/src/main/webapp]
+[INFO] Webapp assembled in [52 msecs]
+[INFO] Building war: /home/ec2-user/1797faba/workspace/cd/target/x.war
+[INFO] WEB-INF/web.xml already added, skipping
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.169s
+[INFO] Finished at: Wed Dec 17 14:47:47 UTC 2014
+[INFO] Final Memory: 11M/176M
+[INFO] ------------------------------------------------------------------------
+Running: Archive Artifacts
+Sending artifact delta relative to cd #60
+Archived 1 artifacts
+Archive block size is 32768
+Received 118 blocks and 1720144 bytes
+Compression is 69.2%
+Took 0.8 sec
+Running: Capture the execution state so that it can be restarted later
+Running: QA
+Entering stage QA
+Proceeding
+Running: Execute sub-workflows in parallel : Start
+Running: Parallel branch: longerTests
+Running: Parallel branch: quickerTests
+Running: Execute sub-workflows in parallel : Body : End
+Running: Execute sub-workflows in parallel : Body : End
+Running: Execute sub-workflows in parallel : End
+Running: Staging
+Entering stage Staging
+Proceeding
+Running: Shell Script
+[cd] Running shell script
++ cp target/x.war /tmp/webapps/staging.war
+Running: Allocate node : Body : End
+Running: Allocate node : End
+Running: Input
+Does http://localhost:8888/staging/ look good?
+[8mha:AAABGx+LCAAAAAAAAP9dj71OwzAUhW9SAStiRGzsdtw0jSnqBEggVYBUBtbEdn6NbWyHtgsPwWvAgsQr8BC8ABszAwuBTnClo3uko+9I5+kDNpyFY21L1AjV1sqxGhnZlb1DC23bQuoFcp0x2nrkvDAO1cp0Hl1ezK9OV0ZYWav2XHux/TZ4+Uy/3kMIZjDorPSwM2uyuwzLTJV47m2tysOlhb2q404rxLRyWgr0p2U8fXyePpjXEMIz2JRClb5a193CPQQ9vvsPP1r/HxjWF4QAS9ObLQ/BvofrynszwTgZIZL2GkaIxMmERjTCjc4x43hM8O8sTAlj6cEwTnlBheApSUaCUpLzPIm5KAQ2VrM+OLkxfvUNLRdoDz8BAAA=[0mProceed or [8mha:AAABFR+LCAAAAAAAAP9dkL1OwzAUhW9SlRkxIjZ2O26axhR1ggGkih+VF0hs59eyje3QsvAQvEZZkHgFHoIXYGNmYCGQCY50dc7yHemepw8YOwun2paoEaqtlWM1MrIr+4TW2raF1GvkOmO09ch5YRyqlek8urpc3ZzdG2FlrdoL7cXu2+jlM/16DyFYwqiz0sPessnuMiwzVeKVt7UqjzcWDqqOO60Q08ppKdCfltli+7x4NK8hhOewI4UqfTXU3cIDBD2+/w8/GfwHhkFBCLAxfRh7CA49XFfemznGyRSRtL9JhEiczGlEI9zoHDOOZwT/voUpYSw9msQpL6gQPCXJVFBKcp4nMReFwFneL/ENEgA3MDgBAAA=[0mAbort
+Aborted by [8mha:AAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyOEgY+/dLi1CL9jMSigqLU1BIAPxyXUsMAAAA=[0mharpreet
+Running: End of Workflow
+Rejected by SYSTEM
+Finished: ABORTED

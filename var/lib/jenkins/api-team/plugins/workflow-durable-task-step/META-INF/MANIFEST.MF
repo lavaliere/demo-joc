@@ -5,14 +5,14 @@ Built-By: jglick
 Build-Jdk: 1.7.0_67
 Extension-Name: workflow-durable-task-step
 Implementation-Title: workflow-durable-task-step
-Implementation-Version: 1.0
+Implementation-Version: 1.1
 Group-Id: org.jenkins-ci.plugins.workflow
 Short-Name: workflow-durable-task-step
 Long-Name: Workflow: Durable Task Step
 Url: https://github.com/jenkinsci/workflow-plugin
-Plugin-Version: 1.0
+Plugin-Version: 1.1
 Hudson-Version: 1.580.1
 Jenkins-Version: 1.580.1
-Plugin-Dependencies: durable-task:0.7,workflow-step-api:1.0
+Plugin-Dependencies: workflow-step-api:1.1,durable-task:1.0
 Plugin-Developers: 
 

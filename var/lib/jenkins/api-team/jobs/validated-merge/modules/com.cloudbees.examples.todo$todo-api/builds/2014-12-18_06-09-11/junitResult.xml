@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<result plugin="junit@1.2">
+  <suites>
+    <suite>
+      <file>/home/ec2-user/1797faba/workspace/validated-merge/target/surefire-reports/TEST-com.cloudbees.examples.todo.api.ToDoResourceTest.xml</file>
+      <name>com.cloudbees.examples.todo.api.ToDoResourceTest</name>
+      <duration>2.55</duration>
+      <cases>
+        <case>
+          <duration>2.299</duration>
+          <className>com.cloudbees.examples.todo.api.ToDoResourceTest</className>
+          <testName>testCreateOne</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.251</duration>
+          <className>com.cloudbees.examples.todo.api.ToDoResourceTest</className>
+          <testName>testGet</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+  </suites>
+  <duration>2.55</duration>
+  <keepLongStdio>false</keepLongStdio>
+</result>

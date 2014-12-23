@@ -1,0 +1,2 @@
+Connected
+ClientMaster{fullName=masters/web-team/jenkins-master-web-team,uid=cce9cc3f-8047-4857-89a3-6fe213ce899b,state=Approved}

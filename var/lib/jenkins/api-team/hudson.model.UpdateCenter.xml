@@ -1,7 +1,27 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <sites>
-  <jenkins-enterprise plugin="nectar-license@6.0">
-    <id>jenkins-enterprise</id>
-    <url>http://jenkins-updates.cloudbees.com/update-center.json</url>
-  </jenkins-enterprise>
+  <com.cloudbees.opscenter.updatecenters.ContextUpdateSite plugin="operations-center-context@1.6">
+    <id>default</id>
+    <url>http://54.84.32.220:8888/updateCenters/updates/428183082f6d2fe7c78cf0d4aa359f4c/update-center.json</url>
+    <rootCertificate>-----BEGIN CERTIFICATE-----
+MIIDFzCCAf+gAwIBAgIGAUo13HcYMA0GCSqGSIb3DQEBBQUAMDQxMjAwBgNVBAMT
+KUplbmtpbnMgVXBkYXRlIENlbnRlciBQbHVnaW4gQnkgQ2xvdWRCZWVzMB4XDTE0
+MTIwOTIwMjA0OFoXDTE5MTIxMDIwMjA0OFowNDEyMDAGA1UEAxMpSmVua2lucyBV
+cGRhdGUgQ2VudGVyIFBsdWdpbiBCeSBDbG91ZEJlZXMwggEiMA0GCSqGSIb3DQEB
+AQUAA4IBDwAwggEKAoIBAQCF6TmNcMxvk7rRKwYuAQEHrMVvkyW+2AdHJL6kRRnU
+IfrtyAC2C4aEXJ8dQ09tcZBi82Ti16szmjiaUEHKmu3iVRAZXbOyKlPGdNTCfUP9
+PtbY2ofnNbeveYzqfB7NtQKWH9atRTNKDp/JYZgI8HxkQEg87I1kjk1WqIYlrz2s
+NOGlgf9Z5vM64fwU5kr2aSLNedhrkYohyG+GIMFSwYBqB2nUeQ9zLTjntr+bDGw0
+nUBuXaU6bsC59yAgFDeg1DANmXOZA9C0Ty7fiY817PUN6IJDlhBGEUJYChmpmEg3
+Tk6puA0Rh6R+bd5GyKr4WwfkcHcCuz2ffYCuhaHo5nZvAgMBAAGjLzAtMB0GA1Ud
+DgQWBBQK9edzsXCHDXQffXUn9rKOs+7SnzAMBgNVHRMEBTADAQH/MA0GCSqGSIb3
+DQEBBQUAA4IBAQB6pIsSVzevOncFXotEOXa+ka4g4UXB+HgTFYngCQEJ0Z/1ol4+
+G6fNc8oDsa+YHvuTjm2+qlE6hM905VIt+M6TQ1v6YI2xF/IhmjWuYokMTvNieNb7
+ftBv1zlD9EYVrxeOECQYb5NXjDZOnrTRXhNzjvZxzLw8pTc2Ro4ZERuS3lOHQjgg
+aYamlkCrBHlFeUItboUcIgzjH/bntMIPnN/8Fl52ciZZU6uE6jittxYVtx+Oo2Ke
+e43j8Mh5jkYYP1hsSF07V5VzPQQS4VhjYoOF17xzqfVD1huyRrDntOFnQMUV8W1H
+qKXd7WQLPIwQhvGmAfIICZBRkL0bwnfSyxyb
+-----END CERTIFICATE-----
+</rootCertificate>
+  </com.cloudbees.opscenter.updatecenters.ContextUpdateSite>
 </sites>

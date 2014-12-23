@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<org.jenkinsci.plugins.workflow.support.storage.SimpleXStreamFlowNodeStorage_-Tag plugin="workflow-support@1.1">
+  <node class="org.jenkinsci.plugins.workflow.cps.nodes.StepAtomNode" plugin="workflow-cps@1.1">
+    <parents class="com.google.common.collect.ImmutableList">
+      <org.jenkinsci.plugins.workflow.cps.nodes.StepEndNode>25</org.jenkinsci.plugins.workflow.cps.nodes.StepEndNode>
+    </parents>
+    <id>26</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.support.steps.input.InputStep</descriptorId>
+  </node>
+  <actions>
+    <org.jenkinsci.plugins.workflow.support.actions.LogActionImpl>
+      <charset>UTF-8</charset>
+    </org.jenkinsci.plugins.workflow.support.actions.LogActionImpl>
+    <org.jenkinsci.plugins.workflow.support.actions.PauseAction>
+      <cause>Input</cause>
+      <startTime>1418827669545</startTime>
+      <endTime>1418831976620</endTime>
+    </org.jenkinsci.plugins.workflow.support.actions.PauseAction>
+    <org.jenkinsci.plugins.workflow.actions.TimingAction plugin="workflow-api@1.1">
+      <startTime>1418827669551</startTime>
+    </org.jenkinsci.plugins.workflow.actions.TimingAction>
+    <org.jenkinsci.plugins.workflow.actions.ErrorAction plugin="workflow-api@1.1">
+      <error class="org.jenkinsci.plugins.workflow.steps.FlowInterruptedException" plugin="workflow-step-api@1.1">
+        <stackTrace>
+          <trace>org.jenkinsci.plugins.workflow.support.steps.input.InputStepExecution.doAbort(InputStepExecution.java:171)</trace>
+          <trace>org.jenkinsci.plugins.workflow.support.steps.input.InputStepExecution.stop(InputStepExecution.java:79)</trace>
+          <trace>org.jenkinsci.plugins.workflow.cps.CpsFlowExecution$6.onSuccess(CpsFlowExecution.java:609)</trace>
+          <trace>org.jenkinsci.plugins.workflow.cps.CpsFlowExecution$6.onSuccess(CpsFlowExecution.java:604)</trace>
+          <trace>org.jenkinsci.plugins.workflow.support.concurrent.Futures$1.run(Futures.java:150)</trace>
+          <trace>com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:253)</trace>
+          <trace>com.google.common.util.concurrent.ExecutionList$RunnableExecutorPair.execute(ExecutionList.java:149)</trace>
+          <trace>com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:134)</trace>
+          <trace>com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:170)</trace>
+          <trace>com.google.common.util.concurrent.SettableFuture.set(SettableFuture.java:53)</trace>
+          <trace>org.jenkinsci.plugins.workflow.cps.CpsFlowExecution$5.onSuccess(CpsFlowExecution.java:558)</trace>
+          <trace>org.jenkinsci.plugins.workflow.cps.CpsFlowExecution$5.onSuccess(CpsFlowExecution.java:546)</trace>
+          <trace>org.jenkinsci.plugins.workflow.cps.CpsFlowExecution$4$1.run(CpsFlowExecution.java:497)</trace>
+          <trace>org.jenkinsci.plugins.workflow.cps.CpsVmExecutorService$1.run(CpsVmExecutorService.java:32)</trace>
+          <trace>java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)</trace>
+          <trace>java.util.concurrent.FutureTask.run(FutureTask.java:262)</trace>
+          <trace>hudson.remoting.SingleLaneExecutorService$1.run(SingleLaneExecutorService.java:111)</trace>
+          <trace>jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)</trace>
+          <trace>java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)</trace>
+          <trace>java.util.concurrent.FutureTask.run(FutureTask.java:262)</trace>
+          <trace>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)</trace>
+          <trace>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)</trace>
+          <trace>java.lang.Thread.run(Thread.java:745)</trace>
+        </stackTrace>
+        <suppressedExceptions class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list"/>
+          <list reference="../c"/>
+        </suppressedExceptions>
+        <result>
+          <name>ABORTED</name>
+          <ordinal>4</ordinal>
+          <color>ABORTED</color>
+          <completeBuild>false</completeBuild>
+        </result>
+        <causes class="java.util.Arrays$ArrayList">
+          <a class="jenkins.model.CauseOfInterruption-array">
+            <org.jenkinsci.plugins.workflow.support.steps.input.Rejection plugin="workflow-support@1.1">
+              <userName>SYSTEM</userName>
+              <timestamp>1418831976616</timestamp>
+            </org.jenkinsci.plugins.workflow.support.steps.input.Rejection>
+          </a>
+        </causes>
+      </error>
+    </org.jenkinsci.plugins.workflow.actions.ErrorAction>
+    <org.jenkinsci.plugins.workflow.actions.ErrorAction plugin="workflow-api@1.1">
+      <error class="org.jenkinsci.plugins.workflow.steps.FlowInterruptedException" reference="../../org.jenkinsci.plugins.workflow.actions.ErrorAction/error"/>
+    </org.jenkinsci.plugins.workflow.actions.ErrorAction>
+  </actions>
+</org.jenkinsci.plugins.workflow.support.storage.SimpleXStreamFlowNodeStorage_-Tag>

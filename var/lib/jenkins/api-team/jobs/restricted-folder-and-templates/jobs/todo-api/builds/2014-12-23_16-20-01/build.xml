@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causes>
+        <hudson.triggers.TimerTrigger_-TimerTriggerCause/>
+        <hudson.triggers.TimerTrigger_-TimerTriggerCause/>
+        <hudson.triggers.TimerTrigger_-TimerTriggerCause/>
+        <hudson.triggers.TimerTrigger_-TimerTriggerCause/>
+        <hudson.triggers.TimerTrigger_-TimerTriggerCause/>
+        <hudson.triggers.TimerTrigger_-TimerTriggerCause/>
+        <hudson.triggers.TimerTrigger_-TimerTriggerCause/>
+        <hudson.triggers.TimerTrigger_-TimerTriggerCause/>
+        <hudson.triggers.TimerTrigger_-TimerTriggerCause/>
+        <hudson.triggers.TimerTrigger_-TimerTriggerCause/>
+        <hudson.triggers.TimerTrigger_-TimerTriggerCause/>
+        <hudson.triggers.TimerTrigger_-TimerTriggerCause/>
+        <hudson.triggers.TimerTrigger_-TimerTriggerCause/>
+        <hudson.triggers.TimerTrigger_-TimerTriggerCause/>
+        <hudson.triggers.TimerTrigger_-TimerTriggerCause/>
+        <hudson.triggers.TimerTrigger_-TimerTriggerCause/>
+        <hudson.triggers.TimerTrigger_-TimerTriggerCause/>
+      </causes>
+    </hudson.model.CauseAction>
+    <jenkins.metrics.impl.TimeInQueueAction plugin="metrics@3.0.9">
+      <queuingDurationMillis>60180823</queuingDurationMillis>
+    </jenkins.metrics.impl.TimeInQueueAction>
+    <hudson.plugins.git.util.BuildData plugin="git@2.3.1">
+      <buildsByBranchName>
+        <entry>
+          <string>origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@1.12.0">
+              <sha1>d47b4b62596a0ec49c89da6735c872deb49463e5</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>265</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <scmName></scmName>
+      <remoteUrls>
+        <string>https://github.com/apemberton/todo-api.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction plugin="git@2.3.1">
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <entry>
+          <string>origin/master</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>/home/ec2-user/1797faba/workspace/restricted-folder-and-templates/todo-api</ws>
+    </hudson.plugins.git.GitTagAction>
+    <hudson.scm.SCMRevisionState_-None/>
+    <org.jenkinsci.plugins.uniqueid.impl.Id plugin="unique-id@1.2">
+      <id>YmExN2FhMTctN2IwYi00MGNkLWJhYj</id>
+    </org.jenkinsci.plugins.uniqueid.impl.Id>
+  </actions>
+  <number>265</number>
+  <startTime>1419351601139</startTime>
+  <result>SUCCESS</result>
+  <duration>12833</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn>shared-slave-1</builtOn>
+  <workspace>/home/ec2-user/1797faba/workspace/restricted-folder-and-templates/todo-api</workspace>
+  <hudsonVersion>1.580.1.1 (Jenkins Enterprise by CloudBees 14.11)</hudsonVersion>
+  <scm class="hudson.plugins.git.GitChangeLogParser" plugin="git@2.3.1">
+    <authorOrCommitter>false</authorOrCommitter>
+  </scm>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

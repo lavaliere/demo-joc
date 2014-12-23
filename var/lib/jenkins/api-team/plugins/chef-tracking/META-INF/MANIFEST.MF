@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: kohsuke
+Build-Jdk: 1.7.0_07
+Extension-Name: chef-tracking
+Implementation-Title: chef-tracking
+Implementation-Version: 1.0
+Group-Id: org.jenkins-ci.plugins
+Short-Name: chef-tracking
+Long-Name: chef-tracking
+Url: http://jenkins-ci.org/plugin/chef-tracking/
+Plugin-Version: 1.0
+Hudson-Version: 1.509.4
+Jenkins-Version: 1.509.4
+Plugin-Dependencies: deployment-notification:1.1
+Plugin-Developers: 
+

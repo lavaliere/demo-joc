@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: kohsuke
+Build-Jdk: 1.7.0_07
+Extension-Name: deployment-notification
+Implementation-Title: deployment-notification
+Implementation-Version: 1.2
+Group-Id: org.jenkins-ci.plugins
+Short-Name: deployment-notification
+Long-Name: deployment-notification
+Url: https://wiki.jenkins-ci.org/display/JENKINS/Deploment+Notificatio
+ n+Plugin
+Plugin-Version: 1.2
+Hudson-Version: 1.509
+Jenkins-Version: 1.509
+Plugin-Dependencies: promoted-builds:2.7;resolution:=optional
+Plugin-Developers: 
+

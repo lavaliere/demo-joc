@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<com.cloudbees.jenkins.plugins.longrunning.LongRunningBuild plugin="cloudbees-long-running-build@1.1">
+  <actions>
+    <hudson.model.CauseAction>
+      <causes>
+        <hudson.triggers.TimerTrigger_-TimerTriggerCause/>
+      </causes>
+    </hudson.model.CauseAction>
+    <jenkins.metrics.impl.TimeInQueueAction plugin="metrics@3.0.9">
+      <queuingDurationMillis>4</queuingDurationMillis>
+    </jenkins.metrics.impl.TimeInQueueAction>
+    <org.jenkinsci.plugins.uniqueid.impl.Id plugin="unique-id@1.2">
+      <id>YTgzNWU0MWUtZmYxMC00Y2JiLTk4NT</id>
+    </org.jenkinsci.plugins.uniqueid.impl.Id>
+  </actions>
+  <number>211</number>
+  <startTime>1418905680320</startTime>
+  <result>SUCCESS</result>
+  <duration>200767</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/var/lib/jenkins/jobs/long-running/workspace</workspace>
+  <hudsonVersion>1.580.1.1 (Jenkins Enterprise by CloudBees 14.11)</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</com.cloudbees.jenkins.plugins.longrunning.LongRunningBuild>

@@ -2,28 +2,9 @@
 <hudson.tasks.Maven_-DescriptorImpl>
   <installations>
     <hudson.tasks.Maven_-MavenInstallation>
-      <name>Maven_3</name>
-      <properties>
-        <hudson.tools.InstallSourceProperty>
-          <installers>
-            <hudson.tasks.Maven_-MavenInstaller>
-              <id>3.2.2</id>
-            </hudson.tasks.Maven_-MavenInstaller>
-          </installers>
-        </hudson.tools.InstallSourceProperty>
-      </properties>
-    </hudson.tasks.Maven_-MavenInstallation>
-    <hudson.tasks.Maven_-MavenInstallation>
-      <name>Maven_2</name>
-      <properties>
-        <hudson.tools.InstallSourceProperty>
-          <installers>
-            <hudson.tasks.Maven_-MavenInstaller>
-              <id>2.2.1</id>
-            </hudson.tasks.Maven_-MavenInstaller>
-          </installers>
-        </hudson.tools.InstallSourceProperty>
-      </properties>
+      <name>Maven 3.x</name>
+      <home>/usr/local/apache-maven</home>
+      <properties/>
     </hudson.tasks.Maven_-MavenInstallation>
   </installations>
 </hudson.tasks.Maven_-DescriptorImpl>

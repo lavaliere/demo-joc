@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@1.1">
+  <actions>
+    <hudson.model.CauseAction>
+      <causes>
+        <hudson.model.Cause_-UserIdCause>
+          <userId>harpreet</userId>
+        </hudson.model.Cause_-UserIdCause>
+      </causes>
+    </hudson.model.CauseAction>
+    <jenkins.metrics.impl.TimeInQueueAction plugin="metrics@3.0.9">
+      <queuingDurationMillis>6</queuingDurationMillis>
+    </jenkins.metrics.impl.TimeInQueueAction>
+    <hudson.plugins.git.util.BuildData plugin="git@2.3.1">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@1.12.0">
+              <sha1>3c21f12bc94d4c4a221882920da7e9e3bd51aa59</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>60</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <scmName></scmName>
+      <remoteUrls>
+        <string>https://github.com/lavaliere/workflow-plugin-pipeline-demo.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction plugin="git@2.3.1">
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>/home/ec2-user/1797faba/workspace/cd</ws>
+    </hudson.plugins.git.GitTagAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@1.1">
+      <env class="tree-map">
+        <entry>
+          <string>PATH</string>
+          <string>/usr/local/apache-maven/bin:/usr/local/apache-maven/bin:/usr/local/bin:/bin:/usr/bin:/opt/aws/bin</string>
+        </entry>
+      </env>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+    <com.cloudbees.workflow.cps.checkpoint.CheckpointRunAction plugin="workflow-cps-checkpoint@1.1">
+      <SORTER class="com.cloudbees.workflow.cps.checkpoint.CheckpointRunAction$1">
+        <outer-class reference="../.."/>
+      </SORTER>
+    </com.cloudbees.workflow.cps.checkpoint.CheckpointRunAction>
+    <org.jenkinsci.plugins.workflow.support.steps.input.InputAction plugin="workflow-support@1.1">
+      <executions/>
+    </org.jenkinsci.plugins.workflow.support.steps.input.InputAction>
+    <org.jenkinsci.plugins.uniqueid.impl.Id plugin="unique-id@1.2">
+      <id>ODEyN2NiNzgtN2U0NC00NTc5LThiMD</id>
+    </org.jenkinsci.plugins.uniqueid.impl.Id>
+  </actions>
+  <number>60</number>
+  <startTime>1418418088728</startTime>
+  <result>SUCCESS</result>
+  <duration>46500</duration>
+  <keepLog>false</keepLog>
+  <artifactManager class="com.cloudbees.jenkins.plugins.jsync.archiver.JSyncArtifactManager" plugin="cloudbees-jsync-archiver@5.3"/>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>def flow
+node(&apos;shared&apos;) {
+    git branch: &apos;master&apos;, changelog: false, poll: false, url: &apos;https://github.com/lavaliere/workflow-plugin-pipeline-demo.git&apos;
+    flow = load &apos;flow.groovy&apos;
+    flow.devQAStaging()
+}
+flow.production()</script>
+    <loadedScripts class="map">
+      <entry>
+        <string>Script1</string>
+        <string>def devQAStaging() {
+    env.PATH=&quot;${tool &apos;Maven 3.x&apos;}/bin:${env.PATH}&quot;
+    stage &apos;Dev&apos;
+    sh &apos;mvn clean install package&apos;
+    archive &apos;target/x.war&apos;
+  try {
+        checkpoint(&apos;Archived war&apos;)
+    } catch (NoSuchMethodError _) {
+        echo &apos;Checkpoint feature available in Jenkins Enterprise by CloudBees.&apos;
+    }
+    stage &apos;QA&apos;
+
+    parallel(longerTests: {
+        runWithServer {url -&gt;
+            sh &quot;mvn -f sometests/pom.xml test -Durl=${url} -Dduration=30&quot;
+        }
+    }, quickerTests: {
+        runWithServer {url -&gt;
+            sh &quot;mvn -f sometests/pom.xml test -Durl=${url} -Dduration=20&quot;
+        }
+    })
+    stage name: &apos;Staging&apos;, concurrency: 1
+    deploy &apos;target/x.war&apos;, &apos;staging&apos;
+}
+
+def production() {
+    input message: &quot;Does http://localhost:8888/staging/ look good?&quot;
+    try {
+        checkpoint(&apos;Before production&apos;)
+    } catch (NoSuchMethodError _) {
+        echo &apos;Checkpoint feature available in Jenkins Enterprise by CloudBees.&apos;
+    }
+    stage name: &apos;Production&apos;, concurrency: 1
+    node {
+        unarchive mapping: [&apos;target/x.war&apos; : &apos;x.war&apos;]
+        deploy &apos;x.war&apos;, &apos;production&apos;
+        echo &apos;Deployed to http://localhost:8888/production/&apos;
+    }
+}
+
+def deploy(war, id) {
+    sh &quot;cp ${war} /tmp/webapps/${id}.war&quot;
+}
+
+def undeploy(id) {
+    sh &quot;rm /tmp/webapps/${id}.war&quot;
+}
+
+def runWithServer(body) {
+
+}
+
+return this;
+</string>
+      </entry>
+    </loadedScripts>
+    <owner class="flow-owner">
+      <job>cd</job>
+      <id>2014-12-12_21-01-28</id>
+    </owner>
+    <iota>36</iota>
+    <head>1:36</head>
+  </execution>
+  <checkouts class="linked-list">
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@2.3.1">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <url>https://github.com/lavaliere/workflow-plugin-pipeline-demo.git</url>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches class="singleton-list">
+          <hudson.plugins.git.BranchSpec>
+            <name>*/master</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="empty-list"/>
+        <extensions/>
+      </scm>
+      <node>shared-slave-1</node>
+      <workspace>/home/ec2-user/1797faba/workspace/cd</workspace>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+  </checkouts>
+</flow-build>

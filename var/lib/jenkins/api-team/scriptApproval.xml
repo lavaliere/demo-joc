@@ -1,16 +1,35 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<scriptApproval plugin="script-security@1.10">
+<scriptApproval plugin="script-security@1.12">
   <approvedScriptHashes>
-    <string>017d0db438428731cd600b6ebda805065433520f</string>
-    <string>28642834a609de12840191e0f172b28225c654b8</string>
-    <string>30cbd1794f49fa00ae78f3169b9e7c09f60eefed</string>
-    <string>407d121ba0c9ca4c3629cae617ec583c403402fb</string>
-    <string>526436b2ff1516e16b668f1b722a84bfcae85e7b</string>
-    <string>8b381e5d6372ca7892cbcdd3750b579e3d4079fb</string>
-    <string>a4c78feab8fcf4947b55b11eedc184f397b08ba4</string>
-    <string>a7a775b48c4581f2eb36a80ccaeb9fe51726acd4</string>
+    <string>05ea41c644e024a1b5026716622f785e343da5af</string>
+    <string>17b9bab7a820886056f9a2d394a508c27b6a6af4</string>
+    <string>24000678bf06eebd56cc150ccef654c57199347d</string>
+    <string>24f703ec771fa11923e0052de59b6c582a5ab424</string>
+    <string>336821c08860484fa3aa87900471905df37f09c4</string>
+    <string>3c906519fb723f87c38189dc2be44a68c141a5d1</string>
+    <string>3f30b95e39228df5f7f61a7fb5547ee3966e45de</string>
+    <string>4a949bb1b94d340b0326c29030694b67f5343280</string>
+    <string>540bd388f7242374a4ec6da37e0b3c0bd781fa6b</string>
+    <string>657ecba251e5d086510427af6a97a8f9aced8670</string>
+    <string>668882d3be5b3e98d14f2584a5c7c4444226f920</string>
+    <string>67ee85df3bfc87ff2af2328d6e1d3ac2b883782b</string>
+    <string>6944a4c35171c3ad4ea1ec35aff6c2da73309519</string>
+    <string>798bab26c42ecb6b8437a376f474c1c5e74ca719</string>
+    <string>8202c579451a35b271f78f00e7250b9d6e009095</string>
+    <string>85585b1dad27f6632d4f69f11256f54652cdbd19</string>
+    <string>891d889071989c5287ff9788ebf8eb636b8b10b4</string>
+    <string>8d80e10cc7148e8b474d657c195914e8a71f98bf</string>
+    <string>941e1acda3c65c908ece6c0a804b105436dade3d</string>
+    <string>9c7ef69a424f0431009e8ea2af3310b810c1e382</string>
+    <string>a88ac305f5c207ff5d100e482821277baf503e24</string>
     <string>af35de3c40f540a32a9730c83118eb0fafab3616</string>
-    <string>d70b93fcd3ea66a3e988f9661d3473e1c5f03e51</string>
+    <string>b20c26327774045e2308bf1407f71ad8710a019e</string>
+    <string>b57fd7805a9e59c824255003cd6690f8d8604c74</string>
+    <string>cf708d55538c4bc3b266db44d8a70de3865e1824</string>
+    <string>d5925e9e55a9d1ab9ff8c3f7e25a9afec65fc39d</string>
+    <string>dd4135075947a8154dce463cb4f772622e920692</string>
+    <string>e251818ead38221fc676677524d9237c58b40110</string>
+    <string>f25e11eb22fdaba099f94ecaa96071e5da92c49d</string>
   </approvedScriptHashes>
   <approvedSignatures/>
   <aclApprovedSignatures/>
