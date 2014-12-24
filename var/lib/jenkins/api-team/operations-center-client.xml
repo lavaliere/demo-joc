@@ -26,7 +26,7 @@
                 <default>
                   <class>com.cloudbees.opscenter.context.ConnectionDetails</class>
                   <xml>&lt;com.cloudbees.opscenter.context.ConnectionDetails plugin=&quot;operations-center-context@1.6&quot;&gt;
-  &lt;url&gt;http://joc-1.jenkins-operations-center.dev.beedemo.io:8888/&lt;/url&gt;
+  &lt;url&gt;http://joc-1.jenkins-operations-center.dev.beedemo.io/&lt;/url&gt;:8080/
   &lt;id&gt;0-jenkins-master-api-team&lt;/id&gt;
   &lt;grant&gt;45fde081-d539-44fd-b529-d6f172feedbc&lt;/grant&gt;
 &lt;/com.cloudbees.opscenter.context.ConnectionDetails&gt;</xml>
@@ -157,17 +157,17 @@ qKXd7WQLPIwQhvGmAfIICZBRkL0bwnfSyxyb
           <c class="list">
             <com.cloudbees.opscenter.context.BreadcrumbImpl>
               <displayName>Jenkins</displayName>
-              <url>http://joc-1.jenkins-operations-center.dev.beedemo.io:8888/</url>
+              <url>http://joc.beedemo.io/</url>
               <enabled>true</enabled>
             </com.cloudbees.opscenter.context.BreadcrumbImpl>
             <com.cloudbees.opscenter.context.BreadcrumbImpl>
               <displayName>masters</displayName>
-              <url>http://joc-1.jenkins-operations-center.dev.beedemo.io:8888/job/masters/</url>
+              <url>http://joc.beedemo.io/job/masters/</url>
               <enabled>true</enabled>
             </com.cloudbees.opscenter.context.BreadcrumbImpl>
             <com.cloudbees.opscenter.context.BreadcrumbImpl>
               <displayName>api-team</displayName>
-              <url>http://joc-1.jenkins-operations-center.dev.beedemo.io:8888/job/masters/job/api-team/</url>
+              <url>http://joc.beedemo.io/job/masters/job/api-team/</url>
               <enabled>true</enabled>
             </com.cloudbees.opscenter.context.BreadcrumbImpl>
           </c>
