@@ -45,6 +45,7 @@ tools/
 **/cache/**
 **/fingerprints/**
 **/elasticsearch/**
+**/analytics-reporting-queue/**
 
 # JEBC
 **/jgroups/**
