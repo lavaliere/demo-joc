@@ -5,15 +5,15 @@ Built-By: jglick
 Build-Jdk: 1.7.0_67
 Extension-Name: workflow-support
 Implementation-Title: workflow-support
-Implementation-Version: 1.1
+Implementation-Version: 1.0
 Group-Id: org.jenkins-ci.plugins.workflow
 Short-Name: workflow-support
 Long-Name: Workflow: Execution Support
 Url: https://github.com/jenkinsci/workflow-plugin
-Plugin-Version: 1.1
+Plugin-Version: 1.0
 Hudson-Version: 1.580.1
 Jenkins-Version: 1.580.1
-Plugin-Dependencies: durable-task:1.0,workflow-step-api:1.1,workflow-a
- pi:1.1
+Plugin-Dependencies: workflow-api:1.0,workflow-step-api:1.0,durable-ta
+ sk:0.7
 Plugin-Developers: 
 

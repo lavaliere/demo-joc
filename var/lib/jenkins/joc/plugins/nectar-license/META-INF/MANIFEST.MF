@@ -7,17 +7,17 @@ Extension-Name: nectar-license
 Specification-Title: This plugin is used by CloudBees to give access t
  o the Jenkins Enterprise by CloudBees plugins.
 Implementation-Title: nectar-license
-Implementation-Version: 6.0
+Implementation-Version: 5.7
 Plugin-Class: com.cloudbees.jenkins.plugins.license.nectar.PluginImpl
 Group-Id: com.cloudbees.nectar.plugins
 Short-Name: nectar-license
 Long-Name: Jenkins Enterprise License Entitlement Check
 Url: http://release-notes.cloudbees.com/product/Jenkins+Enterprise+Lic
  ense+Entitlement+Check
-Plugin-Version: 6.0
+Plugin-Version: 5.7
 Hudson-Version: 1.532.3
 Jenkins-Version: 1.532.3
-Plugin-Dependencies: cloudbees-license:6.0,async-http-client:1.7.8
+Plugin-Dependencies: async-http-client:1.7.8,cloudbees-license:5.3
 Plugin-Developers: 
 Support-Dynamic-Loading: false
 

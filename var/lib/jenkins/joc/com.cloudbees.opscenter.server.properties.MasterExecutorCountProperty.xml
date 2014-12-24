@@ -1,5 +1,4 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <com.cloudbees.opscenter.server.properties.MasterExecutorCountProperty_-DescriptorImpl plugin="operations-center-server@1.6">
-  <count>5</count>
   <canOverride>true</canOverride>
 </com.cloudbees.opscenter.server.properties.MasterExecutorCountProperty_-DescriptorImpl>

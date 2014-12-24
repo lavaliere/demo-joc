@@ -2,7 +2,7 @@
 <sites>
   <com.cloudbees.opscenter.updatecenters.ContextUpdateSite plugin="operations-center-context@1.6">
     <id>default</id>
-    <url>http://54.84.32.220:8888/updateCenters/updates/428183082f6d2fe7c78cf0d4aa359f4c/update-center.json</url>
+    <url>http://joc-1.jenkins-operations-center.dev.beedemo.io:8888/updateCenters/updates/428183082f6d2fe7c78cf0d4aa359f4c/update-center.json</url>
     <rootCertificate>-----BEGIN CERTIFICATE-----
 MIIDFzCCAf+gAwIBAgIGAUo13HcYMA0GCSqGSIb3DQEBBQUAMDQxMjAwBgNVBAMT
 KUplbmtpbnMgVXBkYXRlIENlbnRlciBQbHVnaW4gQnkgQ2xvdWRCZWVzMB4XDTE0

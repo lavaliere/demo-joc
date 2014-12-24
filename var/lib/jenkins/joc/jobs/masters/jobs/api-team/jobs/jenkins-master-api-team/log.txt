@@ -1,2 +1,4 @@
 Connected
 ClientMaster{fullName=masters/api-team/jenkins-master-api-team,uid=45fde081-d539-44fd-b529-d6f172feedbc,state=Approved}
+Disconnected
+ClientMaster{fullName=masters/api-team/jenkins-master-api-team,uid=45fde081-d539-44fd-b529-d6f172feedbc,state=Approved}

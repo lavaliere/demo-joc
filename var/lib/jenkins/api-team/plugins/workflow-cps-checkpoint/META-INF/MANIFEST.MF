@@ -1,20 +1,20 @@
 Manifest-Version: 1.0
 Archiver-Version: Plexus Archiver
 Created-By: Apache Maven
-Built-By: jenkins
-Build-Jdk: 1.7.0_71
+Built-By: jglick
+Build-Jdk: 1.7.0_67
 Extension-Name: workflow-cps-checkpoint
 Specification-Title: The CloudBees Jenkins Plugins Parent Project
 Implementation-Title: workflow-cps-checkpoint
-Implementation-Version: 1.1
+Implementation-Version: 1.0
 Group-Id: com.cloudbees.jenkins.plugins.workflow
 Short-Name: workflow-cps-checkpoint
 Long-Name: CloudBees Workflow: Groovy Checkpoint
 Url: http://release-notes.cloudbees.com/product/CloudBees+Workflow
-Plugin-Version: 1.1
+Plugin-Version: 1.0
 Hudson-Version: 1.580.1
 Jenkins-Version: 1.580.1
-Plugin-Dependencies: workflow-job:1.1,workflow-cps:1.1,nectar-license:
- 5.0
+Plugin-Dependencies: nectar-license:5.0,workflow-job:1.0,workflow-cps:
+ 1.0
 Plugin-Developers: 
 

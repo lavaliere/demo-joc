@@ -34,7 +34,7 @@ THE SOFTWARE.
 
   <groupId>org.jenkins-ci.main</groupId><!-- for historical reason, this plugin has a different groupId -->
   <artifactId>maven-plugin</artifactId><!-- for the same reason, artifactId is against the convention -->
-  <version>2.8</version>
+  <version>2.7.1</version>
   <packaging>hpi</packaging>
 
   <name>Maven Integration plugin</name>
@@ -43,7 +43,7 @@ THE SOFTWARE.
   <url>http://wiki.jenkins-ci.org/display/JENKINS/Maven+Project+Plugin</url>
 
   <properties>
-    <mavenInterceptorsVersion>1.6</mavenInterceptorsVersion>
+    <mavenInterceptorsVersion>1.5</mavenInterceptorsVersion>
     <mavenVersion>3.1.0</mavenVersion>
     <maven.version>${mavenVersion}</maven.version>
     <aetherVersion>0.9.0.M3</aetherVersion>
@@ -143,11 +143,6 @@ THE SOFTWARE.
       <artifactId>maven31-agent</artifactId>
       <version>${mavenInterceptorsVersion}</version>
     </dependency>
-    <dependency>
-      <groupId>org.jenkins-ci.main.maven</groupId>
-      <artifactId>maven32-agent</artifactId>
-      <version>${mavenInterceptorsVersion}</version>
-    </dependency>
     
     <dependency>
       <groupId>org.jenkins-ci.main.maven</groupId>
@@ -167,11 +162,6 @@ THE SOFTWARE.
     <dependency>
       <groupId>org.jenkins-ci.main.maven</groupId>
       <artifactId>maven31-interceptor</artifactId>
-      <version>${mavenInterceptorsVersion}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.jenkins-ci.main.maven</groupId>
-      <artifactId>maven32-interceptor</artifactId>
       <version>${mavenInterceptorsVersion}</version>
     </dependency>
     <dependency>
@@ -549,7 +539,7 @@ THE SOFTWARE.
     <connection>scm:git:git://github.com/jenkinsci/maven-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/maven-plugin.git</developerConnection>
     <url>http://github.com/jenkinsci/maven-plugin</url>
-    <tag>maven-plugin-2.8</tag>
+    <tag>maven-plugin-2.7.1</tag>
   </scm>
 
 </project>

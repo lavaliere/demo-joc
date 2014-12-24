@@ -1,0 +1,29 @@
+Started by timer
+Building in workspace /data/var/lib/jenkins/api-team/jobs/hourly-backup-jebc/workspace
+Creating a backup to /tmp/backup/backup-hourly-backup-jebc-273.tar.gz
+100: .m2/repository/backport-util-concurrent/backport-util-concurrent/3.1
+200: .m2/repository/org/apache/commons/commons-parent/22
+300: .m2/repository/org/apache/maven/maven-plugin-registry/2.2.1/maven-plugin-registry-2.2.1.pom.sha1
+400: .m2/repository/org/apache/maven/surefire/surefire-api/2.12.4/_remote.repositories
+500: .m2/repository/org/apache/maven/wagon/wagon-webdav-jackrabbit/1.0-beta-6
+600: .m2/repository/org/apache/maven/maven-parent/22/maven-parent-22.pom
+700: .m2/repository/org/apache/maven/plugins/maven-war-plugin/2.2/_remote.repositories
+800: .m2/repository/org/apache/maven/maven-error-diagnostics/2.0.9
+900: .m2/repository/org/apache/xbean/xbean
+1000: .m2/repository/org/codehaus/plexus/plexus/3.0.1
+1100: .m2/repository/org/codehaus/plexus/plexus-components/1.3
+1200: .m2/repository/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-6
+1300: .m2/repository/org/codehaus/plexus/plexus-compiler-manager/2.2/plexus-compiler-manager-2.2.jar.sha1
+1400: .m2/repository/commons-io/commons-io/2.2/commons-io-2.2.pom.sha1
+1500: plugins/git-server.jpi
+1600: analytics-reporting-queue/items1419414496020.xml
+1700: analytics-reporting-queue/items1419424006019.xml
+1800: analytics-reporting-queue/items1419430666021.xml
+1900: analytics-reporting-queue/items1419431326031.xml
+2000: analytics-reporting-queue/items1419429046021.xml
+2100: analytics-reporting-queue/items1419426166024.xml
+2200: analytics-reporting-queue/items1419428086020.xml
+2300: analytics-reporting-queue/items1419426136025.xml
+2400: com.cloudbees.jenkins.plugins.evenscheduler.SchedulerPreference.xml
+Finished. Took 5.3 sec to back up 2401 files
+Finished: SUCCESS

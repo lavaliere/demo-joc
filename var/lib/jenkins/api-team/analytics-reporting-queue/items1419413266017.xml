@@ -1,0 +1,11 @@
+<object-stream>
+  <com.cloudbees.opscenter.analytics.reporter.items.Change_-Create plugin="operations-center-analytics-reporter@1.6">
+    <locator class="com.cloudbees.opscenter.analytics.reporter.items.Locator$RunLocator">
+      <number>339</number>
+      <parent>
+        <fullName>long-running</fullName>
+        <clazz>com.cloudbees.jenkins.plugins.longrunning.LongRunningProject</clazz>
+      </parent>
+    </locator>
+  </com.cloudbees.opscenter.analytics.reporter.items.Change_-Create>
+</object-stream>

@@ -12,7 +12,7 @@
                 <default>
                   <class>com.cloudbees.opscenter.analytics.reporter.RemoteContextReportingConfiguration</class>
                   <xml>&lt;com.cloudbees.opscenter.analytics.reporter.RemoteContextReportingConfiguration plugin=&quot;operations-center-analytics-reporter@1.6&quot;&gt;
-  &lt;feeder&gt;http://joc-1.jenkins-operations-center.dev.beedemo.io:8080/feeder&lt;/feeder&gt;
+  &lt;feeder&gt;http://joc-1.jenkins-operations-center.dev.beedemo.io:8888/feeder&lt;/feeder&gt;
   &lt;reportingInterval&gt;10000&lt;/reportingInterval&gt;
 &lt;/com.cloudbees.opscenter.analytics.reporter.RemoteContextReportingConfiguration&gt;</xml>
                 </default>
@@ -26,7 +26,7 @@
                 <default>
                   <class>com.cloudbees.opscenter.context.ConnectionDetails</class>
                   <xml>&lt;com.cloudbees.opscenter.context.ConnectionDetails plugin=&quot;operations-center-context@1.6&quot;&gt;
-  &lt;url&gt;http://joc-1.jenkins-operations-center.dev.beedemo.io:8080/&lt;/url&gt;
+  &lt;url&gt;http://joc-1.jenkins-operations-center.dev.beedemo.io:8888/&lt;/url&gt;
   &lt;id&gt;0-jenkins-master-api-team&lt;/id&gt;
   &lt;grant&gt;45fde081-d539-44fd-b529-d6f172feedbc&lt;/grant&gt;
 &lt;/com.cloudbees.opscenter.context.ConnectionDetails&gt;</xml>
@@ -65,7 +65,7 @@
                   <class>com.cloudbees.opscenter.updatecenters.ContextUpdateSite</class>
                   <xml>&lt;com.cloudbees.opscenter.updatecenters.ContextUpdateSite plugin=&quot;operations-center-context@1.6&quot;&gt;
   &lt;id&gt;default&lt;/id&gt;
-  &lt;url&gt;http://joc-1.jenkins-operations-center.dev.beedemo.io:8080/updateCenters/updates/428183082f6d2fe7c78cf0d4aa359f4c/update-center.json&lt;/url&gt;
+  &lt;url&gt;http://joc-1.jenkins-operations-center.dev.beedemo.io:8888/updateCenters/updates/428183082f6d2fe7c78cf0d4aa359f4c/update-center.json&lt;/url&gt;
   &lt;rootCertificate&gt;-----BEGIN CERTIFICATE-----
 MIIDFzCCAf+gAwIBAgIGAUo13HcYMA0GCSqGSIb3DQEBBQUAMDQxMjAwBgNVBAMT
 KUplbmtpbnMgVXBkYXRlIENlbnRlciBQbHVnaW4gQnkgQ2xvdWRCZWVzMB4XDTE0
@@ -96,8 +96,8 @@ qKXd7WQLPIwQhvGmAfIICZBRkL0bwnfSyxyb
             <com.cloudbees.opscenter.utils.SerializableWrapper serialization="custom">
               <com.cloudbees.opscenter.utils.SerializableWrapper>
                 <default>
-                  <class>nectar.plugins.rbac.strategy.RoleMatrixAuthorizationStrategyImpl</class>
-                  <xml>&lt;nectar.plugins.rbac.strategy.RoleMatrixAuthorizationStrategyImpl/&gt;</xml>
+                  <class>hudson.security.AuthorizationStrategy$Unsecured</class>
+                  <xml>&lt;hudson.security.AuthorizationStrategy_-Unsecured/&gt;</xml>
                 </default>
               </com.cloudbees.opscenter.utils.SerializableWrapper>
             </com.cloudbees.opscenter.utils.SerializableWrapper>
@@ -107,8 +107,8 @@ qKXd7WQLPIwQhvGmAfIICZBRkL0bwnfSyxyb
             <com.cloudbees.opscenter.utils.SerializableWrapper serialization="custom">
               <com.cloudbees.opscenter.utils.SerializableWrapper>
                 <default>
-                  <class>com.cloudbees.opscenter.security.OperationsCenterSecurityRealm</class>
-                  <xml>&lt;com.cloudbees.opscenter.security.OperationsCenterSecurityRealm plugin=&quot;operations-center-context@1.6&quot;/&gt;</xml>
+                  <class>hudson.security.SecurityRealm$None</class>
+                  <xml>&lt;hudson.security.SecurityRealm_-None/&gt;</xml>
                 </default>
               </com.cloudbees.opscenter.utils.SerializableWrapper>
             </com.cloudbees.opscenter.utils.SerializableWrapper>
@@ -122,6 +122,13 @@ qKXd7WQLPIwQhvGmAfIICZBRkL0bwnfSyxyb
                   <xml>&lt;jenkins.metrics.api.MetricsAccessKey_-FixedListProviderImpl plugin=&quot;metrics@3.0.9&quot;&gt;
   &lt;accessKeys&gt;
     &lt;jenkins.metrics.api.MetricsAccessKey&gt;
+      &lt;key&gt;CZCHNWgwQYbPlY1rIrYCnxT36Mq6xhMGSpkouIaXMH6FVdE6ezOL7FRXna8UMSiaYXsxM5l4kZK2F2EFM7TBDqkCW9SRXi9eSD2Ab4h3_mlSepbdmNxHpgnSEEb3fGuiuKYTh9Qq1ZO7x-wRV8pOuG4_BjtmYlYJG6Geom-mcqYseU51GLlhaRyRuJO6QmBarj9vHj3whZC7AN5tjOXqC0fqIdysDA4r_tkHvidDQKYZmTRMHVJSlaQ8NNypM1l_KLhkLY2p4_I9OkAcBNdr91-vIn5Wnr2wvxCKFDuYaem8G5WGjPyy_Po167MawbFvh6RjSmOKofQ7PH051RoBjg&lt;/key&gt;
+      &lt;canPing&gt;false&lt;/canPing&gt;
+      &lt;canThreadDump&gt;false&lt;/canThreadDump&gt;
+      &lt;canHealthCheck&gt;false&lt;/canHealthCheck&gt;
+      &lt;canMetrics&gt;true&lt;/canMetrics&gt;
+    &lt;/jenkins.metrics.api.MetricsAccessKey&gt;
+    &lt;jenkins.metrics.api.MetricsAccessKey&gt;
       &lt;key&gt;IXmj5iKPe9TycHYmUXh9lFTWUqISvxCz5v_-L2eFiCdCP45ytNA6ZxmzQ53Z6Oy1fYbO9jMhYtJDRnkgrKERImKHeZ-2sFmV0Hg1bIsB2YV89T_y4BnZ0tCHmEMhVDxqn9YwMcekU_uM_IEaRKvr3Qf3WyINzmzKhXOeYaMoR3jh1Rt0KcdOfd4-LpK_16QaJTJlYbU0g0oOywHxPx4SNfcH-GN1e8R-3AxNv-WUPuSVmSgNqGxnUpj9xCXRycNtSBh2Zdus_VsWoHs6alo7Uw57rHF7_TAUbHbCgRMtjtTGd-IhNQc--CjL__H0gwR11OjqH6TbiMvmvvxPiOA9XA&lt;/key&gt;
       &lt;canPing&gt;false&lt;/canPing&gt;
       &lt;canThreadDump&gt;false&lt;/canThreadDump&gt;
@@ -129,14 +136,7 @@ qKXd7WQLPIwQhvGmAfIICZBRkL0bwnfSyxyb
       &lt;canMetrics&gt;true&lt;/canMetrics&gt;
     &lt;/jenkins.metrics.api.MetricsAccessKey&gt;
     &lt;jenkins.metrics.api.MetricsAccessKey&gt;
-      &lt;key&gt;aCkLd3tdL6zMq817kXKrc7wiIlRl0-ACSUnM4qtSjtAahXS7XDqbMYLm-QXXnYaPIlEE6ibcjvLcmT1hAMpeuOzCSkHMDeD9ysMCfEIpR1iV8VAUNq0k0_mjX0AF1T7MyUqQ-3hVc31iuJd_CR7kyijczUAsCuENkGVzKYM5s3SsBqEvryws6OXEFD-QTPi0W4npjBTbn2Gnf9l-bcCE-QWg_Mh-LxEwyvFi_JGDHN_Y_zSjjo68FsG8rrbFogWZlsVnpb5NzSRB9gbHo6e2pG8ubzUEfBPzbIPTEeOjBUhgR1j-WXblBVk000uJNRUSbFFIjKx6i1y4peDGFf8MDg&lt;/key&gt;
-      &lt;canPing&gt;false&lt;/canPing&gt;
-      &lt;canThreadDump&gt;false&lt;/canThreadDump&gt;
-      &lt;canHealthCheck&gt;false&lt;/canHealthCheck&gt;
-      &lt;canMetrics&gt;true&lt;/canMetrics&gt;
-    &lt;/jenkins.metrics.api.MetricsAccessKey&gt;
-    &lt;jenkins.metrics.api.MetricsAccessKey&gt;
-      &lt;key&gt;CZCHNWgwQYbPlY1rIrYCnxT36Mq6xhMGSpkouIaXMH6FVdE6ezOL7FRXna8UMSiaYXsxM5l4kZK2F2EFM7TBDqkCW9SRXi9eSD2Ab4h3_mlSepbdmNxHpgnSEEb3fGuiuKYTh9Qq1ZO7x-wRV8pOuG4_BjtmYlYJG6Geom-mcqYseU51GLlhaRyRuJO6QmBarj9vHj3whZC7AN5tjOXqC0fqIdysDA4r_tkHvidDQKYZmTRMHVJSlaQ8NNypM1l_KLhkLY2p4_I9OkAcBNdr91-vIn5Wnr2wvxCKFDuYaem8G5WGjPyy_Po167MawbFvh6RjSmOKofQ7PH051RoBjg&lt;/key&gt;
+      &lt;key&gt;hYpJcgR0Nus2Ex-HkvjBjkbvT-oUkwB3xZiEl2x_eq_HaMf0V4ovuPbJmco4gwOw0jR30M7UMP_CLH620wtRrqRjdUYDAAmetyNzsw3OmnZwDrHW80hkobVLptGl_41knbC1NS1WSsRHDV2XLp0BTODabLUuwmcUUXYQmjsAzutGXZLxJ5GEgHWRKa56DfQRRKpI_MaaTj4vLEsZO2zxp8V8DF3_QqKdpMR0mrS4qWpaAHylOo2EfDRpgtSF5AQ0iuXI9qfqDwkRoQl2IidR9W7dE1-0msCjs6bSU9gCIliAK4cbAjk0KYG1KXRi_M_IJLkHS9wPqE2o-ZQnDqynfA&lt;/key&gt;
       &lt;canPing&gt;false&lt;/canPing&gt;
       &lt;canThreadDump&gt;false&lt;/canThreadDump&gt;
       &lt;canHealthCheck&gt;false&lt;/canHealthCheck&gt;
@@ -157,24 +157,24 @@ qKXd7WQLPIwQhvGmAfIICZBRkL0bwnfSyxyb
           <c class="list">
             <com.cloudbees.opscenter.context.BreadcrumbImpl>
               <displayName>Jenkins</displayName>
-              <url>http://api-team-1.jenkins-enterprise.dev.beedemo.io:8080/</url>
+              <url>http://joc-1.jenkins-operations-center.dev.beedemo.io:8888/</url>
               <enabled>true</enabled>
             </com.cloudbees.opscenter.context.BreadcrumbImpl>
             <com.cloudbees.opscenter.context.BreadcrumbImpl>
               <displayName>masters</displayName>
-              <url>http://joc-1.jenkins-operations-center.dev.beedemo.io:8080/job/masters/</url>
+              <url>http://joc-1.jenkins-operations-center.dev.beedemo.io:8888/job/masters/</url>
               <enabled>true</enabled>
             </com.cloudbees.opscenter.context.BreadcrumbImpl>
             <com.cloudbees.opscenter.context.BreadcrumbImpl>
               <displayName>api-team</displayName>
-              <url>http://joc-1.jenkins-operations-center.dev.beedemo.io:8080/job/masters/job/api-team/</url>
+              <url>http://joc-1.jenkins-operations-center.dev.beedemo.io:8888/job/masters/job/api-team/</url>
               <enabled>true</enabled>
             </com.cloudbees.opscenter.context.BreadcrumbImpl>
           </c>
           <list reference="../c"/>
         </breadcrumbs>
         <displayName>jenkins-master-api-team</displayName>
-        <objectUrl>http://joc-1.jenkins-operations-center.dev.beedemo.io:8080/job/masters/job/api-team/job/jenkins-master-api-team/</objectUrl>
+        <objectUrl>http://joc-1.jenkins-operations-center.dev.beedemo.io:8888/job/masters/job/api-team/job/jenkins-master-api-team/</objectUrl>
       </default>
     </com.cloudbees.opscenter.context.ItemRemoteContext>
   </context>

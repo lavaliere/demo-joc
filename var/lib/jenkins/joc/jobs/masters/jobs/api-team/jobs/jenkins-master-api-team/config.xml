@@ -8,7 +8,7 @@
   <timeStamp>1418241229125</timeStamp>
   <grantId>45fde081-d539-44fd-b529-d6f172feedbc</grantId>
   <approved>true</approved>
-  <localEndpoint>http://54.174.120.135:8080/</localEndpoint>
+  <localEndpoint>http://api-team-1.jenkins-enterprise.dev.beedemo.io:8080/</localEndpoint>
   <identity>MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtcOr/5qMvZyIs3swQY8Ra+n18LIoPoEH
 TCECht86NCOEigqXWxi0xfW0XdS4FpgbR6amZCvNfydgYl3FyIhFAQdhSLUxVlV7T6gzJ6UwaXIF
 czGRk4jkJjLRE6ASBtyC/mJsT5I8/5r+CQ2wvIAHu3RDxGXDjMrGqLnZk1dTcT2GHPXOElTxsB8N

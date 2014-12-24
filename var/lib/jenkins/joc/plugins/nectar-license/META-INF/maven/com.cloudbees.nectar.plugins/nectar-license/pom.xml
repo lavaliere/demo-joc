@@ -16,7 +16,7 @@
 
   <groupId>com.cloudbees.nectar.plugins</groupId>
   <artifactId>nectar-license</artifactId>
-  <version>6.0</version>
+  <version>5.7</version>
   <packaging>hpi</packaging>
   <name>Jenkins Enterprise License Entitlement Check</name>
   <description>
@@ -27,7 +27,7 @@
   <scm>
     <connection>scm:git:ssh://git@github.com/cloudbees/${project.artifactId}-plugin.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/cloudbees/${project.artifactId}-plugin.git</developerConnection>
-    <tag>nectar-license-6.0</tag>
+    <tag>nectar-license-5.7</tag>
   </scm>
 
   <properties>
@@ -52,7 +52,7 @@
     <dependency>
       <groupId>com.cloudbees.nectar.plugins</groupId>
       <artifactId>cloudbees-license</artifactId>
-      <version>6.0</version>
+      <version>5.3</version>
     </dependency>
     <!-- jenkins dependencies -->
   </dependencies>

@@ -8,7 +8,7 @@
   </parent>
 
   <artifactId>cloudbees-ha</artifactId>
-  <version>4.4</version>
+  <version>4.3</version>
   <packaging>hpi</packaging>
 
   <name>CloudBees High Availability Management plugin</name>
@@ -32,7 +32,8 @@
     </dependency>
   </dependencies>
 
+
   <scm>
-    <tag>jenkins-ha-parent-4.4</tag>
+    <tag>jenkins-ha-parent-4.3</tag>
   </scm>
 </project>
