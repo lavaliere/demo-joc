@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <jenkins.model.JenkinsLocationConfiguration>
   <adminAddress>tkennedy@cloudbees.com</adminAddress>
-  <jenkinsUrl>http://54.84.32.220:8888/</jenkinsUrl>
+  <jenkinsUrl>http://joc-1.jenkins-operations-center.dev.beedemo.io:8888/</jenkinsUrl>
 </jenkins.model.JenkinsLocationConfiguration>

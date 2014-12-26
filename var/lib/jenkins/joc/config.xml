@@ -6,19 +6,8 @@
   <version>1.580.1.1 (Jenkins Operations Center by CloudBees 1.6)</version>
   <numExecutors>2</numExecutors>
   <mode>NORMAL</mode>
-  <useSecurity>true</useSecurity>
-  <authorizationStrategy class="nectar.plugins.rbac.strategy.RoleMatrixAuthorizationStrategyImpl"/>
-  <securityRealm class="org.jenkinsci.plugins.mocksecurityrealm.MockSecurityRealm" plugin="mock-security-realm@1.2">
-    <data>admin admin-ext
-harpreet admin-ext
-kohsuke developer-ext
-stephen developer-ext
-alyssa</data>
-    <randomDelay>false</randomDelay>
-    <userIdStrategy class="jenkins.model.IdStrategy$CaseInsensitive"/>
-    <groupIdStrategy class="jenkins.model.IdStrategy$CaseInsensitive"/>
-  </securityRealm>
-  <disableRememberMe>false</disableRememberMe>
+  <useSecurity>false</useSecurity>
+    <disableRememberMe>false</disableRememberMe>
   <projectNamingStrategy class="jenkins.model.ProjectNamingStrategy$DefaultProjectNamingStrategy"/>
   <workspaceDir>${JENKINS_HOME}/workspace/${ITEM_FULLNAME}</workspaceDir>
   <buildsDir>${ITEM_ROOTDIR}/builds</buildsDir>
