@@ -12,7 +12,7 @@
                 <default>
                   <class>com.cloudbees.opscenter.analytics.reporter.RemoteContextReportingConfiguration</class>
                   <xml>&lt;com.cloudbees.opscenter.analytics.reporter.RemoteContextReportingConfiguration plugin=&quot;operations-center-analytics-reporter@1.6&quot;&gt;
-  &lt;feeder&gt;http://54.84.32.220:8888/feeder&lt;/feeder&gt;
+  &lt;feeder&gt;http://joc-1.jenkins-operations-center.dev.beedemo.io:8080/feeder&lt;/feeder&gt;
   &lt;reportingInterval&gt;10000&lt;/reportingInterval&gt;
 &lt;/com.cloudbees.opscenter.analytics.reporter.RemoteContextReportingConfiguration&gt;</xml>
                 </default>
@@ -26,7 +26,7 @@
                 <default>
                   <class>com.cloudbees.opscenter.context.ConnectionDetails</class>
                   <xml>&lt;com.cloudbees.opscenter.context.ConnectionDetails plugin=&quot;operations-center-context@1.6&quot;&gt;
-  &lt;url&gt;http://54.84.32.220:8888/&lt;/url&gt;
+  &lt;url&gt;http://joc-1.jenkins-operations-center.dev.beedemo.io:8080/&lt;/url&gt;
   &lt;id&gt;0-jenkins-master-api-team&lt;/id&gt;
   &lt;grant&gt;45fde081-d539-44fd-b529-d6f172feedbc&lt;/grant&gt;
 &lt;/com.cloudbees.opscenter.context.ConnectionDetails&gt;</xml>
@@ -65,7 +65,7 @@
                   <class>com.cloudbees.opscenter.updatecenters.ContextUpdateSite</class>
                   <xml>&lt;com.cloudbees.opscenter.updatecenters.ContextUpdateSite plugin=&quot;operations-center-context@1.6&quot;&gt;
   &lt;id&gt;default&lt;/id&gt;
-  &lt;url&gt;http://54.84.32.220:8888/updateCenters/updates/428183082f6d2fe7c78cf0d4aa359f4c/update-center.json&lt;/url&gt;
+  &lt;url&gt;http://joc-1.jenkins-operations-center.dev.beedemo.io:8080/updateCenters/updates/428183082f6d2fe7c78cf0d4aa359f4c/update-center.json&lt;/url&gt;
   &lt;rootCertificate&gt;-----BEGIN CERTIFICATE-----
 MIIDFzCCAf+gAwIBAgIGAUo13HcYMA0GCSqGSIb3DQEBBQUAMDQxMjAwBgNVBAMT
 KUplbmtpbnMgVXBkYXRlIENlbnRlciBQbHVnaW4gQnkgQ2xvdWRCZWVzMB4XDTE0
@@ -148,125 +148,6 @@ qKXd7WQLPIwQhvGmAfIICZBRkL0bwnfSyxyb
               </com.cloudbees.opscenter.utils.SerializableWrapper>
             </com.cloudbees.opscenter.utils.SerializableWrapper>
           </entry>
-          <entry>
-            <java-class>nectar.plugins.rbac.strategy.RoleMatrixAuthorizationConfig</java-class>
-            <com.cloudbees.opscenter.utils.SerializableWrapper serialization="custom">
-              <com.cloudbees.opscenter.utils.SerializableWrapper>
-                <default>
-                  <class>nectar.plugins.rbac.strategy.ImmutableRoleMatrixAuthorizationConfig</class>
-                  <xml>&lt;nectar.plugins.rbac.strategy.ImmutableRoleMatrixAuthorizationConfig&gt;
-  &lt;parent class=&quot;nectar.plugins.rbac.groups.ContextGroupContainer&quot; plugin=&quot;nectar-rbac@4.12&quot;&gt;
-    &lt;parent class=&quot;nectar.plugins.rbac.groups.ContextGroupContainer&quot;&gt;
-      &lt;parent class=&quot;nectar.plugins.rbac.groups.ContextGroupContainer&quot;&gt;
-        &lt;name&gt;Jenkins&lt;/name&gt;
-        &lt;groups class=&quot;java.util.Collections$UnmodifiableRandomAccessList&quot; resolves-to=&quot;java.util.Collections$UnmodifiableList&quot;&gt;
-          &lt;c class=&quot;list&quot;&gt;
-            &lt;nectar.plugins.rbac.groups.ReadOnlyGroup&gt;
-              &lt;name&gt;Administrators&lt;/name&gt;
-              &lt;member&gt;admin-ext&lt;/member&gt;
-              &lt;member&gt;harpreet&lt;/member&gt;
-              &lt;role&gt;administer&lt;/role&gt;
-            &lt;/nectar.plugins.rbac.groups.ReadOnlyGroup&gt;
-            &lt;nectar.plugins.rbac.groups.ReadOnlyGroup&gt;
-              &lt;name&gt;Developers&lt;/name&gt;
-              &lt;member&gt;developer-ext&lt;/member&gt;
-              &lt;role&gt;develop&lt;/role&gt;
-            &lt;/nectar.plugins.rbac.groups.ReadOnlyGroup&gt;
-            &lt;nectar.plugins.rbac.groups.ReadOnlyGroup&gt;
-              &lt;name&gt;Browsers&lt;/name&gt;
-              &lt;member&gt;alyssa&lt;/member&gt;
-              &lt;role&gt;browse&lt;/role&gt;
-            &lt;/nectar.plugins.rbac.groups.ReadOnlyGroup&gt;
-          &lt;/c&gt;
-          &lt;list reference=&quot;../c&quot;/&gt;
-        &lt;/groups&gt;
-        &lt;roleFilters class=&quot;java.util.Collections$UnmodifiableSet&quot;&gt;
-          &lt;c class=&quot;set&quot;/&gt;
-        &lt;/roleFilters&gt;
-      &lt;/parent&gt;
-      &lt;name&gt;masters&lt;/name&gt;
-      &lt;groups class=&quot;java.util.Collections$UnmodifiableRandomAccessList&quot; resolves-to=&quot;java.util.Collections$UnmodifiableList&quot;&gt;
-        &lt;c class=&quot;list&quot;&gt;
-          &lt;nectar.plugins.rbac.groups.ReadOnlyGroup&gt;
-            &lt;name&gt;devs&lt;/name&gt;
-            &lt;member&gt;kohsuke&lt;/member&gt;
-            &lt;role&gt;develop&lt;/role&gt;
-          &lt;/nectar.plugins.rbac.groups.ReadOnlyGroup&gt;
-          &lt;nectar.plugins.rbac.groups.ReadOnlyGroup&gt;
-            &lt;name&gt;admins&lt;/name&gt;
-            &lt;member&gt;harpreet&lt;/member&gt;
-            &lt;member&gt;stephen&lt;/member&gt;
-            &lt;role&gt;administer&lt;/role&gt;
-          &lt;/nectar.plugins.rbac.groups.ReadOnlyGroup&gt;
-        &lt;/c&gt;
-        &lt;list reference=&quot;../c&quot;/&gt;
-      &lt;/groups&gt;
-      &lt;roleFilters class=&quot;java.util.Collections$UnmodifiableSet&quot;&gt;
-        &lt;c class=&quot;set&quot;&gt;
-          &lt;string&gt;anonymous&lt;/string&gt;
-          &lt;string&gt;browse&lt;/string&gt;
-          &lt;string&gt;authenticated&lt;/string&gt;
-          &lt;string&gt;develop&lt;/string&gt;
-        &lt;/c&gt;
-      &lt;/roleFilters&gt;
-    &lt;/parent&gt;
-    &lt;name&gt;api-team&lt;/name&gt;
-    &lt;groups class=&quot;java.util.Collections$UnmodifiableRandomAccessList&quot; resolves-to=&quot;java.util.Collections$UnmodifiableList&quot;&gt;
-      &lt;c class=&quot;list&quot;&gt;
-        &lt;nectar.plugins.rbac.groups.ReadOnlyGroup&gt;
-          &lt;name&gt;api-team&lt;/name&gt;
-          &lt;member&gt;kohsuke&lt;/member&gt;
-          &lt;member&gt;stephen&lt;/member&gt;
-          &lt;role&gt;develop&lt;/role&gt;
-        &lt;/nectar.plugins.rbac.groups.ReadOnlyGroup&gt;
-      &lt;/c&gt;
-      &lt;list reference=&quot;../c&quot;/&gt;
-    &lt;/groups&gt;
-    &lt;roleFilters class=&quot;java.util.Collections$UnmodifiableSet&quot;&gt;
-      &lt;c class=&quot;set&quot;&gt;
-        &lt;string&gt;anonymous&lt;/string&gt;
-        &lt;string&gt;browse&lt;/string&gt;
-        &lt;string&gt;authenticated&lt;/string&gt;
-        &lt;string&gt;develop&lt;/string&gt;
-      &lt;/c&gt;
-    &lt;/roleFilters&gt;
-  &lt;/parent&gt;
-  &lt;role name=&quot;administer&quot; filterable=&quot;true&quot;&gt;
-    &lt;permission id=&quot;hudson.model.Hudson.ConfigureUpdateCenter&quot;/&gt;
-    &lt;permission id=&quot;hudson.model.Hudson.Administer&quot;/&gt;
-    &lt;permission id=&quot;hudson.model.Hudson.RunScripts&quot;/&gt;
-    &lt;permission id=&quot;hudson.model.Hudson.UploadPlugins&quot;/&gt;
-  &lt;/role&gt;
-  &lt;role name=&quot;anonymous&quot; filterable=&quot;true&quot;/&gt;
-  &lt;role name=&quot;authenticated&quot; filterable=&quot;true&quot;&gt;
-    &lt;permission id=&quot;hudson.model.Hudson.Read&quot;/&gt;
-  &lt;/role&gt;
-  &lt;role name=&quot;browse&quot; filterable=&quot;true&quot;&gt;
-    &lt;permission id=&quot;hudson.model.Item.Read&quot;/&gt;
-    &lt;permission id=&quot;hudson.model.Hudson.Read&quot;/&gt;
-  &lt;/role&gt;
-  &lt;role name=&quot;develop&quot; filterable=&quot;true&quot;&gt;
-    &lt;permission id=&quot;hudson.scm.SCM.Tag&quot;/&gt;
-    &lt;permission id=&quot;hudson.model.View.Delete&quot;/&gt;
-    &lt;permission id=&quot;hudson.model.Item.Move&quot;/&gt;
-    &lt;permission id=&quot;hudson.model.Item.Read&quot;/&gt;
-    &lt;permission id=&quot;hudson.model.Item.Configure&quot;/&gt;
-    &lt;permission id=&quot;hudson.model.Item.Workspace&quot;/&gt;
-    &lt;permission id=&quot;hudson.model.View.Create&quot;/&gt;
-    &lt;permission id=&quot;hudson.model.View.Read&quot;/&gt;
-    &lt;permission id=&quot;hudson.model.Run.Delete&quot;/&gt;
-    &lt;permission id=&quot;hudson.model.Item.Build&quot;/&gt;
-    &lt;permission id=&quot;hudson.model.Item.Create&quot;/&gt;
-    &lt;permission id=&quot;hudson.model.Hudson.Read&quot;/&gt;
-    &lt;permission id=&quot;hudson.model.Item.Delete&quot;/&gt;
-    &lt;permission id=&quot;hudson.model.View.Configure&quot;/&gt;
-    &lt;permission id=&quot;hudson.model.Run.Update&quot;/&gt;
-  &lt;/role&gt;
-&lt;/nectar.plugins.rbac.strategy.ImmutableRoleMatrixAuthorizationConfig&gt;</xml>
-                </default>
-              </com.cloudbees.opscenter.utils.SerializableWrapper>
-            </com.cloudbees.opscenter.utils.SerializableWrapper>
-          </entry>
         </instanceBag>
       </default>
     </com.cloudbees.opscenter.context.RemoteContext>
@@ -276,24 +157,24 @@ qKXd7WQLPIwQhvGmAfIICZBRkL0bwnfSyxyb
           <c class="list">
             <com.cloudbees.opscenter.context.BreadcrumbImpl>
               <displayName>Jenkins</displayName>
-              <url>http://54.84.32.220:8888/</url>
+              <url>http://api-team-1.jenkins-enterprise.dev.beedemo.io:8080/</url>
               <enabled>true</enabled>
             </com.cloudbees.opscenter.context.BreadcrumbImpl>
             <com.cloudbees.opscenter.context.BreadcrumbImpl>
               <displayName>masters</displayName>
-              <url>http://54.84.32.220:8888/job/masters/</url>
+              <url>http://joc-1.jenkins-operations-center.dev.beedemo.io:8080/job/masters/</url>
               <enabled>true</enabled>
             </com.cloudbees.opscenter.context.BreadcrumbImpl>
             <com.cloudbees.opscenter.context.BreadcrumbImpl>
               <displayName>api-team</displayName>
-              <url>http://54.84.32.220:8888/job/masters/job/api-team/</url>
+              <url>http://joc-1.jenkins-operations-center.dev.beedemo.io:8080/job/masters/job/api-team/</url>
               <enabled>true</enabled>
             </com.cloudbees.opscenter.context.BreadcrumbImpl>
           </c>
           <list reference="../c"/>
         </breadcrumbs>
         <displayName>jenkins-master-api-team</displayName>
-        <objectUrl>http://54.84.32.220:8888/job/masters/job/api-team/job/jenkins-master-api-team/</objectUrl>
+        <objectUrl>http://joc-1.jenkins-operations-center.dev.beedemo.io:8080/job/masters/job/api-team/job/jenkins-master-api-team/</objectUrl>
       </default>
     </com.cloudbees.opscenter.context.ItemRemoteContext>
   </context>
