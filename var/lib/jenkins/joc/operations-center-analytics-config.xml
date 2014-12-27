@@ -11,5 +11,5 @@
       <logsPath>elasticsearch/logs</logsPath>
     </settings>
   </elasticsearchProvider>
-  <feederUrl>http://54.84.32.220:8888/feeder</feederUrl>
+  <feederUrl>http://joc-1.jenkins-operations-center.dev.beedemo.io:8888/feeder</feederUrl>
 </com.cloudbees.opscenter.analytics.AnalyticsConfiguration>
