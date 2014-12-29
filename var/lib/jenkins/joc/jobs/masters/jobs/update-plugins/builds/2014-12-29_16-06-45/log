@@ -1,0 +1,9 @@
+Started by timer
+Building on master in workspace /data/var/lib/jenkins/joc/workspace/masters/update-plugins@2
+#17 web-update-center finished successfully.[8mha:AAAArx+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgLWHQzwdalliSmZ9noJ+Tn65vaWlhmWiZnGJslJRobJJsmpJkZJCalGRuaGqZkmRiYQAADTEOuLQAAAA=[0m(log)
+#17 api-update-center finished successfully.[8mha:AAAArx+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgLWHQzwdalliSmZ9noJ+Tn66fYmhsamRoaZ5qZGphkpRmbmphkWKQaG5okJxqlpaWagEAzqqlJrQAAAA=[0m(log)
+[8mha:AAAAzh+LCAAAAAAAAP9djjsOwjAQRJcgOAAloqaLLRqEQFQ0ICEaTmCSVeLgrC17g+AaXAMaDsFxuAPmIwqmmVmt5mmuD+gED4OyyYMlkVkK1qBYnhx6o2m/sYzj+eU2P7t7AskKugap4HIN7cYbht66UgcljaJCbtlrKmZHD/0/3OLjLxh81EoAji6GIUNVMruplJXN0pGokPaaQmrjAsU6NtMMidGLHA9ih5hjbYW200lU7OxkrUJ8h3dWTqeMqv4djcsV4xchn7WJ3yTvAAAA[0mmasters ? api-team ? api-update-center: SUCCESS
+[8mha:AAAA0x+LCAAAAAAAAP9djk1uwjAQhadBcACWFevuYosNQqlYsaFSxKYncJJR4sQZW/YE0mtwjXbTQ/Q4vQPmRyx4m/dGo/fp/fzDNHhYNEMVLInSUrAGxe7LoTeaur1lXG2+fzcn95dA8gEzg1Rzk8Nk8IZhnrfqoKRRVMtP9prq99HD6xNue/MLDG56SQBGF8MbQ9swu0zK1pbpUrRInaaQ2rhAsY7NtERi9KLCgygQK+yt0DZbR8VOIXsV4jtc8xGLlFH1j2NwlWK8I+QZdjXRw+8AAAA=[0mmasters ? web-team ? web-update-center: SUCCESS
+[8mha:AAAAfB+LCAAAAAAAAP9b85aBtbiIwTE5P1cvOSe/NCUpNbVYL7+gODk1ryS1SK84tagMSCXnlBYDuUBxvdCSzByV8MSivMy8dOf8vOL8nFS//JLUYwVdKftvL5dgYmCoKGKQyihNKc7P00uGKNBDUsgAAYwghQUABw2Bo38AAAA=[0mWARNING: No Masters to run the operation on.
+Warning: this build has no associated authentication, so build permissions may be lacking, and downstream projects which cannot even be seen by an anonymous user will be silently skipped
+Finished: SUCCESS

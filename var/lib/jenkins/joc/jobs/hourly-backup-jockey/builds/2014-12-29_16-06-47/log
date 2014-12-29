@@ -1,0 +1,24 @@
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Building on master in workspace /data/var/lib/jenkins/joc/workspace/hourly-backup-jockey
+FATAL: harpreet
+[8mha:AAAAWB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0morg.acegisecurity.userdetails.UsernameNotFoundException: harpreet
+	at hudson.security.SecurityRealm$None$2.loadUserByUsername(SecurityRealm.java:494)
+	at jenkins.security.ImpersonatingUserDetailsService.loadUserByUsername(ImpersonatingUserDetailsService.java:32)
+	at hudson.model.User.impersonate(User.java:282)
+	at com.infradna.hudson.plugins.backup.BackupBuilder.perform(BackupBuilder.java:134)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:770)
+	at hudson.model.Build$BuildExecution.build(Build.java:199)
+	at hudson.model.Build$BuildExecution.doRun(Build.java:160)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:533)
+	at hudson.model.Run.execute(Run.java:1745)
+	at hudson.model.Build.run(Build.java:113)
+	at hudson.model.ResourceController.execute(ResourceController.java:89)
+	at hudson.model.Executor.run(Executor.java:240)
